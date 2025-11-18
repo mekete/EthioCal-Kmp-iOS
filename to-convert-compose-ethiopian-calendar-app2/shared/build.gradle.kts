@@ -2,6 +2,8 @@ plugins {
     kotlin("multiplatform")
     id("com.android.library")
     kotlin("plugin.serialization")
+    id("com.google.devtools.ksp") version "2.0.21-1.0.27"
+    id("androidx.room") version "2.7.0-alpha10"
 }
 
 kotlin {
@@ -28,6 +30,14 @@ kotlin {
                 implementation("org.jetbrains.kotlinx:kotlinx-datetime:0.6.0")
                 implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.8.0")
                 implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.6.3")
+
+                // Room KMP
+                implementation("androidx.room:room-runtime:2.7.0-alpha10")
+                implementation("androidx.sqlite:sqlite-bundled:2.5.0-alpha10")
+
+                // Koin for DI
+                implementation("io.insert-koin:koin-core:3.5.6")
+                implementation("io.insert-koin:koin-compose:1.1.5")
 
                 // Ethiopian calendar library
                 implementation(project(":ethiopic-chrono"))
@@ -77,4 +87,17 @@ android {
         sourceCompatibility = JavaVersion.VERSION_21
         targetCompatibility = JavaVersion.VERSION_21
     }
+}
+
+room {
+    schemaDirectory("$projectDir/schemas")
+}
+
+dependencies {
+    // Room KSP
+    add("kspCommonMainMetadata", "androidx.room:room-compiler:2.7.0-alpha10")
+    add("kspAndroid", "androidx.room:room-compiler:2.7.0-alpha10")
+    add("kspIosX64", "androidx.room:room-compiler:2.7.0-alpha10")
+    add("kspIosArm64", "androidx.room:room-compiler:2.7.0-alpha10")
+    add("kspIosSimulatorArm64", "androidx.room:room-compiler:2.7.0-alpha10")
 }
