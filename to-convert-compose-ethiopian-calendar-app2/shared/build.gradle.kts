@@ -1,8 +1,8 @@
 plugins {
     kotlin("multiplatform")
     id("com.android.library")
-    kotlin("plugin.serialization") version "2.0.21"
-    id("com.google.devtools.ksp") version "2.0.21-1.0.27"
+    kotlin("plugin.serialization") version "2.2.21"
+    id("com.google.devtools.ksp")
     id("androidx.room") version "2.7.0-alpha10"
 }
 
