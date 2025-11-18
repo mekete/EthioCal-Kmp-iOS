@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="screen_title_month_calendar">Lakkoofsa Guyyaa Itoophiyaa</string>
+    <string name="screen_title_date_converter">Guyyaa Jijjiiraa</string>
+    <string name="screen_title_holidays">Ayyaanota Itoophiyaa</string>
+    <string name="screen_title_events">Yaadachiisa</string>
+    <string name="screen_title_settings">Filannoo (Settings)</string>
+    <string name="screen_title_more">Dabalata</string>
+
+    <string name="nav_month">Ji\'a</string>
+    <string name="nav_event">Yaadachiisa</string>
+    <string name="nav_holiday">Ayyaana</string>
+    <string name="nav_convert">Jijjiiri</string>
+    <string name="nav_more">Dabalata</string>
+
+    <string name="button_today">Har\'a</string>
+    <string name="button_prev">DURAA</string>
+    <string name="button_next">BODA</string>
+    <string name="button_to_ethiopian">Gara Itoophiyaa</string>
+    <string name="button_to_gregorian">Gara Giriigooriyanii</string>
+    <string name="button_ok">TOLE</string>
+    <string name="button_cancel">Haqi</string>
+    <string name="button_calculate_difference">Garaagarummaa shallagi</string>
+
+    <string name="onboarding_welcome_title">Kaalendara Itoophiyaa</string>
+    <string name="onboarding_welcome_subtitle">Afaan Shanitti Ni Hojjeta</string>
+    <string name="onboarding_feature_dual_calendar">Itoophiyaa fi Giregooriyaanii</string>
+    <string name="onboarding_feature_holidays">Ayyaanota Hawaasaa/Amantii</string>
+    <string name="onboarding_feature_reminders">Yaadachiisaa fi Beeksisa</string>
+    <string name="onboarding_feature_date_converter">Konvertara Guyyaa</string>
+    <string name="onboarding_feature_multilingual">Afaan Shan (5) Ni Deggera</string>
+    <string name="onboarding_get_started">Eegali</string>
+
+    <string name="onboarding_language_title">Afaan Filadhu</string>
+    <string name="onboarding_language_description">Afaan (Langue, Afaan)</string>
+
+    <string name="onboarding_theme_title">Imaama Filadhu</string>
+    <string name="onboarding_theme_description">Booda Jijjiirama</string>
+    <string name="onboarding_theme_light">Haala Ifaa</string>
+    <string name="onboarding_theme_light_desc">Fuula Ifaa fi Qulqulluu</string>
+    <string name="onboarding_theme_dark">Haala Dukkanaa</string>
+    <string name="onboarding_theme_dark_desc">Galagala Ijaaf Salphaa</string>
+    <string name="onboarding_theme_system">Kan Sirnaa (Default)</string>
+    <string name="onboarding_theme_system_desc">Saattii Meeshaa Hordofa</string>
+
+    <string name="onboarding_holidays_title">Ayyaana Kam Argisiisa?</string>
+    <string name="onboarding_holidays_description">Booda Jijjiirama</string>
+    <string name="onboarding_holidays_public">Ayyaanota Hawaasaa</string>
+    <string name="onboarding_holidays_public_desc">Guyyoota Hojiin Dhaabatu</string>
+    <string name="onboarding_holidays_orthodox">Ayyaanota Ortodoksii</string>
+    <string name="onboarding_holidays_orthodox_desc">Ayyaanota Ortodoksii fi Sooma</string>
+    <string name="onboarding_holidays_muslim">Ayyaanota Islaamaa</string>
+    <string name="onboarding_holidays_muslim_desc">Ayyaanota Islaamaa fi Kabajoota</string>
+    <string name="onboarding_holidays_orthodox_days">Maqaa Guyyaa Ortodoksii</string>
+    <string name="onboarding_holidays_orthodox_days_desc">Yoo Filatame, Kutaa **Dabalataa** Keessatti.</string>
+
+    <string name="onboarding_calendar_title">Kaalendara Hundee</string>
+    <string name="onboarding_calendar_description">Kam Argisiisuu Qaba?</string>
+    <string name="onboarding_calendar_dual_display">Kaalendara Lameenuu</string>
+    <string name="onboarding_calendar_dual_display_desc">Baay\'ina Qabaachuu Danda\'a</string>
+    <string name="onboarding_calendar_tip">Booda Kutaa **Dabalataa** Keessatti Jijjiiruu Dandeessa</string>
+
+    <string name="onboarding_skip">Darbi</string>
+    <string name="onboarding_next">Itti Fufi</string>
+    <string name="onboarding_done">Xumurame</string>
+
+    <string name="label_from_gregorian">Giriigooriyanii Irraa</string>
+    <string name="label_from_ethiopian">IItoophiyaa Irraa</string>
+    <string name="label_ethiopian_date">Guyyaa Itoophiyaa</string>
+    <string name="label_gregorian_date">Guyyaa Giriigooriyanii</string>
+    <string name="dialog_title_select_ethiopian_date">Guyyaa Itoophiyaa Filadhu</string>
+    <string name="label_date_difference">Garaagarummaa Guyyaa</string>
+    <string name="label_start_date">Guyyaa Jalqabaa</string>
+    <string name="label_end_date">Guyyaa Xumuraa</string>
+    <string name="label_difference_result">Garaagarummaa</string>
+    <string name="pick_gregorian">Giriigooriyanii</string>
+    <string name="pick_ethiopian">Itoophiyaa</string>
+
+    <string name="label_filter_by_type">Ayyaanota Mul\'atan</string>
+    <string name="filter_public">Uummataa</string>
+    <string name="filter_orthodox">Ortodoksii</string>
+    <string name="filter_muslim">Muslima</string>
+    <string name="label_ec_suffix">A.L.I.</string>
+    <string name="label_holidays">Ayyaanota</string>
+    <string name="label_day_off">Hojiin kan cufamu</string>
+
+    <string name="menu_color_theme">Tiiimii ykn Halluu (Theme)</string>
+    <string name="menu_privacy_policy">Imaammata Mateenyaa</string>
+    <string name="menu_share_app">Appii kana qooduuf</string>
+    <string name="menu_about_us">Waa\'ee Keenya</string>
+    <string name="menu_language">Afaan (Language, Langue)</string>
+    <string name="menu_notifications">Beeksisa (Notifications)</string>
+    <string name="menu_additional_settings">Filannoowwan Dabalataa</string>
+
+    <string name="notification_banner_title">Beeksisoota banaa</string>
+    <string name="notification_banner_message">Ayyaanota Itoophiyaa fi taateewwan dhufaniif yaadachiisa argadhaa</string>
+    <string name="notification_banner_enable">Bani</string>
+    <string name="notification_banner_dismiss">Haqi</string>
+
+    <string name="about_us_dialog_title">Waa\'ee Keenya</string>
+    <string name="about_us_developer">Gaggeessaa</string>
+    <string name="about_us_developed_by">Mekete Nimaga</string>
+    <string name="about_us_contact_us">Nu qunnamaa</string>
+    <string name="about_us_rate_app">Sadarkaa kennuuf</string>
+    <string name="about_us_app_version">Vershinii Appii</string>
+    <string name="about_us_build_time">Kan haaromfame</string>
+    <string name="about_us_privacy_policy">Imaammata Mateenyaa</string>
+    <string name="about_us_terms_of_service">Haal-qajeelfama Tajaajilaa</string>
+
+    <string name="label_theme_color">Halluu Tiiimii (Theme)</string>
+    <string name="label_theme_mode">Akkaataa Tiiimii(Theme)</string>
+
+    <string name="settings_calendar_display">Agarsiisa Lakkoofsa Guyyaa</string>
+    <string name="settings_ethiopian_gregorian_display">Agarsiisa Itoophiyaafi Giriigooriyanii</string>
+    <string name="settings_calendar_display_dialog_title">Filannoo Agarsiisa Lakkoofsa Guyyaa</string>
+    <string name="settings_primary_calendar">Lakkoofsa Guyyaa Isa Guddaa</string>
+    <string name="settings_display_dual_calendar">Lakkoofsa Guyyaa lama agarsiisi</string>
+    <string name="settings_secondary_calendar">Lakkoofsa Guyyaa Dabalataa</string>
+    <string name="settings_calendar_ethiopian">Kan Itoophiyaa</string>
+    <string name="settings_calendar_gregorian">Giriigooriyanii</string>
+    <string name="settings_calendar_hirji">Muslima</string>
+
+    <string name="settings_show_orthodox_day_names">Maqaawwan Guyyaa Ortodoksii agarsiisi</string>
+    <string name="settings_show_day_off_holidays">Ayyaanota Uummataa agarsiisi</string>
+    <string name="settings_show_orthodox_working_holidays">Guyyoota Soomaa fi Ayyaanota Ortodoksii agarsiisi</string>
+    <string name="settings_show_muslim_working_holidays">Ayyaanota Muslimaa dabalataa agarsiisi</string>
+    <string name="settings_show_cultural_holidays">Ayyaanota Aadaa agarsiisi</string>
+    <string name="settings_show_us_holidays">Ayyaanota Ameerikaa agarsiisi</string>
+    <string name="settings_use_geez_numbers">Lakkoofsota Gi\'iizii fayyadami</string>
+    <string name="settings_holidays_display">Ayyaanota Mul\'atan</string>
+    <string name="settings_holidays_display_dialog_title">Ayyaanota Mul\'atan</string>
+    <string name="settings_orthodox_day_names_button">Maqaawwan Guyyaa Ortodoksii</string>
+    <string name="settings_orthodox_day_names_dialog_title">Maqaawwan Guyyaa Ortodoksii</string>
+    <string name="settings_use_24_hour_format">Wiijeetii irratti sa\'aatii 24 fayyadami</string>
+
+    <string name="settings_widget_options">Wiijeetii Fuula Jalqabaa</string>
+    <string name="settings_widget_dialog_title">Filannoo Wiijeetii</string>
+    <string name="settings_display_two_clocks">Sa\'aatii lama agarsiisi</string>
+    <string name="settings_primary_timezone">Bakka Wiijeetiin inni guddaan agarsiisu</string>
+    <string name="settings_secondary_timezone">Bakka Wiijeetiin inni lammaffaan agarsiisu</string>
+    <string name="settings_use_transparent_background">Duyda ifa mul\'atu fayyadami</string>
+    <string name="settings_timezone_hint">Naannoo yeroo galchi (fkn, New York)</string>
+
+    <string name="holiday_info_dialog_title">Kan Ayyaanotaa</string>
+    <string name="holiday_info_dialog_message">Filannoo keessatti ayyaanota kamfa akka mul\'atan jijjiiruu dandeessa</string>
+    <string name="holiday_info_dialog_checkbox">Odeeffannoo kana irra deebi\'ii hin agarsiisin</string>
+
+    <string name="error_loading_calendar">Lakkoofsa guyyaa fe\'uu irratti dogoggorri uumameera</string>
+    <string name="empty_no_holidays_month">Ayyaanni hojiin itti cufamu hin jiru</string>
+    <string name="empty_no_holidays_display">Ayyaanni hojiin itti cufamu hin jiru</string>
+    <string name="placeholder_coming_soon">Dhiheenyatti…</string>
+    <string name="placeholder_news_events">Oduuwwan, Taateewwanii fi Yaadachiisa</string>
+
+    <string name="cd_back">Gara Boodaatti</string>
+    <string name="cd_pick_date">Guyyaa Filadhu</string>
+    <string name="cd_selected">Filatameera</string>
+    <string name="cd_navigate">Adeemi</string>
+    <string name="cd_previous_year">Bara Darbe</string>
+    <string name="cd_next_year">Bara Dhufu</string>
+    <string name="cd_calendar_state">Lakkoofsa Guyyaa Itoophiyaa, amma %1$s agarsiisaa jira</string>
+    <string name="cd_holiday_info">Odeeffannoo Qindaa\'ina Ayyaanaa</string>
+
+    <!-- Public Holidays -->
+    <string name="holiday_public_enkutatash">Inquxaaxaash</string>
+    <string name="holiday_public_enkutatash_history">**Inquxaaxaash** yookiin Guyyaan Bara Haaraa Itoophiyaa Meskarama 1 (yeroo baay\'ee Caamsaa 11, kalandarii Gireegoriyaanii) kabajama. Ayyaanni kun dhuma bonaa fi jalqaba birraa ni agarsiisa. Maqaan isaa, \"Kennaa Meeshaalee\" jechuun, deebii Mootittii Sabaa gara Solomoon dhaqxa qaba.</string>
+    <string name="holiday_public_enkutatash_celebration">Ayyaanni kun nyaata maatii, keessattuu *Doro Waat* (itti dhidhiitamaa lukkuu mi\'aawaa) kan qabatuudha. Ijoolleen ulee daraaraa *Adeey Ababaa* (daraaraa Masqalaa keelloo) raabsanii sirboota sirbu. Kun yeroo haaressaa, gammachuu fi walitti qabamaa bara haaraa gaarii hawwinuudha.</string>
+
+    <string name="holiday_public_christian_meskel">Masqala</string>
+    <string name="holiday_public_christian_meskel_history">**Masqala** Meskarama 17 (yeroo baay\'ee Fulbaana 27) kan kabajamu yoo ta\'u, Argamuu Masqala Dhugaa mootitti Heleenaan jaarraa 4ffaa keessa argatte yaadachuuf. Kun ayyaanota Ortodoksii Itoophiyaa keessaa isa tokko, yeroo daraaroon keelloo baay\'inaan mul\'atu.</string>
+    <string name="holiday_public_christian_meskel_celebration">Wantootni guddaa ayyaanichaa **Damaraa**, guuboo guddinaan masqalaa fakkaatuu fi daraaraan keelloon kan miidhageedha. Egaa barii halkanitti namoonni kumaatamaan lakkaa\'aman guuboo kana irraatti walitti qabamu. Ayyaanni kun namoota gammachiisa, aadaa fi seenaa keenya yaadachiisa.</string>
+
+    <string name="holiday_public_christian_genna">Geennaa</string>
+    <string name="holiday_public_christian_genna_history">**Geennaa** yookiin Ayyaanni Dhaloota Itoophiyaa Amajjii 7 (Tahsaas 29) tti kabajama. Dursee, **Sooma Raajotaa** guyyaa 43\'f soomama, achitti hordoftoonni foonii fi aannanii dhiisu.</string>
+    <string name="holiday_public_christian_genna_celebration">Erga Sagadaa dheeraa booda, maatiin nyaata *Doro Waat* jedhamu nyaachuun sooma hiiku. Ayyaanni kun yeroo baay\'ee *Yageennaa Ciwaataa*, tapha hockey\'tti fakkaatuun wal qabata.</string>
+
+    <string name="holiday_public_christian_timket">Ximqata</string>
+    <string name="holiday_public_christian_timket_history">**Ximqata** ayyaana Cuuphaa Iyyesuus kan Itoophiyaati, yeroo Iyyesuus Yordaanositti cuuphame yaadachuuf. Amajjii 19 kabajama. Ayyaanni kun UNESCO\'n akka dhaala aadaatti beekameera.</string>
+    <string name="holiday_public_christian_timket_celebration">Ayyaanni kun galgala sana **xaabota** (fakkeessa Seera Kumi) gara iddoo bishaanitti baasuun jalqaba. Ganama Ximqataa, bishaan eebbifamee namoota irratti facaafama. Ayyaanota kana keessatti sirba, shubbisa, meeshaalee aadaa fi luboonni dallaa halluu qaban baatu ni mul\'atu.</string>
+
+    <string name="holiday_public_adwa">Injifannoo Adwaa</string>
+    <string name="holiday_public_adwa_history">**Guyyaan Injifannoo Adwaa** Bitootessa 2 kabajama, Injifannoo Itoophiyaan humnoota Xaaliyaanii irratti Argamaa Adwaa bara 1896tti galmeessite yaadachuuf.</string>
+    <string name="holiday_public_adwa_celebration">Injifannoon kun birmadummaa Itoophiyaa akka eegeefi sochii koloonii-mormituu addunyaaf kaka\'umsa ta\'e. Guyyaan kun sirnaa fi agarsiisa waraanaa, akkasumas walitti qabama yaadannoo bakka seenaa Adwaatti ni agarsiisa.</string>
+
+    <string name="holiday_public_labour_day">Guyyaa Hojjettootaa</string>
+    <string name="holiday_public_labour_day_history">**Guyyaan Hojjettootaa** (yookiin Guyyaan Hojjettootaa Addunyaa) Itoophiyaatti akkuma biyyoota baay\'eetti Ebla 1 kabajama. Ayyaanni kun gumaacha hojjettootaa seenaa keessatti galateeffachuufidha.</string>
+    <string name="holiday_public_labour_day_celebration">Yeroo boqonnaa ta\'us, mirga hojjettootaa fi haqa hawaasaa irratti akka yaadamu ni gargaara. Waldaaleen hojjettootaa fi dhaabbileen ogummaa qaban waa\'ee mirga hojjettootaa haasa\'uuf yeroo qabachuu danda\'u.</string>
+
+    <string name="holiday_public_patriots_day">Guyyaa Goototaa</string>
+    <string name="holiday_public_patriots_day_history">**Guyyaan Goototaa** Caamsaa 5 kabajama, Bilisummaa Itoophiyaa Tooftaa Xaaliyaaniitiin bara 1941 ture irraa yaadamuuf. Deebii Mootii Hayile Sillaasee I gara Finfinneetti fi humna waraanaa ture \"Gootota\" jedhamu kabajuufidha.</string>
+    <string name="holiday_public_patriots_day_celebration">Guyyaan kun mallattoo guddaa kabaja biyyaa fi jajjabinaati. Sirnoonni yaadannoo mana nama du\'eetti raawwatamu, namoota lola irratti kufan yaadachuuf. Kun dhiibbaa diinaa irratti tokkummaa biyyaa mirkaneessuuf yeroo gabaabaadha.</string>
+
+    <string name="holiday_derg">Caamsaa 20</string>
+    <string name="holiday_derg_history">**Guyyaan Kuufaatii Dargii** Caamsaa 28 kabajama. Kun dhuma bulchiinsa waraana Maarkisist-Leeninist Dargii kan bara 1991 ture, booda waggaa 17tti xumura argaate.</string>
+    <string name="holiday_derg_celebration">Guyyaan kun yeroo baay\'ee akka jalqaba baroota haaraatti fudhatama. Mallattoo jijjiiramaa fi ce\'umsa sirna bulchiinsaa tokko irraa gara isa biraatti ta\'uusaa agarsiisa.</string>
+
+    <!-- Orthodox Holidays -->
+    <string name="holiday_orthodox_siklet">Siqileetii</string>
+    <string name="holiday_orthodox_siklet_history">Siqileetii jechuun \"Fannoo irratti Fannifamuu\" jechuu yoo ta\'u, ayyaana gadda guddaa fi qalbii jijjiirrannaa Waldaan Ortodoksii Tawaahidoo Itoophiyaa rakkoo, fannifamuu fi du\'a Iyyesuus Kiristoos Goologotaatti raawwate ittiin yaadattu dha. Guyyaan kun erga guyyoota 55 Sooma Guddichaa (Abiy Soom) booda **Torban Qulqulluu (Himamaat)** keessa kan oolu yoo ta\'u, aarsaa Kiristoos guutuu ta\'e yaadachuun amantoonni Faasikaa (Du\'aa Ka\'uu) dhaaf qophii hafuuraa cimaa taasisanidha.</string>
+    <string name="holiday_orthodox_siklet_celebration">Guyyaa Siqileetii, amantoonni guyyaa guutuu **ni soomu** (nyaata hin nyaatan) fi tajaajila waldaa addaa fi dheeraa ta\'e, kan raawwii gara fannifamuutti geessan ibsu irratti hirmaatu. Tajaajilli kun yeroo baay\'ee ganama irraa jalqabee hamma galgalaatti kan turu yoo ta\'u, **Kadhannaa Sa\'aatii**, Maahileetii fi sagada kan rakkoo Kiristoos yaadatan ni raawwatamu. Amantoonni mana sagadaa keessatti ni sagadu, qilleensi naannoo sanaa gadda guddaa, callisii fi kadhannaadhaan kan guutame yoo ta\'u, kunis dhiphinnaa fi du\'a Kiristoos akka jireenya dhugaatti akka isaanitti dhaga\'amu taasisa.</string>
+
+    <string name="holiday_orthodox_fasika">Faasikaa (Du\'aa Ka\'uu)</string>
+    <string name="holiday_orthodox_fasika_history">Faasikaan, Afaan Amaaraan Du\'aa Ka\'uu jedhamee kan waamamu, ayyaana **guddaa fi ijoo** Waldaa Ortodoksii Tawaahidoo Itoophiyaa keessatti argamu dha. Ayyaanni kun **Du\'aa Ka\'uu** (Tinsa\'ee) Iyyesuus Kiristoos Du\'a moo\'ee ka\'uusaa kan kabaju yoo ta\'u, saba namaa hundaaf **injifannoo**, **abdii** fi **Jireenya gara Du\'aatti ce\'uu** (Faasikaan jecha \"Ce\'uu\" jedhu irraa dhufe) agarsiisa. Faasikaan xumura Sooma Guddichaa (Abiy Soom) guyyoota 55 dheeraa fi jabaa fi Torban Qulqulluu ta\'uusaa, ayyaanicha Faasikaa irra caalaa yeroo gammachuu fi bashannanaa guddaa taasisa.</string>
+    <string name="holiday_orthodox_fasika_celebration">Ayyaanni Faasikaa **Halkan Sanbata Duraa** kan eegalu yoo ta\'u, amantoonni uffata aadaa adii uffatanii halkan guutuu Mana Sagadaatti **Dammaqinsaa Du\'aa Ka\'uu** (Paschal Vigil) fi kadhannaatti dabarsu. Naannoo Gidduu Halkaanii booda, Du\'aa Ka\'uun labsamuu hordofee, haalli gaddaa gara **gammachuu fi sirbaatti** ni jijjiirama; ibsaan ni boba\'a, faaruuwwan ni faarfamu, amantoonnis guutummaa qaama isaanii ni sagadu. Naannoo sa\'aatii 3:00 ganamaatti gara mana isaaniitti deebi\'uun, nyaata **foonii fi aannanii** isa guyyaa 55f sooman nyaachuun sooma isaanii hiiku. Keessattuu **Dukkana (Doro) Wat** fi **Qixxaa (Injaraan)** nyaata Faasikaa kan jaallataman yoo ta\'u, fira fi michuu daawwachuu, kennaa wal jijjiiruu fi **tokkummaa** maatii cimsuu kan jedhaman aadaawwan guyyaa guutuu itti fufu.</string>
+
+    <string name="holiday_orthodox_tensae">Du\'aa Ka\'uu</string>
+    <string name="holiday_orthodox_tensae_history">Du\'aa Ka\'uu jechuun \"Du\'aa Ka\'uu\" jechuu yoo ta\'u, Faasikaa wajjin dhiyeenyaan kan wal qabatu dha. Keessattuu, Du\'aa Ka\'uu Gooftaa Iyyesuus Kiristoos, kan yeroo Faasikaa kabajamu, isaanis dhugaa bu\'uura ti\'oolojii ta\'e kan agarsiisu dha. Yeroo baay\'ee Faasikaa wajjin wal jijjiiree kan hojii irra oolu yoo ta\'u, Du\'aa Ka\'uun garuu injifannoo hafuuraa du\'a irratti argame cimsee agarsiisa. Gadda soomaa irraa gara gammachuu amantii guddaatti ce\'uu agarsiisa.</string>
+    <string name="holiday_orthodox_tensae_celebration">Sirni amantii Du\'aa Ka\'uu faaruu gammachuu, deemsaa fi tsinaatsiloota (meeshaalee muuziqaa) luboonni harka isaaniitti qabatan, kan ergamoonni yemmuu faarfan agarsiisuun kan deeggarame dha. Barbaachisummaan Du\'aa Ka\'uu nagaa gaafannaa aadaa kan amantoota gidduutti wal jijjiirramu irratti kan mul\'atu yoo ta\'u, kunis injifannoo Waaqummaa fi abdii jireenya bara baraa cimsee agarsiisa.</string>
+
+    <string name="holiday_orthodox_erget">Ol Ba\'uu</string>
+    <string name="holiday_orthodox_erget_history">Irgaat, yookiin Ayyaanni Gara Samii Ol Ba\'uu, gabaasa Macaafa Qulqulluu kan Iyyesuus Kiristoos erga Du\'aa Ka\'uu Faasikaa booda guyyoota 40 booda gara samii ol ba\'uusaa yaadatu dha. Ayyaanni kun kan jijjiiramu yoo ta\'u, mul\'achuu Kiristoos inni dhumaa lafa irratti deebisaa barattoota isaatiif agarsiisuu dhaan, gidduu Du\'aa Ka\'uu isaa fi Hafuura Qulqulluu (Pheeraaqilixoos) dhufuu isaa gidduutti akka riqichaatti tajaajila.</string>
+    <string name="holiday_orthodox_erget_celebration">Guyyaan kun tajaajiloota waldaa addaa fi faaruuwwan kan mootummaa Kiristoos samii irratti fi argamuu isaa hafuuraa duuka buutota isaa gidduutti xiyyeefatan dabalata. Haa ta\'u malee, sirna amantii gaddaatiif xiyyeeffannaa kan kennu yoo ta\'u, Ayyaanni Gara Samii Ol Ba\'uu sagalee ayyaana kan Waaqummaa Kiristoosii fi xumura tajaajila isaa lafa irratti ture kan mirkaneessu qaba.</string>
+
+    <string name="holiday_orthodox_peraklitos">Pheeraaqilixoos</string>
+    <string name="holiday_orthodox_peraklitos_history">Pheeraaqilixoos jechuun \"Jajjabeessaa\" yookiin \"Abbaa Alangaa\" jechuu yoo ta\'u, Afaan Gi\'iiziin maqaa Pheenteeqoosxee ti. Erga Faasikaa booda guyyaa 50ffaa kan kabajamu yoo ta\'u, Hafuura Qulqulluu Duuka Bu\'oota fi duuka buutota Iyyesuus Kiristoos kaan irratti bu\'uusaa kan yaadatu yoo ta\'u, kunis hundeeffama Waldaa Kiristaanaa agarsiisa. Ayyaanota gurguddoo Gooftaa sagal keessaa tokko dha.</string>
+    <string name="holiday_orthodox_peraklitos_celebration">Guyyaan kun ulfina guddaadhaan kan kabajamu yoo ta\'u, kadhannaalee addaa fi sirnoota amantii kan **Humna Hafuura Qulqulluu** amantoota geggeessuu fi jajjabeessu irratti xiyyeefatan dabalata. Yoo barbaachise, amantoonni uffata adii yookiin qulqulluu uffatu, kunis qulqullummaa fi jalqaba hafuuraa haaraa Hafuurri Qulqulluun kenne agarsiisa.</string>
+
+    <string name="holiday_orthodox_nineveh">Nanawee</string>
+    <string name="holiday_orthodox_nineveh_history">Soomni Nanawee, yookiin Soomni Nanawee, sooma guyyaa sadii kan Waldaa Ortodoksii Tawaahidoo Itoophiyaa keessatti Soomni Guddichi eegaluu isaa dura torban lama dura soomamu dha. Kunis lallaba Raajicha Yoonaas gara saba Nanawee fi qalbii jijjiirrannaa isaan booda ta\'een magaalittiin badii irraa baraaramuu ishee yaadachuuf dha. Yeroo Sooma Guddichaa isa ijoo tiif akka qophii hafuuraa ta\'ee tajaajila.</string>
+    <string name="holiday_orthodox_nineveh_celebration">Soomni kun soomota Waldaa sagal keessaa tokko yoo ta\'u, akkuma Sooma Guddichaa, foonii fi wantoota aannanii irraa of qusachuu gaafata. Guyyoota sadii kana keessa, amantoonni tajaajiloota waldaa irratti ni hirmaatu fi magaalittiin Nanawee Dubbii Waaqayyoof abboomamuu ishee fakkeessuun kadhanna fi qalbii jijjiirrannaa jabaa keessa darbu.</string>
+
+    <string name="holiday_orthodox_abiy_tsom">Sooma Guddicha</string>
+    <string name="holiday_orthodox_abiy_tsom_history">Sooma Guddicha jechuun \"Sooma Guddaa\" jechuu yoo ta\'u, yeroo soomaa kan baay\'ee dheeraa fi kabajamaa kalandarii Ortodoksii Itoophiyaa keessaa tokko dha; guyyoota 55 turu. **Hudaadee** yookiin **Sooma Afurtamaa**, kan guyyaa afurtama Iyyesuus onaa keessatti soome jedhamuun beekama. Guyyaa Sanbata Duratti kan eegalu yoo ta\'u, Faasikaa (Du\'aa Ka\'uun) kan xumuramu dha; kunis yeroo qophii hafuuraa ol\'aanaa ti.</string>
+    <string name="holiday_orthodox_abiy_tsom_celebration">Soomni kun baay\'ee cimaa yoo ta\'u, guyyoota 55 guutuu foon, hanqaaquu fi wantoota aannanii irraa of qusachuu gaafata. Amantoonni nyaata bunaa cimaa kan wantoota beellada irraa dhufe hundumaa irraa of qusatan hordofu. Nyaata irraa kan hafe, soomni kun **kadhannaa cimaa**, **kennaa** fi **qalbii jijjiirrannaa** kan dabalatu yoo ta\'u, amantoota rakkoo fi Du\'aa Ka\'uu Kiristoos keessatti hafuuraan hirmaachuuf ni qopheessa.</string>
+
+    <string name="holiday_orthodox_debre_zeit">Dabra Zayit</string>
+    <string name="holiday_orthodox_debre_zeit_history">Dabra Zayit jechuun \"Gaara Zayitaa\" jechuu yoo ta\'u, Dilbata lammaffaa Sooma Guddichaa irratti kan kabajamu dha. Raajotaa fi barumsa Iyyesuus Kiristoos Gaara Zayitaa irratti dubbate, keessattuu mallattoolee **Deebii Isaa Lammaffaa** fi dhuma baraa kan ibsan yaadachiisa. Guyyaan kun dammaqina fi qophii Murtii Dhumaatiif yaaduu jajjabeessa.</string>
+    <string name="holiday_orthodox_debre_zeit_celebration">Sirni amantii guyyaa kanaaf godhamu Dubbii Wangeelaa kan dubbii Kiristoos inni dhumaa irratti xiyyeefatu irratti xiyyeefannaa guddaa kenna. Mata dureen Dabra Zayit **dammaqina hafuuraa** yoo ta\'u, amantoonni yeroo soomaatti daandii isaanii akka sirreessan gorsuun, amantii fi hojii gaarii isaanii keessatti akka dhaabatan isaan gorfu.</string>
+
+    <string name="holiday_orthodox_hosanna">Hosaa\'inaa fi Himamaat</string>
+    <string name="holiday_orthodox_hosanna_history">Hosaa\'inaan, yookiin Dilbata Raamotaa, Dilbata Faasikaa (Du\'aa Ka\'uu) duraa kan kabajamu dha. Kunis Iyyesuus Kiristoos gara Iyyarusaalemitti kabajaan seensaa namoonni damee muka zayitaa fi uffata isaanii karaa irratti facaasanii **\"Hosaa\'inaa\"** jedhanii simataniidha. Guyyaan kun eegala **Torban Qulqulluu (Himamaat)** ti. Torban Qulqulluun (Himamaat) yeroo kalandarii Waldaa Ortodoksii Tawaahidoo Itoophiyaa keessaa isa baay\'ee qulqulluu fi gadda guddaa qabu dha. Torban kun yeroo Sooma Guddichaa keessaa inni dhumaa yoo ta\'u, hamma Sanbata Duratti ni tura. Himamaat jechuun **Rakkoo** yookiin **Dhiphina** jechuu yoo ta\'u, torban guutuu Iyyesuus Kiristoos utuu hin fannifamin dura rakkoo cimaa, barumsa fi hojiiwwan isaa inni dhumaa mana sagadaa keessatti hojjete adda baasuun **qalbii jijjiirrannaa fi gaddaan** ni yaadawwata.</string>
+    <string name="holiday_orthodox_hosanna_celebration">Guyyaa kana, dameewwan muka zayitaa yookiin baala walitti hidhaman mana sagadaa keessatti amantootaaf ni raabsamu, isaanis yeroo baay\'ee qubee yookiin fannoo godhamanii aarsaa fi injifannoo Kiristoos yaadachuuf ni kaa\'amu. Guyyaan kun eegala Torban Qulqulluu, isaanis torban dhumaa Sooma Guddichaa kan rakkoo Kiristoos agarsiisu dha. Torban Qulqulluu keessatti amantoonni sooma cimaa soomuun, tajaajila kadhannaa dheeraa irratti hirmaachuun fi **sagada** gochuun dabarsu. Wantoonni guyyaa guyyaan yaadatamus akkasitti: \n• Dilbata (Hosaa\'inaa): Gooftaan harree irratti taa\'ee damee zayitaa fi faaruu (Hosaa\'inaa) Iyyarusaalemitti kabajaan seenuun ni yaadawwata. Guyyaa kana, dameewwan muka zayitaa yookiin baala walitti hidhaman mana sagadaa keessatti amantootaaf ni raabsamu, isaanis yeroo baay\'ee qubee yookiin fannoo godhamanii aarsaa fi injifannoo Kiristoos yaadachuuf ni kaa\'amu. \n• Wiixata (Kudhaan Bala\'ii): Kiristoos mukaa bala\'ii ija hin qabne ergamtootaa fi mana sagadaa fakkeessee barumsa kennuun ni yaadawwata. \n• Kibxata (Gaaffii fi Deebii): Gooftaan mana sagadaa keessa taa\'ee barumsa kennuu fi gaaffii ogeessotaaf deebii kennuun ni yaadawwata. \n• Roobii (Gorsa): Luboonni Yihuudotaa Kiristoos ajjeesuuf **gorsa iccitii** godhan fi Yihuudaan dabarsee kennuuf walii gale ni yaadawwata. \n• Kamisii (Kadhannaa Kamisii): Kiristoos deganaa isaatiif **miilla isaanii dhiquu**, **Sagada Qulqulluu** hundeessuu fi Gaatsamaaniitti **kadhachuun** ni yaadawwata. \n• Jimaata (Siqileetii): **Fannifamuu fi Du\'a** Gooftaa keenyaa kan yaadawwatu, torban kana keessaa guyyaa **gadda guddaa** qabu dha. \n• Sanbata (S\'uur): Kiristoos **awwaala keessa buluu** fi gara Si\'oolitti bu\'ee lubbuu achi jirtu baasuun (**Abdii kennuu**) ni yaadawwata.</string>
+
+    <string name="holiday_orthodox_rikbe_kahinat">Rikbe Kaahinaat</string>
+    <string name="holiday_orthodox_rikbe_kahinat_history">Rikbe Kaahinaat jechuun \"Walga\'ii Lubootaa\" jechuu yoo ta\'u, bu\'uurri isaa Wangeela Yohaannis (21:15) keessatti kan ibsame dha. Kunis Abbootiin Duuka Bu\'ootaa Kiristoos Gooftaa keenyaa irraa **Hafuurummaa (Eegumsa)** fi amantaa simatan ture. Kunis yeroo jalqabaa Ebla 23 kan raawwatame yoo ta\'u, sana booda Qulqulloonni Duuka Bu\'ootaa waggaa waggaan guyyaa 25ffaa Du\'aa Ka\'uu booda Qulqulleettii Iyyarusaalemitti walitti qabamu turan jechuun barsiisotaa fi ogeeyyiin ni barsiisu.</string>
+    <string name="holiday_orthodox_rikbe_kahinat_celebration">Ayyaanni kun Abbootiin keenya kan Waldaa Qulqulleettii Duuka Bu\'oota irraa jalqabanii bulchaa turan walitti qabamuun tajaajila Waldaa Qulqulleettii akka toluuf akkasumas tokkummaa fi gudina hafuuraa amantootaaf kan ta\'an **qajeelfamoota hafuuraa** dabarsanidha.</string>
+
+    <string name="holiday_orthodox_tsome_hawariat">Sooma Duuka Bu\'ootaa</string>
+    <string name="holiday_orthodox_tsome_hawariat_history">Soomni Duuka Bu\'ootaa (Tsome Hawariaat), erga Pheeraaqilixoos (Pentecote) booda kan kabajamu yoo ta\'u, soomota seera qabeessa Waldaa Ortodoksii Tawaahidoo Itoophiyaa torban keessaa tokko dha. Duuka Bu\'oonni lallaba Wangeelaa addunyaaf eegaluu isaanii dura kan sooman sooma yaadachuuf raawwatama.</string>
+    <string name="holiday_orthodox_tsome_hawariat_celebration">Soomni kun Wiixata Pheeraaqilixoos booda kan eegalu yoo ta\'u, Adoolessa 5 (yeroo baay\'ee naannoo Adoolessa 12 kalandarii Goorgooriyaaniin) ayyaana Qulqulluu Pheexiroosii fi Phaawuloositti ni xumurama. Yeroo kana, amantoonni foonii fi aannanii irraa of qusachuun, kadhanna fi qophii hafuuraa hojii misiyoonii Duuka Bu\'ootaatiif ni taasisu.</string>
+
+    <string name="holiday_orthodox_tsome_dihnet">Sooma Dihnat</string>
+    <string name="holiday_orthodox_tsome_dihnet_history">Sooma Dihnat, \"Sooma Fayyinaa\" jechuun, yeroo tokko tokko sooma Sanbata Garii waggaa guutuu soomamu yookiin yeroo tokko tokko maqaa addaa Sooma Jimaata Torban Qulqulluu (Siqileetii) wajjin wal qabatu dha. Guyyaa Fayyina Kiristoos rakkoo fi du\'aan argame irratti yaaduuf kenname dha.</string>
+    <string name="holiday_orthodox_tsome_dihnet_celebration">Sirni amantii kun fedhii qalbii jijjiirrannaa itti fufaa ta\'e fi amanannaa gaarummaa Kiristoos irratti jiru cimsa. Akkuma soomota hundumaa, wantoota beellada irraa dhufe irraa of qusachuu fi hojii kadhannaa dabaluu kan dabalatu yoo ta\'u, akka yaadannoo torbanitti yookiin yeroo yerootti bu\'uuraalee amantii Ortodoksii ta\'ee tajaajila.</string>
+
+    <string name="holiday_orthodox_ghad">Gahaad</string>
+    <string name="holiday_orthodox_ghad_history">Gahaad jechuun ayyaana **Ximqataa** (Ephiphany) dura, Amajjii 10 kan soomamu dha. Soomni kun amantoonni qaamaa fi hafuuraan ayyaana Cuuphaa Kiristoos isa gammachuu fi baay\'ee barbaachisaa ta\'eef akka qophaa\'aniif soomama. Sooma guyyaa tokkoo kan amantoonni sirna amantii qulqullummaa fi qophii hafuuraatiin akka simatan mirkaneessu dha.</string>
+    <string name="holiday_orthodox_ghad_celebration">Soomni kun yeroo baay\'ee erga tajaajila halkan gidduu Ayyaana Ximqataa duraa booda yookiin yeroo tokko tokko ganama Ximqataa erga sirna eebba bishaan booda hiikama. Yeroo barbaachisummaa Ximqataa fi mul\'achuu Iyyesuus akka Ilma Waaqayyootti irratti yaaduuf gargaaru dha.</string>
+
+    <string name="holiday_orthodox_kana_zegelila">Qaanaa Zagaliilaa</string>
+    <string name="holiday_orthodox_kana_zegelila_history">Qaanaa Zagaliilaa, yaadannoo cidha Qaanaa irratti godhamu, ayyaana Ortodoksii kan dinqii Iyyesuus Kiristoos inni jalqabaa, bishaan daadhii wayinii jijjiiruun raawwate, yaadatu dha. Gocha kun humna Waaqummaa isaa barattoota isaatiif mul\'ise Amajjii 11 (kalandarii Itoophiyaatiin) ni kabajama.</string>
+    <string name="holiday_orthodox_kana_zegelila_celebration">Ayyaanni kun ulfina Kiristoosii fi eebba gaa\'elaa fi jireenya hawaasaa cimsa. Yaadannoo humna jijjiiruu isaa ta\'ee kan tajaajilu yoo ta\'u, yeroo baay\'ee kadhannaalee fi dubbisa kan Wangeela Yohaannis isa dinqicha ibsu irratti xiyyeefatan dabalata.</string>
+
+    <string name="holiday_orthodox_lideta_mariam">Lidataa Maariyaam</string>
+    <string name="holiday_orthodox_lideta_mariam_history">Lidataa Maariyaam, Dhaloota Dubroo Maariyaam, sirna amantii Waldaa Ortodoksii Tawaahidoo Itoophiyaa kan ji\'a ji\'aan raawwatu yoo ta\'u, ayyaanni isaa inni guddaan waggaatti kan kabajamu Muddee 1 (yeroo baay\'ee Caamsaa 9 kalandarii Goorgooriyaaniin) dha. Dhaloota Haadha Waaqayyoo kan yaadatu yoo ta\'u, guyyaa Dubroo Maariyaam kan aadaa Itoophiyaa keessatti bakka guddaa qabdu kabajuuf kenname dha.</string>
+    <string name="holiday_orthodox_lideta_mariam_celebration">Akka yaadannoo ji\'aa tokkootti, sooma hanga booda sa\'aatii fi tajaajila waldaa addaatiin ni kabajama. Ayyaanni waggaa kan ishee gocha fayyinaa keessatti qabduuf kenname faaruuwwan, kadhannaalee fi deemsawwan addaa kan dabalatu ayyaana bal\'aa dha.</string>
+
+    <string name="holiday_orthodox_filseta">Filsetaa</string>
+    <string name="holiday_orthodox_filseta_history">Filsetaan, Sooma Gara Samii Ol Ba\'uu Dubroo Maariyaam, soomota kalandarii Itoophiyaa keessatti beekamaa fi soomamuu keessaa tokko dha. Kun sooma guyyaa 15 kan Maariyaam gara samii ce\'uushee yaadachuuf hanga Hagayya 16tti turu dha. Filsetaa jechuun \"Ba\'uu\" yookiin \"Godaanuu\" jechuu dha.</string>
+    <string name="holiday_orthodox_filseta_celebration">Soomni kun, kabaja soomaatiin Sooma Guddichaa booda lammaffaa irratti kan argamu yoo ta\'u, yeroo kana amantoonni foonii fi aannanii irraa of qusachuun, yeroo tokko tokko sirna nyaataa baay\'ee cimaa hordofu. Waldaaleen tajaajiloota addaa torban lamaan keessatti ni raawwatu, fi guyyaan ayyaanichaa mataan isaa ayyaana guddaadhaan kan mallatteeffamu yoo ta\'u, qulqullummaa fi jaarsummaa Dubroo Maariyaam ni kabaja.</string>
+
+    <string name="holiday_orthodox_debre_tabor">Dabra Taabor (Buhee)</string>
+    <string name="holiday_orthodox_debre_tabor_history">Dabra Taabor, yookiin Buheen Hagayya 13 kan kabajamu dha. Iyyesuus deganaa isaa sadii (Pheexiroos, Yaa\'iqoobii fi Yohaannis) gara Dabra Taabor geessee fuulli isaa akka aduutti yeroo ifu fi uffatni isaa akka ifaatti adii ta\'e yaadachuuf dha.</string>
+    <string name="holiday_orthodox_debre_tabor_celebration">Biyya keenyatti daa\'imman ayyaana kana dura yeroo dheeraaf **alangaadhaan** taphachuun (sagalee dhageessisuun) ni turu. Ayyaanni isaa kan itti aanu yeroo ta\'u, waaree isaa (Hagayya 12) daa\'imman naannoo sanaa mana mana isaanii deemuun **sirba Buhee** sirbuun **Daabboo Muummuul** ni fudhatu. Naannoo tokko tokkotti galgala Buhee **Ciboo** ni bobeessu.</string>
+
+    <!-- Events -->
+    <string name="add_event">Yaadachiisa Dabali</string>
+    <string name="edit_event">Yaadachiisa Sirreessi</string>
+    <string name="delete_event">Yaadachiisa Haqi</string>
+    <string name="delete_event_title">Haqamuu?</string>
+    <string name="delete_event_message">\"%1$s\" akka badu sirriidhaa?</string>
+    <string name="delete">Haqi</string>
+
+    <string name="title">Mata Duree</string>
+    <string name="title_required">Mata dureen barbaachisaadha</string>
+    <string name="description_optional">Ibsa</string>
+    <string name="date">Guyyaa</string>
+    <string name="start_time">Sa\'aatii Jalqabaa</string>
+    <string name="end_time">Sa\'aatii Xumuraa</string>
+    <string name="all_day_event">Guyyaa Guutuu</string>
+    <string name="category">Ramaddii</string>
+
+    <string name="repeat">Kan irra deebi\'amu</string>
+    <string name="repeat_weekly">Torban torbaniin irra deebi\'i</string>
+    <string name="no_repeat">Irra hin deebi\'in</string>
+    <string name="weekly">Torban</string>
+    <string name="repeat_on">Guyyaa itti irra deebi\'amu</string>
+    <string name="ends">Xumurama</string>
+    <string name="never">Xumura hin qabu</string>
+    <string name="until">Hamma</string>
+    <string name="until_date">Hamma %1$s</string>
+    <string name="select_end_date">Guyyaa xumuraa filadhu</string>
+
+    <string name="reminder">Yaadachiisa</string>
+    <string name="add_reminder">Yaadachiisa Dabali</string>
+    <string name="show_reminder_before">%1$s dura na yaadachiisi</string>
+    <string name="at_time_of_event">Sa\'aatii isaa irratti</string>
+    <string name="minutes_before_5">Daqiiqaa 5 dura</string>
+    <string name="minutes_before_15">Daqiiqaa 15 dura</string>
+    <string name="minutes_before_30">Daqiiqaa 30 dura</string>
+    <string name="hour_before_1">Sa\'aatii 1 dura</string>
+    <string name="reminder_minutes_before">%1$d Daq. Dura</string>
+
+    <string name="create">Uumi</string>
+    <string name="update">Olkaa\'i</string>
+    <string name="cancel">Haqi</string>
+    <string name="ok">Tole</string>
+
+    <string name="no_events">Yaadachiisni hin jiru</string>
+    <string name="tap_plus_to_add_event">Yaadachiisa kee isa jalqabaa olkaa\'uuf + tuqi</string>
+    <string name="error_loading_events">Fe\'uu irratti dogoggorri uumameera</string>
+
+    <string name="event_date_all_day">%1$d/%2$d/%3$d (Guyyaa Guutuu)</string>
+    <string name="recurring_event">Yaadachiisa irra deebi\'amu</string>
+    <string name="recurring">Irra deebi\'amaa</string>
+
+    <string name="filter">Filannoo</string>
+    <string name="show_all">Hunda Argisiisi</string>
+    <string name="showing_all_events">Yaadachiisonni hunda mul\'achaa jiru</string>
+    <string name="showing_from_to">%1$s hanga %2$s mul\'achaa jiru</string>
+    <string name="showing_from">%1$s irraa mul\'achaa jiru</string>
+    <string name="showing_until">Hanga %1$s mul\'achaa jiru</string>
+
+    <string name="time_just_now">Amma</string>
+    <string name="time_in_a_moment">Dhiheenyatti</string>
+    <string name="time_minute_singular">daqiiqaa</string>
+    <string name="time_minute_plural">daqiiqaa</string>
+    <string name="time_hour_singular">sa\'aatii</string>
+    <string name="time_hour_plural">sa\'aatii</string>
+    <string name="time_day_singular">guyyaa</string>
+    <string name="time_day_plural">guyyaa</string>
+    <string name="time_week_singular">torban</string>
+    <string name="time_week_plural">torban</string>
+    <string name="time_month_singular">ji\'a</string>
+    <string name="time_month_plural">ji\'a</string>
+    <string name="time_year_singular">bara</string>
+    <string name="time_year_plural">bara</string>
+    <string name="time_ago">%1$d %2$s dura</string>
+    <string name="time_in_future">%1$d %2$s keessatti</string>
+
+    <string name="permission_notification_title">Beeksisa Argachuuf</string>
+    <string name="permission_notification_rationale">Waa\'ee taateewwan keetii si yaadachiisuuf hayyama beeksisaa nu barbaachisa. Taateewwan karoorfamaniif yeroo isaaniitti yaadachiisa ni argatta.</string>
+    <string name="permission_exact_alarm_title">Sirrii akeekkachiisa banaa</string>
+    <string name="permission_exact_alarm_rationale">Yaadachiisa olkaa\'atteef beeksisa argachuu yoo feete, appilikeeshiniidhaaf PERMISSION kennuu qabda. Kana booda yoo \"Permission Request\" kan jedhu sitti dhufe ALLOW kan jedhu tuqi.</string>
+    <string name="permission_exact_alarm_instructions">Fuula itti aanu irratti Lakkoofsa Guyyaa Itoophiyaatiif \"Akeekkachiisaafi Yaadachiisa\" banaa.</string>
+    <string name="permission_grant">Hayyama kenni</string>
+    <string name="permission_not_now">Amma miti</string>
+    <string name="permission_open_settings">Filannoo bani</string>
+    <string name="permission_close">Cufi</string>
+    <string name="permission_fix">Sirreessi</string>
+    <string name="permission_banner_title">Beeksisni hin mul\'atu</string>
+    <string name="permission_banner_message">%1$s hir\'ateera. Beeksisa yaadachiisaa argachuuf Sirreessi tuqi.</string>
+    <string name="permission_warning_compact">Beeksisa yaadachiisaa argachuuf hayyamoota banaa</string>
+    <string name="permission_fix_title">Yaadachiisota banaa</string>
+    <string name="permission_fix_message">Beeksisa yaadachiisaa argachuuf hayyamoota armaan gadii kenni:</string>
+    <string name="permission_grant_notifications">Hayyama Beeksisaa kenni</string>
+    <string name="permission_grant_exact_alarms">Sirrii akeekkachiisa banaa</string>
+
+    <string-array name="ethiopian_months">
+        <item>Fulbaana</item>
+        <item>Onkoloolessa</item>
+        <item>Sadaasa</item>
+        <item>Muddee</item>
+        <item>Amajjii</item>
+        <item>Guraandhala</item>
+        <item>Bitootessa</item>
+        <item>Eebla</item>
+        <item>Caamsaa</item>
+        <item>Waxabajjii</item>
+        <item>Adoolessa</item>
+        <item>Hagayya</item>
+        <item>Phaagumee</item>
+    </string-array>
+
+    <string-array name="weekday_names_short">
+        <item>Wix</item>
+        <item>Qib</item>
+        <item>Rob</item>
+        <item>Kam</item>
+        <item>Jim</item>
+        <item>Sam</item>
+        <item>Dil</item>
+    </string-array>
+
+    <string-array name="weekday_names_full">
+        <item>Wixata</item>
+        <item>Qibxata</item>
+        <item>Roobii</item>
+        <item>Kamisa</item>
+        <item>Jimaata</item>
+        <item>Sanbata</item>
+        <item>Dilbata</item>
+    </string-array>
+
+    <string-array name="theme_color_names">
+        <item>Balaawu</item>
+        <item>Diimaa</item>
+        <item>Magariisa</item>
+        <item>Burtukaana</item>
+        <item>Arbuu</item>
+    </string-array>
+
+    <string-array name="theme_mode_names">
+        <item>Tiiimii (Halluu)</item>
+        <item>Ifa (Light)</item>
+        <item>Dukkana (Dark)</item>
+    </string-array>
+</resources>
