@@ -8,6 +8,12 @@ plugins {
     id("org.jetbrains.compose") version "1.7.0"
 }
 
+compose.resources {
+    publicResClass = true
+    packageOfResClass = "com.shalom.calendar.shared.resources"
+    generateResClass = always
+}
+
 kotlin {
     jvmToolchain(21)
 
@@ -47,10 +53,17 @@ kotlin {
                 implementation(compose.ui)
                 implementation(compose.components.resources)
                 implementation(compose.components.uiToolingPreview)
+                implementation(compose.materialIconsExtended)
+
+                // Navigation Compose Multiplatform
+                implementation("org.jetbrains.androidx.navigation:navigation-compose:2.8.0-alpha10")
 
                 // ViewModel for Compose
                 implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.8.0")
                 implementation("androidx.lifecycle:lifecycle-runtime-compose:2.8.0")
+
+                // Koin ViewModel integration
+                implementation("io.insert-koin:koin-compose-viewmodel:1.2.0-Beta5")
 
                 // Ethiopian calendar library
                 implementation(project(":ethiopic-chrono"))
