@@ -73,6 +73,7 @@ ethiopic-chrono/
 - ✅ Committed to branch: `claude/kmp-migration-planning-01K48csCpTQh8Fg6eDH9QJLo`
 - ✅ Pushed to remote
 - ✅ Ready for you to test/review
+- ✅ **Fixed:** Added missing Android resources (AndroidManifest.xml, strings.xml) that weren't in initial commit
 
 ---
 
@@ -191,12 +192,19 @@ cd to-convert-compose-ethiopian-calendar-app2
 
 **Branch:** `claude/kmp-migration-planning-01K48csCpTQh8Fg6eDH9QJLo`
 
-**Commit:** "Convert ethiopic-chrono to Kotlin Multiplatform"
+**Recent Commits:**
+1. "Add missing Android resources for KMP ethiopic-chrono library" (commit 08fe754)
+2. "Fix deprecated kotlinOptions - migrate to compilerOptions DSL" (commit ef6651c)
+3. "Convert ethiopic-chrono to Kotlin Multiplatform" (commit 9a520cc)
 
 **Files changed:**
-- `ethiopic-chrono/build.gradle.kts` - Converted to KMP
+- `ethiopic-chrono/build.gradle.kts` - Converted to KMP with compilerOptions DSL
 - `src/main/kotlin/` → `src/androidMain/kotlin/` - Migrated to KMP structure
 - `src/iosMain/kotlin/IosStub.kt` - Created placeholder
+- `src/main/AndroidManifest.xml` - Android library manifest
+- `src/main/res/values/strings.xml` - English strings (month/day names)
+- `src/main/res/values-am/strings.xml` - Amharic strings (localized names)
+- `src/commonMain/kotlin/.gitkeep` - Placeholder for future shared code
 
 ---
 
