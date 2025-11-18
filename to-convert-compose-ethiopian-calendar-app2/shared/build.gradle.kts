@@ -1,6 +1,7 @@
 plugins {
     kotlin("multiplatform")
     id("com.android.library")
+    kotlin("plugin.serialization")
 }
 
 kotlin {
@@ -23,8 +24,13 @@ kotlin {
     sourceSets {
         val commonMain by getting {
             dependencies {
-                // Common Kotlin dependencies
+                // Kotlin dependencies
                 implementation("org.jetbrains.kotlinx:kotlinx-datetime:0.6.0")
+                implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.8.0")
+                implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.6.3")
+
+                // Ethiopian calendar library
+                implementation(project(":ethiopic-chrono"))
             }
         }
 
@@ -36,8 +42,8 @@ kotlin {
 
         val androidMain by getting {
             dependencies {
-                // Android-only annotation library
-                implementation("androidx.annotation:annotation:1.9.1")
+                // Android-specific dependencies
+                implementation("androidx.core:core-ktx:1.15.0")
             }
         }
 
@@ -60,38 +66,15 @@ kotlin {
 }
 
 android {
-    namespace = "com.shalom.ethiopicchrono"
+    namespace = "com.shalom.calendar.shared"
     compileSdk = 36
 
     defaultConfig {
         minSdk = 26
-        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
-        consumerProguardFiles("consumer-rules.pro")
-    }
-
-    buildTypes {
-        release {
-            isMinifyEnabled = false
-            proguardFiles(
-                getDefaultProguardFile("proguard-android-optimize.txt"),
-                "proguard-rules.pro"
-            )
-        }
     }
 
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_21
         targetCompatibility = JavaVersion.VERSION_21
     }
-
-    buildFeatures {
-        viewBinding = false
-        compose = false
-    }
-}
-
-dependencies {
-    testImplementation("junit:junit:4.13.2")
-    androidTestImplementation("androidx.test.ext:junit:1.2.1")
-    androidTestImplementation("androidx.test.espresso:espresso-core:3.6.1")
 }
