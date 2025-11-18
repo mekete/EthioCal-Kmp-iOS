@@ -15,6 +15,9 @@ import com.shalom.calendar.data.preferences.SettingsPreferences
 import com.shalom.calendar.data.preferences.ThemePreferences
 import com.shalom.calendar.data.remote.RemoteConfigManager
 import com.shalom.calendar.data.repository.EventRepository
+import com.shalom.calendar.util.AppInfo
+import com.shalom.calendar.util.ShareManager
+import com.shalom.calendar.util.UrlLauncher
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -141,5 +144,25 @@ object AppModule {
             themePreferences,
             permissionManager
         )
+    }
+
+    // ========== Platform Utilities ==========
+
+    @Provides
+    @Singleton
+    fun provideUrlLauncher(@ApplicationContext context: Context): UrlLauncher {
+        return UrlLauncher(context)
+    }
+
+    @Provides
+    @Singleton
+    fun provideShareManager(@ApplicationContext context: Context): ShareManager {
+        return ShareManager(context)
+    }
+
+    @Provides
+    @Singleton
+    fun provideAppInfo(@ApplicationContext context: Context): AppInfo {
+        return AppInfo(context)
     }
 }
