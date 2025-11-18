@@ -8,7 +8,9 @@ import com.shalom.calendar.domain.calculator.PublicHolidayCalculator
 import com.shalom.calendar.domain.calculator.ResourceProvider
 import com.shalom.calendar.domain.calculator.SimpleResourceProvider
 import com.shalom.calendar.presentation.converter.DateConverterViewModel
+import com.shalom.calendar.presentation.event.EventViewModel
 import com.shalom.calendar.presentation.holidaylist.CalendarItemListViewModel
+import com.shalom.calendar.presentation.month.MonthCalendarViewModel
 import com.shalom.calendar.presentation.onboarding.OnboardingViewModel
 import com.shalom.calendar.presentation.settings.SettingsViewModel
 import com.shalom.calendar.presentation.theme.ThemeViewModel
@@ -53,6 +55,8 @@ val viewModelModule = module {
     factoryOf(::OnboardingViewModel)
     factoryOf(::SettingsViewModel)
     factoryOf(::ThemeViewModel)
+    factoryOf(::MonthCalendarViewModel)
+    factoryOf(::EventViewModel)
 }
 
 /**

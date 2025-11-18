@@ -1,6 +1,8 @@
 package com.shalom.calendar.di
 
 import android.content.Context
+import com.shalom.calendar.alarm.AlarmScheduler
+import com.shalom.calendar.alarm.AlarmSchedulerImpl
 import com.shalom.calendar.data.analytics.AnalyticsManager
 import com.shalom.calendar.data.analytics.NoOpAnalyticsManager
 import com.shalom.calendar.data.preferences.SettingsPreferences
@@ -18,6 +20,9 @@ fun androidPlatformModule(context: Context) = module {
 
     // Theme preferences using DataStore
     single<ThemePreferences> { ThemePreferencesImpl(context) }
+
+    // Alarm scheduler using AlarmManager
+    single<AlarmScheduler> { AlarmSchedulerImpl(context) }
 
     // Analytics manager - using NoOp for now, can be replaced with Firebase later
     single<AnalyticsManager> { NoOpAnalyticsManager() }
