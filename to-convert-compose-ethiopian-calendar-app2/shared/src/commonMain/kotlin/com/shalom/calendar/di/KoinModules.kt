@@ -7,7 +7,10 @@ import com.shalom.calendar.domain.calculator.OrthodoxHolidayCalculator
 import com.shalom.calendar.domain.calculator.PublicHolidayCalculator
 import com.shalom.calendar.domain.calculator.ResourceProvider
 import com.shalom.calendar.domain.calculator.SimpleResourceProvider
+import com.shalom.calendar.presentation.converter.DateConverterViewModel
+import com.shalom.calendar.presentation.holidaylist.CalendarItemListViewModel
 import org.koin.core.module.Module
+import org.koin.core.module.dsl.factoryOf
 import org.koin.core.module.dsl.singleOf
 import org.koin.dsl.module
 
@@ -38,10 +41,20 @@ val domainModule = module {
 }
 
 /**
+ * ViewModel module - provides presentation layer ViewModels
+ * Using factory scope so new instances are created for each injection
+ */
+val viewModelModule = module {
+    factoryOf(::DateConverterViewModel)
+    factoryOf(::CalendarItemListViewModel)
+}
+
+/**
  * All app modules combined
  */
 val appModules = listOf(
     databaseModule,
     repositoryModule,
-    domainModule
+    domainModule,
+    viewModelModule
 )

@@ -17,6 +17,14 @@ class EthiopicDate private constructor(
         private const val EPOCH_DAY_DIFFERENCE = 716367
 
         /**
+         * Gets the current Ethiopian date
+         */
+        fun now(): EthiopicDate {
+            val today = kotlinx.datetime.Clock.System.todayIn(kotlinx.datetime.TimeZone.currentSystemDefault())
+            return from(today)
+        }
+
+        /**
          * Creates an Ethiopian date from year, month, and day
          */
         fun of(prolepticYear: Int, month: Int, dayOfMonth: Int): EthiopicDate {
