@@ -10,6 +10,7 @@ import com.shalom.calendar.domain.calculator.SimpleResourceProvider
 import com.shalom.calendar.presentation.converter.DateConverterViewModel
 import com.shalom.calendar.presentation.holidaylist.CalendarItemListViewModel
 import com.shalom.calendar.presentation.onboarding.OnboardingViewModel
+import com.shalom.calendar.presentation.settings.SettingsViewModel
 import org.koin.core.module.Module
 import org.koin.core.module.dsl.factoryOf
 import org.koin.core.module.dsl.singleOf
@@ -49,6 +50,7 @@ val viewModelModule = module {
     factoryOf(::DateConverterViewModel)
     factoryOf(::CalendarItemListViewModel)
     factoryOf(::OnboardingViewModel)
+    factoryOf(::SettingsViewModel)
 }
 
 /**
