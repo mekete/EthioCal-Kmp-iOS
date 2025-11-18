@@ -21,8 +21,9 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.window.Dialog
+import com.shalom.ethiopicchrono.ChronoField
+import com.shalom.ethiopicchrono.ChronoUnit
 import com.shalom.ethiopicchrono.EthiopicDate
-import java.time.temporal.ChronoField
 
 /**
  * iOS implementation of Ethiopian date picker.
@@ -79,12 +80,12 @@ actual fun EthiopicDatePickerDialog(
                     horizontalArrangement = Arrangement.SpaceEvenly
                 ) {
                     TextButton(onClick = {
-                        currentDate = currentDate.minusDays(1) as EthiopicDate
+                        currentDate = currentDate.minus(1, ChronoUnit.DAYS)
                     }) {
                         Text("- Day")
                     }
                     TextButton(onClick = {
-                        currentDate = currentDate.plusDays(1) as EthiopicDate
+                        currentDate = currentDate.plus(1, ChronoUnit.DAYS)
                     }) {
                         Text("+ Day")
                     }
@@ -95,12 +96,12 @@ actual fun EthiopicDatePickerDialog(
                     horizontalArrangement = Arrangement.SpaceEvenly
                 ) {
                     TextButton(onClick = {
-                        currentDate = currentDate.minusMonths(1) as EthiopicDate
+                        currentDate = currentDate.minus(1, ChronoUnit.MONTHS)
                     }) {
                         Text("- Month")
                     }
                     TextButton(onClick = {
-                        currentDate = currentDate.plusMonths(1) as EthiopicDate
+                        currentDate = currentDate.plus(1, ChronoUnit.MONTHS)
                     }) {
                         Text("+ Month")
                     }
