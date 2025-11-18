@@ -4,6 +4,8 @@ plugins {
     kotlin("plugin.serialization") version "2.2.21"
     id("com.google.devtools.ksp")
     id("androidx.room") version "2.7.0-alpha10"
+    id("org.jetbrains.kotlin.plugin.compose") version "2.2.21"
+    id("org.jetbrains.compose") version "1.7.3"
 }
 
 kotlin {
@@ -37,6 +39,18 @@ kotlin {
                 // Koin for DI
                 implementation("io.insert-koin:koin-core:3.5.6")
                 implementation("io.insert-koin:koin-compose:1.1.5")
+
+                // Compose Multiplatform
+                implementation(compose.runtime)
+                implementation(compose.foundation)
+                implementation(compose.material3)
+                implementation(compose.ui)
+                implementation(compose.components.resources)
+                implementation(compose.components.uiToolingPreview)
+
+                // ViewModel for Compose
+                implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.8.7")
+                implementation("androidx.lifecycle:lifecycle-runtime-compose:2.8.7")
 
                 // Ethiopian calendar library
                 implementation(project(":ethiopic-chrono"))

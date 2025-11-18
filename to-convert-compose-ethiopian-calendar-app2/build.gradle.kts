@@ -6,5 +6,6 @@ plugins {
     id("com.google.gms.google-services") version "4.4.4" apply false
     id("com.google.devtools.ksp") version "2.3.0"
     id("org.jetbrains.kotlin.plugin.compose") version "2.2.21" apply false
-    id("com.google.firebase.crashlytics") version "3.0.6" apply false // Add this line
+    id("org.jetbrains.compose") version "1.7.3" apply false
+    id("com.google.firebase.crashlytics") version "3.0.6" apply false
 }
