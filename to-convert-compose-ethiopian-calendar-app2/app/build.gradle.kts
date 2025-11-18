@@ -139,6 +139,7 @@ android {
 
 dependencies {
     // Ethiopian DatePicker Library
+    implementation(project(":ethiopic-chrono"))
     implementation(project(":datepicker"))
 
     // Core Android
@@ -188,15 +189,14 @@ dependencies {
     implementation("androidx.work:work-runtime-ktx:2.11.0")
 
     // Firebase
-    implementation(platform("com.google.firebase:firebase-bom:34.5.0"))
+    implementation(platform("com.google.firebase:firebase-bom:34.6.0"))
     implementation("com.google.firebase:firebase-messaging")
     implementation("com.google.firebase:firebase-config")
     implementation("com.google.firebase:firebase-analytics")
     implementation("com.google.firebase:firebase-crashlytics")
 
     // ThreeTenBP for Ethiopian Calendar
-    // implementation("com.jakewharton.threetenabp:threetenabp:1.4.9")
-    implementation("org.threeten:threeten-extra:1.8.0")
+//    implementation("org.threeten:threeten-extra:1.8.0")
     implementation("com.airbnb.android:lottie-compose:6.7.1")
     // Timber
     implementation("com.jakewharton.timber:timber:5.0.1")

@@ -32,7 +32,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import com.shalom.calendar.domain.model.HolidayOccurrence
 import com.shalom.calendar.domain.model.HolidayType
-import org.threeten.extra.chrono.EthiopicDate
+import com.shalom.ethiopicchrono.EthiopicDate
 import java.time.LocalDate
 import java.time.format.TextStyle
 import java.time.temporal.ChronoField

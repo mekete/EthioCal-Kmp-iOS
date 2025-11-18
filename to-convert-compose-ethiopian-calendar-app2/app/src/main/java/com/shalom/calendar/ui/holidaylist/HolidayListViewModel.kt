@@ -13,7 +13,7 @@ import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.catch
 import kotlinx.coroutines.flow.combine
 import kotlinx.coroutines.launch
-import org.threeten.extra.chrono.EthiopicDate
+import com.shalom.ethiopicchrono.EthiopicDate
 import timber.log.Timber
 import java.time.temporal.ChronoField
 import javax.inject.Inject

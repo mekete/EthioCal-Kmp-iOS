@@ -1,6 +1,6 @@
 package com.shalom.calendar.domain.model
 
-import org.threeten.extra.chrono.EthiopicDate
+import com.shalom.ethiopicchrono.EthiopicDate
 import java.time.LocalDate
 import java.time.temporal.ChronoField
 

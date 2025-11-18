@@ -1,7 +1,7 @@
 package com.shalom.calendar.data.migration
 
 
-import org.threeten.extra.chrono.EthiopicDate
+import com.shalom.ethiopicchrono.EthiopicDate
 import java.time.Instant
 import java.time.ZoneId
 import java.time.ZonedDateTime

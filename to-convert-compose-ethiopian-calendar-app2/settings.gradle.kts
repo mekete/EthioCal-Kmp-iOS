@@ -29,5 +29,6 @@ dependencyResolutionManagement {
 }
 
 rootProject.name = "Compose-Ethiopian-Calendar"
+include(":ethiopic-chrono")
 include(":app")
 include(":datepicker")

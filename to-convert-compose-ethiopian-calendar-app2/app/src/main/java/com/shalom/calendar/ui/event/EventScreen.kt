@@ -73,7 +73,7 @@ import com.shalom.calendar.ui.permissions.NotificationPermissionRationaleDialog
 import com.shalom.calendar.ui.permissions.PermissionDeniedBanner
 import com.shalom.calendar.ui.permissions.PermissionFixDialog
 import kotlinx.coroutines.launch
-import org.threeten.extra.chrono.EthiopicDate
+import com.shalom.ethiopicchrono.EthiopicDate
 import java.time.Duration
 import java.time.LocalDate
 import java.time.ZonedDateTime

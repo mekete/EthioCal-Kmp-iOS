@@ -3,7 +3,7 @@ package com.shalom.calendar.ui.month
 import com.shalom.calendar.data.local.entity.EventInstance
 import com.shalom.calendar.data.preferences.CalendarType
 import com.shalom.calendar.domain.model.HolidayOccurrence
-import org.threeten.extra.chrono.EthiopicDate
+import com.shalom.ethiopicchrono.EthiopicDate
 
 /**
  * UI state for month calendar screen

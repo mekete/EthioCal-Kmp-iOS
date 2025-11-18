@@ -84,7 +84,7 @@ import com.shalom.calendar.ui.holidaylist.HolidayDetailsDialog
 import com.shalom.calendar.ui.holidaylist.HolidayItem
 import com.shalom.calendar.ui.holidaylist.formatEthiopicDate
 import kotlinx.coroutines.launch
-import org.threeten.extra.chrono.EthiopicDate
+import com.shalom.ethiopicchrono.EthiopicDate
 import java.time.LocalDate
 import java.time.format.DateTimeFormatter
 import java.time.temporal.ChronoField

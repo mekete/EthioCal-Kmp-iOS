@@ -1,0 +1,16 @@
+{
+  "to": "/topics/holiday-updates",
+  "notification": {
+    "title": "እንቁጣጣሽ - Ethiopian New Year",
+    "body": "Happy Enkutatash! Celebrate the Ethiopian New Year with joy and blessings.",
+    "image": "https://picsum.photos/400/300"
+  },
+  "data": {
+    "category": "HOLIDAY",
+    "priority": "HIGH",
+    "imageUrl": "https://picsum.photos/400/300",
+    "actionType": "IN_APP_HOLIDAY",
+    "actionTarget": "enkutatash_2024",
+    "actionLabel": "Celebrate"
+  }
+}

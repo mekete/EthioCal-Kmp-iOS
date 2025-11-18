@@ -8,7 +8,7 @@ import com.shalom.calendar.domain.calculator.PublicHolidayCalculator
 import com.shalom.calendar.domain.model.HolidayOccurrence
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
-import org.threeten.extra.chrono.EthiopicDate
+import com.shalom.ethiopicchrono.EthiopicDate
 import java.time.temporal.ChronoField
 import javax.inject.Inject
 import javax.inject.Singleton

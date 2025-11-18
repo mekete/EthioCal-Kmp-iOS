@@ -4,7 +4,7 @@ import com.shalom.calendar.R
 import com.shalom.calendar.data.provider.ResourceProvider
 import com.shalom.calendar.domain.model.Holiday
 import com.shalom.calendar.domain.model.HolidayType
-import org.threeten.extra.chrono.EthiopicDate
+import com.shalom.ethiopicchrono.EthiopicDate
 import java.time.temporal.ChronoField
 import java.time.temporal.ChronoUnit
 import javax.inject.Inject

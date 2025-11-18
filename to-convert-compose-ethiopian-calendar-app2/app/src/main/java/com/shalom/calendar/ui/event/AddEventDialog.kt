@@ -61,7 +61,7 @@ import com.shalom.calendar.data.local.entity.RecurrenceFrequency
 import com.shalom.calendar.data.local.entity.RecurrenceRule
 import com.shalom.calendar.data.local.entity.parseRRule
 import com.shalom.calendar.domain.model.EventCategory
-import org.threeten.extra.chrono.EthiopicDate
+import com.shalom.ethiopicchrono.EthiopicDate
 import java.time.DayOfWeek
 import java.time.LocalDate
 import java.time.LocalTime

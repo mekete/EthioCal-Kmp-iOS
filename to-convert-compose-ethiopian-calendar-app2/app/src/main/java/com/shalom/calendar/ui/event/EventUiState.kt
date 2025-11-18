@@ -2,7 +2,7 @@ package com.shalom.calendar.ui.event
 
 import com.shalom.calendar.data.local.entity.EventEntity
 import com.shalom.calendar.data.local.entity.EventInstance
-import org.threeten.extra.chrono.EthiopicDate
+import com.shalom.ethiopicchrono.EthiopicDate
 import java.time.LocalDate
 
 /**

@@ -1,0 +1,13 @@
+{
+  "to": "/topics/Version107",
+  "notification": {
+    "title": "New Feature Available!",
+    "body": "You're running version 107. Check out the new date converter feature!"
+  },
+  "data": {
+    "category": "APP_UPDATE",
+    "priority": "NORMAL",
+    "actionType": "IN_APP_CONVERTER",
+    "actionLabel": "Try It Now"
+  }
+}

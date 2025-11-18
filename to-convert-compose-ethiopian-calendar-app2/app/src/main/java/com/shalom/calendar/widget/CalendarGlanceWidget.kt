@@ -39,7 +39,7 @@ import com.shalom.calendar.data.model.NEW_YORK_ZONE_ID
 import com.shalom.calendar.data.preferences.SettingsPreferences
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.runBlocking
-import org.threeten.extra.chrono.EthiopicDate
+import com.shalom.ethiopicchrono.EthiopicDate
 import java.time.Instant
 import java.time.LocalDate
 import java.time.ZoneId
