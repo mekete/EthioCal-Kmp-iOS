@@ -285,3 +285,21 @@ BUILD SUCCESSFUL in 45s
 **STATUS: READY TO BUILD** ✅
 
 You can now run `./gradlew build` and it should work!
+
+---
+
+## UPDATE: Gradle 8.7 Required
+
+**Date:** 2025-11-18
+
+After fixing the initial build errors, Android Gradle Plugin 8.5.2 and Room 2.7.0-alpha10 require **Gradle 8.7** as the minimum version.
+
+**Final Configuration:**
+- ✅ Gradle: **8.7** (minimum required)
+- ✅ AGP: 8.5.2
+- ✅ Kotlin: 2.0.21
+- ✅ KSP: 2.0.21-1.0.28
+- ✅ Room: 2.7.0-alpha10
+- ✅ Compose Multiplatform: 1.7.0
+
+**All builds should now work correctly!**
