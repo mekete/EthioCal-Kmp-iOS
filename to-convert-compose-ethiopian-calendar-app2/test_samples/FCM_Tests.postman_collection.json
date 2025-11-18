@@ -1,0 +1,177 @@
+{
+  "info": {
+    "name": "Ethiopian Calendar FCM Tests",
+    "description": "Test collection for Firebase Cloud Messaging notifications",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {
+      "key": "SERVER_KEY",
+      "value": "YOUR_SERVER_KEY_HERE",
+      "type": "string"
+    },
+    {
+      "key": "VERSION_CODE",
+      "value": "107",
+      "type": "string"
+    }
+  ],
+  "item": [
+    {
+      "name": "1. Basic Notification",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "key={{SERVER_KEY}}"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"to\": \"/topics/general\",\n  \"notification\": {\n    \"title\": \"Basic Test\",\n    \"body\": \"This is a simple notification test\"\n  }\n}"
+        },
+        "url": {
+          "raw": "https://fcm.googleapis.com/fcm/send",
+          "protocol": "https",
+          "host": ["fcm", "googleapis", "com"],
+          "path": ["fcm", "send"]
+        }
+      }
+    },
+    {
+      "name": "2. Holiday with Action",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "key={{SERVER_KEY}}"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"to\": \"/topics/holiday-updates\",\n  \"notification\": {\n    \"title\": \"መስቀል Tomorrow!\",\n    \"body\": \"Meskel - The Finding of the True Cross celebration begins tomorrow. Join the festivities!\"\n  },\n  \"data\": {\n    \"category\": \"HOLIDAY\",\n    \"priority\": \"HIGH\",\n    \"actionType\": \"IN_APP_HOLIDAY\",\n    \"actionTarget\": \"meskel_2024\",\n    \"actionLabel\": \"View Details\"\n  }\n}"
+        },
+        "url": {
+          "raw": "https://fcm.googleapis.com/fcm/send",
+          "protocol": "https",
+          "host": ["fcm", "googleapis", "com"],
+          "path": ["fcm", "send"]
+        }
+      }
+    },
+    {
+      "name": "3. Version-Specific",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "key={{SERVER_KEY}}"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"to\": \"/topics/Version{{VERSION_CODE}}\",\n  \"notification\": {\n    \"title\": \"New Feature Available!\",\n    \"body\": \"Check out the new date converter feature!\"\n  },\n  \"data\": {\n    \"category\": \"APP_UPDATE\",\n    \"priority\": \"NORMAL\",\n    \"actionType\": \"IN_APP_CONVERTER\",\n    \"actionLabel\": \"Try It Now\"\n  }\n}"
+        },
+        "url": {
+          "raw": "https://fcm.googleapis.com/fcm/send",
+          "protocol": "https",
+          "host": ["fcm", "googleapis", "com"],
+          "path": ["fcm", "send"]
+        }
+      }
+    },
+    {
+      "name": "4. URL Action",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "key={{SERVER_KEY}}"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"to\": \"/topics/general\",\n  \"notification\": {\n    \"title\": \"Learn About Ethiopian Calendar\",\n    \"body\": \"Discover the fascinating history of the Ethiopian calendar system\"\n  },\n  \"data\": {\n    \"category\": \"DAILY_INSIGHT\",\n    \"priority\": \"LOW\",\n    \"actionType\": \"URL\",\n    \"actionTarget\": \"https://en.wikipedia.org/wiki/Ethiopian_calendar\",\n    \"actionLabel\": \"Read More\"\n  }\n}"
+        },
+        "url": {
+          "raw": "https://fcm.googleapis.com/fcm/send",
+          "protocol": "https",
+          "host": ["fcm", "googleapis", "com"],
+          "path": ["fcm", "send"]
+        }
+      }
+    },
+    {
+      "name": "5. Seasonal",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "key={{SERVER_KEY}}"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"to\": \"/topics/general\",\n  \"notification\": {\n    \"title\": \"Spring Season Begins\",\n    \"body\": \"የፀደይ ወቅት begins today according to the Ethiopian calendar!\"\n  },\n  \"data\": {\n    \"category\": \"SEASONAL\",\n    \"priority\": \"NORMAL\"\n  }\n}"
+        },
+        "url": {
+          "raw": "https://fcm.googleapis.com/fcm/send",
+          "protocol": "https",
+          "host": ["fcm", "googleapis", "com"],
+          "path": ["fcm", "send"]
+        }
+      }
+    },
+    {
+      "name": "6. With Image",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "key={{SERVER_KEY}}"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"to\": \"/topics/holiday-updates\",\n  \"notification\": {\n    \"title\": \"እንቁጣጣሽ - Ethiopian New Year\",\n    \"body\": \"Happy Enkutatash! Celebrate the Ethiopian New Year with joy and blessings.\",\n    \"image\": \"https://picsum.photos/400/300\"\n  },\n  \"data\": {\n    \"category\": \"HOLIDAY\",\n    \"priority\": \"HIGH\",\n    \"imageUrl\": \"https://picsum.photos/400/300\",\n    \"actionType\": \"IN_APP_HOLIDAY\",\n    \"actionTarget\": \"enkutatash_2024\",\n    \"actionLabel\": \"Celebrate\"\n  }\n}"
+        },
+        "url": {
+          "raw": "https://fcm.googleapis.com/fcm/send",
+          "protocol": "https",
+          "host": ["fcm", "googleapis", "com"],
+          "path": ["fcm", "send"]
+        }
+      }
+    }
+  ]
+}

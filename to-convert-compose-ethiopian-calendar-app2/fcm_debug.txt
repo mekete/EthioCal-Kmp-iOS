@@ -1,0 +1,86 @@
+--------- beginning of main
+11-17 20:58:25.630  1401  1596 E CheckNotification: TAG installationId dbCkkLtISQKPclenKVNYeJ
+11-17 20:58:25.631  1401  1544 E CheckNotification: ===== SUBSCRIBING TO FCM TOPICS =====
+11-17 20:58:25.631  1401  1544 E CheckNotification: Topics to subscribe: [general, holiday-updates, Version108]
+11-17 20:58:25.631  1401  1544 E CheckNotification: Subscribing to topic: general...
+11-17 20:58:28.884  1401  1401 E CheckNotification: ===== FCM Service onCreate() called =====
+11-17 20:58:28.884  1401  1401 E CheckNotification: Service created successfully, creating notification channels...
+11-17 20:58:28.884  1401  1401 E CheckNotification: Creating notification channels...
+11-17 20:58:28.885  1401  1401 E CheckNotification: Creating channel: Holiday Reminders (ID: holiday_notifications)
+11-17 20:58:28.888  1401  1401 E CheckNotification: Creating channel: Seasonal Events (ID: seasonal_notifications)
+11-17 20:58:28.892  1401  1401 E CheckNotification: Creating channel: Daily Insights (ID: daily_insights)
+11-17 20:58:28.895  1401  1401 E CheckNotification: Creating channel: App Updates (ID: app_updates)
+11-17 20:58:28.898  1401  1401 E CheckNotification: Creating channel: General Announcements (ID: general_notifications)
+11-17 20:58:28.901  1401  1401 E CheckNotification: ✅ Created 5 notification channels
+11-17 20:58:28.901  1401  1401 E CheckNotification: FCM Service initialization complete
+11-17 20:58:28.907  1401  1912 E CheckNotification: ===== NEW FCM TOKEN GENERATED =====
+11-17 20:58:28.907  1401  1912 E CheckNotification: FCM Token: dbCkkLtISQKPclenKVNYeJ:APA91bEO8aw6hUBqgGXwCjbFcyflCg_kao2VRxo7G7OO_keKmbmotG-ZMPW-5rjF6ZH52KgZaR0Q7Fz1_8Nli9O-B-RDLEu9qsHIuRtJrsZxOHT6KL11CVI
+11-17 20:58:28.907  1401  1912 E CheckNotification: Token length: 142
+11-17 20:58:29.269  1401  1566 E CheckNotification: ✅ Successfully subscribed to topic: general
+11-17 20:58:29.269  1401  1566 E CheckNotification: Subscribing to topic: holiday-updates...
+11-17 20:58:29.575  1401  1566 E CheckNotification: ✅ Successfully subscribed to topic: holiday-updates
+11-17 20:58:29.575  1401  1566 E CheckNotification: Subscribing to topic: Version108...
+11-17 20:58:29.957  1401  1594 E CheckNotification: ✅ Successfully subscribed to topic: Version108
+11-17 20:58:29.957  1401  1594 E CheckNotification: ✅ ✅ ALL TOPICS SUBSCRIBED SUCCESSFULLY ✅ ✅
+11-17 20:58:29.957  1401  1594 E CheckNotification: You should now receive notifications sent to these topics
+11-17 21:17:19.622  1401  6721 E CheckNotification: ========================================
+11-17 21:17:19.622  1401  6721 E CheckNotification: ===== FCM MESSAGE RECEIVED =====
+11-17 21:17:19.622  1401  6721 E CheckNotification: ========================================
+11-17 21:17:19.622  1401  6721 E CheckNotification: Message ID: 0:1763443040018066%c528bbc6c528bbc6
+11-17 21:17:19.622  1401  6721 E CheckNotification: From: 527637582710
+11-17 21:17:19.622  1401  6721 E CheckNotification: Sent time: 1763443040011
+11-17 21:17:19.622  1401  6721 E CheckNotification: Message type: null
+11-17 21:17:19.623  1401  6721 E CheckNotification: ----- Notification Payload -----
+11-17 21:17:19.623  1401  6721 E CheckNotification: Title: Ethiopian Calendar Feedback
+11-17 21:17:19.623  1401  6721 E CheckNotification: Body: Have a thought on the new design?
+11-17 21:17:19.623  1401  6721 E CheckNotification: Image URL: null
+11-17 21:17:19.623  1401  6721 E CheckNotification: Click action: null
+11-17 21:17:19.623  1401  6721 E CheckNotification: ----- Data Payload -----
+11-17 21:17:19.624  1401  6721 E CheckNotification: Data[priority] = HIGH
+11-17 21:17:19.624  1401  6721 E CheckNotification: Data[category] = DAILY_INSIGHT
+11-17 21:17:19.624  1401  6721 E CheckNotification: Data[actionTarget] = https://en.wikipedia.org/wiki/Ethiopian_calendar
+11-17 21:17:19.624  1401  6721 E CheckNotification: Data[actionLabel] = Read More
+11-17 21:17:19.624  1401  6721 E CheckNotification: Data[actionType] = URL
+11-17 21:17:19.625  1401  6721 E CheckNotification: ----- Permission Check -----
+11-17 21:17:19.625  1401  6721 E CheckNotification: Can show notifications: true
+11-17 21:17:19.625  1401  6721 E CheckNotification: ✅ Permission granted, proceeding with notification
+11-17 21:17:19.625  1401  6721 E CheckNotification: ----- Converting to AppNotification -----
+11-17 21:17:19.626  1401  6721 E CheckNotification: Notification ID: 0:1763443040018066%c528bbc6c528bbc6
+11-17 21:17:19.626  1401  6721 E CheckNotification: Title: Ethiopian Calendar Feedback
+11-17 21:17:19.626  1401  6721 E CheckNotification: Body: Have a thought on the new design?
+11-17 21:17:19.626  1401  6721 E CheckNotification: Category: DAILY_INSIGHT
+11-17 21:17:19.626  1401  6721 E CheckNotification: Priority: HIGH
+11-17 21:17:19.626  1401  6721 E CheckNotification: Action Type: URL
+11-17 21:17:19.627  1401  6721 E CheckNotification: Action Target: https://en.wikipedia.org/wiki/Ethiopian_calendar
+11-17 21:17:19.627  1401  6721 E CheckNotification: Action Label: Read More
+11-17 21:17:19.627  1401  6721 E CheckNotification: Image URL: null
+11-17 21:17:19.627  1401  6721 E CheckNotification: ----- Creating/Verifying Channel -----
+11-17 21:17:19.627  1401  6721 E CheckNotification: Channel ID: daily_insights
+11-17 21:17:19.627  1401  6721 E CheckNotification: Channel Name: Daily Insights
+11-17 21:17:19.628  1401  6721 E CheckNotification: Channel verified/created
+11-17 21:17:19.628  1401  6721 E CheckNotification: ----- Displaying Notification -----
+11-17 21:17:19.628  1401  6721 E CheckNotification: Building rich notification...
+11-17 21:17:19.628  1401  6721 E CheckNotification: NotificationHelper.buildRichNotification() called
+11-17 21:17:19.628  1401  6721 E CheckNotification: Creating intent for action...
+11-17 21:17:19.629  1401  6721 E CheckNotification: Intent created: Intent { act=android.intent.action.VIEW dat=https://en.wikipedia.org/... }
+11-17 21:17:19.629  1401  6721 E CheckNotification: Creating pending intent...
+11-17 21:17:19.630  1401  6721 E CheckNotification: Pending intent created
+11-17 21:17:19.630  1401  6721 E CheckNotification: Building notification with:
+11-17 21:17:19.630  1401  6721 E CheckNotification:   Channel ID: daily_insights
+11-17 21:17:19.631  1401  6721 E CheckNotification:   Icon: R.drawable.ic_notification_calendar
+11-17 21:17:19.631  1401  6721 E CheckNotification:   Title: Ethiopian Calendar Feedback
+11-17 21:17:19.631  1401  6721 E CheckNotification:   Body: Have a thought on the new design?
+11-17 21:17:19.631  1401  6721 E CheckNotification:   Priority: 1
+11-17 21:17:19.631  1401  6721 E CheckNotification: Notification builder created
+11-17 21:17:19.631  1401  6721 E CheckNotification: Adding action button: Read More
+11-17 21:17:19.631  1401  6721 E CheckNotification: Action button added
+11-17 21:17:19.631  1401  6721 E CheckNotification: ✅ Notification builder ready to return
+11-17 21:17:19.631  1401  6721 E CheckNotification: Notification builder created successfully
+11-17 21:17:19.631  1401  6721 E CheckNotification: Notification ID: -718330276
+11-17 21:17:19.631  1401  6721 E CheckNotification: Calling notificationManager.notify()...
+11-17 21:17:19.642  1401  6721 E CheckNotification: notificationManager.notify() completed
+11-17 21:17:19.642  1401  6721 E CheckNotification: ✅ ✅ ✅ NOTIFICATION DISPLAYED SUCCESSFULLY ✅ ✅ ✅
+11-17 21:17:19.642  1401  6721 E CheckNotification: Notification should now be visible in notification drawer
+11-17 21:17:19.642  1401  6721 E CheckNotification: ========================================
+11-17 21:17:19.642  1401  6721 E CheckNotification: ===== FCM MESSAGE PROCESSING COMPLETE =====
+11-17 21:17:19.642  1401  6721 E CheckNotification: ========================================

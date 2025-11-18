@@ -1,0 +1,11 @@
+{
+  "to": "/topics/general",
+  "notification": {
+    "title": "Spring Season Begins",
+    "body": "የፀደይ ወቅት begins today according to the Ethiopian calendar!"
+  },
+  "data": {
+    "category": "SEASONAL",
+    "priority": "NORMAL"
+  }
+}
