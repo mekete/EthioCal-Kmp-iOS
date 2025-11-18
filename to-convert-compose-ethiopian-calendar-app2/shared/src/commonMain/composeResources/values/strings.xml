@@ -1,0 +1,530 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- ============================================ -->
+    <!-- App Identity -->
+    <!-- ============================================ -->
+    <!--    <string name="app_name">Ethiopian Calendar</string>-->
+
+    <!-- ============================================ -->
+    <!-- Screen Titles -->
+    <!-- ============================================ -->
+    <string name="screen_title_month_calendar">Ethiopian Calendar</string>
+    <string name="screen_title_date_converter">Date Converter</string>
+    <string name="screen_title_holidays">Ethiopian Holidays</string>
+    <string name="screen_title_events">Events</string>
+    <string name="screen_title_settings">Settings</string>
+    <string name="screen_title_more">More</string>
+
+    <!-- ============================================ -->
+    <!-- Navigation Labels -->
+    <!-- ============================================ -->
+    <string name="nav_month">Month</string>
+    <string name="nav_event">Event</string>
+    <string name="nav_holiday">Holiday</string>
+    <string name="nav_convert">Convert</string>
+    <string name="nav_more">More</string>
+
+    <!-- ============================================ -->
+    <!-- Button Labels -->
+    <!-- ============================================ -->
+    <string name="button_today">Today</string>
+    <string name="button_prev">PREV</string>
+    <string name="button_next">NEXT</string>
+    <string name="button_to_ethiopian">To Ethiopian</string>
+    <string name="button_to_gregorian">To Gregorian</string>
+    <string name="button_ok">OK</string>
+    <string name="button_cancel">Cancel</string>
+    <string name="button_calculate_difference">Calculate Difference</string>
+    <string name="button_create_reminder">Create Reminder</string>
+    <string name="button_view_events">View Events</string>
+    <string name="button_close">Close</string>
+
+    <!-- ============================================ -->
+    <!-- Onboarding -->
+    <!-- ============================================ -->
+    <!-- Welcome Page -->
+
+    <!--    -->
+
+    <string name="onboarding_welcome_title">Ethiopian Calendar</string>
+    <string name="onboarding_welcome_subtitle">በ 5 ቋንቋዎች</string>
+    <string name="onboarding_feature_dual_calendar">Ethiopian &amp; Gregorian</string>
+    <string name="onboarding_feature_holidays">Public &amp; Religious Holidays </string>
+    <string name="onboarding_feature_reminders">Event with Notifications</string>
+    <string name="onboarding_feature_date_converter">Robust Date Converter</string>
+    <string name="onboarding_feature_multilingual">Supports 5 Languages</string>
+    <string name="onboarding_get_started">Get Started</string>
+
+    <!-- Language Selection Page -->
+    <string name="onboarding_language_title">Choose Language</string>
+    <string name="onboarding_language_description">ቋንቋ (Langue, Afaan)</string>
+
+    <!-- Theme Selection Page -->
+    <string name="onboarding_theme_title">Pick Your Theme</string>
+    <string name="onboarding_theme_description">You can change this later</string>
+    <string name="onboarding_theme_light">Light Mode</string>
+    <string name="onboarding_theme_light_desc">Bright and clear interface</string>
+    <string name="onboarding_theme_dark">Dark Mode</string>
+    <string name="onboarding_theme_dark_desc">Easy on the eyes at night</string>
+    <string name="onboarding_theme_system">System Default</string>
+    <string name="onboarding_theme_system_desc">Match your device settings</string>
+
+    <!-- Holiday Selection Page -->
+    <string name="onboarding_holidays_title">Holiday to Display</string>
+    <string name="onboarding_holidays_description">You can also change this later</string>
+    <string name="onboarding_holidays_public">Public Holidays</string>
+    <string name="onboarding_holidays_public_desc">All day off Ethiopian holidays</string>
+    <string name="onboarding_holidays_orthodox">Orthodox Holidays</string>
+    <string name="onboarding_holidays_orthodox_desc">Ethiopian Orthodox celebrations and fasting days</string>
+    <string name="onboarding_holidays_muslim">Muslim holidays and fasting</string>
+    <string name="onboarding_holidays_muslim_desc">Islamic holidays and celebrations</string>
+    <string name="onboarding_holidays_orthodox_days">Orthodox Day Names</string>
+    <string name="onboarding_holidays_orthodox_days_desc">If selected, will be shown in More section</string>
+
+    <!-- Calendar Display Page -->
+    <string name="onboarding_calendar_title">Default Calendar</string>
+    <string name="onboarding_calendar_description">In the month view, which one to display?</string>
+    <string name="onboarding_calendar_dual_display">Display Dual Calendar</string>
+    <string name="onboarding_calendar_dual_display_desc">This may make the calendar cluttered</string>
+    <string name="onboarding_calendar_tip">You can always change these settings later in the More section</string>
+
+    <!-- Navigation -->
+    <string name="onboarding_skip">Skip</string>
+    <string name="onboarding_next">Next</string>
+    <string name="onboarding_done">Done</string>
+
+    <!-- ============================================ -->
+    <!-- Date Details Dialog -->
+    <!-- ============================================ -->
+    <string name="date_details_dialog_title">Date Details</string>
+    <string name="conversion_result_title">Conversion Result</string>
+    <string name="date_difference_result_title">Date Difference</string>
+
+    <!-- ============================================ -->
+    <!-- Date Converter -->
+    <!-- ============================================ -->
+    <string name="label_from_gregorian">From Gregorian</string>
+    <string name="label_from_ethiopian">From Ethiopian</string>
+    <string name="label_ethiopian_date">Ethiopian Date</string>
+    <string name="label_gregorian_date">Gregorian Date</string>
+    <string name="dialog_title_select_ethiopian_date">Select Ethiopian Date</string>
+    <string name="label_date_difference">Date Difference</string>
+    <string name="label_start_date">Start Date</string>
+    <string name="label_end_date">End Date</string>
+    <string name="label_difference_result">Difference</string>
+    <string name="pick_gregorian">Or pick Gregorian</string>
+    <string name="pick_ethiopian">Pick Ethiopian</string>
+
+    <!-- ============================================ -->
+    <!-- Holiday List -->
+    <!-- ============================================ -->
+    <string name="label_filter_by_type">Filter by Type</string>
+    <string name="filter_public">Public</string>
+    <string name="filter_orthodox">Orthodox</string>
+    <string name="filter_muslim">Muslim</string>
+    <string name="label_ec_suffix">E.C.</string>
+    <string name="label_holidays">Holidays</string>
+    <string name="label_day_off">Day Off</string>
+
+    <!-- ============================================ -->
+    <!-- More Screen -->
+    <!-- ============================================ -->
+    <string name="menu_color_theme">Theme and Color</string>
+    <string name="menu_privacy_policy">Privacy Policy</string>
+    <string name="menu_share_app">Share App</string>
+    <string name="menu_about_us">About Us</string>
+    <string name="menu_language">Language (ቋንቋ, Langue, Afaan)</string>
+    <string name="menu_notifications">Notifications</string>
+    <string name="menu_additional_settings">Additional Settings</string>
+
+    <!-- ============================================ -->
+    <!-- Notification Banner -->
+    <!-- ============================================ -->
+    <string name="notification_banner_title">Enable Notifications</string>
+    <string name="notification_banner_message">Get reminders for upcoming Ethiopian holidays and events</string>
+    <string name="notification_banner_enable">Enable</string>
+    <string name="notification_banner_dismiss">Dismiss</string>
+
+    <!-- ============================================ -->
+    <!-- About Us Dialog -->
+    <!-- ============================================ -->
+    <string name="about_us_dialog_title">About Us</string>
+    <string name="about_us_developer">Developer</string>
+    <string name="about_us_developed_by">Developed by: KerodApps</string>
+    <string name="about_us_contact_us">Contact Us</string>
+    <string name="about_us_rate_app">Rate App</string>
+    <string name="about_us_app_version">App Version</string>
+    <string name="about_us_build_time">Build Time</string>
+    <string name="about_us_privacy_policy">Privacy Policy</string>
+    <string name="about_us_terms_of_service">Terms of Service</string>
+
+    <!-- ============================================ -->
+    <!-- Settings -->
+    <!-- ============================================ -->
+    <string name="label_theme_color">Theme Color</string>
+    <string name="label_theme_mode">Theme Mode</string>
+
+    <!-- Calendar Display Settings -->
+    <string name="settings_calendar_display">Calendar Display</string>
+    <string name="settings_ethiopian_gregorian_display">Ethiopian and Gregorian View</string>
+    <string name="settings_calendar_display_dialog_title">Calendar Display Settings</string>
+    <string name="settings_primary_calendar">Primary Calendar to display</string>
+    <string name="settings_display_dual_calendar">Display dual calendar</string>
+    <string name="settings_secondary_calendar">Secondary Calendar to display</string>
+    <string name="settings_calendar_ethiopian">Ethiopian</string>
+    <string name="settings_calendar_gregorian">Gregorian</string>
+    <string name="settings_calendar_hirji">Hirji</string>
+
+    <!-- Holiday Display Settings -->
+    <string name="settings_show_orthodox_day_names">Show Orthodox day names</string>
+    <string name="settings_show_day_off_holidays">Show Public holidays</string>
+    <string name="settings_show_orthodox_working_holidays">Show Orthodox fasting days Holidays</string>
+    <string name="settings_show_muslim_working_holidays">Show additional Muslim Holidays</string>
+    <string name="settings_show_cultural_holidays">Show Cultural Holidays</string>
+    <string name="settings_show_us_holidays">Show US Holidays</string>
+    <string name="settings_use_geez_numbers">Use Geez numbers</string>
+    <string name="settings_holidays_display">Holidays to Display</string>
+    <string name="settings_holidays_display_dialog_title">Holidays to Display</string>
+    <string name="settings_orthodox_day_names_button">Orthodox Day Names</string>
+    <string name="settings_orthodox_day_names_dialog_title">Orthodox Day Names</string>
+    <string name="settings_use_24_hour_format">Use 24 hour format in widgets</string>
+
+    <!-- Widget Settings -->
+    <string name="settings_widget_options">Widget Options</string>
+    <string name="settings_widget_dialog_title">Widget Settings</string>
+    <string name="settings_display_two_clocks">Display two clocks</string>
+    <string name="settings_primary_timezone">Primary Widget time zone</string>
+    <string name="settings_secondary_timezone">Secondary Widget time zone</string>
+    <string name="settings_use_transparent_background">Use transparent background</string>
+    <string name="settings_timezone_hint">Enter timezone (e.g., America/New_York)</string>
+
+    <!-- ============================================ -->
+    <!-- Holiday Info Dialog -->
+    <!-- ============================================ -->
+    <string name="holiday_info_dialog_title">Holiday Settings</string>
+    <string name="holiday_info_dialog_message">You can configure which holidays to show in the settings</string>
+    <string name="holiday_info_dialog_checkbox">Do not show this information again</string>
+
+    <!-- ============================================ -->
+    <!-- Error and Empty State Messages -->
+    <!-- ============================================ -->
+    <string name="error_loading_calendar">Error loading calendar</string>
+    <string name="empty_no_holidays_month">No holidays this month</string>
+    <string name="empty_no_holidays_display">No holidays to display</string>
+    <string name="placeholder_coming_soon">Coming soon…</string>
+    <string name="placeholder_news_events">News, Events &amp; Reminders</string>
+
+    <!-- ============================================ -->
+    <!-- Content Descriptions (Accessibility) -->
+    <!-- ============================================ -->
+    <string name="cd_back">Back</string>
+    <string name="cd_pick_date">Pick Date</string>
+    <string name="cd_selected">Selected</string>
+    <string name="cd_navigate">Navigate</string>
+    <string name="cd_previous_year">Previous Year</string>
+    <string name="cd_next_year">Next Year</string>
+    <string name="cd_calendar_state">Ethiopian Calendar, currently showing %1$s</string>
+    <string name="cd_holiday_info">Holiday settings information</string>
+    <!-- Public Holidays -->
+    <!-- ============================================ -->
+    <string name="holiday_public_enkutatash">Enkutatash</string>
+    <string name="holiday_public_enkutatash_history">Enkutatash is the Ethiopian New Year and is celebrated on Meskerem 1. The name translates to &quot;Gift of Jewels,&quot; and one source links it to the pearl gift Queen of Sheba received from King Solomon, who said, &quot;May a pearl be a jewel for your finger,&quot; after her visit. Another view suggests it comes from Ham, the son of Noah, who, upon entering the land of Africa and seeing it adorned with Adey Ababa, exclaimed, &quot;I have been allotted a jewel.&quot; Meskerem signifies the end of the rainy season and the beginning of the spring season (Tseday).</string>
+    <string name="holiday_public_enkutatash_celebration">The main tradition is the exchange of New Year cards and bouquets of bright yellow Adey Ababa daisies, which symbolize the transition from the dark season to a vibrant, flower-filled landscape. Girls go from house to house singing traditional songs, collecting money and fresh bread. At the family level, the holiday includes eating Doro Wot (spicy chicken stew) and the ceremonial slaughter of a sheep or goat.</string>
+
+    <string name="holiday_public_christian_meskel">Meskel</string>
+    <string name="holiday_public_christian_meskel_history">Meskel is an annual festival commemorating the finding of the True Cross upon which Jesus Christ was crucified, through the efforts of Empress Helena in the 4th century. It is celebrated on Meskerem 17 and is one of the most vibrant and colorful festivals of the Orthodox Christians.</string>
+    <string name="holiday_public_christian_meskel_celebration">The main ceremony is called Demera, which primarily takes place at Meskel Square in Addis Ababa, involving priests, deacons, and a large crowd dressed in traditional white clothing. After sunset, the Demera bonfire is lit. The light of the bonfire symbolizes the smoke that guided Empress Helena to the location of the Cross. (Additionally, the direction in which the ashes fall is interpreted by priests to predict the prospects for the coming year.)</string>
+
+    <string name="holiday_public_christian_genna">Genna</string>
+    <string name="holiday_public_christian_genna_history">Genna is observed on Tahsas 29 (Tahsas 28 once every four years). Unlike the commercial aspect of the holiday celebrated in the Western world, Genna is primarily a religious observance, following the 40-day Fast of the Prophets by Orthodox believers, a period of abstaining from all meat and dairy products. The holiday concludes the long fast by consuming meat and dairy products on the morning of Genna.</string>
+    <string name="holiday_public_christian_genna_celebration">A popular tradition associated with Genna is the game of Yegenna Chewata. This is a traditional hockey-like game played by men with a bent stick and a ball. (Legend states the game was played by the shepherds after the birth of Christ.)</string>
+
+    <string name="holiday_public_christian_timket">Timket</string>
+    <string name="holiday_public_christian_timket_history">Timket (Epiphany) is a vibrant celebration by Christian followers, especially the Ethiopian Orthodox Tewahedo Church, commemorating the baptism of Jesus Christ by John the Baptist in the Jordan River. The story of Jesus Christ\'s baptism is found in the Gospel of Matthew, Chapter 3, verses 13–17.</string>
+    <string name="holiday_public_christian_timket_celebration">On Tikimt 10, the Tabots (replicas of the Ark of the Covenant) are carried out of their respective churches and proceed, accompanied by the faithful singing, to the celebration site. There, they are housed in prepared tents and spend the night. At the site, flowing water is contained in rural areas, and artificial reservoirs are built in cities. On Tikimt 11, the day of Timket; at dawn, the faithful receive communion around the tents, and after they finish, led by the priests, everyone heads to the reservoir, where the water is blessed and the people are sprinkled. Following this ceremony, the Tabots are escorted back to their respective churches with religious hymns accompanied by *Mekwamiye* (prayer staffs), *Kebero* (drums), and *Tsinatsil* (sistras), with men shouting in celebration (*Hota*), women ululating (*Ellilta*), and priests chanting *Haleta*.</string>
+
+    <string name="holiday_public_adwa">Adwa Victory Day</string>
+    <string name="holiday_public_adwa_history">The Battle of Adwa, fought on Yekatit 23, 1888 E.C., between the Ethiopian army led by Emperor Menelik II and the Italian army that crossed the sea from Europe, is one of the most significant events in history. The Adwa battle commemorates Ethiopia\'s victory over the invading Italian forces. This historic triumph is celebrated as one of the greatest acts of resistance against colonial aggression in Africa. The main cause of the Battle of Adwa was the Treaty of Wuchale signed between the Ethiopian and Italian governments. After the army led by Emperor Menelik reached Adwa, they waited for a favorable time for the battle, and on Yekatit 23, 1888 E.C., they engaged in battle with the European force that had mobilized over 17,000 soldiers. Within half a day of the battle\'s start, the Ethiopian patriots inflicted heavy damage on the Italian army with attacks launched from all directions, preventing them from grouping together to resist the Ethiopians. The Adwa Victory was first celebrated in its seventh year, in 1895 E.C. (in 1903, one hundred and nine years ago, at the place where St. George\'s Church now stands, which was Menelik Square).</string>
+    <string name="holiday_public_adwa_celebration">The day is marked across the country, especially in Addis Ababa and Adwa memorial sites, with national celebrations, military parades, and ceremonial events. This day serves as a memorial that recalls national unity, sovereignty, and the historical struggle for freedom, distinguishing Ethiopia as the only African country to have defeated a major European power on the battlefield and maintained its independence.</string>
+
+    <string name="holiday_public_labour_day">Labour Day</string>
+    <string name="holiday_public_labour_day_history">Labour Day, or International Workers\' Day, is observed globally and celebrated in Ethiopia on Miyazya 23. This public holiday recognizes the contributions and achievements of workers and the labour movement. The day is dedicated to the social and economic rights of workers and is often accompanied by discussions, rallies, and organized events by trade unions.</string>
+    <string name="holiday_public_labour_day_celebration">While generally recognized as a day off for most citizens, the observance of Labour Day in Ethiopia follows the international tradition of highlighting worker solidarity and the ongoing effort for fair labour practices and improved working conditions. The day is used to reflect on the progress made in protecting workers\' rights and the economic contributions of the labour force.</string>
+
+    <string name="holiday_public_patriots_day">Patriots\' Day</string>
+    <string name="holiday_public_patriots_day_history">Patriots\' Day, celebrated on Miyazya 27, commemorates the liberation of Ethiopia from the five-year Italian occupation (1936–1941) and to honor the sacrifices of the resistance fighters, or &quot;Patriots.&quot; This day marks the return of Emperor Haile Selassie to Addis Ababa in 1941, signaling the end of the Second Italo-Ethiopian War and the restoration of national sovereignty.</string>
+    <string name="holiday_public_patriots_day_celebration">The celebration involves laying wreaths at monuments dedicated to the war heroes and martyrs across Ethiopia. It is a deeply patriotic occasion that emphasizes national pride, resilience, and the unity of the Ethiopian people in their struggle against foreign invaders. The day serves as a solemn remembrance of those who fought and died for the country\'s freedom.</string>
+
+    <string name="holiday_derg">Derg Downfall Day</string>
+    <string name="holiday_derg_history">Derg Downfall Day, observed on Genbot 20, commemorates the overthrow of the Derg military junta in 1991 E.C. (1991), which marked the end of a 17-year period of Marxist-Leninist military rule. The Derg regime, which came to power after deposing Emperor Haile Selassie I, was characterized by political repression, famine, and civil war.</string>
+    <string name="holiday_derg_celebration">This day is celebrated as a major turning point in Ethiopia\'s history, ushering in a new political structure and the hope for democracy and peace for many. While it is a public holiday and historically commemorates the liberation from the dictatorship, its observance and interpretation remain a subject of varied public discourse regarding the country\'s ongoing political developments.</string>
+    <!-- ============================================ -->
+    <!-- Orthodox Holidays -->
+    <!-- ============================================ -->
+    <string name="holiday_orthodox_siklet">Siklet (Good Friday)</string>
+    <string name="holiday_orthodox_siklet_history">Siklet, which translates to "Crucifixion," is the Ethiopian Orthodox Tewahedo observance of Good Friday. It commemorates the suffering, crucifixion, and death of Jesus Christ at Calvary. This day falls during the most solemn part of the Holy Week, following 55 days of rigorous Lenten fasting, known as Abiy Tsom.</string>
+    <string name="holiday_orthodox_siklet_celebration">On Siklet, the faithful engage in a full day of fasting and attend special, lengthy church services that recount the events leading up to the crucifixion. The atmosphere is intensely sorrowful and meditative, with many worshipers prostrating themselves in prayer. The day is a profound reflection on sacrifice and preparation for the joy of Fasika (Easter).</string>
+    <string name="holiday_orthodox_fasika">Fasika (Easter)</string>
+    <string name="holiday_orthodox_fasika_history">Fasika, the Ethiopian Orthodox Easter, is the most important holiday in the liturgical calendar, celebrating the resurrection of Jesus Christ. Because the Ethiopian Orthodox Church follows the Julian calendar, Fasika typically falls later than Easter celebrated by Western churches. It is the joyous culmination of the seven-week Great Lent (Abiy Tsom).</string>
+    <string name="holiday_orthodox_fasika_celebration">The celebration begins after an all-night vigil that ends around 3:00 am on Easter Sunday. Following the church service, the people break their long fast with a massive feast, typically featuring meat dishes like Doro Wot (chicken stew) and Kitfo (raw or lightly cooked ground beef). Unlike Western traditions, there are no Easter bunnies, but the day is filled with festive singing, dancing, and family gatherings.</string>
+    <string name="holiday_orthodox_tensae">Tensae (Resurrection)</string>
+    <string name="holiday_orthodox_tensae_history">Tensae, meaning Resurrection, is closely tied to Fasika and refers specifically to the moment of Jesus Christ\'s rising from the dead, which is the core theological event celebrated at Easter. While often used interchangeably with Fasika, Tensae highlights the spiritual triumph over death. It marks the shift from the somber fasting period to immense religious joy.</string>
+    <string name="holiday_orthodox_tensae_celebration">The liturgy of the Resurrection is characterized by jubilant chanting, processions, and the use of the sistrum (a percussion instrument) by the priests, symbolizing the angels singing. The significance of Tensae is reflected in the traditional greetings exchanged among the faithful, emphasizing the divine victory and the promise of eternal life.</string>
+    <string name="holiday_orthodox_erget">Erget (Ascension)</string>
+    <string name="holiday_orthodox_erget_history">Erget, or the Feast of the Ascension, commemorates the biblical account of Jesus Christ\'s bodily ascension into heaven 40 days after his resurrection on Fasika. This movable feast marks the final earthly appearance of Christ before his disciples and serves as the bridge between his resurrection and the coming of the Holy Spirit at Pentecost.</string>
+    <string name="holiday_orthodox_erget_celebration">The day is celebrated with special church services and hymns focused on Christ\'s enthronement in heaven and his continued spiritual presence among his followers. Although a solemn religious observance, it carries a celebratory tone, affirming the divinity of Christ and the completion of his ministry on earth.</string>
+    <string name="holiday_orthodox_peraklitos">Peraklitos (Pentecost)</string>
+    <string name="holiday_orthodox_peraklitos_history">Peraklitos, meaning "Comforter" or "Advocate," is the Ethiopian Orthodox Tewahedo name for Pentecost. Celebrated 50 days after Fasika, it commemorates the descent of the Holy Spirit upon the Apostles and other followers of Jesus Christ, marking the foundation of the Christian Church. It is one of the nine major feast days of the Lord.</string>
+    <string name="holiday_orthodox_peraklitos_celebration">The day is observed with great reverence, including special prayers and liturgies that reflect on the power of the Holy Spirit to guide and empower the faithful. Traditionally, the faithful wear new or clean white garments, symbolizing purity and the fresh spiritual start provided by the Holy Spirit.</string>
+    <string name="holiday_orthodox_nineveh">Nineveh</string>
+    <string name="holiday_orthodox_nineveh_history">The Fast of Nineveh, or Tsome Nenewe, is a three-day fast observed by the Ethiopian Orthodox Tewahedo Church approximately two weeks before the start of the Great Lent. It commemorates the preaching of Jonah the Prophet to the people of Nineveh and their subsequent repentance, saving the city from destruction. It serves as a spiritual precursor to the main Lenten period.</string>
+    <string name="holiday_orthodox_nineveh_celebration">The fast is one of the seven official fasts of the church and, like the Great Lent, requires abstinence from meat and dairy products. During these three days, devout members attend church services and engage in intensified prayer and repentance, mirroring the biblical city of Nineveh\'s submission to God\'s word.</string>
+    <string name="holiday_orthodox_abiy_tsom">Abiy Tsom (Great Lent)</string>
+    <string name="holiday_orthodox_abiy_tsom_history">Abiy Tsom, meaning the "Great Fast" or "Great Lent," is the longest and most revered fasting season in the Ethiopian Orthodox calendar, lasting 55 days. It is also known as Hudade or Tsome Arbaa, the forty-day fast of Jesus in the wilderness. It begins on a Monday and concludes with Fasika (Easter) and is a period of intense spiritual preparation.</string>
+    <string name="holiday_orthodox_abiy_tsom_celebration">The fast is exceptionally rigorous, requiring abstinence from meat, eggs, and dairy products for the entire 55 days. Devout followers also adhere to a strict vegan diet, avoiding all animal products. Beyond diet, the fast involves increased prayer, almsgiving, and repentance, preparing the faithful to spiritually participate in Christ\'s passion and resurrection.</string>
+    <string name="holiday_orthodox_debre_zeit">Debre Zeit (Mount of Olives)</string>
+    <string name="holiday_orthodox_debre_zeit_history">Debre Zeit, meaning the "Mount of Olives," is a festival celebrated on the second Sunday of the Great Lent. It commemorates the prophecy and teachings of Jesus Christ given on the Mount of Olives, particularly concerning the signs of his Second Coming and the end times. The day encourages reflection on vigilance and preparedness for judgment.</string>
+    <string name="holiday_orthodox_debre_zeit_celebration">The liturgy for this day focuses heavily on the Gospel readings that detail Christ\'s apocalyptic discourses. The theme of Debre Zeit is one of spiritual alertness, urging the faithful to remain steadfast in their faith and good works, using the Lenten season as a time to correct their paths.</string>
+    <string name="holiday_orthodox_hosanna">Hosanna (Palm Sunday)</string>
+    <string name="holiday_orthodox_hosanna_history">Hosanna, or Palm Sunday, is celebrated on the Sunday immediately preceding Fasika (Easter). It commemorates the triumphant entry of Jesus Christ into Jerusalem, where crowds laid palms and cloaks on the road and hailed him with cries of "Hosanna," a Hebrew word meaning "save now" or "save, please."</string>
+    <string name="holiday_orthodox_hosanna_celebration">On this day, palm fronds or braided leaves are distributed to the faithful in church, which are often woven into rings or crosses, and kept as a reminder of Christ\'s sacrifice and victory. The day marks the beginning of Holy Week, the final week of the Great Lent, which details Christ\'s Passion.</string>
+    <string name="holiday_orthodox_rikbe_kahinat">Rikbe Kahinat (Congress of Priests)</string>
+    <string name="holiday_orthodox_rikbe_kahinat_history">Rikbe Kahinat, meaning the "Congress of Priests," is an observance that traditionally begins on Wednesday of the Holy Week, the final week leading up to Fasika. It is a day of deep reflection on the betrayal of Jesus by Judas Iscariot and the subsequent assembly of the priests and elders who condemned him.</string>
+    <string name="holiday_orthodox_rikbe_kahinat_celebration">The liturgical focus of Rikbe Kahinat centers on the sorrowful events of Christ\'s passion, highlighting the moral failings of those who plotted against him. The day is observed with heightened fasting and extended church services that prepare the faithful for the upcoming solemnity of Siklet (Good Friday).</string>
+    <string name="holiday_orthodox_tsome_hawariat">Tsome Hawariat (Apostles\' Fast)</string>
+    <string name="holiday_orthodox_tsome_hawariat_history">Tsome Hawariat, the Apostles\' Fast, is observed after Pentecost (Peraklitos) and is one of the seven canonical fasts of the Ethiopian Orthodox Tewahedo Church. It is undertaken in remembrance of the fasts kept by the Apostles before they embarked on their evangelical mission to preach the Gospel to the world.</string>
+    <string name="holiday_orthodox_tsome_hawariat_celebration">The fast begins on the Monday following Pentecost and concludes on the 5th of Hamle (which falls around July 12th in the Gregorian calendar), which is the Feast of Peter and Paul. During this period, the faithful abstain from meat and dairy, dedicating themselves to prayer and spiritual preparation for the missionary work of the Apostles.</string>
+    <string name="holiday_orthodox_tsome_dihnet">Tsome Dihnet (Salvation Fast)</string>
+    <string name="holiday_orthodox_tsome_dihnet_history">Tsome Dihnet, the "Fast of Salvation," is a specific name sometimes applied to a Friday fast observed throughout the year, or occasionally associated with the Friday of Holy Week (Siklet/Good Friday). It is a day dedicated to contemplation of the salvation achieved through Christ\'s suffering and death.</string>
+    <string name="holiday_orthodox_tsome_dihnet_celebration">The observance reinforces the continuous need for repentance and reliance on Christ\'s grace. Like all fasts, it involves abstinence from animal products and an increase in devotional activities, serving as a weekly or seasonal reminder of the core tenets of Orthodox faith.</string>
+    <string name="holiday_orthodox_ghad">Ghad (Epiphany Eve Fast)</string>
+    <string name="holiday_orthodox_ghad_history">Ghad refers to the fast observed on the eve of Timket (Epiphany), on January 18th. This fast is kept to prepare the body and spirit for the joyous and highly significant celebration of Christ\'s baptism. It is a one-day fast that ensures the faithful approach the ceremony with purity and spiritual readiness.</string>
+    <string name="holiday_orthodox_ghad_celebration">The fast is traditionally broken after the midnight service on Epiphany Eve, or sometimes after the water blessing ceremony on Timket morning. It is a period of reflection on the significance of baptism and the manifestation of Jesus as the Son of God.</string>
+    <string name="holiday_orthodox_kana_zegelila">Kana Zegelila (Wedding at Cana)</string>
+    <string name="holiday_orthodox_kana_zegelila_history">Kana Zegelila, commemorating the Wedding at Cana, is an Orthodox holiday that remembers the first miracle performed by Jesus Christ, where he turned water into wine. This event, which revealed his divine power to his disciples, is celebrated on the 11th of Ter (January 19th in the Ethiopian calendar, separate from Timket\'s Gregorian date).</string>
+    <string name="holiday_orthodox_kana_zegelila_celebration">The celebration emphasizes the manifestation of Christ\'s glory and his blessing of marriage and social life. It serves as a reminder of his power to transform and is often marked by prayers and readings focused on the Gospel of John, which recounts the miracle.</string>
+    <string name="holiday_orthodox_lideta_mariam">Lideta Mariam (Birth of Mary)</string>
+    <string name="holiday_orthodox_lideta_mariam_history">Lideta Mariam, the Birth of the Virgin Mary, is a monthly religious observance in the Ethiopian Orthodox Tewahedo Church, though the major annual feast is on Ginbot 1 (usually May 9). It commemorates the birth of the Theotokos (Mother of God) and is a day of veneration for the Virgin Mary, who holds a highly esteemed place in the Ethiopian tradition.</string>
+    <string name="holiday_orthodox_lideta_mariam_celebration">As a monthly commemoration, it is observed with a fast until the afternoon and special church services. The annual feast is a more elaborate celebration, featuring special hymns, prayers, and processions dedicated to her pivotal role in salvation history.</string>
+    <string name="holiday_orthodox_filseta">Filseta (Assumption of Mary)</string>
+    <string name="holiday_orthodox_filseta_history">Filseta, the Fast of the Assumption of the Virgin Mary, is one of the most dedicated and observed fasts in the Ethiopian calendar. It is a 15-day fasting period leading up to the Feast of the Assumption on August 22nd, commemorating Mary\'s passage into heaven. The name Filseta translates to "departure" or "exodus."</string>
+    <string name="holiday_orthodox_filseta_celebration">During this fast, which is second only to the Great Lent in its observance, the faithful abstain from meat and dairy, sometimes observing a particularly strict regimen. Churches hold special services throughout the two weeks, and the feast day itself is marked by massive celebrations, honoring the Virgin Mary\'s purity and intercessory power.</string>
+    <string name="holiday_orthodox_debre_tabor">Debre Tabor (Transfiguration)</string>
+    <string name="holiday_orthodox_debre_tabor_history">Debre Tabor, or the Feast of the Transfiguration, is celebrated on August 19th. It commemorates the event where Jesus took three of his disciples, Peter, James, and John, to Mount Tabor, where he was transfigured before them, his face shining like the sun and his clothing becoming dazzling white. This miracle affirmed his divine nature.</string>
+    <string name="holiday_orthodox_debre_tabor_celebration">The holiday is a joyous occasion and a day of feasting, coming at the end of the Filseta fast. Traditionally, the celebration involves special bonfires and the distribution of the first crop harvest. The feast is associated with the theme of spiritual light and the final glory of Christ.</string>
+
+    <!-- ============================================ -->
+    <!-- Muslim Holidays -->
+    <!-- ============================================ -->
+    <string name="holiday_muslim_mawlid">Mawlid al-Nabi</string>
+    <string name="holiday_muslim_mawlid_history">Mawlid al-Nabi commemorates the birthday of the Prophet Muhammad on the 12th day of Rabi\' al-Awwal. It is a day for Muslims to express love and reverence for the Prophet.</string>
+    <string name="holiday_muslim_mawlid_celebration">In Ethiopia, it is a major celebration marked by large, peaceful processions chanting devotional hymns, especially in cities like Addis Ababa and Harar. The day includes special prayers, sermons on the Prophet\'s life, and generous food distribution as charity.</string>
+
+    <string name="holiday_muslim_ramadan_start">Start of Ramadan</string>
+    <string name="holiday_muslim_ramadan_start_history">This marks the beginning of the Islamic holy month of fasting, determined by the sighting of the new moon. Healthy adult Muslims abstain from all food and drink from dawn until sunset, focusing on prayer and spiritual purification.</string>
+    <string name="holiday_muslim_ramadan_start_celebration">In Ethiopia, the pre-dawn meal (Suhur) and the evening meal to break the fast (Iftar) are often communal events. Mosques see increased attendance for special nightly Tarawih prayers, and there is a strong emphasis on charity.</string>
+
+    <string name="holiday_muslim_eid_fitr">Eid al-Fitr</string>
+    <string name="holiday_muslim_eid_fitr_history">Eid al-Fitr, the "Festival of Breaking the Fast," marks the joyful conclusion of Ramadan. It signifies the successful completion of a month of fasting and is a time to show gratitude to God. Giving Zakat al-Fitr (a mandatory charity) before the prayer is essential.</string>
+    <string name="holiday_muslim_eid_fitr_celebration">The day begins with a special congregational prayer held in large open spaces. It is a time for feasting, visiting family and friends in new clothes, and ensuring even the poor can celebrate thanks to the Zakat given.</string>
+
+    <string name="holiday_muslim_arafat">Day of Arafat</string>
+    <string name="holiday_muslim_arafat_history">Observed on the 9th day of Dhu al-Hijjah, this is the pinnacle of the Hajj pilgrimage. It commemorates the day the Prophet Muhammad delivered his Farewell Sermon on the plain of Arafat.</string>
+    <string name="holiday_muslim_arafat_celebration">For Muslims not performing Hajj, it is a highly recommended day to fast, pray, and seek forgiveness. It is believed that fasting on this day expiates the sins of the preceding and coming year.</string>
+
+    <string name="holiday_muslim_eid_adha">Eid al-Adha</string>
+    <string name="holiday_muslim_eid_adha_history">Eid al-Adha, the "Festival of Sacrifice," begins on the 10th day of Dhu al-Hijjah. It commemorates Prophet Ibrahim\'s willingness to sacrifice his son as an act of obedience to God, before God provided a ram instead.</string>
+    <string name="holiday_muslim_eid_adha_celebration">The celebration is marked by the ritual sacrifice of an animal (like a sheep or goat). The meat is divided into three parts: for the family, for relatives and friends, and for the poor, strengthening community bonds.</string>
+
+    <string name="holiday_muslim_hijri_new_year">Islamic New Year</string>
+    <string name="holiday_muslim_hijri_new_year_history">The Islamic New Year (Al-Hijra) marks the beginning of the month of Muharram. It commemorates the Hijra, the migration of the Prophet Muhammad and his followers from Mecca to Medina, which led to the first Muslim community.</string>
+    <string name="holiday_muslim_hijri_new_year_celebration">In Ethiopia, this day is typically observed in a quiet, contemplative manner. Many attend mosques for special prayers and sermons reflecting on the event\'s significance, rather than with public festivities or feasts.</string>
+
+    <string name="holiday_muslim_ashura">Ashura</string>
+    <string name="holiday_muslim_ashura_history">Ashura is observed on the 10th day of Muharram. For Ethiopia\'s predominantly Sunni Muslim population, it primarily commemorates the day God saved Prophet Moses (Musa) and the Israelites from Pharaoh.</string>
+    <string name="holiday_muslim_ashura_celebration">It is observed mainly as a day of voluntary fasting and increased prayer. Some communities in Ethiopia also maintain traditions of preparing special meals to share with the needy as an act of charity.</string>
+
+    <string name="holiday_muslim_isra_miraj">Isra and Mi\'raj</string>
+    <string name="holiday_muslim_isra_miraj_history">Isra and Mi\'raj marks the Prophet Muhammad\'s miraculous night journey from Mecca to Jerusalem (Isra) and his subsequent ascension through the heavens (Mi\'raj). During this journey, the five daily prayers were ordained.</string>
+    <string name="holiday_muslim_isra_miraj_celebration">The night is observed with special prayers and religious gatherings at mosques. Scholars narrate the story of the Prophet\'s journey and its spiritual significance, focusing on the importance of the five daily prayers.</string>
+
+    <string name="holiday_muslim_mid_shaban">Mid-Sha\'ban</string>
+    <string name="holiday_muslim_mid_shaban_history">Mid-Sha\'ban, or the 15th night of Sha\'ban, is known as Laylat al-Bara\'ah (the "Night of Forgiveness"). It is considered a night when God determines the fortunes of people and offers forgiveness to those who seek it sincerely.</string>
+    <string name="holiday_muslim_mid_shaban_celebration">Many observe the night with voluntary prayers, Quranic recitation, and supplications for forgiveness. It is seen as a time of spiritual renewal and preparation for the holy month of Ramadan, which follows.</string>
+    <!-- ============================================ -->
+    <!-- Events / Reminders -->
+    <!-- ============================================ -->
+    <string name="add_event">Add Event</string>
+    <string name="edit_event">Edit Event</string>
+    <string name="delete_event">Delete Event</string>
+    <string name="delete_event_title">Delete Event?</string>
+    <string name="delete_event_message">Are you sure you want to delete \"%1$s\"?</string>
+    <string name="delete">Delete</string>
+
+    <!-- Event Form Fields -->
+    <string name="title">Title</string>
+    <string name="title_required">Title is required</string>
+    <string name="description_optional">Description (optional)</string>
+    <string name="date">Date</string>
+    <string name="start_time">Start Time</string>
+    <string name="end_time">End Time</string>
+    <string name="all_day_event">All-day event</string>
+    <string name="category">Category</string>
+
+    <!-- Event Repeat Options -->
+    <string name="repeat">Repeat</string>
+    <string name="repeat_weekly">Repeat Weekly</string>
+    <string name="no_repeat">No repeat</string>
+    <string name="weekly">Weekly</string>
+    <string name="repeat_on">Repeat on</string>
+    <string name="ends">Ends</string>
+    <string name="never">Never</string>
+    <string name="until">Until</string>
+    <string name="until_date">Until %1$s</string>
+    <string name="select_end_date">Select End Date</string>
+
+    <!-- Event Reminders -->
+    <string name="reminder">Reminder</string>
+    <string name="add_reminder">Add reminder</string>
+    <string name="show_reminder_before">Remind me before %1$s</string>
+    <string name="at_time_of_event">At time of event</string>
+    <string name="minutes_before_5">5 minutes before</string>
+    <string name="minutes_before_15">15 minutes before</string>
+    <string name="minutes_before_30">30 minutes before</string>
+    <string name="hour_before_1">1 hour before</string>
+    <string name="reminder_minutes_before">%1$d min before</string>
+
+    <!-- Event Actions -->
+    <string name="create">Create</string>
+    <string name="update">Update</string>
+    <string name="cancel">Cancel</string>
+    <string name="ok">OK</string>
+
+    <!-- Event Empty State -->
+    <string name="no_events">No events yet</string>
+    <string name="tap_plus_to_add_event">Tap the + button to add your first event</string>
+    <string name="error_loading_events">Error Loading Events</string>
+
+    <!-- Event Display -->
+    <string name="event_date_all_day">%1$d/%2$d/%3$d (All day)</string>
+    <string name="recurring_event">Recurring event</string>
+    <string name="recurring">Recurring</string>
+
+    <!-- Event Filter Display -->
+    <string name="filter">Filter</string>
+    <string name="show_all">Show All</string>
+    <string name="showing_all_events">Showing all events</string>
+    <string name="showing_from_to">Showing from %1$s to %2$s</string>
+    <string name="showing_from">Showing from %1$s</string>
+    <string name="showing_until">Showing until %1$s</string>
+
+    <!-- ============================================ -->
+    <!-- Relative Time Strings -->
+    <!-- ============================================ -->
+    <string name="time_just_now">Just now</string>
+    <string name="time_in_a_moment">In a moment</string>
+    <string name="time_minute_singular">minute</string>
+    <string name="time_minute_plural">minutes</string>
+    <string name="time_hour_singular">hour</string>
+    <string name="time_hour_plural">hours</string>
+    <string name="time_day_singular">day</string>
+    <string name="time_day_plural">days</string>
+    <string name="time_week_singular">week</string>
+    <string name="time_week_plural">weeks</string>
+    <string name="time_month_singular">month</string>
+    <string name="time_month_plural">months</string>
+    <string name="time_year_singular">year</string>
+    <string name="time_year_plural">years</string>
+    <string name="time_ago">%1$d %2$s ago</string>
+    <string name="time_in_future">In %1$d %2$s</string>
+
+    <!-- ============================================ -->
+    <!-- Permission Strings -->
+    <!-- ============================================ -->
+    <string name="permission_notification_title">Enable Notifications</string>
+    <string name="permission_notification_rationale">To remind you about your events, we need permission to send notifications. You\'ll receive timely reminders for your scheduled events.</string>
+    <string name="permission_exact_alarm_title">Enable Exact Alarms</string>
+    <string name="permission_exact_alarm_rationale">To send reminders at the exact time of your events, we need permission to schedule exact alarms.</string>
+    <string name="permission_exact_alarm_instructions">In the next screen, enable \"Alarms &amp; reminders\" for Ethiopian Calendar.</string>
+    <string name="permission_grant">Grant Permission</string>
+    <string name="permission_not_now">Not Now</string>
+    <string name="permission_open_settings">Open Settings</string>
+    <string name="permission_close">Close</string>
+    <string name="permission_fix">Fix</string>
+    <string name="permission_banner_title">Reminders Disabled</string>
+    <string name="permission_banner_message">Missing %1$s. Tap Fix to enable event reminders.</string>
+    <string name="permission_warning_compact">Enable permissions to receive event reminders</string>
+    <string name="permission_fix_title">Enable Reminders</string>
+    <string name="permission_fix_message">Grant the following permissions to receive event reminders:</string>
+    <string name="permission_grant_notifications">Grant Notification Permission</string>
+    <string name="permission_grant_exact_alarms">Enable Exact Alarms</string>
+
+    <!-- ============================================ -->
+    <!-- Widget Strings -->
+    <!-- ============================================ -->
+    <string name="widget_description" translatable="false">Ethiopian Calendar widget with date, time and upcoming reminders</string>
+
+    <!-- ============================================ -->
+    <!-- Preference/Settings Dialog Strings -->
+    <!-- ============================================ -->
+    <string name="pref_language_dialog_title" translatable="false">Language</string>
+
+    <!-- ============================================ -->
+    <!-- String Arrays -->
+    <!-- ============================================ -->
+
+    <!-- Ethiopian Month Names -->
+    <string-array name="ethiopian_months">
+        <item>Meskerem</item>
+        <item>Tikimt</item>
+        <item>Hidar</item>
+        <item>Tahsas</item>
+        <item>Tir</item>
+        <item>Yekatit</item>
+        <item>Megabit</item>
+        <item>Miazia</item>
+        <item>Ginbot</item>
+        <item>Sene</item>
+        <item>Hamle</item>
+        <item>Nehase</item>
+        <item>Pagume</item>
+    </string-array>
+
+    <!-- Weekday Names (Short) -->
+    <string-array name="weekday_names_short">
+        <item>Mon</item>
+        <item>Tue</item>
+        <item>Wed</item>
+        <item>Thu</item>
+        <item>Fri</item>
+        <item>Sat</item>
+        <item>Sun</item>
+    </string-array>
+
+    <!-- Weekday Names (Full) -->
+    <string-array name="weekday_names_full">
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+        <item>Sunday</item>
+    </string-array>
+
+    <!-- Theme Color Names -->
+    <string-array name="theme_color_names">
+        <item>Blue</item>
+        <item>Red</item>
+        <item>Green</item>
+        <item>Purple</item>
+        <item>Orange</item>
+    </string-array>
+
+    <!-- Theme Mode Names -->
+    <string-array name="theme_mode_names">
+        <item>System Default</item>
+        <item>Light</item>
+        <item>Dark</item>
+    </string-array>
+</resources>
