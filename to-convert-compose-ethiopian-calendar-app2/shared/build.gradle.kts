@@ -1,11 +1,11 @@
 plugins {
     kotlin("multiplatform")
     id("com.android.library")
-    kotlin("plugin.serialization") version "2.2.21"
+    kotlin("plugin.serialization") version "2.0.21"
     id("com.google.devtools.ksp")
     id("androidx.room") version "2.7.0-alpha10"
-    id("org.jetbrains.kotlin.plugin.compose") version "2.2.21"
-    id("org.jetbrains.compose") version "1.7.3"
+    id("org.jetbrains.kotlin.plugin.compose") version "2.0.21"
+    id("org.jetbrains.compose") version "1.7.0"
 }
 
 kotlin {
@@ -49,8 +49,8 @@ kotlin {
                 implementation(compose.components.uiToolingPreview)
 
                 // ViewModel for Compose
-                implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.8.7")
-                implementation("androidx.lifecycle:lifecycle-runtime-compose:2.8.7")
+                implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.8.0")
+                implementation("androidx.lifecycle:lifecycle-runtime-compose:2.8.0")
 
                 // Ethiopian calendar library
                 implementation(project(":ethiopic-chrono"))
@@ -66,7 +66,7 @@ kotlin {
         val androidMain by getting {
             dependencies {
                 // Android-specific dependencies
-                implementation("androidx.core:core-ktx:1.15.0")
+                implementation("androidx.core:core-ktx:1.13.1")
 
                 // DataStore for preferences
                 implementation("androidx.datastore:datastore-preferences:1.1.1")
@@ -93,7 +93,7 @@ kotlin {
 
 android {
     namespace = "com.shalom.calendar.shared"
-    compileSdk = 36
+    compileSdk = 35
 
     defaultConfig {
         minSdk = 26
