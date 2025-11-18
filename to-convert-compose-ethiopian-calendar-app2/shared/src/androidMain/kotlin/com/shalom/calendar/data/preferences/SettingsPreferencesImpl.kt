@@ -25,10 +25,22 @@ class SettingsPreferencesImpl(private val context: Context) : SettingsPreference
         private val INCLUDE_ALL_DAY_OFF_HOLIDAYS_KEY = booleanPreferencesKey("show_public_holidays")
         private val INCLUDE_WORKING_ORTHODOX_HOLIDAYS_KEY = booleanPreferencesKey("show_orthodox_fasting_holidays")
         private val INCLUDE_WORKING_MUSLIM_HOLIDAYS_KEY = booleanPreferencesKey("show_muslim_holidays")
+        private val INCLUDE_WORKING_CULTURAL_HOLIDAYS_KEY = booleanPreferencesKey("show_cultural_holidays")
+        private val INCLUDE_WORKING_WESTERN_HOLIDAYS_KEY = booleanPreferencesKey("show_working_western_holidays")
 
         private val HIDE_HOLIDAY_INFO_DIALOG_KEY = booleanPreferencesKey("hide_holiday_info_dialog")
         private val USE_AMHARIC_DAY_NAMES_KEY = booleanPreferencesKey("show_orthodox_day_names")
+        private val SHOW_ORTHODOX_DAY_NAMES_KEY = booleanPreferencesKey("show_orthodox_day_names")
         private val SHOW_LUNAR_PHASES_KEY = booleanPreferencesKey("show_lunar_phases")
+        private val USE_GEEZ_NUMBERS_KEY = booleanPreferencesKey("use_geez_numbers")
+        private val USE_24_HOUR_FORMAT_KEY = booleanPreferencesKey("use_24_hour_format_in_widgets")
+
+        private val DISPLAY_TWO_CLOCKS_KEY = booleanPreferencesKey("display_two_clocks")
+        private val PRIMARY_WIDGET_TIMEZONE_KEY = stringPreferencesKey("primary_widget_timezone")
+        private val SECONDARY_WIDGET_TIMEZONE_KEY = stringPreferencesKey("secondary_widget_timezone")
+        private val USE_TRANSPARENT_BACKGROUND_KEY = booleanPreferencesKey("use_transparent_background")
+
+        private val LANGUAGE_KEY = stringPreferencesKey("app_language")
 
         private val IS_DARK_MODE_KEY = booleanPreferencesKey("is_dark_mode")
         private val THEME_COLOR_KEY = stringPreferencesKey("theme_color")
@@ -72,6 +84,14 @@ class SettingsPreferencesImpl(private val context: Context) : SettingsPreference
         preferences[INCLUDE_WORKING_MUSLIM_HOLIDAYS_KEY] ?: false
     }
 
+    override val includeWorkingCulturalHolidays: Flow<Boolean> = context.settingsDataStore.data.map { preferences ->
+        preferences[INCLUDE_WORKING_CULTURAL_HOLIDAYS_KEY] ?: false
+    }
+
+    override val includeWorkingWesternHolidays: Flow<Boolean> = context.settingsDataStore.data.map { preferences ->
+        preferences[INCLUDE_WORKING_WESTERN_HOLIDAYS_KEY] ?: false
+    }
+
     // UI preferences
     override val hideHolidayInfoDialog: Flow<Boolean> = context.settingsDataStore.data.map { preferences ->
         preferences[HIDE_HOLIDAY_INFO_DIALOG_KEY] ?: false
@@ -81,8 +101,47 @@ class SettingsPreferencesImpl(private val context: Context) : SettingsPreference
         preferences[USE_AMHARIC_DAY_NAMES_KEY] ?: false
     }
 
+    override val showOrthodoxDayNames: Flow<Boolean> = context.settingsDataStore.data.map { preferences ->
+        preferences[SHOW_ORTHODOX_DAY_NAMES_KEY] ?: false
+    }
+
     override val showLunarPhases: Flow<Boolean> = context.settingsDataStore.data.map { preferences ->
         preferences[SHOW_LUNAR_PHASES_KEY] ?: false
+    }
+
+    override val useGeezNumbers: Flow<Boolean> = context.settingsDataStore.data.map { preferences ->
+        preferences[USE_GEEZ_NUMBERS_KEY] ?: false
+    }
+
+    override val use24HourFormat: Flow<Boolean> = context.settingsDataStore.data.map { preferences ->
+        preferences[USE_24_HOUR_FORMAT_KEY] ?: false
+    }
+
+    // Widget settings
+    override val displayTwoClocks: Flow<Boolean> = context.settingsDataStore.data.map { preferences ->
+        preferences[DISPLAY_TWO_CLOCKS_KEY] ?: true
+    }
+
+    override val primaryWidgetTimezone: Flow<String> = context.settingsDataStore.data.map { preferences ->
+        preferences[PRIMARY_WIDGET_TIMEZONE_KEY] ?: ""
+    }
+
+    override val secondaryWidgetTimezone: Flow<String> = context.settingsDataStore.data.map { preferences ->
+        preferences[SECONDARY_WIDGET_TIMEZONE_KEY] ?: ""
+    }
+
+    override val useTransparentBackground: Flow<Boolean> = context.settingsDataStore.data.map { preferences ->
+        preferences[USE_TRANSPARENT_BACKGROUND_KEY] ?: false
+    }
+
+    // Language
+    override val language: Flow<Language> = context.settingsDataStore.data.map { preferences ->
+        val languageString = preferences[LANGUAGE_KEY] ?: Language.AMHARIC.name
+        try {
+            Language.valueOf(languageString)
+        } catch (e: IllegalArgumentException) {
+            Language.AMHARIC
+        }
     }
 
     // Theme settings
@@ -136,6 +195,19 @@ class SettingsPreferencesImpl(private val context: Context) : SettingsPreference
         }
     }
 
+    override suspend fun setIncludeWorkingCulturalHolidays(include: Boolean) {
+        context.settingsDataStore.edit { preferences ->
+            preferences[INCLUDE_WORKING_CULTURAL_HOLIDAYS_KEY] = include
+        }
+    }
+
+    override suspend fun setIncludeWorkingWesternHolidays(include: Boolean) {
+        context.settingsDataStore.edit { preferences ->
+            preferences[INCLUDE_WORKING_WESTERN_HOLIDAYS_KEY] = include
+        }
+    }
+
+    // UI Setters
     override suspend fun setHideHolidayInfoDialog(hide: Boolean) {
         context.settingsDataStore.edit { preferences ->
             preferences[HIDE_HOLIDAY_INFO_DIALOG_KEY] = hide
@@ -148,9 +220,59 @@ class SettingsPreferencesImpl(private val context: Context) : SettingsPreference
         }
     }
 
+    override suspend fun setShowOrthodoxDayNames(show: Boolean) {
+        context.settingsDataStore.edit { preferences ->
+            preferences[SHOW_ORTHODOX_DAY_NAMES_KEY] = show
+        }
+    }
+
     override suspend fun setShowLunarPhases(show: Boolean) {
         context.settingsDataStore.edit { preferences ->
             preferences[SHOW_LUNAR_PHASES_KEY] = show
+        }
+    }
+
+    override suspend fun setUseGeezNumbers(use: Boolean) {
+        context.settingsDataStore.edit { preferences ->
+            preferences[USE_GEEZ_NUMBERS_KEY] = use
+        }
+    }
+
+    override suspend fun setUse24HourFormat(use: Boolean) {
+        context.settingsDataStore.edit { preferences ->
+            preferences[USE_24_HOUR_FORMAT_KEY] = use
+        }
+    }
+
+    // Widget Setters
+    override suspend fun setDisplayTwoClocks(display: Boolean) {
+        context.settingsDataStore.edit { preferences ->
+            preferences[DISPLAY_TWO_CLOCKS_KEY] = display
+        }
+    }
+
+    override suspend fun setPrimaryWidgetTimezone(timezone: String) {
+        context.settingsDataStore.edit { preferences ->
+            preferences[PRIMARY_WIDGET_TIMEZONE_KEY] = timezone
+        }
+    }
+
+    override suspend fun setSecondaryWidgetTimezone(timezone: String) {
+        context.settingsDataStore.edit { preferences ->
+            preferences[SECONDARY_WIDGET_TIMEZONE_KEY] = timezone
+        }
+    }
+
+    override suspend fun setUseTransparentBackground(use: Boolean) {
+        context.settingsDataStore.edit { preferences ->
+            preferences[USE_TRANSPARENT_BACKGROUND_KEY] = use
+        }
+    }
+
+    // Language & Theme Setters
+    override suspend fun setLanguage(language: Language) {
+        context.settingsDataStore.edit { preferences ->
+            preferences[LANGUAGE_KEY] = language.name
         }
     }
 
