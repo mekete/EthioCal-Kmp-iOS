@@ -10,7 +10,6 @@ import com.shalom.calendar.data.repository.EventRepository
 import com.shalom.calendar.data.repository.HolidayRepository
 import com.shalom.calendar.domain.model.HolidayOccurrence
 import com.shalom.calendar.domain.model.HolidayType
-import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.CancellationException
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.MutableStateFlow
@@ -26,10 +25,8 @@ import com.shalom.ethiopicchrono.EthiopicDate
 import java.time.LocalDate
 import java.time.temporal.ChronoField
 import java.time.temporal.ChronoUnit
-import javax.inject.Inject
 
-@HiltViewModel
-class MonthCalendarViewModel @Inject constructor(
+class MonthCalendarViewModel(
     private val holidayRepository: HolidayRepository,
     private val eventRepository: EventRepository,
     private val settingsPreferences: SettingsPreferences,

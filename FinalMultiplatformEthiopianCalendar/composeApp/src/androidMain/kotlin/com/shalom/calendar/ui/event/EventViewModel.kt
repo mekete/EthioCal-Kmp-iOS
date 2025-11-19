@@ -1,6 +1,5 @@
 package com.shalom.calendar.ui.event
 
-import android.content.Context
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.shalom.calendar.alarm.AlarmScheduler
@@ -13,8 +12,6 @@ import com.shalom.calendar.data.local.entity.toRRuleString
 import com.shalom.calendar.data.preferences.CalendarType
 import com.shalom.calendar.data.preferences.SettingsPreferences
 import com.shalom.calendar.data.repository.EventRepository
-import dagger.hilt.android.lifecycle.HiltViewModel
-import dagger.hilt.android.qualifiers.ApplicationContext
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
@@ -27,28 +24,24 @@ import java.time.LocalTime
 import java.time.ZonedDateTime
 import java.time.temporal.TemporalAdjusters
 import java.util.UUID
-import javax.inject.Inject
 
 
 /**
  * ViewModel for EventScreen.
  *
  * Follows the same pattern as HolidayListViewModel:
- * - Uses @HiltViewModel for dependency injection
+ * - Uses Koin for dependency injection
  * - Exposes StateFlow for UI state
  * - Handles business logic and repository operations
  * - Uses viewModelScope for coroutines
  * - Integrates alarm scheduling for event reminders
  */
-@HiltViewModel
-class EventViewModel @Inject constructor(
+class EventViewModel(
     private val eventRepository: EventRepository,
     private val settingsPreferences: SettingsPreferences,
     private val analyticsManager: AnalyticsManager,
-    @ApplicationContext private val context: Context
+    private val alarmScheduler: AlarmScheduler
 ) : ViewModel() {
-
-    private val alarmScheduler = AlarmScheduler(context)
 
     private val _uiState = MutableStateFlow<EventUiState>(EventUiState.Loading)
     val uiState: StateFlow<EventUiState> = _uiState.asStateFlow()

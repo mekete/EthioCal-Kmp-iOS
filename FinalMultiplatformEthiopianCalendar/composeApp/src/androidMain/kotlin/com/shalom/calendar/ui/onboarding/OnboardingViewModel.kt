@@ -9,12 +9,10 @@ import com.shalom.calendar.data.preferences.Language
 import com.shalom.calendar.data.preferences.SettingsPreferences
 import com.shalom.calendar.data.preferences.ThemePreferences
 import com.shalom.calendar.ui.theme.ThemeMode
-import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.launch
-import javax.inject.Inject
 
 data class OnboardingState(
     val currentPage: Int = 0,
@@ -41,8 +39,7 @@ private val PAGE_NAMES = arrayOf(
     "Calendar Display"
 )
 
-@HiltViewModel
-class OnboardingViewModel @Inject constructor(
+class OnboardingViewModel(
     private val settingsPreferences: SettingsPreferences,
     private val themePreferences: ThemePreferences,
     private val analyticsManager: AnalyticsManager

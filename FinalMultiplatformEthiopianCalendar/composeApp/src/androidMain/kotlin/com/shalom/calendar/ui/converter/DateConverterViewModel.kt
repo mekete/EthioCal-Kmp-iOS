@@ -1,7 +1,6 @@
 package com.shalom.calendar.ui.converter
 
 import androidx.lifecycle.ViewModel
-import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
@@ -9,10 +8,8 @@ import com.shalom.ethiopicchrono.EthiopicDate
 import java.time.LocalDate
 import java.time.format.DateTimeFormatter
 import java.time.temporal.ChronoField
-import javax.inject.Inject
 
-@HiltViewModel
-class DateConverterViewModel @Inject constructor() : ViewModel() {
+class DateConverterViewModel : ViewModel() {
 
     private val _uiState = MutableStateFlow(DateConverterUiState())
     val uiState: StateFlow<DateConverterUiState> = _uiState.asStateFlow()

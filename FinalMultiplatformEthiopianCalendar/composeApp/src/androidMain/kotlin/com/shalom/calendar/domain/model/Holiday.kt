@@ -5,25 +5,12 @@ import java.time.LocalDate
 import java.time.temporal.ChronoField
 
 /**
- * Represents a holiday in the Ethiopian calendar
- */
-data class Holiday(
-    override val id: String, override val title: String, val nameAmharic: String = "", val type: HolidayType, override val ethiopianYear: Int = 2020, override val ethiopianMonth: Int, override val ethiopianDay: Int, val isDayOff: Boolean, val isVerified: Boolean = false, val isFixedDate: Boolean, override val description: String = "", val celebration: String = "", val mediaUrl: String? = null
-) : CalendarItem(), Comparable<Holiday> {
-
-    override fun compareTo(other: Holiday): Int {
-        return when {
-            ethiopianMonth != other.ethiopianMonth -> ethiopianMonth.compareTo(other.ethiopianMonth)
-            else -> ethiopianDay.compareTo(other.ethiopianDay)
-        }
-    }
-}
-
-/**
  * Holiday occurrence for a specific year with actual date
  */
 data class HolidayOccurrence(
-    val holiday: Holiday, val ethiopicDate: EthiopicDate, val adjustment: Int = 0  // Days adjusted via Firebase
+    val holiday: Holiday,
+    val ethiopicDate: EthiopicDate,
+    val adjustment: Int = 0  // Days adjusted via Firebase
 ) {
     /**
      * Get the actual Ethiopic date after applying any adjustment
@@ -32,7 +19,8 @@ data class HolidayOccurrence(
     val actualEthiopicDate: EthiopicDate
         get() = if (adjustment == 0) {
             ethiopicDate
-        } else { // Convert to Gregorian, add days, convert back to Ethiopic
+        } else {
+            // Convert to Gregorian, add days, convert back to Ethiopic
             val gregorian = LocalDate.from(ethiopicDate)
             val adjustedGregorian = gregorian.plusDays(adjustment.toLong())
             EthiopicDate.from(adjustedGregorian)

@@ -6,7 +6,6 @@ import com.shalom.calendar.data.preferences.SettingsPreferences
 import com.shalom.calendar.data.repository.HolidayRepository
 import com.shalom.calendar.domain.model.HolidayOccurrence
 import com.shalom.calendar.domain.model.HolidayType
-import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
@@ -16,10 +15,8 @@ import kotlinx.coroutines.launch
 import com.shalom.ethiopicchrono.EthiopicDate
 import timber.log.Timber
 import java.time.temporal.ChronoField
-import javax.inject.Inject
 
-@HiltViewModel
-class CalendarItemListViewModel @Inject constructor(
+class CalendarItemListViewModel(
     private val holidayRepository: HolidayRepository, private val settingsPreferences: SettingsPreferences
 ) : ViewModel() {
 

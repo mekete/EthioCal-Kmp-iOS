@@ -7,16 +7,13 @@ import com.shalom.calendar.data.analytics.AnalyticsManager
 import com.shalom.calendar.data.preferences.CalendarType
 import com.shalom.calendar.data.preferences.Language
 import com.shalom.calendar.data.preferences.SettingsPreferences
-import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.flow.stateIn
 import kotlinx.coroutines.launch
-import javax.inject.Inject
 
-@HiltViewModel
-class SettingsViewModel @Inject constructor(
+class SettingsViewModel(
     private val settingsPreferences: SettingsPreferences,
     private val analyticsManager: AnalyticsManager
 ) : ViewModel() {
