@@ -6,8 +6,6 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.darkColorScheme
 import androidx.compose.material3.lightColorScheme
 import androidx.compose.runtime.Composable
-import com.shalom.calendar.data.preferences.AppTheme
-import com.shalom.calendar.data.preferences.ThemeMode
 
 // Blue Color Schemes
 private val BlueLightColorScheme = lightColorScheme(
