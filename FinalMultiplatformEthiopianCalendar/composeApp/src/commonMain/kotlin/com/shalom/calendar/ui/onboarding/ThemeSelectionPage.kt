@@ -15,15 +15,15 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import com.shalom.calendar.data.preferences.ThemeMode
-import com.shalom.calendar.shared.resources.Res
-import com.shalom.calendar.shared.resources.onboarding_theme_dark
-import com.shalom.calendar.shared.resources.onboarding_theme_dark_desc
-import com.shalom.calendar.shared.resources.onboarding_theme_description
-import com.shalom.calendar.shared.resources.onboarding_theme_light
-import com.shalom.calendar.shared.resources.onboarding_theme_light_desc
-import com.shalom.calendar.shared.resources.onboarding_theme_system
-import com.shalom.calendar.shared.resources.onboarding_theme_system_desc
-import com.shalom.calendar.shared.resources.onboarding_theme_title
+import ethiopiancalendar.composeapp.generated.resources.Res
+import ethiopiancalendar.composeapp.generated.resources.onboarding_theme_dark
+import ethiopiancalendar.composeapp.generated.resources.onboarding_theme_dark_desc
+import ethiopiancalendar.composeapp.generated.resources.onboarding_theme_description
+import ethiopiancalendar.composeapp.generated.resources.onboarding_theme_light
+import ethiopiancalendar.composeapp.generated.resources.onboarding_theme_light_desc
+import ethiopiancalendar.composeapp.generated.resources.onboarding_theme_system
+import ethiopiancalendar.composeapp.generated.resources.onboarding_theme_system_desc
+import ethiopiancalendar.composeapp.generated.resources.onboarding_theme_title
 import org.jetbrains.compose.resources.stringResource
 
 @Composable

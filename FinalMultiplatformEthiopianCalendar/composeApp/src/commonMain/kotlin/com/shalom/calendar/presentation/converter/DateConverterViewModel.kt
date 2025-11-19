@@ -116,7 +116,7 @@ class DateConverterViewModel : ViewModel() {
             }
 
             val ethiopianDate = EthiopicDate.of(year, month, day)
-            val gregorianDate = LocalDate.from(ethiopianDate)
+            val gregorianDate = ethiopianDate.toLocalDate()
 
             // Format the date manually (KMP-compatible)
             val monthName = getGregorianMonthName(gregorianDate.monthNumber)
@@ -174,8 +174,8 @@ class DateConverterViewModel : ViewModel() {
             }
 
             // Convert to LocalDate for calculation
-            val startLocalDate = LocalDate.from(start)
-            val endLocalDate = LocalDate.from(end)
+            val startLocalDate = start.toLocalDate()
+            val endLocalDate = end.toLocalDate()
 
             // Ensure start date is before end date
             if (startLocalDate > endLocalDate) {

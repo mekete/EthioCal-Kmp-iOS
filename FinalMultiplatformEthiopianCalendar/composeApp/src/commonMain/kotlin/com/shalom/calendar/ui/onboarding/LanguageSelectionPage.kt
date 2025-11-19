@@ -15,9 +15,9 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import com.shalom.calendar.data.preferences.Language
-import com.shalom.calendar.shared.resources.Res
-import com.shalom.calendar.shared.resources.onboarding_language_description
-import com.shalom.calendar.shared.resources.onboarding_language_title
+import ethiopiancalendar.composeapp.generated.resources.Res
+import ethiopiancalendar.composeapp.generated.resources.onboarding_language_description
+import ethiopiancalendar.composeapp.generated.resources.onboarding_language_title
 import org.jetbrains.compose.resources.stringResource
 
 @Composable

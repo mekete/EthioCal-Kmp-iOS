@@ -16,14 +16,14 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
-import com.shalom.calendar.shared.resources.Res
-import com.shalom.calendar.shared.resources.onboarding_feature_dual_calendar
-import com.shalom.calendar.shared.resources.onboarding_feature_holidays
-import com.shalom.calendar.shared.resources.onboarding_feature_multilingual
-import com.shalom.calendar.shared.resources.onboarding_feature_reminders
-import com.shalom.calendar.shared.resources.onboarding_get_started
-import com.shalom.calendar.shared.resources.onboarding_welcome_subtitle
-import com.shalom.calendar.shared.resources.onboarding_welcome_title
+import ethiopiancalendar.composeapp.generated.resources.Res
+import ethiopiancalendar.composeapp.generated.resources.onboarding_feature_dual_calendar
+import ethiopiancalendar.composeapp.generated.resources.onboarding_feature_holidays
+import ethiopiancalendar.composeapp.generated.resources.onboarding_feature_multilingual
+import ethiopiancalendar.composeapp.generated.resources.onboarding_feature_reminders
+import ethiopiancalendar.composeapp.generated.resources.onboarding_get_started
+import ethiopiancalendar.composeapp.generated.resources.onboarding_welcome_subtitle
+import ethiopiancalendar.composeapp.generated.resources.onboarding_welcome_title
 import org.jetbrains.compose.resources.stringResource
 
 @Composable

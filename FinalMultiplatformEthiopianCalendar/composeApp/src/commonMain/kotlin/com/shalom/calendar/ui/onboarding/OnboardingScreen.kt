@@ -41,11 +41,11 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.unit.dp
 import com.shalom.calendar.presentation.onboarding.OnboardingViewModel
 import com.shalom.calendar.presentation.onboarding.TOTAL_ONBOARDING_PAGES
-import com.shalom.calendar.shared.resources.Res
-import com.shalom.calendar.shared.resources.cd_back
-import com.shalom.calendar.shared.resources.onboarding_done
-import com.shalom.calendar.shared.resources.onboarding_next
-import com.shalom.calendar.shared.resources.onboarding_skip
+import ethiopiancalendar.composeapp.generated.resources.Res
+import ethiopiancalendar.composeapp.generated.resources.cd_back
+import ethiopiancalendar.composeapp.generated.resources.onboarding_done
+import ethiopiancalendar.composeapp.generated.resources.onboarding_next
+import ethiopiancalendar.composeapp.generated.resources.onboarding_skip
 import kotlinx.coroutines.launch
 import org.jetbrains.compose.resources.stringResource
 import org.koin.compose.viewmodel.koinViewModel

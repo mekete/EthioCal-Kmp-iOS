@@ -83,7 +83,8 @@ interface SettingsPreferences {
  */
 enum class CalendarType {
     ETHIOPIAN,
-    GREGORIAN
+    GREGORIAN,
+    HIRJI
 }
 
 /**

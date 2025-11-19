@@ -16,17 +16,17 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
-import com.shalom.calendar.shared.resources.Res
-import com.shalom.calendar.shared.resources.onboarding_holidays_description
-import com.shalom.calendar.shared.resources.onboarding_holidays_muslim
-import com.shalom.calendar.shared.resources.onboarding_holidays_muslim_desc
-import com.shalom.calendar.shared.resources.onboarding_holidays_orthodox
-import com.shalom.calendar.shared.resources.onboarding_holidays_orthodox_days
-import com.shalom.calendar.shared.resources.onboarding_holidays_orthodox_days_desc
-import com.shalom.calendar.shared.resources.onboarding_holidays_orthodox_desc
-import com.shalom.calendar.shared.resources.onboarding_holidays_public
-import com.shalom.calendar.shared.resources.onboarding_holidays_public_desc
-import com.shalom.calendar.shared.resources.onboarding_holidays_title
+import ethiopiancalendar.composeapp.generated.resources.Res
+import ethiopiancalendar.composeapp.generated.resources.onboarding_holidays_description
+import ethiopiancalendar.composeapp.generated.resources.onboarding_holidays_muslim
+import ethiopiancalendar.composeapp.generated.resources.onboarding_holidays_muslim_desc
+import ethiopiancalendar.composeapp.generated.resources.onboarding_holidays_orthodox
+import ethiopiancalendar.composeapp.generated.resources.onboarding_holidays_orthodox_days
+import ethiopiancalendar.composeapp.generated.resources.onboarding_holidays_orthodox_days_desc
+import ethiopiancalendar.composeapp.generated.resources.onboarding_holidays_orthodox_desc
+import ethiopiancalendar.composeapp.generated.resources.onboarding_holidays_public
+import ethiopiancalendar.composeapp.generated.resources.onboarding_holidays_public_desc
+import ethiopiancalendar.composeapp.generated.resources.onboarding_holidays_title
 import org.jetbrains.compose.resources.stringResource
 
 @Composable

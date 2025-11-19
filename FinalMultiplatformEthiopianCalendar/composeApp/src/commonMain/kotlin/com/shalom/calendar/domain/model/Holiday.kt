@@ -2,7 +2,9 @@ package com.shalom.calendar.domain.model
 
 import com.shalom.ethiopicchrono.EthiopicDate
 import com.shalom.ethiopicchrono.ChronoField
+import kotlinx.datetime.DateTimeUnit
 import kotlinx.datetime.LocalDate
+import kotlinx.datetime.plus
 
 /**
  * Represents a holiday in the Ethiopian calendar
@@ -49,7 +51,7 @@ data class HolidayOccurrence(
         } else {
             // Convert to Gregorian, add days, convert back to Ethiopic
             val gregorian = ethiopicDate.toLocalDate()
-            val adjustedGregorian = gregorian.plus(adjustment, kotlinx.datetime.DateTimeUnit.DAY)
+            val adjustedGregorian = gregorian.plus(adjustment, DateTimeUnit.DAY)
             EthiopicDate.from(adjustedGregorian)
         }
 

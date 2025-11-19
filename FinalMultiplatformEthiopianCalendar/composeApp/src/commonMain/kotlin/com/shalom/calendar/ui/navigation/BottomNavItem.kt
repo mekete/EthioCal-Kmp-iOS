@@ -8,12 +8,12 @@ import androidx.compose.material.icons.filled.ViewAgenda
 import androidx.compose.material.icons.filled.ViewDay
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.graphics.vector.ImageVector
-import com.shalom.calendar.shared.resources.Res
-import com.shalom.calendar.shared.resources.nav_convert
-import com.shalom.calendar.shared.resources.nav_event
-import com.shalom.calendar.shared.resources.nav_holiday
-import com.shalom.calendar.shared.resources.nav_month
-import com.shalom.calendar.shared.resources.nav_more
+import ethiopiancalendar.composeapp.generated.resources.Res
+import ethiopiancalendar.composeapp.generated.resources.nav_convert
+import ethiopiancalendar.composeapp.generated.resources.nav_event
+import ethiopiancalendar.composeapp.generated.resources.nav_holiday
+import ethiopiancalendar.composeapp.generated.resources.nav_month
+import ethiopiancalendar.composeapp.generated.resources.nav_more
 import org.jetbrains.compose.resources.stringResource
 
 /**
