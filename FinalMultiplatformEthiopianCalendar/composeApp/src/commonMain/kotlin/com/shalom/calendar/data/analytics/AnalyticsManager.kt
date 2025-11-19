@@ -63,31 +63,33 @@ sealed class AnalyticsEvent(val name: String, val params: Map<String, Any> = emp
     // Onboarding events
     data object OnboardingStart : AnalyticsEvent("onboarding_start")
 
-    data class OnboardingPageView(val page: Int) :
-        AnalyticsEvent("onboarding_page_view", mapOf("page" to page))
+    data class OnboardingPageView(val pageNumber: Int, val pageName: String) :
+        AnalyticsEvent("onboarding_page_view", mapOf("page_number" to pageNumber, "page_name" to pageName))
 
     data class OnboardingLanguageSelected(val language: String) :
         AnalyticsEvent("onboarding_language_selected", mapOf("language" to language))
 
-    data class OnboardingThemeSelected(val theme: String) :
-        AnalyticsEvent("onboarding_theme_selected", mapOf("theme" to theme))
+    data class OnboardingThemeSelected(val theme: String, val mode: String) :
+        AnalyticsEvent("onboarding_theme_selected", mapOf("theme" to theme, "mode" to mode))
 
     data class OnboardingHolidaysConfigured(
-        val showOrthodox: Boolean,
-        val showMuslim: Boolean,
-        val showDayOff: Boolean
+        val publicEnabled: Boolean,
+        val orthodoxEnabled: Boolean,
+        val muslimEnabled: Boolean
     ) : AnalyticsEvent("onboarding_holidays_configured", mapOf(
-        "show_orthodox" to showOrthodox,
-        "show_muslim" to showMuslim,
-        "show_day_off" to showDayOff
+        "public_enabled" to publicEnabled,
+        "orthodox_enabled" to orthodoxEnabled,
+        "muslim_enabled" to muslimEnabled
     ))
 
-    data class OnboardingCalendarSelected(val calendarType: String) :
-        AnalyticsEvent("onboarding_calendar_selected", mapOf("calendar_type" to calendarType))
+    data class OnboardingCalendarSelected(val primaryCalendar: String, val dualEnabled: Boolean) :
+        AnalyticsEvent("onboarding_calendar_selected", mapOf("primary_calendar" to primaryCalendar, "dual_enabled" to dualEnabled))
 
-    data object OnboardingCompleted : AnalyticsEvent("onboarding_completed")
+    data class OnboardingCompleted(val duration: Long) :
+        AnalyticsEvent("onboarding_completed", mapOf("duration_ms" to duration))
 
-    data object OnboardingSkipped : AnalyticsEvent("onboarding_skipped")
+    data class OnboardingSkipped(val lastPage: Int) :
+        AnalyticsEvent("onboarding_skipped", mapOf("last_page" to lastPage))
 
     // Settings events
     data class SettingsCalendarPreferencesChanged(val changedField: String) :
