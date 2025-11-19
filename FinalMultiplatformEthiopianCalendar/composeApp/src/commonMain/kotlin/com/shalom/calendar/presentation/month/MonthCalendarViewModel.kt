@@ -399,7 +399,7 @@ class MonthCalendarViewModel(
 
         // Add days from previous month to fill first week
         val gregorianFirstDay = firstDayOfMonth.toLocalDate()
-        val firstDayWeekday = gregorianFirstDay.dayOfWeek.isoDayNumber
+        val firstDayWeekday = gregorianFirstDay.dayOfWeek.ordinal + 1
         val dayOffset = (firstDayWeekday - 1) % 7
 
         if (dayOffset > 0) {
@@ -465,7 +465,7 @@ class MonthCalendarViewModel(
         val dateList = mutableListOf<EthiopicDate>()
 
         // Add days from previous month to fill first week
-        val firstDayWeekday = firstDayOfMonthGreg.dayOfWeek.isoDayNumber
+        val firstDayWeekday = firstDayOfMonthGreg.dayOfWeek.ordinal + 1
         val dayOffset = (firstDayWeekday - 1) % 7
 
         if (dayOffset > 0) {

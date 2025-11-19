@@ -60,6 +60,10 @@ class EventRepository(
 
     // ========== MUTATION OPERATIONS ==========
 
+    suspend fun createEvent(event: EventEntity): Long {
+        return eventDao.insertEvent(event)
+    }
+
     suspend fun insertEvent(event: EventEntity): Long {
         return eventDao.insertEvent(event)
     }

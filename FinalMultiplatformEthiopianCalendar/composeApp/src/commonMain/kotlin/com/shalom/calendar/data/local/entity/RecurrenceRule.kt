@@ -1,5 +1,8 @@
 package com.shalom.calendar.data.local.entity
 
+import kotlinx.datetime.atStartOfDayIn
+import kotlinx.datetime.toLocalDateTime
+
 /**
  * Represents a recurrence rule for events.
  * Based on iCalendar RRULE specification.

@@ -272,11 +272,16 @@ fun EventScreen(
         AddEventDialog(
             onDismiss = { showAddEventDialog = false },
             onSave = { title, description, date, time ->
+                val year = date.get(ChronoField.YEAR_OF_ERA)
+                val month = date.get(ChronoField.MONTH_OF_YEAR)
+                val day = date.get(ChronoField.DAY_OF_MONTH)
                 viewModel.createEvent(
-                    title = title,
+                    summary = title,
                     description = description,
-                    ethiopicDate = date,
-                    reminderTime = time
+                    startTime = time,
+                    ethiopianYear = year,
+                    ethiopianMonth = month,
+                    ethiopianDay = day
                 )
                 showAddEventDialog = false
             }
@@ -316,11 +321,6 @@ fun EventCard(
                 Spacer(modifier = Modifier.height(4.dp))
 
                 // Format Ethiopian date
-                val ethiopicDate = EthiopicDate.of(
-                    event.ethiopianYear,
-                    event.ethiopianMonth,
-                    event.ethiopianDay
-                )
                 val monthName = monthNames.getOrElse(event.ethiopianMonth - 1) { "" }
                 Text(
                     text = "$monthName ${event.ethiopianDay}, ${event.ethiopianYear}",

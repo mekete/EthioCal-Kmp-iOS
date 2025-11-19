@@ -2,11 +2,11 @@ package com.shalom.ethiopiancalendar
 
 import androidx.compose.ui.window.ComposeUIViewController
 import com.shalom.calendar.di.initKoin
-import org.koin.core.context.GlobalContext
+import org.koin.mp.KoinPlatformTools
 
 fun MainViewController() = ComposeUIViewController {
     // Initialize Koin if not already initialized
-    if (GlobalContext.getOrNull() == null) {
+    if (KoinPlatformTools.defaultContext().getOrNull() == null) {
         initKoin()
     }
     App()

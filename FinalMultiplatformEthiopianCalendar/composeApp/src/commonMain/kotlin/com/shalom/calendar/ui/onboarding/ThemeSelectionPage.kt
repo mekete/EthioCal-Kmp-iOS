@@ -14,7 +14,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
-import com.shalom.calendar.data.preferences.ThemeMode
+import com.shalom.calendar.ui.theme.ThemeMode
 import ethiopiancalendar.composeapp.generated.resources.Res
 import ethiopiancalendar.composeapp.generated.resources.onboarding_theme_dark
 import ethiopiancalendar.composeapp.generated.resources.onboarding_theme_dark_desc
