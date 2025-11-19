@@ -116,19 +116,51 @@
     <string name="theme_dark">Dark</string>
     <string name="theme_system">System Default</string>
 
+    <!-- Bottom Navigation -->
+    <string name="nav_month">Month</string>
+    <string name="nav_event">Events</string>
+    <string name="nav_holiday">Holidays</string>
+    <string name="nav_convert">Convert</string>
+    <string name="nav_more">More</string>
+
     <!-- Onboarding -->
     <string name="onboarding_welcome_title">Welcome to Ethiopian Calendar</string>
     <string name="onboarding_welcome_message">Your complete Ethiopian calendar companion</string>
+    <string name="onboarding_welcome_subtitle">Your complete Ethiopian calendar companion</string>
     <string name="onboarding_language_title">Select Language</string>
+    <string name="onboarding_language_description">Choose your preferred language for the app</string>
     <string name="onboarding_theme_title">Choose Theme</string>
+    <string name="onboarding_theme_description">Select your preferred appearance</string>
+    <string name="onboarding_theme_light">Light</string>
+    <string name="onboarding_theme_light_desc">Bright and clear appearance</string>
+    <string name="onboarding_theme_dark">Dark</string>
+    <string name="onboarding_theme_dark_desc">Easy on the eyes in low light</string>
+    <string name="onboarding_theme_system">System Default</string>
+    <string name="onboarding_theme_system_desc">Follow your device settings</string>
     <string name="onboarding_holidays_title">Holiday Preferences</string>
+    <string name="onboarding_holidays_description">Choose which holidays to display</string>
+    <string name="onboarding_holidays_public">Public Holidays</string>
+    <string name="onboarding_holidays_public_desc">National days off and celebrations</string>
+    <string name="onboarding_holidays_orthodox">Orthodox Holidays</string>
+    <string name="onboarding_holidays_orthodox_desc">Ethiopian Orthodox Christian holidays</string>
+    <string name="onboarding_holidays_muslim">Muslim Holidays</string>
+    <string name="onboarding_holidays_muslim_desc">Islamic religious holidays</string>
+    <string name="onboarding_holidays_orthodox_days">Orthodox Day Names</string>
+    <string name="onboarding_holidays_orthodox_days_desc">Show traditional Orthodox names for each day</string>
     <string name="onboarding_calendar_title">Calendar Display</string>
+    <string name="onboarding_calendar_description">Configure your calendar preferences</string>
+    <string name="onboarding_calendar_dual_display">Dual Calendar Display</string>
+    <string name="onboarding_calendar_dual_display_desc">Show both Ethiopian and Gregorian dates</string>
     <string name="onboarding_done_title">All Set!</string>
     <string name="onboarding_skip">Skip</string>
     <string name="onboarding_next">Next</string>
     <string name="onboarding_previous">Previous</string>
     <string name="onboarding_done">Done</string>
     <string name="onboarding_get_started">Get Started</string>
+    <string name="onboarding_feature_dual_calendar">Dual Calendar Support</string>
+    <string name="onboarding_feature_holidays">Ethiopian Holidays</string>
+    <string name="onboarding_feature_reminders">Event Reminders</string>
+    <string name="onboarding_feature_multilingual">Multilingual Support</string>
 
     <!-- Errors -->
     <string name="error_generic">Something went wrong</string>

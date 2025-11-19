@@ -144,7 +144,10 @@ fun formatEthiopicDate(date: EthiopicDate, monthNames: List<String>, weekdayName
 
     // Get day of week from the Gregorian equivalent
     val gregorianDate = date.toLocalDate()
-    val dayOfWeekIndex = (gregorianDate.dayOfWeek.isoDayNumber - 1) % 7 // Convert to 0-6 (Mon=0, Sun=6)
+    // weekdayNamesShort is [Sun, Mon, Tue, Wed, Thu, Fri, Sat] - 0=Sunday
+    // isoDayNumber: Monday=1, ..., Sunday=7
+    // Convert to 0=Sunday, 1=Monday, ..., 6=Saturday
+    val dayOfWeekIndex = gregorianDate.dayOfWeek.isoDayNumber % 7 // Sun=0, Mon=1, ..., Sat=6
     val dayOfWeekName = weekdayNamesShort.getOrElse(dayOfWeekIndex) { "" }
 
     return "$dayOfWeekName, $monthName $day, $year"

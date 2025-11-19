@@ -169,6 +169,7 @@ fun ThemeColorOption(
         AppTheme.GREEN -> green_light_primary
         AppTheme.PURPLE -> purple_light_primary
         AppTheme.ORANGE -> orange_light_primary
+        else -> blue_light_primary
     }
 
     val secondaryColor = when (theme) {
@@ -177,6 +178,7 @@ fun ThemeColorOption(
         AppTheme.GREEN -> green_light_secondary
         AppTheme.PURPLE -> purple_light_secondary
         AppTheme.ORANGE -> orange_light_secondary
+        else -> blue_light_secondary
     }
 
     Card(

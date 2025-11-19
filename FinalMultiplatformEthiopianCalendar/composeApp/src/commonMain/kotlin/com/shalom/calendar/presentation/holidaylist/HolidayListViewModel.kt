@@ -77,7 +77,7 @@ class CalendarItemListViewModel(
                     )
                 }
                 .collect { calendarItems ->
-                    allCalendarItems = calendarItems.sortedWith(compareBy { it.holiday })
+                    allCalendarItems = calendarItems.sortedWith(compareBy { it.actualEthiopicDate })
 
                     // Get current settings values to apply initial filter
                     val showAllDayOffHolidays = settingsPreferences.includeAllDayOffHolidays
