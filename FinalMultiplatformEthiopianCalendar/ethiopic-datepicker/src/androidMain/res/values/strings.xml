@@ -7,6 +7,10 @@
     <string name="mtrl_picker_date_header_title">Selected Date</string>
     <string name="mtrl_picker_range_header_title">Date Range</string>
 
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="pmtrl_picker_confirm">OK</string>
+    <string name="pmtrl_picker_cancel">Cancel</string>
     <!-- Ethiopic Date Picker strings -->
     <string name="ethiopic_picker_title">Select Ethiopian Date</string>
 
