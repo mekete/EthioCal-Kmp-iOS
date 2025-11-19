@@ -57,9 +57,11 @@ actual class EthiopicChronology private constructor() : AbstractChronology(), Se
 
     private fun readResolve(): Any = INSTANCE
 
+    @get:JvmName("getIdProperty")
     actual val id: String
         get() = getId()
 
+    @get:JvmName("getCalendarTypeProperty")
     actual val calendarType: String
         get() = getCalendarType()
 

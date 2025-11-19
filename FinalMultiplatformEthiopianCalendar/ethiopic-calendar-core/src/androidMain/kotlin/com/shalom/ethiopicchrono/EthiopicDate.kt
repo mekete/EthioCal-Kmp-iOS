@@ -125,12 +125,15 @@ actual class EthiopicDate private constructor(
 
     private fun readResolve(): Any = create(prolepticYear, month.toInt(), day.toInt())
 
+    @get:JvmName("getChronologyProperty")
     actual val chronology: EthiopicChronology
         get() = getChronology()
 
+    @get:JvmName("getEraProperty")
     actual val era: EthiopicEra
         get() = getEra()
 
+    @get:JvmName("isLeapYearProperty")
     actual val isLeapYear: Boolean
         get() = EthiopicChronology.INSTANCE.isLeapYear(prolepticYear.toLong())
 
