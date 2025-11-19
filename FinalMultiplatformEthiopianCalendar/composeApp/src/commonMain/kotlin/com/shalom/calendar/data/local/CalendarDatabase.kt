@@ -1,7 +1,9 @@
 package com.shalom.calendar.data.local
 
+import androidx.room.ConstructedBy
 import androidx.room.Database
 import androidx.room.RoomDatabase
+import androidx.room.RoomDatabaseConstructor
 import androidx.room.TypeConverters
 import com.shalom.calendar.data.local.converter.DateConverter
 import com.shalom.calendar.data.local.dao.EventDao
@@ -21,6 +23,7 @@ import com.shalom.calendar.data.local.entity.EventEntity
     exportSchema = true
 )
 @TypeConverters(DateConverter::class)
+@ConstructedBy(CalendarDatabaseConstructor::class)
 abstract class CalendarDatabase : RoomDatabase() {
 
     abstract fun eventDao(): EventDao
@@ -28,4 +31,10 @@ abstract class CalendarDatabase : RoomDatabase() {
     companion object {
         const val DATABASE_NAME = "calendar_database"
     }
+}
+
+// The Room compiler generates the actual implementations
+@Suppress("NO_ACTUAL_FOR_EXPECT")
+expect object CalendarDatabaseConstructor : RoomDatabaseConstructor<CalendarDatabase> {
+    override fun initialize(): CalendarDatabase
 }
