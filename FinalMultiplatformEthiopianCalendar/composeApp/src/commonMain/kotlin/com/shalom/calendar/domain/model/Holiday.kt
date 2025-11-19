@@ -48,7 +48,7 @@ data class HolidayOccurrence(
             ethiopicDate
         } else {
             // Convert to Gregorian, add days, convert back to Ethiopic
-            val gregorian = LocalDate.from(ethiopicDate)
+            val gregorian = ethiopicDate.toLocalDate()
             val adjustedGregorian = gregorian.plus(adjustment, kotlinx.datetime.DateTimeUnit.DAY)
             EthiopicDate.from(adjustedGregorian)
         }
@@ -56,7 +56,7 @@ data class HolidayOccurrence(
     /**
      * Get the Gregorian date for this holiday occurrence
      */
-    fun toGregorian(): LocalDate = LocalDate.from(actualEthiopicDate)
+    fun toGregorian(): LocalDate = actualEthiopicDate.toLocalDate()
 
     /**
      * Get Ethiopian month number (1-13)
