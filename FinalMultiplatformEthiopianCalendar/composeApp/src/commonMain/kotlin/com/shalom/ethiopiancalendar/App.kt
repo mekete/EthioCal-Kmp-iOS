@@ -1,49 +1,26 @@
 package com.shalom.ethiopiancalendar
 
-import androidx.compose.animation.AnimatedVisibility
-import androidx.compose.foundation.Image
-import androidx.compose.foundation.background
-import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.fillMaxWidth
-import androidx.compose.foundation.layout.safeContentPadding
-import androidx.compose.material3.Button
-import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.Text
-import androidx.compose.runtime.*
-import androidx.compose.ui.Alignment
-import androidx.compose.ui.Modifier
-import org.jetbrains.compose.resources.painterResource
+import androidx.compose.runtime.Composable
+import com.shalom.calendar.data.preferences.SettingsPreferences
+import com.shalom.calendar.util.AppInfo
+import com.shalom.calendar.util.ShareManager
+import com.shalom.calendar.util.UrlLauncher
 import org.jetbrains.compose.ui.tooling.preview.Preview
-
-import ethiopiancalendar.composeapp.generated.resources.Res
-import ethiopiancalendar.composeapp.generated.resources.compose_multiplatform
+import org.koin.compose.koinInject
+import com.shalom.calendar.ui.App as CalendarApp
 
 @Composable
 @Preview
 fun App() {
-    MaterialTheme {
-        var showContent by remember { mutableStateOf(false) }
-        Column(
-            modifier = Modifier
-                .background(MaterialTheme.colorScheme.primaryContainer)
-                .safeContentPadding()
-                .fillMaxSize(),
-            horizontalAlignment = Alignment.CenterHorizontally,
-        ) {
-            Button(onClick = { showContent = !showContent }) {
-                Text("Click me!")
-            }
-            AnimatedVisibility(showContent) {
-                val greeting = remember { Greeting().greet() }
-                Column(
-                    modifier = Modifier.fillMaxWidth(),
-                    horizontalAlignment = Alignment.CenterHorizontally,
-                ) {
-                    Image(painterResource(Res.drawable.compose_multiplatform), null)
-                    Text("Compose: $greeting")
-                }
-            }
-        }
-    }
+    val settingsPreferences: SettingsPreferences = koinInject()
+    val urlLauncher: UrlLauncher = koinInject()
+    val shareManager: ShareManager = koinInject()
+    val appInfo: AppInfo = koinInject()
+
+    CalendarApp(
+        settingsPreferences = settingsPreferences,
+        urlLauncher = urlLauncher,
+        shareManager = shareManager,
+        appInfo = appInfo
+    )
 }
