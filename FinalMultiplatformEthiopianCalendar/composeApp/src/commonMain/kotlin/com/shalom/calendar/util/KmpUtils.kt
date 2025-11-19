@@ -1,5 +1,6 @@
 package com.shalom.calendar.util
 
+import com.shalom.ethiopicchrono.EthiopicDate
 import kotlinx.datetime.Clock
 import kotlinx.datetime.LocalDate
 import kotlinx.datetime.TimeZone
@@ -49,3 +50,17 @@ fun LocalDate.lengthOfMonth(): Int {
  * Create a LocalDate with a specific day of month.
  */
 fun LocalDate.withDayOfMonth(day: Int): LocalDate = LocalDate(year, month, day)
+
+/**
+ * EthiopicDate comparison operators using epoch day comparison.
+ */
+operator fun EthiopicDate.compareTo(other: EthiopicDate): Int {
+    return this.toEpochDay().compareTo(other.toEpochDay())
+}
+
+/**
+ * Check if this EthiopicDate is greater than or equal to another.
+ */
+operator fun EthiopicDate.compareTo(other: LocalDate): Int {
+    return this.toLocalDate().toEpochDays().compareTo(other.toEpochDays())
+}

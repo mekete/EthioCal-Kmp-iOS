@@ -15,13 +15,13 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import com.shalom.calendar.data.preferences.CalendarType
-import com.shalom.calendar.shared.resources.Res
-import com.shalom.calendar.shared.resources.onboarding_calendar_description
-import com.shalom.calendar.shared.resources.onboarding_calendar_dual_display
-import com.shalom.calendar.shared.resources.onboarding_calendar_dual_display_desc
-import com.shalom.calendar.shared.resources.onboarding_calendar_title
-import com.shalom.calendar.shared.resources.settings_calendar_ethiopian
-import com.shalom.calendar.shared.resources.settings_calendar_gregorian
+import ethiopiancalendar.composeapp.generated.resources.Res
+import ethiopiancalendar.composeapp.generated.resources.onboarding_calendar_description
+import ethiopiancalendar.composeapp.generated.resources.onboarding_calendar_dual_display
+import ethiopiancalendar.composeapp.generated.resources.onboarding_calendar_dual_display_desc
+import ethiopiancalendar.composeapp.generated.resources.onboarding_calendar_title
+import ethiopiancalendar.composeapp.generated.resources.settings_calendar_ethiopian
+import ethiopiancalendar.composeapp.generated.resources.settings_calendar_gregorian
 import org.jetbrains.compose.resources.stringResource
 
 @Composable

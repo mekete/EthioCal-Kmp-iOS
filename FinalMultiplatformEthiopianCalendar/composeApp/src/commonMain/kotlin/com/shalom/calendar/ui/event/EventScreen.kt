@@ -51,17 +51,17 @@ import androidx.compose.ui.unit.dp
 import com.shalom.calendar.data.local.entity.EventInstance
 import com.shalom.calendar.presentation.event.EventUiState
 import com.shalom.calendar.presentation.event.EventViewModel
-import com.shalom.calendar.shared.resources.Res
-import com.shalom.calendar.shared.resources.button_cancel
-import com.shalom.calendar.shared.resources.button_delete
-import com.shalom.calendar.shared.resources.cd_add_event
-import com.shalom.calendar.shared.resources.cd_delete_event
-import com.shalom.calendar.shared.resources.delete_event_confirm_message
-import com.shalom.calendar.shared.resources.delete_event_confirm_title
-import com.shalom.calendar.shared.resources.empty_no_events
-import com.shalom.calendar.shared.resources.ethiopian_months
-import com.shalom.calendar.shared.resources.screen_title_events
-import com.shalom.calendar.shared.resources.weekday_names_short
+import ethiopiancalendar.composeapp.generated.resources.Res
+import ethiopiancalendar.composeapp.generated.resources.button_cancel
+import ethiopiancalendar.composeapp.generated.resources.button_delete
+import ethiopiancalendar.composeapp.generated.resources.cd_add_event
+import ethiopiancalendar.composeapp.generated.resources.cd_delete_event
+import ethiopiancalendar.composeapp.generated.resources.delete_event_confirm_message
+import ethiopiancalendar.composeapp.generated.resources.delete_event_confirm_title
+import ethiopiancalendar.composeapp.generated.resources.empty_no_events
+import ethiopiancalendar.composeapp.generated.resources.ethiopian_months
+import ethiopiancalendar.composeapp.generated.resources.screen_title_events
+import ethiopiancalendar.composeapp.generated.resources.weekday_names_short
 import com.shalom.calendar.ui.components.EthiopicDatePickerDialog
 import com.shalom.ethiopicchrono.ChronoField
 import com.shalom.ethiopicchrono.EthiopicDate
@@ -100,8 +100,9 @@ fun EventScreen(
                     val month = parts[1].toInt()
                     val day = parts[2].toInt()
                     val ethiopicDate = EthiopicDate.of(year, month, day)
-                    viewModel.setFilterStartDate(ethiopicDate)
-                    viewModel.setFilterEndDate(ethiopicDate)
+                    val localDate = ethiopicDate.toLocalDate()
+                    viewModel.setFilterStartDate(localDate)
+                    viewModel.setFilterEndDate(localDate)
                 }
             } catch (e: Exception) {
                 // Ignore parsing errors

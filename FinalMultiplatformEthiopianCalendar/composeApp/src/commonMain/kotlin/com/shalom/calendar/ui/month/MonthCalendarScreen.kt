@@ -56,11 +56,11 @@ import com.shalom.calendar.data.preferences.CalendarType
 import com.shalom.calendar.domain.model.HolidayOccurrence
 import com.shalom.calendar.presentation.month.MonthCalendarViewModel
 import com.shalom.calendar.presentation.month.MonthPageData
-import com.shalom.calendar.shared.resources.Res
-import com.shalom.calendar.shared.resources.button_ok
-import com.shalom.calendar.shared.resources.cd_go_to_today
-import com.shalom.calendar.shared.resources.ethiopian_months
-import com.shalom.calendar.shared.resources.weekday_names_short
+import ethiopiancalendar.composeapp.generated.resources.Res
+import ethiopiancalendar.composeapp.generated.resources.button_ok
+import ethiopiancalendar.composeapp.generated.resources.cd_go_to_today
+import ethiopiancalendar.composeapp.generated.resources.ethiopian_months
+import ethiopiancalendar.composeapp.generated.resources.weekday_names_short
 import com.shalom.calendar.ui.components.MonthHeaderItem
 import com.shalom.calendar.ui.holidaylist.HolidayItem
 import com.shalom.calendar.util.today
