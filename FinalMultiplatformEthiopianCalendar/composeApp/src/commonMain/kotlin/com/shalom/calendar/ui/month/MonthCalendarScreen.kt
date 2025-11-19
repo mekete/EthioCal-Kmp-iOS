@@ -52,10 +52,12 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.shalom.calendar.data.local.entity.EventInstance
 import com.shalom.calendar.data.preferences.CalendarType
 import com.shalom.calendar.domain.model.HolidayOccurrence
+import com.shalom.calendar.presentation.month.MonthCalendarUiState
 import com.shalom.calendar.presentation.month.MonthCalendarViewModel
-import com.shalom.calendar.presentation.month.MonthPageData
+import com.shalom.calendar.util.today
 import ethiopiancalendar.composeapp.generated.resources.Res
 import ethiopiancalendar.composeapp.generated.resources.button_ok
 import ethiopiancalendar.composeapp.generated.resources.cd_go_to_today
@@ -63,12 +65,11 @@ import ethiopiancalendar.composeapp.generated.resources.ethiopian_months
 import ethiopiancalendar.composeapp.generated.resources.weekday_names_short
 import com.shalom.calendar.ui.components.MonthHeaderItem
 import com.shalom.calendar.ui.holidaylist.HolidayItem
-import com.shalom.calendar.util.today
 import com.shalom.ethiopicchrono.ChronoField
 import com.shalom.ethiopicchrono.EthiopicDate
+import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.launch
 import kotlinx.datetime.LocalDate
-import kotlinx.datetime.Month
 import org.jetbrains.compose.resources.stringArrayResource
 import org.jetbrains.compose.resources.stringResource
 import org.koin.compose.viewmodel.koinViewModel
@@ -196,15 +197,14 @@ fun MonthCalendarScreen(
                 state = pagerState,
                 modifier = Modifier.weight(1f)
             ) { page ->
-                val pageData = viewModel.loadMonthDataForPage(page)
                 CalendarMonthPage(
-                    pageData = pageData,
+                    pageDataFlow = viewModel.loadMonthDataForPage(page),
                     primaryCalendar = primaryCalendar,
                     displayDualCalendar = displayDualCalendar,
                     monthNames = monthNames,
                     weekdayNamesShort = weekdayNamesShort,
-                    onDayClick = { date ->
-                        viewModel.showDateDetailsDialog(date)
+                    onDayClick = { date, hasEvents ->
+                        viewModel.showDateDetailsDialog(date, hasEvents)
                     }
                 )
             }
@@ -231,85 +231,147 @@ fun MonthCalendarScreen(
 
 @Composable
 fun CalendarMonthPage(
-    pageData: MonthPageData,
+    pageDataFlow: Flow<MonthCalendarUiState>,
     primaryCalendar: CalendarType,
     displayDualCalendar: Boolean,
     monthNames: List<String>,
     weekdayNamesShort: List<String>,
-    onDayClick: (EthiopicDate) -> Unit
+    onDayClick: (EthiopicDate, Boolean) -> Unit
 ) {
+    val uiState by pageDataFlow.collectAsState(initial = MonthCalendarUiState.Loading)
+
+    when (val state = uiState) {
+        is MonthCalendarUiState.Loading -> {
+            Box(
+                modifier = Modifier.fillMaxSize(),
+                contentAlignment = Alignment.Center
+            ) {
+                CircularProgressIndicator()
+            }
+        }
+        is MonthCalendarUiState.Error -> {
+            Box(
+                modifier = Modifier.fillMaxSize(),
+                contentAlignment = Alignment.Center
+            ) {
+                Text(
+                    text = state.message,
+                    color = MaterialTheme.colorScheme.error
+                )
+            }
+        }
+        is MonthCalendarUiState.Success -> {
+            CalendarMonthContent(
+                state = state,
+                primaryCalendar = primaryCalendar,
+                displayDualCalendar = displayDualCalendar,
+                monthNames = monthNames,
+                weekdayNamesShort = weekdayNamesShort,
+                onDayClick = onDayClick
+            )
+        }
+    }
+}
+
+@Composable
+private fun CalendarMonthContent(
+    state: MonthCalendarUiState.Success,
+    primaryCalendar: CalendarType,
+    displayDualCalendar: Boolean,
+    monthNames: List<String>,
+    weekdayNamesShort: List<String>,
+    onDayClick: (EthiopicDate, Boolean) -> Unit
+) {
+    val todayEthiopic = remember { EthiopicDate.now() }
+    val todayGregorian = remember { today() }
+
     Column(
         modifier = Modifier
             .fillMaxSize()
             .padding(horizontal = 16.dp)
     ) {
-        // Calendar grid
-        val grid = if (primaryCalendar == CalendarType.ETHIOPIAN) {
-            pageData.ethiopianGrid
-        } else {
-            pageData.gregorianGrid
-        }
-
-        grid.chunked(7).forEach { week ->
+        // Calendar grid using dateList from state
+        state.dateList.chunked(7).forEach { week ->
             Row(modifier = Modifier.fillMaxWidth()) {
-                week.forEach { dayData ->
+                week.forEach { ethiopicDate ->
+                    val gregorianDate = ethiopicDate.toLocalDate()
+                    val isToday = ethiopicDate.toLocalDate() == todayGregorian
+
+                    // Check if date has holidays
+                    val dateHolidays = state.calendarItems.filter { holiday ->
+                        holiday.actualEthiopicDate.get(ChronoField.YEAR_OF_ERA) == ethiopicDate.get(ChronoField.YEAR_OF_ERA) &&
+                        holiday.actualEthiopicDate.get(ChronoField.MONTH_OF_YEAR) == ethiopicDate.get(ChronoField.MONTH_OF_YEAR) &&
+                        holiday.actualEthiopicDate.get(ChronoField.DAY_OF_MONTH) == ethiopicDate.get(ChronoField.DAY_OF_MONTH)
+                    }
+
+                    // Check if date has events
+                    val hasEvents = state.events.any { event ->
+                        event.ethiopianYear == ethiopicDate.get(ChronoField.YEAR_OF_ERA) &&
+                        event.ethiopianMonth == ethiopicDate.get(ChronoField.MONTH_OF_YEAR) &&
+                        event.ethiopianDay == ethiopicDate.get(ChronoField.DAY_OF_MONTH)
+                    }
+
+                    // Determine primary and secondary day numbers
+                    val primaryDay = if (primaryCalendar == CalendarType.ETHIOPIAN) {
+                        ethiopicDate.get(ChronoField.DAY_OF_MONTH)
+                    } else {
+                        gregorianDate.dayOfMonth
+                    }
+
+                    val secondaryDay = if (primaryCalendar == CalendarType.ETHIOPIAN) {
+                        gregorianDate.dayOfMonth
+                    } else {
+                        ethiopicDate.get(ChronoField.DAY_OF_MONTH)
+                    }
+
                     Box(
                         modifier = Modifier
                             .weight(1f)
                             .aspectRatio(1f)
                             .padding(2.dp)
                             .clip(RoundedCornerShape(8.dp))
-                            .then(
-                                if (dayData != null) {
-                                    Modifier
-                                        .clickable { onDayClick(dayData.ethiopicDate) }
-                                        .background(
-                                            when {
-                                                dayData.isToday -> MaterialTheme.colorScheme.primary
-                                                dayData.holidays.isNotEmpty() -> MaterialTheme.colorScheme.primaryContainer
-                                                else -> Color.Transparent
-                                            }
-                                        )
-                                } else {
-                                    Modifier
+                            .clickable { onDayClick(ethiopicDate, hasEvents) }
+                            .background(
+                                when {
+                                    isToday -> MaterialTheme.colorScheme.primary
+                                    dateHolidays.isNotEmpty() -> MaterialTheme.colorScheme.primaryContainer
+                                    else -> Color.Transparent
                                 }
                             ),
                         contentAlignment = Alignment.Center
                     ) {
-                        if (dayData != null) {
-                            Column(
-                                horizontalAlignment = Alignment.CenterHorizontally
-                            ) {
+                        Column(
+                            horizontalAlignment = Alignment.CenterHorizontally
+                        ) {
+                            Text(
+                                text = primaryDay.toString(),
+                                style = MaterialTheme.typography.bodyMedium,
+                                fontWeight = if (isToday) FontWeight.Bold else FontWeight.Normal,
+                                color = when {
+                                    isToday -> MaterialTheme.colorScheme.onPrimary
+                                    dateHolidays.isNotEmpty() -> MaterialTheme.colorScheme.onPrimaryContainer
+                                    else -> MaterialTheme.colorScheme.onSurface
+                                }
+                            )
+                            if (displayDualCalendar) {
                                 Text(
-                                    text = dayData.primaryDay.toString(),
-                                    style = MaterialTheme.typography.bodyMedium,
-                                    fontWeight = if (dayData.isToday) FontWeight.Bold else FontWeight.Normal,
+                                    text = secondaryDay.toString(),
+                                    style = MaterialTheme.typography.labelSmall,
+                                    fontSize = 8.sp,
                                     color = when {
-                                        dayData.isToday -> MaterialTheme.colorScheme.onPrimary
-                                        dayData.holidays.isNotEmpty() -> MaterialTheme.colorScheme.onPrimaryContainer
-                                        else -> MaterialTheme.colorScheme.onSurface
+                                        isToday -> MaterialTheme.colorScheme.onPrimary.copy(alpha = 0.7f)
+                                        else -> MaterialTheme.colorScheme.onSurfaceVariant
                                     }
                                 )
-                                if (displayDualCalendar) {
-                                    Text(
-                                        text = dayData.secondaryDay.toString(),
-                                        style = MaterialTheme.typography.labelSmall,
-                                        fontSize = 8.sp,
-                                        color = when {
-                                            dayData.isToday -> MaterialTheme.colorScheme.onPrimary.copy(alpha = 0.7f)
-                                            else -> MaterialTheme.colorScheme.onSurfaceVariant
-                                        }
-                                    )
-                                }
-                                // Event indicator
-                                if (dayData.hasEvents) {
-                                    Box(
-                                        modifier = Modifier
-                                            .size(4.dp)
-                                            .clip(CircleShape)
-                                            .background(MaterialTheme.colorScheme.tertiary)
-                                    )
-                                }
+                            }
+                            // Event indicator
+                            if (hasEvents) {
+                                Box(
+                                    modifier = Modifier
+                                        .size(4.dp)
+                                        .clip(CircleShape)
+                                        .background(MaterialTheme.colorScheme.tertiary)
+                                )
                             }
                         }
                     }
@@ -319,8 +381,8 @@ fun CalendarMonthPage(
 
         Spacer(modifier = Modifier.height(8.dp))
 
-        // Holidays for current selection
-        if (pageData.holidays.isNotEmpty()) {
+        // Holidays for current month
+        if (state.calendarItems.isNotEmpty()) {
             Card(
                 modifier = Modifier.fillMaxWidth(),
                 colors = CardDefaults.cardColors(
@@ -331,7 +393,7 @@ fun CalendarMonthPage(
                     modifier = Modifier.padding(8.dp),
                     verticalArrangement = Arrangement.spacedBy(4.dp)
                 ) {
-                    items(pageData.holidays.take(3)) { holiday ->
+                    items(state.calendarItems.take(3)) { holiday ->
                         HolidayItem(
                             holiday = holiday,
                             monthNames = monthNames,

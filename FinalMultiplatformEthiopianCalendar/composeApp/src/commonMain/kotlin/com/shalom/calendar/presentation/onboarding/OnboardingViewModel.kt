@@ -10,6 +10,7 @@ import com.shalom.calendar.data.preferences.SettingsPreferences
 import com.shalom.calendar.data.preferences.ThemePreferences
 import com.shalom.calendar.ui.theme.ThemeMode
 import kotlinx.coroutines.flow.MutableStateFlow
+import kotlinx.datetime.Clock
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.launch
@@ -28,7 +29,7 @@ data class OnboardingState(
     val showOrthodoxDayNames: Boolean = false,
     val displayDualCalendar: Boolean = false,
     val isCompleted: Boolean = false,
-    val onboardingStartTime: Long = System.currentTimeMillis()
+    val onboardingStartTime: Long = Clock.System.now().toEpochMilliseconds()
 )
 
 const val TOTAL_ONBOARDING_PAGES = 5
@@ -196,7 +197,7 @@ class OnboardingViewModel(
      */
     fun completeOnboarding() {
         // Calculate duration
-        val duration = System.currentTimeMillis() - _state.value.onboardingStartTime
+        val duration = Clock.System.now().toEpochMilliseconds() - _state.value.onboardingStartTime
 
         // Track completion
         analyticsManager.logEvent(

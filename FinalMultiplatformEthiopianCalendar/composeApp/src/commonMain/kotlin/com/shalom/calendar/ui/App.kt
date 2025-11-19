@@ -88,8 +88,10 @@ fun App(
                             selected = baseRoute == item.route,
                             onClick = {
                                 navController.navigate(item.route) {
-                                    popUpTo(navController.graph.startDestinationId) {
-                                        saveState = true
+                                    navController.graph.startDestinationRoute?.let { startRoute ->
+                                        popUpTo(startRoute) {
+                                            saveState = true
+                                        }
                                     }
                                     launchSingleTop = true
                                     restoreState = true

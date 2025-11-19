@@ -142,6 +142,7 @@
     <string name="cd_close_dialog">Close dialog</string>
     <string name="cd_select_date">Select date</string>
     <string name="cd_today">Go to today</string>
+    <string name="cd_go_to_today">Go to today</string>
     <string name="cd_add_event">Add event</string>
     <string name="cd_delete_event">Delete event</string>
     <string name="cd_holiday_info">Holiday information</string>
