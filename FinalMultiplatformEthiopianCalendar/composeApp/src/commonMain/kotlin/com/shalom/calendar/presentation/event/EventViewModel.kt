@@ -11,6 +11,14 @@ import com.shalom.calendar.data.local.entity.toRRuleString
 import com.shalom.calendar.data.preferences.CalendarType
 import com.shalom.calendar.data.preferences.SettingsPreferences
 import com.shalom.calendar.data.repository.EventRepository
+import com.shalom.calendar.util.randomUUID
+import com.shalom.calendar.util.today
+import com.shalom.calendar.util.firstDayOfMonth
+import com.shalom.calendar.util.lastDayOfMonth
+import com.shalom.calendar.util.lengthOfMonth
+import com.shalom.calendar.util.withDayOfMonth
+import com.shalom.ethiopicchrono.ChronoField
+import com.shalom.ethiopicchrono.ChronoUnit
 import com.shalom.ethiopicchrono.EthiopicDate
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
@@ -18,11 +26,12 @@ import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.catch
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.launch
-import java.time.LocalDate
-import java.time.LocalTime
-import java.time.ZonedDateTime
-import java.time.temporal.TemporalAdjusters
-import java.util.UUID
+import kotlinx.datetime.Clock
+import kotlinx.datetime.Instant
+import kotlinx.datetime.LocalDate
+import kotlinx.datetime.TimeZone
+import kotlinx.datetime.atStartOfDayIn
+import kotlinx.datetime.toLocalDateTime
 
 /**
  * ViewModel for EventScreen.
@@ -106,34 +115,34 @@ class EventViewModel(
 
             when (calendarType) {
                 CalendarType.ETHIOPIAN -> {
-                    val today = EthiopicDate.now()
-                    val firstDay = today.with(TemporalAdjusters.firstDayOfMonth())
-                    val lastDay = today.with(TemporalAdjusters.lastDayOfMonth())
-                    val startDate = LocalDate.from(firstDay)
-                    val endDate = LocalDate.from(lastDay)
+                    val todayEthiopic = EthiopicDate.now()
+                    val year = todayEthiopic.get(ChronoField.YEAR)
+                    val month = todayEthiopic.get(ChronoField.MONTH_OF_YEAR)
+                    val firstDay = EthiopicDate.of(year, month, 1)
+                    val lastDay = EthiopicDate.of(year, month, firstDay.lengthOfMonth())
+                    val startDate = firstDay.toLocalDate()
+                    val endDate = lastDay.toLocalDate()
                     Pair(startDate, endDate)
                 }
 
                 CalendarType.GREGORIAN -> {
-                    val today = LocalDate.now()
-                    val lengthOfMonth = today.lengthOfMonth()
-                    val startDate = today.withDayOfMonth(1)
-                    val endDate = today.withDayOfMonth(lengthOfMonth)
+                    val todayDate = today()
+                    val startDate = todayDate.firstDayOfMonth()
+                    val endDate = todayDate.lastDayOfMonth()
                     Pair(startDate, endDate)
                 }
 
-                CalendarType.HIRJI -> {
-                    val today = LocalDate.now()
-                    val lengthOfMonth = today.lengthOfMonth()
-                    val startDate = today.withDayOfMonth(1)
-                    val endDate = today.withDayOfMonth(lengthOfMonth)
+                else -> {
+                    // HIJRI or other - use Gregorian as fallback
+                    val todayDate = today()
+                    val startDate = todayDate.firstDayOfMonth()
+                    val endDate = todayDate.lastDayOfMonth()
                     Pair(startDate, endDate)
                 }
             }
         } catch (e: Exception) {
-            val today = LocalDate.now()
-            val lengthOfMonth = today.lengthOfMonth()
-            Pair(today.withDayOfMonth(1), today.withDayOfMonth(lengthOfMonth))
+            val todayDate = today()
+            Pair(todayDate.firstDayOfMonth(), todayDate.lastDayOfMonth())
         }
     }
 
@@ -204,37 +213,39 @@ class EventViewModel(
     fun createEvent(
         summary: String,
         description: String? = null,
-        startTime: ZonedDateTime,
-        endTime: ZonedDateTime? = null,
+        startTime: Instant,
+        endTime: Instant? = null,
         isAllDay: Boolean = false,
         recurrenceRule: RecurrenceRule? = null,
         reminderMinutesBefore: Int? = null,
         category: String = "PERSONAL",
+        timeZoneId: String = "Africa/Addis_Ababa",
         ethiopianYear: Int,
         ethiopianMonth: Int,
         ethiopianDay: Int
     ) {
         viewModelScope.launch {
             try {
+                val now = Clock.System.now().toEpochMilliseconds()
                 val event = EventEntity(
-                    id = UUID.randomUUID().toString(),
+                    id = randomUUID(),
                     summary = summary.trim(),
                     description = description?.trim(),
                     startTime = startTime,
                     endTime = endTime,
                     isAllDay = isAllDay,
-                    timeZone = startTime.zone.id,
+                    timeZone = timeZoneId,
                     recurrenceRule = recurrenceRule?.toRRuleString(),
                     recurrenceEndDate = recurrenceRule?.endDate?.let {
-                        ZonedDateTime.ofInstant(java.time.Instant.ofEpochMilli(it), startTime.zone)
+                        Instant.fromEpochMilliseconds(it)
                     },
                     reminderMinutesBefore = reminderMinutesBefore,
                     category = category,
                     ethiopianYear = ethiopianYear,
                     ethiopianMonth = ethiopianMonth,
                     ethiopianDay = ethiopianDay,
-                    createdAt = System.currentTimeMillis(),
-                    updatedAt = System.currentTimeMillis()
+                    createdAt = now,
+                    updatedAt = now
                 )
 
                 // Create event in database
@@ -306,12 +317,13 @@ class EventViewModel(
         eventId: String,
         summary: String,
         description: String? = null,
-        startTime: ZonedDateTime,
-        endTime: ZonedDateTime? = null,
+        startTime: Instant,
+        endTime: Instant? = null,
         isAllDay: Boolean = false,
         recurrenceRule: RecurrenceRule? = null,
         reminderMinutesBefore: Int? = null,
         category: String = "PERSONAL",
+        timeZoneId: String = "Africa/Addis_Ababa",
         ethiopianYear: Int,
         ethiopianMonth: Int,
         ethiopianDay: Int
@@ -346,10 +358,10 @@ class EventViewModel(
                     startTime = startTime,
                     endTime = endTime,
                     isAllDay = isAllDay,
-                    timeZone = startTime.zone.id,
+                    timeZone = timeZoneId,
                     recurrenceRule = recurrenceRule?.toRRuleString(),
                     recurrenceEndDate = recurrenceRule?.endDate?.let {
-                        ZonedDateTime.ofInstant(java.time.Instant.ofEpochMilli(it), startTime.zone)
+                        Instant.fromEpochMilliseconds(it)
                     },
                     reminderMinutesBefore = reminderMinutesBefore,
                     category = category,
@@ -357,7 +369,7 @@ class EventViewModel(
                     ethiopianMonth = ethiopianMonth,
                     ethiopianDay = ethiopianDay,
                     createdAt = existingEvent.createdAt,
-                    updatedAt = System.currentTimeMillis(),
+                    updatedAt = Clock.System.now().toEpochMilliseconds(),
                     googleCalendarEventId = existingEvent.googleCalendarEventId,
                     isSynced = false
                 )
@@ -444,8 +456,8 @@ class EventViewModel(
      * Clear all date filters by setting a wide date range (1900-2100).
      */
     fun clearDateFilters() {
-        val showAllStartDate = LocalDate.of(1900, 1, 1)
-        val showAllEndDate = LocalDate.of(2100, 12, 31)
+        val showAllStartDate = LocalDate(1900, 1, 1)
+        val showAllEndDate = LocalDate(2100, 12, 31)
 
         val currentState = _uiState.value as? EventUiState.Success ?: return
         val filteredEvents = applyDateFilter(allEvents, showAllStartDate, showAllEndDate)
@@ -483,11 +495,13 @@ class EventViewModel(
         viewModelScope.launch {
             val currentState = _uiState.value as? EventUiState.Success ?: return@launch
 
-            val firstDay = date.with(TemporalAdjusters.firstDayOfMonth())
-            val lastDay = date.with(TemporalAdjusters.lastDayOfMonth())
+            val year = date.get(ChronoField.YEAR)
+            val month = date.get(ChronoField.MONTH_OF_YEAR)
+            val firstDay = EthiopicDate.of(year, month, 1)
+            val lastDay = EthiopicDate.of(year, month, firstDay.lengthOfMonth())
 
-            val startDate = LocalDate.from(firstDay)
-            val endDate = LocalDate.from(lastDay)
+            val startDate = firstDay.toLocalDate()
+            val endDate = lastDay.toLocalDate()
 
             val filteredEvents = applyDateFilter(allEvents, startDate, endDate)
             _uiState.value = currentState.copy(
@@ -505,11 +519,13 @@ class EventViewModel(
         viewModelScope.launch {
             val currentState = _uiState.value as? EventUiState.Success ?: return@launch
 
-            val firstDay = date.with(TemporalAdjusters.firstDayOfMonth())
-            val lastDay = date.with(TemporalAdjusters.lastDayOfMonth())
+            val year = date.get(ChronoField.YEAR)
+            val month = date.get(ChronoField.MONTH_OF_YEAR)
+            val firstDay = EthiopicDate.of(year, month, 1)
+            val lastDay = EthiopicDate.of(year, month, firstDay.lengthOfMonth())
 
-            val startDate = LocalDate.from(firstDay)
-            val endDate = LocalDate.from(lastDay)
+            val startDate = firstDay.toLocalDate()
+            val endDate = lastDay.toLocalDate()
 
             val filteredEvents = applyDateFilter(allEvents, startDate, endDate)
             _uiState.value = currentState.copy(
@@ -535,21 +551,25 @@ class EventViewModel(
             return events
         }
 
+        val tz = TimeZone.currentSystemDefault()
+
         return events.filter { event ->
             val eventStartTime = event.instanceStart
 
             // Check start date filter
             val passesStartFilter = if (startDate != null) {
-                val filterStartDateTime = startDate.atTime(LocalTime.MIN).atZone(eventStartTime.zone)
-                eventStartTime >= filterStartDateTime
+                val filterStartInstant = startDate.atStartOfDayIn(tz)
+                eventStartTime >= filterStartInstant
             } else {
                 true
             }
 
             // Check end date filter
             val passesEndFilter = if (endDate != null) {
-                val filterEndDateTime = endDate.atTime(LocalTime.MAX).atZone(eventStartTime.zone)
-                eventStartTime <= filterEndDateTime
+                // End of day = start of next day
+                val nextDay = LocalDate.fromEpochDays(endDate.toEpochDays() + 1)
+                val filterEndInstant = nextDay.atStartOfDayIn(tz)
+                eventStartTime < filterEndInstant
             } else {
                 true
             }
