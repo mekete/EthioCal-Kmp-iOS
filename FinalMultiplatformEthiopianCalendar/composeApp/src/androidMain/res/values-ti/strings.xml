@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- ============================================ -->
+    <!-- App Identity -->
+    <!-- ============================================ -->
+    <!--    <string name="app_name">Ethiopian Calendar</string>-->
+
+    <string name="screen_title_month_calendar">ናይ ኢትዮጵያ መቁጸሪ ዕለት</string>
+    <string name="screen_title_date_converter">መቐየሪ ዕለት</string>
+    <string name="screen_title_holidays">ናይ ኢትዮጵያ በዓላት</string>
+    <string name="screen_title_events">መዘኻኸሪ</string>
+    <string name="screen_title_settings">ቅጥዕታት (Settings)</string>
+    <string name="screen_title_more">ተወሳኺ</string>
+
+    <string name="nav_month">ወርሒ</string>
+    <string name="nav_event">መዘኻኸሪ</string>
+    <string name="nav_holiday">በዓል</string>
+    <string name="nav_convert">ቀይር</string>
+    <string name="nav_more">ተወሳኺ</string>
+
+    <string name="button_today">ሎሚ</string>
+    <string name="button_prev">ሕሉፍ</string>
+    <string name="button_next">ቀፃሊ</string>
+    <string name="button_to_ethiopian">ናብ ኢትዮጵያ</string>
+    <string name="button_to_gregorian">ናብ ግሪጎርያዊ</string>
+    <string name="button_ok">ሕራይ</string>
+    <string name="button_cancel">ይትረፍ</string>
+    <string name="button_calculate_difference">ፍልልይ ኣስልሕ</string>
+
+    <!--    -->
+    <string name="onboarding_welcome_title">ቀንዲር ኢትዮጵያ</string>
+    <string name="onboarding_welcome_subtitle">ብ 5 ቋንቋታት ይሰርሕ</string>
+    <string name="onboarding_feature_dual_calendar">ኢትዮጵያን ግሪጎርያንን</string>
+    <string name="onboarding_feature_holidays">በዓላት ሃገራዊ/ሃይማኖታዊ</string>
+    <string name="onboarding_feature_reminders">መዘኻኸሪ ፍጻሜታት</string>
+    <string name="onboarding_feature_date_converter">ቀያሪ ዕለታት</string>
+    <string name="onboarding_feature_multilingual">5 ቋንቋታት ይድግፍ</string>
+    <string name="onboarding_get_started">ኣጀመረኒ</string>
+
+    <string name="onboarding_language_title">ቋንቋ ምረጽ</string>
+    <string name="onboarding_language_description">ቋንቋ</string>
+
+    <string name="onboarding_theme_title">ስእሊ (Theme)</string>
+    <string name="onboarding_theme_description">ድሕሪ ሕጂ ክትቅይሮ ትኽእል</string>
+    <string name="onboarding_theme_light">ብርሃናዊ ገጽታ</string>
+    <string name="onboarding_theme_light_desc">ብሩህን ንጹህን ገጽ</string>
+    <string name="onboarding_theme_dark">ጸላሚ ገጽታ</string>
+    <string name="onboarding_theme_dark_desc">ለይቲ ንዒንቲ ዝቐለለ</string>
+    <string name="onboarding_theme_system">ናይ ስርዓት ቅጥዒ</string>
+    <string name="onboarding_theme_system_desc">ቅጥዒ ናይ መሳርሒኻ ይኽተል</string>
+
+    <string name="onboarding_holidays_title">ኣየኖት በዓላት ይርኣዩ?</string>
+    <string name="onboarding_holidays_description">ድሕሪ ሕጂ ክትቅይሮ ትኽእል</string>
+    <string name="onboarding_holidays_public">ሃገራዊ በዓላት</string>
+    <string name="onboarding_holidays_public_desc">መዓልትታት ስራሕ ዘይብሉ</string>
+    <string name="onboarding_holidays_orthodox">በዓላት ኦርቶዶክስ</string>
+    <string name="onboarding_holidays_orthodox_desc">በዓላትን መዓልትታት ጾምን</string>
+    <string name="onboarding_holidays_muslim">በዓላት እስልምና</string>
+    <string name="onboarding_holidays_muslim_desc">በዓላትን እምነታትን እስልምና</string>
+    <string name="onboarding_holidays_orthodox_days">ስማት መዓልትታት ኦርቶዶክስ</string>
+    <string name="onboarding_holidays_orthodox_days_desc">እንተተመርጸ፡ ኣብ **ተወሳኺ** ይርአ</string>
+
+    <string name="onboarding_calendar_title">ቐንዲ ቀንዲር</string>
+    <string name="onboarding_calendar_description">ኣየናይ ቀንዲር ኣብ ወርሒ?</string>
+    <string name="onboarding_calendar_dual_display">ክልተኡ ቀንዲር ኣርኢ</string>
+    <string name="onboarding_calendar_dual_display_desc">ንቀንዲሩ ምሉእ ክገብሮ ይኽእል</string>
+    <string name="onboarding_calendar_tip">ድሕሪ ሕጂ ኣብ **ተወሳኺ** ቀይር</string>
+
+    <string name="onboarding_skip">ሕለፍ</string>
+    <string name="onboarding_next">ቀጽል</string>
+    <string name="onboarding_done">ተወዲኡ</string>
+    <!--    -->
+    <string name="label_from_gregorian">ካብ ግሪጎርያዊ</string>
+    <string name="label_from_ethiopian">ካብ ኢትዮጵያ</string>
+    <string name="label_ethiopian_date">ናይ ኢትዮጵያ ዕለት</string>
+    <string name="label_gregorian_date">ናይ ግሪጎርያዊ ዕለት</string>
+    <string name="dialog_title_select_ethiopian_date">ናይ ኢትዮጵያ ዕለት ምረጽ</string>
+    <string name="label_date_difference">ፍልልይ ዕለት</string>
+    <string name="label_start_date">መጀመሪ ዕለት</string>
+    <string name="label_end_date">መወዳእታ ዕለት</string>
+    <string name="label_difference_result">ፍልልይ</string>
+    <string name="pick_gregorian">ግሪጎርያ ይምረፁ</string>
+    <string name="pick_ethiopian">ኢትዮጵያ ይምረፁ</string>
+
+    <string name="label_filter_by_type">ብዓይነቱ ይምረፁ</string>
+    <string name="filter_public">ህዝባዊ</string>
+    <string name="filter_orthodox">ኦርቶዶክስ</string>
+    <string name="filter_muslim">እስልምና</string>
+    <string name="label_ec_suffix">ዓ.ም.</string>
+    <string name="label_holidays">በዓላት</string>
+    <string name="label_day_off">ስራሕ ዝዕጸወሉ</string>
+
+    <string name="menu_color_theme">ቴማ ወይ ሕብሪ (Theme)</string>
+    <string name="menu_privacy_policy">ፖሊሲ ብሕትውና</string>
+    <string name="menu_share_app">ነዚ ኣፕ ንምክፋል</string>
+    <string name="menu_about_us">ብዛዕባና</string>
+    <string name="menu_language">ቋንቋ (Language, Afaan, Langue)</string>
+    <string name="menu_notifications">መፍለጣት (Notifications)</string>
+    <string name="menu_additional_settings">ተወሳኺ ቅጥዕታት</string>
+
+    <string name="notification_banner_title">መፍለጣት ኣንቅሕ</string>
+    <string name="notification_banner_message">ንዝመጹ ናይ ኢትዮጵያ በዓላትን ፍጻሜታትን መዘኻኸሪታት ተቐበል</string>
+    <string name="notification_banner_enable">ኣንቅሕ</string>
+    <string name="notification_banner_dismiss">ይትረፍ</string>
+
+    <string name="about_us_dialog_title">ብዛዕባና</string>
+    <string name="about_us_developer">መማዕበሊ</string>
+    <string name="about_us_developed_by">Mekete Nimaga</string>
+    <string name="about_us_contact_us">ተወከሱና</string>
+    <string name="about_us_rate_app">ደረጃ ንምሃብ</string>
+    <string name="about_us_app_version">ሕታም ናይዚ ኣፕ</string>
+    <string name="about_us_build_time">ዝተሓደሰሉ</string>
+    <string name="about_us_privacy_policy">ፖሊሲ ብሕትውና</string>
+    <string name="about_us_terms_of_service">ናይ ኣገልግሎት ውዕላት</string>
+
+    <string name="label_theme_color">ሕብሪ ቴማ (Theme)</string>
+    <string name="label_theme_mode">ጸሊምን ጻዕዳን ቴማ (Theme)</string>
+
+    <string name="settings_calendar_display">ናይ ካላንደር መርኣዪ</string>
+    <string name="settings_ethiopian_gregorian_display">ናይ ኢትዮጵያን ግሪጎርያዊን ትርኢት</string>
+    <string name="settings_calendar_display_dialog_title">ናይ ካላንደር መርኣዪ ምርጫታት</string>
+    <string name="settings_primary_calendar">ቀንዲ ካላንደር</string>
+    <string name="settings_display_dual_calendar">ክልተ ካላንደር ኣርኢ</string>
+    <string name="settings_secondary_calendar">ተወሳኺ ካላንደር</string>
+    <string name="settings_calendar_ethiopian">ናይ ኢትዮጵያ</string>
+    <string name="settings_calendar_gregorian">ግሪጎርያዊ</string>
+    <string name="settings_calendar_hirji">ምስልምና</string>
+
+    <string name="settings_show_orthodox_day_names">ናይ ኦርቶዶክስ ኣስማት መዓልቲ ኣርኢ</string>
+    <string name="settings_show_day_off_holidays">ህዝባዊ በዓላት ኣርኢ</string>
+    <string name="settings_show_orthodox_working_holidays">ናይ ኦርቶዶክስ ኣጽዋማትን በዓላት ኣርኢ</string>
+    <string name="settings_show_muslim_working_holidays">ተወሳኺ ናይ እስልምና በዓላት ኣርኢ</string>
+    <string name="settings_show_cultural_holidays">ባህላዊ በዓላት ኣርኢ</string>
+    <string name="settings_show_us_holidays">ናይ ኣሜሪካ በዓላት ኣርኢ</string>
+    <string name="settings_use_geez_numbers">ናይ ግእዝ ቁጽሪታት ተጠቐም</string>
+    <string name="settings_holidays_display">ዝረኣዩ በዓላት</string>
+    <string name="settings_holidays_display_dialog_title">ዝረኣዩ በዓላት</string>
+    <string name="settings_orthodox_day_names_button">ናይ ኦርቶዶክስ ኣስማት መዓልቲ</string>
+    <string name="settings_orthodox_day_names_dialog_title">ናይ ኦርቶዶክስ ኣስማት መዓልቲ</string>
+    <string name="settings_use_24_hour_format">ኣብ ዊጅታት ናይ 24 ሰዓት ተጠቐም</string>
+
+    <string name="settings_widget_options">ናይ ዊጅት ምርጫታት</string>
+    <string name="settings_widget_dialog_title">ናይ ዊጅት መስተኻኸሊ</string>
+    <string name="settings_display_two_clocks">ክልተ ሰዓታት ኣርኢ</string>
+    <string name="settings_primary_timezone">ቀንዲ ዊጅት ዘርእዮ ቦታ</string>
+    <string name="settings_secondary_timezone">ካልኣይ ዊጅት ዘርእዮ ቦታ</string>
+    <string name="settings_use_transparent_background">ቀላሲ ድሕረ-ባይታ ተጠቐም</string>
+    <string name="settings_timezone_hint">ናይ ሰዓት ዞባ ኣእቱ (ንኣብነት፣ New York)</string>
+
+    <string name="holiday_info_dialog_title">ናይ በዓላት መስተኻኸሊ</string>
+    <string name="holiday_info_dialog_message">ኣብ ቅጥዕታት ኣቲኻ ኣየኖት በዓላት ከም ዝረኣዩ ክትቅይር ትኽእል ኢኻ</string>
+    <string name="holiday_info_dialog_checkbox">ነዚ ሓበሬታ እዚ እንደገና ኣይተርእየኒ</string>
+
+    <string name="error_loading_calendar">መቁጸሪ ዕለት ኣብ ምጽዓን ጌጋ ኣጋጢሙ</string>
+    <string name="empty_no_holidays_month">ስራሕ ዝዕጸወሉ በዓል የለን</string>
+    <string name="empty_no_holidays_display">ስራሕ ዝርኣየሉ በዓል የለን</string>
+    <string name="placeholder_coming_soon">ብቐረባ…</string>
+    <string name="placeholder_news_events">ዜናታት፣ ፍጻሜታትን መዘኻኸሪታትን</string>
+
+    <string name="cd_back">ናብ ድሕሪት</string>
+    <string name="cd_pick_date">ዕለት ምረጽ</string>
+    <string name="cd_selected">ተመሪጹ</string>
+    <string name="cd_navigate">ኣንቀሳቕስ</string>
+    <string name="cd_previous_year">ዝሓለፈ ዓመት</string>
+    <string name="cd_next_year">ዝቕጽል ዓመት</string>
+    <string name="cd_calendar_state">ናይ ኢትዮጵያ መቁጸሪ ዕለት፣ ሕጂ %1$s የርኢ ኣሎ</string>
+    <string name="cd_holiday_info">ናይ በዓላት ቅጥዒ ሓበሬታ</string>
+    <!-- ============================================ -->
+    <!-- ህዝባዊ በዓላት (Public Holidays) -->
+    <!-- ============================================ -->
+    <string name="holiday_public_enkutatash">እንቁጣጣሽ</string>
+    <string name="holiday_public_enkutatash_history">እንቁጣጣሽ ሓድሽ ዓመት ኢትዮጵያ ኮይኑ፡ ብ1 መስከረም ይኽበር። ስሙ "ስጦታ ዕንቊ" ማለት ኮይኑ፡ ንግስቲ ሳባ ንጉስ ሰሎሞን ምስ ሓዘየቶ፡ "ዕንቊ ንኣጻብዕትኺ ስልማት ይኹንኪ" ኢሉ ካብ ዝሃበላ ስጦታ ዕንቊ ዝመጸ እዩ ዝብል ምንጪ ኣሎ። ብተወሳኺ፡ ወዲ ኖህ ካም ናብ ምድሪ ኣፍሪቃ ምስ ኣተወ፡ እታ ሃገር ብኣደይ አበባ ስለ ዝነበረት፡ ተሓጒሱ "እንቋዕ ዕጣ ወጸለይ" ካብ ዝበሎ ኸም ዝመጸ ዝኣምን ኣረኣእያ ኣሎ። መስከረም መወዳእታ ክረምቲን መጀመርታ ጽድያግን ዘርእይ ወርሒ እዩ።</string>
+    <string name="holiday_public_enkutatash_celebration">ዋና ባህሊ፡ ናይ ሓድሽ ዓመት ካርታታትን ብሩህ ቢጫ ኣደይ ኣበባን ምልውዋጥ ኮይኑ፡ እዚ ኻብ ጸልማት ናብ ለምለም፡ ብኣበባ ዝመልአ ምድሪ ምትሕልላፍ የርኢ። ደቂ ኣንስትዮ ኻብ ገዛ ናብ ገዛ እናዞራ ባህላዊ ደርፍታት ይደርፋ፡ ገንዘብን ንጕድጓድ እንጀራን ይእክባ። ኣብ ስድራቤት ደረጃ፡ እቲ በዓል፡ ዶሮ ወጥ ምብላዕን፡ በጊዕ ወይ ጤል ብስርዓት ምሕራድን የጠቓልል።</string>
+
+    <string name="holiday_public_christian_meskel">መስቀል</string>
+    <string name="holiday_public_christian_meskel_history">መስቀል፡ ብ4ይ ክፍለ ዘመን ብንግስቲ እሌኒ፡ የሱስ ክርስቶስ እተሰቕለሉ መስቀል ምንዳዩ ዘዘኻክር ዓመታዊ በዓል እዩ። ብ17 መስከረም ዝኽበር ኮይኑ፡ ካብቶም ኣዝዮም ዝበርሁን ዝነጸርሉን በዓላት ኦርቶዶክስ ክርስትያን ሓደ እዩ።</string>
+    <string name="holiday_public_christian_meskel_celebration">ዋና ስርዓት ደመራ ተባሂሉ ይጽዋዕ፡ እቲ ስርዓተ ደመራ ብቐንዱ ኣብ ኣዲስ ኣበባ ኣብ ዝርከብ መስቀል ኣደባባይ ይካየድ፡ ካህናትን፡ ዲያቆናትን፡ ብባህላዊ ጻዕዳ ልብሲ ዝለበሰ ብዙሕ ህዝቢን ይሳተፉ። ጸሓይ ድሕሪ ምዕራባ፡ እቲ ደመራ ይለዓል። ብርሃን እቲ ሓዊ፡ ንንግስቲ እሌኒ ናብ ቦታ መስቀል ዝመርሓ ትኪ የመልክት።</string>
+
+    <string name="holiday_public_christian_genna">ገና</string>
+    <string name="holiday_public_christian_genna_history">ገና፡ ብ29 ታሕሳስ (ኣብ 4 ዓመት ሓንሳብ ድማ ብ28 ታሕሳስ) ይኽበር። ካብቲ ኣብ ምዕራብ ዝኽበር ንግዲ ዝመስል ባህሊ ብዝተፈልየ መልክዕ፡ ገና ብቐንዱ ሃይማኖታዊ ስርዓት ኮይኑ፡ ብኣመንቲ ኦርቶዶክስ ድሕሪ 40 መዓልታት ጾም ነብያት ይኽበር፡ በዚ እዋን እዚ ኸኣ ካብ ስጋን ጸባን ዝርከቡ ፍርያት ምሉእ ብምሉእ ምቑጣብ ይግበር። እቲ በዓል ብጥዋት ገና ስጋን ጸባን ብምብላዕ ይዛዘም፡ እዚ ኸኣ ነቲ ነዊሕ ጾም ይፈትሖ።</string>
+    <string name="holiday_public_christian_genna_celebration">ምስ ገና ተተሓሒዙ ዝፍለጥ ሓደ ፍሉጥ ባህሊ ናይ ገና ጸወታ እዩ። እዚ ሓደ ዓይነት ሆኪ ዝመስል ባህላዊ ጸወታ ኮይኑ፡ ደቂ ተባዕትዮ ጫፉ ብዝተጠወየ በትሪን ኳስን ይጻወትዎ።</string>
+
+    <string name="holiday_public_christian_timket">ጥምቀት</string>
+    <string name="holiday_public_christian_timket_history">በዓል ጥምቀት፡ ብተኸተልቲ ሃይማኖት ክርስትና፡ ብፍላይ ድማ ኦርቶዶክስ ተዋህዶ ቤተ ክርስቲያን ኢትዮጵያ፡ የሱስ ክርስቶስ ኣብ ሩባ ዮርዳኖስ ብኢድ ዮሃንስ መጥምቕ እተጠምቀሉ መዓልቲ ዘዘኻክር ብሩህ በዓል እዩ። ታሪኽ ጥምቀት የሱስ ክርስቶስ ኣብ ወንጌል ማቴዎስ ምዕራፍ 3፡ ቁጽሪ 13–17 ይርከብ።</string>
+    <string name="holiday_public_christian_timket_celebration">ብ10 ጥሪ፡ ታቦታት ካብ ኣቢያተ ክርስቲያናት ብምእመናን እናተሰንዩ እናዘመሩ ናብቲ በዓል ዝኽበረሉ ቦታ ይኸዱ። ኣብኡ ድማ ኣብ ዝተዳለወ ድንኳን ክዓርፉ ተገይሩ ለይቲ ኣብኡ የሕልፉ። ኣብቲ ቦታ ኸኣ ኣብ ገጠር ዝውሕዝ ማይ ይዕቀብ፡ ኣብ ከተማታት ድማ ሰብ-ዝሰርዖ ግድብ ይስራሕ። ብ11 ጥሪ፡ መዓልቲ ጥምቀት፡ ጎሆ ምስ ቀደደ፡ ምእመናን ኣብቲ ዙርያ ድንኳን ቅዳሴ ምስ ፈጸሙ፡ ብመርነት ካህናት ኩሎም ናብቲ ዓቕሪ ማይ ይኸዱ እሞ፡ እቲ ማይ ተባሪኹ ህዝቢ ይንጸግ። ድሕሪ እዚ ስርዓት እዚ፡ ብመቋምያ፡ ብኸበሮን ብጽንጽልን ዝሰንዖ ሃይማኖታዊ ዝማሬ፡ እቲ ወዲ ብሆታ፡ እታ ጓል ብእልልታ፡ እቲ ካህን ብሃሌታ፡ ነቲ ታቦተ ሕጊ ሸያም ኮይኖም፡ ከምቲ ዝመጽሉ ናብ ቤተ ክርስቲያናቶም ይምለሱ።</string>
+
+    <string name="holiday_public_adwa">ዓወት ዓድዋ</string>
+    <string name="holiday_public_adwa_history">እቲ ብ23 የካቲት 1888 ዓ.ም. (1 መጋቢት 1896) ብንጉስ ሚኒሊክ እተመርሐ ሰራዊት ኢትዮጵያ ን ባሕሪ ሰጊሩ ኻብ ኣውሮጳ ምስ ዝመጸ ሰራዊት ጣልያን እተኻየደ ውግእ ዓድዋ፡ ኣብ ታሪኽ ካብ ዝጥቀሱ ኣገዳሲ ፍጻመታት ሓደ እዩ። ውግእ ዓድዋ፡ ኢትዮጵያ ነቲ ወራሪ ሓይሊ ጣልያን ዝሰዓረትሉ እዩ።\nእዚ ታሪኻዊ ዓወት እዚ፡ ኣብ ኣፍሪቃ ንቅንጽልን ግዝኣትን ኣንጻር ዝተኻየደ ዓብዪ ተቓውሞ ኮይኑ ይኽበር።\nዋና ምኽንያት ናይ ውግእ ዓድዋ፡ ኣብ መንጎ መንግስትታት ኢትዮጵያን ጣልያንን ዝተፈርመ ስምምዕ ውጫሌ እዩ ነይሩ። እቲ ብንጉስ ሚኒሊክ እተመርሐ ሰራዊት ዓድዋ ምስ በጽሐ፡ ንውግእ ዝጥዕም ግዜ እናተጸበየ ጸኒሑ፡ ብ23 የካቲት 1888 ዓ.ም. ምስ ልዕሊ 17 ሽሕ ወተሃደራት ምስ ዝሰለፈ ኣውሮጳዊ ሓይሊ ውግእ ጀመረ። እቲ ውግእ ብፍርቂ መዓልቲ ኣብ ውሽጢ፡ ተቓለስቲ ኢትዮጵያ ኣብ ኩሉ ኣንፈት ኣብ ሰራዊት ጣልያን ከቢድ ጉድኣት ስለ ዘውረዱ፡ ብሓደ ተሰሊፉ ነቶም ኢትዮጵያውያን ክምክት ኣይከኣለን።\nዓወት ዓድዋ ንመጀመርታ ግዜ ዝተኸብረ ብሳብዓይ ዓመቱ ብ1895 ዓ.ም. (ብ1903 እ.ኤ.ኣ. ካብ ሕጂ ሚኒሊክ ኣደባባይ ኣብ ዘለዎ ቦታ) ኣብቲ ሕጂ ቤት ክርስቲያን ቅዱስ ጊዮርጊስ ዘለዎ ቦታ እዩ ነይሩ።</string>
+    <string name="holiday_public_adwa_celebration">እዛ መዓልቲ እዚኣ፡ ብኹሉ ሃገር፡ ብፍላይ ድማ ኣብ ኣዲስ ኣበባን ኣብ ቦታታት መዘክር ዓድዋን ብሃገራዊ በዓላት፡ ወተሃደራዊ ሰልፍታትን ስርዓታውን ምትእኽኻባትን ትፍለጥ። እዛ መዓልቲ እዚኣ፡ ንሓድነት ሃገር፡ ንልዑላውነትን ንታሪኻዊ ቃልሲ ንናጽነትን ዘዘኻክር መዘከርታ ኮይና፡ ኢትዮጵያ ኸኣ ንሓደ ዓብዪ ኣውሮጳዊ ሓይሊ ኣብ መዳይ ውግእ ስዒራ ናጽነታ ዘረጋገጸት እንኮ ሃገር ኣፍሪቃ ክትከውን ገይራትዋ።</string>
+
+    <string name="holiday_public_labour_day">መዓልቲ ሰራሕተኛታት</string>
+    <string name="holiday_public_labour_day_history">መዓልቲ ሰራሕተኛታት፡ ወይ ዓለምለኻዊ መዓልቲ ሰራሕተኛታት፡ ብዓለምለኻዊ ደረጃ ዝኽበር ኮይኑ፡ ኣብ ኢትዮጵያ ድማ ብ23 ሚያዝያ ይኽበር። እዚ ህዝባዊ በዓል፡ ኣበርክቶን ዓወትን ሰራሕተኛታት ከምኡውን ንቕሓት ሰራሕተኛታት ዝዝክር እዩ። እዛ መዓልቲ እዚኣ ንማሕበራዊን ቁጠባዊን መሰላት ሰራሕተኛታት እተዋህበት ኮይና፡ ብቐንዱ ብማሕበራት ንግዲ ብዝዳለዉ ዘተታትን ሰልፍታትን ፍጻመታትን ትስነ።</string>
+    <string name="holiday_public_labour_day_celebration">ንኣብዛሕቲ ዜጋታት መዓልቲ ዕረፍቲ ኮይና እኳ እንተ ተፈልጠት፡ ምኽባር መዓልቲ ሰራሕተኛታት ኣብ ኢትዮጵያ፡ ንሓድነት ሰራሕተኛታትን ንፍትሓዊ ኣሰራርሓን ንዝመሓየሸ ኩነታት ስራሕን ዝግበር ቀጻሊ ጻዕሪ ዓለምለኻዊ ባህሊ ይኽተል። እዛ መዓልቲ እዚኣ፡ ኣብ ምሕላው መሰላት ሰራሕተኛታት ዝተገብረ ዕቤትን ኣበርክቶ ሓይሊ ሰራሕተኛ ንቁጠባ ሃገርን ንምስትንታን እትጠቅም እያ።</string>
+
+    <string name="holiday_public_patriots_day">መዓልቲ ተጋደልቲ</string>
+    <string name="holiday_public_patriots_day_history">መዓልቲ ተጋደልቲ፡ ብ27 ሚያዝያ ዝኽበር ኮይኑ፡ እዚ መዓልቲ እዚ፡ መንግስቲ ፋሽሽት ጣልያን ንኢትዮጵያ ዳግማይ ዝወረረሉን፡ ድሕሪ ሓሙሽተ ዓመታት ቃልሲ ተጋደልቲ ተሳዒሩ ዝወጸሉን፡ ብወራሪ ሓይሊ ወሪዱ ዝነበረ ባንዴራ ኢትዮጵያ ዳግማይ ብኽብሪ ዝተሰቕለሉ እዩ።</string>
+    <string name="holiday_public_patriots_day_celebration">እቲ በዓል፡ ኣብ ኩሉ ኢትዮጵያ ኣብ ንጀጋኑ ውግእን ሰማእታትን ዝተሰርሑ ሓወልትታት፡ ኣኽሊል ኣበባ ብምቕማጥ ይኽበር። እዚ ብዓሚቕ ስምዒት ሃገራዊ ፍቕሪ ዝመልአ ኣጋጣሚ ኮይኑ፡ ንሃገራዊ ኩርዓት፡ ንሓድነት ህዝቢ ኢትዮጵያ ንወጻእተኛታት ወረርቲ ንምምካት ዝገበሮ ሓድነት የጕልሕ። እዛ መዓልቲ እዚኣ፡ ንናጽነት እታ ሃገር ንዝተዋግኡን ንዝሞቱን ኩሎም መዘከርታ ሓዘን ኮይና ተገልግል።</string>
+
+    <string name="holiday_derg">20 ግንቦት</string>
+    <string name="holiday_derg_history">መዓልቲ ምውዳቕ ደርግ፡ ብ20 ግንቦት (ብ28 ግንቦት) ዝኽበር ኮይኑ፡ ኣብ 1991 ዓ.ም. ምግምጣል ወተሃደራዊ ስርዓት ደርግ ዘዘኻክር እዩ፡ እዚ ድማ መወዳእታ ናይቲ 17 ዓመታት ዝጸንሐ ማርክሲስት-ሌኒኒስት ወተሃደራዊ ስርዓት እዩ። ደርግ ንንጉሰ ነገስት ቀዳማይ ሃይለ ስላሴ ካብ ስልጣን ምስ ኣውረደ ናብ ስልጣን ዝመጸ ኮይኑ፡ ብምጽናት፡ ብጥሜትን ብውግእ ሓድሕድን እተፈልየ እዩ።</string>
+    <string name="holiday_derg_celebration">እዛ መዓልቲ እዚኣ ኣብ ታሪኽ ኢትዮጵያ ዓብዪ ለውጢ ኮይና እትኽበር ኮይና፡ ሓድሽ ፖለቲካዊ ቅርጽን ንብዙሓት ተስፋ ዲሞክራስን ሰላምን ኣምጺኣ እያ። ህዝባዊ በዓል ኮይኑ፡ ታሪኻዊ ብዝኾነ መገዲ ኻብ ምልኪ ምውጻእ ዘዘኻክር እኳ እንተኾነ፡ እቲ በዓልን ትርጉሙን ግን ምስ ቀጻሊ ፖለቲካዊ ዕብየት እታ ሃገር ብዝተኣሳሰረ፡ እምነ-መሰረት ዝተፈላለየ ህዝባዊ ክትዓት ኮይኑ ይቕጽ።</string>
+    <!-- ============================================ -->
+    <!-- ናይ ኢትዮጵያ ኦርቶዶክስ በዓላት (Ethiopian Orthodox Holidays) -->
+    <!-- ============================================ -->
+    <string name="holiday_orthodox_siklet">ስቅለት</string>
+    <string name="holiday_orthodox_siklet_history">ስቅለት ማለት "ኣብ መስቀል ምስማር" ማለት ኮይኑ፡ ንኢየሱስ ክርስቶስ መከራ፡ ምስማር ኣብ መስቀልን ኣብ ጎልጎታ ዘካየዶ ሞትን እተዘክር ዓባይ መዓልቲ ሓዘንን ንስሓን ናይ ኢትዮጵያ ኦርቶዶክስ ተዋሕዶ ቤተ ክርስቲያን እያ። እዛ መዓልቲ እዚኣ ድሕሪ 55 መዓልቲታት ዓቢይ ጾም ኣብ ቅድስቲ (ሕማማት) ሰሙን እትወድቕ ኮይና፡ ምእመናን ንፍጹም መስዋዕቲ ክርስቶስ ብምዝካር ንፋሲካ (ትንሳኤ) ምድላው ዚገብሩላ ዕምቆት ዘለዎ መንፈሳዊ ግዜ እያ።</string>
+    <string name="holiday_orthodox_siklet_celebration">ኣብ መዓልቲ ስቅለት፡ ምእመናን ንመዓልቲ ብምሉኡ ይጸውሙ (ኣልቦ ምግብ)፡ ናብ ስቅለት ዘምርሑ ፍጻሜታት ዚገልጹ ፍሉያት፡ ነዊሕ ናይ ቤተ ክርስቲያን ኣገልግሎታትን ይሳተፉ። እቲ ኣገልግሎት ካብ ንግሆ ጀሚሩ ክሳዕ ምሸት ዚቕጽል ኮይኑ፡ ንመከራ ክርስቶስ ዚዝክሩ ናይ ሰዓታት ጸሎታት፡ ማኅሌትን ስግደትን ይካየዱ። ምእመናን ኣብ ቤተ መቅደስ ይሰግዱ፡ ከምኡውን እቲ ኣየር ብዕምቆት ሓዘን፡ ህድኣትን ጸሎትን ዝመልአ ኮይኑ፡ እዚ ድማ ስቓይን ሞትን ክርስቶስ ኣብ ህይወቶም ዘለዎ ስምዒት ከም ዝሰማማዕ ይገብር።</string>
+    <string name="holiday_orthodox_fasika">ፋሲካ (ትንሳኤ)</string>
+    <string name="holiday_orthodox_fasika_history">ፋሲካ፡ ብኣምሓርኛ ትንሳኤ እናተባህለ ዚጽዋዕ፡ ኣብ ኢትዮጵያ ኦርቶዶክስ ተዋሕዶ ቤተ ክርስቲያን እቲ ኣዝዩ ዓብይን ቀንዲን በዓል እዩ። እዚ በዓል እዚ ንኢየሱስ ክርስቶስ ንሞት ስዒሩ **ካብ ምዉታት ምትንስኡን** (ትንሳኤኡ) ዜኽብር ኮይኑ፡ ንኹሉ ወዲ ሰብ ዓወት፡ ተስፋን **ካብ ሞት ናብ ህይወት ምሕላፍን** (ፋሲካ ማለት ምሕላፍ ማለት እዩ) የርኢ። ፋሲካ ናይቲ ነዊሕን ኣድካምን 55 መዓልቲታት ናይ ዓቢይ ጾምን ናይ ሕማማት ሰሙንን መወዳእታ ስለ ዝኾነ፡ ካብ በዓል ልደት ዝዓቢ ዓብይ ግዜ ናይ ሓጐስን ፍስሓን ይገብሮ።</string>
+    <string name="holiday_orthodox_fasika_celebration">በዓል ፋሲካ ዚጅምር ኣብ **ቀዳም ምሸት** ኮይኑ፡ ምእመናን ጻዕዳ ባህላዊ ክዳውንቲ ለቢሶም ንምሉእ ለይቲ ኣብ ቤተ ክርስቲያን ናይ ትንሳኤ ንቃት (Paschal Vigil)ን ጸሎትን ይገብሩ። ኣብ ፍርቂ ለይቲ፡ ድሕሪ ፍርቂ ለይቲ፡ ትንሳኤ ከም እተገለጸ ስዒቡ እቲ ናይ ሓዘን ድባብ ናብ **ሓጐስን ምዝምዛምን** ይቕየር፤ መብራህቲ ይበርህ፡ ዜማታት ይዝመር፡ ምእመናን ድማ ንምሉእ ሰብነቶም ይሰግዱ። ካብ ንግሆ ሰዓት 3፡00 ኣቢሉ ናብ ቤቶም ብምምላስ፡ ነተን 55 መዓልቲታት ዚጸመዎ ስጋን ጸባን ዚፈሪ ነገራትን ብምብላዕ ጾሞም ይፈትሑ። ብፍላይ **ደርሆ ወጥ**ን **እንጀራን** ንፋሲካ ኣዝዮም ፍቑራት ባህላዊ ምግባት ኮይኖም፡ ንስድራ ቤት ምብጻሕ፡ ህያብ ምልውዋጥን **ሓድነት** ስድራ ቤት ምሕያልን ዚብሉ ልምድታት ንምሉእ መዓልቲ ይቕጽሉ።</string>
+    <string name="holiday_orthodox_tensae">ትንሳኤ</string>
+    <string name="holiday_orthodox_tensae_history">ትንሳኤ ማለት "ትንሳኤ" ማለት ኮይኑ፡ ምስ ፋሲካ ብቐረባ ዚተሓሓዝ እዩ። ብፍላይ ኣብ እዋን ፋሲካ ዚኽበር፡ መሰረታዊ ሥነ-መለኮታዊ ፍጻሜ ዝኾነ፡ ናይ ኢየሱስ ክርስቶስ ካብ ሞት ምትንሳእ የመልክት። እኳ ደኣ ምስ ፋሲካ እናተቐያየረ እንተ ተጠቕመ፡ ትንሳኤ ግን ብመንፈሳዊ ሞት ዝተረኽበ ዓወት የጕልሕ። ካብ ሓዘን ጾም ናብ ዓብይ ሃይማኖታዊ ሓጐስ ምግዓዝ የርኢ።</string>
+    <string name="holiday_orthodox_tensae_celebration">ሥርዓተ ኣምልኾ ትንሳኤ ብሓጐስ ዝመልአ መዝሙራት፡ ብሰልፍታትን ቀሳውስት ኣብ ኢዶም ዚሕዝዎ ጽናጽል (ናይ ሙዚቃ መሳርሒ) ዝተሰነየ ኮይኑ፡ እዚ ድማ መላእኽቲ ኺዝምሩ የመልክት። ኣገዳስነት ትንሳኤ ኣብ መንጎ ምእመናን ኣብ ዚልዋወጡ ባህላዊ ሰላምታታት ዚንጸባረቕ ኮይኑ፡ ንመለኮታዊ ዓወትን ንዘለኣለማዊ ህይወትን ዝኸውን መብጽዓ የጕልሕ።</string>
+    <string name="holiday_orthodox_erget">ዕርገት</string>
+    <string name="holiday_orthodox_erget_history">ዕርገት፡ ወይ በዓል ዕርገት፡ ኢየሱስ ክርስቶስ ድሕሪ ትንሳኤ ፋሲካ ብ40 መዓልቲ ናብ ሰማይ ምዕራጉ ዚገልጽ ቅዱስ ጽሑፋዊ ጸብጻብ የዘኻኽር። እዚ ተቐያሪ በዓል እዚ፡ ንመወዳእታ ምድራዊ ምግላጽ ክርስቶስ ንደቀ መዛሙርቱ ዜመልክት ኮይኑ፡ ኣብ መንጎ ትንሳኤኡን ምምጻእ መንፈስ ቅዱስን (ጴራቅሊጦስ) ከም ድልድል ኰይኑ የገልግል።</string>
+    <string name="holiday_orthodox_erget_celebration">እታ መዓልቲ ብፍሉያት ናይ ቤተ ክርስቲያን ኣገልግሎታትን ብመዝሙራትን እተኽብር ኮይና፡ ንግዝኣት ክርስቶስ ኣብ ሰማይን ኣብ መንጎ ተኸተልቱ ዘለዎ መንፈሳዊ ምህላውን ትምርኵስ። እኳ ደኣ ሓዘን ዚመልኦ ሃይማኖታዊ ሥርዓት እንተ ኾነ፡ በዓል ዕርገት ግን ንመለኮትነት ክርስቶስን ንምዝዛም ኣገልግሎቱ ኣብ ምድርን ዜረጋግጽ ናይ በዓል ድምጺ ኣለዎ።</string>
+    <string name="holiday_orthodox_peraklitos">ጴራቅሊጦስ</string>
+    <string name="holiday_orthodox_peraklitos_history">ጴራቅሊጦስ ማለት "መጸናንዒ" ወይ "ሓላዊ" ማለት ኮይኑ፡ ብግእዝ ናይ በዓል ጰንጠቆስጤ ስያሜ እዩ። ድሕሪ ፋሲካ ብ50ይቲ መዓልቲ ዚኽበር ኮይኑ፡ መንፈስ ቅዱስ ኣብ ልዕሊ ሃዋርያትን ካልኦት ተኸተልቲ ኢየሱስ ክርስቶስን ምውራዱ ዜዘኻኽር ኮይኑ፡ እዚ ድማ ምምስራት ቤተ ክርስቲያን ክርስትና የመልክት። ካብ ዓበይቲ ትሽዓተ በዓላት ጐይታ ሓደ እዩ።</string>
+    <string name="holiday_orthodox_peraklitos_celebration">እታ መዓልቲ ብዓብይ ኣኽብሮት እትኽበር ኮይና፡ ንምእመናን ንምምራሕን ንምሕያልን ኣብ ልዕሊ ሓይሊ መንፈስ ቅዱስ ዚምርኵሱ ፍሉያት ጸሎታትን ሥርዓተ ኣምልኮታትን የጠቓልል። ብተለምዶ፡ ምእመናን ጻዕዳ ወይ ንጹህ ክዳውንቲ ይለብሱ፡ እዚ ድማ መንፈስ ቅዱስ ዝሃቦ ንጽህናን ሓድሽ መንፈሳዊ ምጅማርን የመልክት።</string>
+    <string name="holiday_orthodox_nineveh">ነነዌ</string>
+    <string name="holiday_orthodox_nineveh_history">ጾመ ነነዌ፡ ወይ ጾም ነነዌ፡ ዓብይ ጾም ከይጀመረ ቅድሚ ክልተ ሰሙን ኣብ ኢትዮጵያ ኦርቶዶክስ ተዋሕዶ ቤተ ክርስቲያን ዚጽወም ናይ ሰለስተ መዓልቲ ጾም እዩ። ንስብከት ነብዪ ዮናስ ንህዝቢ ነነዌን ድሕሪኡ ንዝተገብረ ንስሓን ብምዝካር ነታ ኸተማ ካብ ጥፍኣት ምድሓን የዘኻኽር። ንቐንዲ ግዜ ዓቢይ ጾም ከም መንፈሳዊ ምድላው ኰይኑ የገልግል።</string>
+    <string name="holiday_orthodox_nineveh_celebration">እቲ ጾም ካብተን ሾውዓተ ናይ ቤተ ክርስቲያን ወግዓዊ ጾማት ሓደ ኮይኑ፡ ከም ዓብይ ጾም፡ ካብ ስጋን ጸባን ዝተሰርሑ ነገራት ምግላስ ይጠልብ። ኣብዘን ሰለስተ መዓልታት እዚኤን፡ ምእመናን ናይ ቤተ ክርስቲያን ኣገልግሎታት ይሳተፉ፡ ከም ከተማ ነነዌ ንቓል ኣምላኽ ምእዛዛ ብምምሳል ድማ ብዝሓየለ ጸሎትን ንስሓን ይኣትዉ።</string>
+    <string name="holiday_orthodox_abiy_tsom">ዓቢይ ጾም</string>
+    <string name="holiday_orthodox_abiy_tsom_history">ዓቢይ ጾም ማለት "ዓብይ ጾም" ማለት ኮይኑ፡ ኣብ ኢትዮጵያ ኦርቶዶክስ ኣቆጻጽራ እቲ ዝነውሐን ኣዝዩ ዝኸበረን ናይ ጾም እዋን እዩ፤ 55 መዓልቲ ይቕጽል። ንሱዳዴ ወይ ጾመ ኣርባዕተ፡ ኢየሱስ ኣብ በረኻ ዚጾሞ ኣርባዓ መዓልቲ ድማ ይፍለጥ። ብሰሉስ ይጅምር እሞ ብፋሲካ (ትንሳኤ) ይዛዘም፤ እዚ ድማ ንዓብይ መንፈሳዊ ምድላው ዚኸውን ግዜ እዩ።</string>
+    <string name="holiday_orthodox_abiy_tsom_celebration">እቲ ጾም ኣዝዩ ጥብቂ ኮይኑ፡ ንምሉእ 55 መዓልቲ ካብ ስጋ፡ ዕንቍላልን ጸባን ዝተሰርሑ ነገራት ምግላስ ይጠልብ። ምእመናን ካብ ኩሎም ናይ እንስሳ ምርኩሳት ብምግላስ ጥብቂ ናይ ቪጋን ኣመጋግባ ይኽተሉ። ካብ ምግቢ ንላዕሊ፡ እቲ ጾም ሓይሊ ዘለዎ ጸሎት፡ ምጽዋትን ንስሓን የጠቓልል፡ እዚ ድማ ንምእመናን ኣብ መከራን ትንሳኤን ክርስቶስ ብመንፈሳዊ መገዲ ንምስታፍ የዳልዎም።</string>
+    <string name="holiday_orthodox_debre_zeit">ደብረ ዘይት</string>
+    <string name="holiday_orthodox_debre_zeit_history">ደብረ ዘይት ማለት "ጎቦ ጸይቲ" ማለት ኮይኑ፡ ኣብ ካልኣይ ሰንበት ዓብይ ጾም ዚኽበር በዓል እዩ። ንኢየሱስ ክርስቶስ ኣብ ደብረ ዘይት ዝተዛረቦ ትንቢትን ትምህርታትን፡ ብፍላይ ድማ ብዛዕባ ምልክታት ዳግማይ ምጽኣቱን ብዛዕባ መወዳእታ ዘመንን ዜነጽር ትምህርቲ የዘኻኽር። እታ መዓልቲ ንንቕሓት ፍርድን ምድላውን ንምስላስ ተተባብዕ።</string>
+    <string name="holiday_orthodox_debre_zeit_celebration">ንእዛ መዓልቲ እዚኣ ዚኸውን ሥርዓተ ኣምልኮ፡ ኣብ ናይ መወዳእታ መዓልታት ብዛዕባ ዚኸውን ነገራት ኣብ ዝምርኵሱ ንባባት ወንጌል ዓብይ ትዅረት ይህብ። ጭብጢ ደብረ ዘይት መንፈሳዊ ንቕሓት ኮይኑ፡ ንምእመናን ኣብ እዋን ጾም መንገዶም ንምዕራይ ብምጥቃም ኣብ እምነቶምን ሰናይ ተግባራቶምን ጸኒዖም ንኺቕጽሉ የተባብዕ።</string>
+    <string name="holiday_orthodox_hosanna">ሆሣዕናን ሕማማትን</string>
+    <string name="holiday_orthodox_hosanna_history">ሆሣዕና፡ ወይ ሰንበት ጨፍጨፍ፡ ቅድሚ ፋሲካ (ትንሳኤ) ዘሎ ሰንበት ዚኽበር እዩ። ኢየሱስ ክርስቶስ ናብ ኢየሩሳሌም ብዓወት ምእታዉ የዘኻኽር፤ ህዝቢ ድማ ጨፍጨፍ ጨንጨፍን ክዳውንትን ኣብ መገዲ ብምንጻፍ "ሆሣዕና" ኢሎም ተቐቢሎሞ። እዚ መዓልቲ እዚ መጀመርታ ናይ ሰሙን ሕማማት እዩ። ሰሙን ሕማማት ኣብ ኢትዮጵያ ኦርቶዶክስ ተዋሕዶ ቤተ ክርስቲያን ኣቆጻጽራ እቲ ኣዝዩ ቅዱስን ሓዘን ዝመልኦን ግዜ እዩ። እዚ ሰሙን እዚ ካብ ዘመነ ጾም እቲ ናይ መወዳእታ ኮይኑ ክሳብ ቀዳም ስዑር ይቕጽል። ሕማማት ዚብል ቃል መከራ ወይ ሥቃይ ማለት ኮይኑ፡ ምሉእ ሰሙን ኢየሱስ ክርስቶስ ቅድሚ ምስማሩ ዝበጽሖ ከቢድ መከራታት፡ ትምህርታትን ኣብ ቤተ መቅደስ ዘካየዶም ናይ መወዳእታ ስራሓትን ብዝርዝር **ብንስሓን ብሓዘንን** እናሓሰቡን እናዘከሩን ይኽበር።</string>
+    <string name="holiday_orthodox_hosanna_celebration">ኣብዛ መዓልቲ እዚኣ፡ ጨንጨፍ ዘንባባ ወይ ዝተኣሳሰራ ቈጽሊ ኣብ ቤተ ክርስቲያን ንምእመናን ይዕደሉ፡ እዚኦም ድማ መብዛሕትኡ ግዜ ቀለቤት ወይ መስቀል ተሰሪሖም ንመስዋዕትን ዓወትን ክርስቶስ ንምዝካር ይቀመጡ። እታ መዓልቲ ንመጀመርታ ናይ ቅድስቲ ሰሙን፡ እቲ መከራ ክርስቶስ ዜርኢ ናይ ዓብይ ጾም ናይ መወዳእታ ሰሙን፡ የመልክት። ኣብ ሰሙን ሕማማት ምእመናን ከቢድ ጾም ብምጽዋም፡ ነዊሕ ናይ ጸሎት ኣገልግሎት ብምክትታልን ስግደትን ብምግባርን የሕልፉ። ናይ የዕለት የዕለት ፍጻሜታት ድማ በዚ መገዲ እዚ ዚዝከሩ፡-\n
+• እሑድ (ሆሳዕና): ጐይታ ኣብ ኣድጊ ወርጩ ኮይኑ ብጨፍጨፍን ምስጋናን (ሆሳዕና) ናብ ኢየሩሳሌም ብኽብሪ ምእታዉ ይታሰበ። ኣብዛ መዓልቲ እዚኣ፡ ጨንጨፍ ዘንባባ ወይ ዝተኣሳሰራ ቈጽሊ ኣብ ቤተ ክርስቲያን ንምእመናን ይዕደሉ፡ እዚኦም ድማ መብዛሕትኡ ግዜ ቀለቤት ወይ መስቀል ተሰሪሖም ንመስዋዕትን ዓወትን ክርስቶስ ንምዝካር ይቀመጡ።\n
+• ሰኞ (መርገመ በለስ): ክርስቶስ ፍረ ዘይብላ በለስ ረጊሙ እስራኤልን (ቤተ መቅደስን) ኣብነት ገይሩ ዘስተምሃረላ መዓልቲ ይታሰበ።\n
+• ማክሰኞ (ሕቶን መልስን): ጐይታ ኣብ ቤተ መቅደስ ኮይኑ ዘስተምሃረለን ናይ ሊቃውንቲ ሕቶታት ዝመለሰለን ፍጻሜታት ይታሰባ።\n
+• ረቡዕ (ምኽሪ): ሊቃነ ካህናት ኣይሁድ ንክርስቶስ ንምቕታል ዘተ ምስጢር ዝገበሩላን ይሁዳ ኣሕሊፉ ንምሃብ ዝተሰማምዓላን መዓልቲ ይታሰበ።\n
+• ሐሙስ (ጸሎተ ሐሙስ): ክርስቶስ ንደቀ መዛሙርቱ **እግሮም ዝሓጽበላ**፡ **ምሥጢረ ቁርባን** ዝመስረተላን ኣብ ጌቴሰማኒ **ዝጸለየላን** ምሸት ይታሰበ።\n
+• ዓርብ (ስቅለት): ናይ ጐይታና **ምስማርን ሞትን** ዚዝከረላ፡ ምናልባት ኣብ ሰሙን **እቲ ዝኸበደን** ናይ ሓዘን መዓልቲ እያ።\n
+• ቅዳሜ (ስዑር): ክርስቶስ **ኣብ መቓብር ዘሕደረላን** ናብ ሲኦል ወሪዱ ነተን ዝነበራ ነፍሳት ዘውጽኣለን **(ተስፋ ዝሃበለን)** መዓልቲ ይታሰበ።</string>
+    <string name="holiday_orthodox_rikbe_kahinat">ርክበ ካህናት</string>
+    <string name="holiday_orthodox_rikbe_kahinat_history">ርክበ ካህናት ማለት ምትእኽኻብ (ናይ ኣኼባ) መዓልቲ ማለት ኮይኑ፡ መሰረቱ ብወንጌል ዮሃንስ (21፡15) ከም ዝተገልጸ እዩ። ንሱ ብቅዱስ ጴጥሮስ ኣቢሉ ኣቦታት ሓዋርያት ካብ ጐይታና ኢየሱስ ክርስቶስ ስልጣን ጓሳነትን ሓላፍነትን ዝተረከቡሉ መዓልቲ እዩ። እዚ ንፈለማ ግዜ ኣብ መጋቢት 23 ዚፍጸም ኮይኑ፡ ቀጺሉ ድማ ቅዱሳን ሓዋርያት ኣብ ነፍሲ ወከፍ ዓመት ትንሳኤ ኣብ ዝወዓለሉ ብ25ይቲ መዓልቲ ኣብ ኢየሩሳሌም ቅድስት ይእከቡ ከም ዝነበሩ ሊቃውንቲ መምህራን ኣስተምሂሮምና።</string>
+    <string name="holiday_orthodox_rikbe_kahinat_celebration">እዚ በዓል እዚ ካብ ቅዱሳን ሓዋርያት ጀሚሮም ንቅድስቲ ቤተ ክርስቲያን ዘመሓድሩ ዝነበሩ ኣቦታት ብሓባር ተኣኪቦም ንቅድስቲ ቤተ ክርስቲያን ጽቡቕ ኣገልግሎት ከምኡውን ንምእመናን ሓድነትን መንፈሳዊ ዕቤትን ዚጠቕሙ መንፈሳዊ መምርሒታት ዜመሓላልፉሉ መዓልቲ እዩ።</string>
+    <string name="holiday_orthodox_tsome_hawariat">ጾመ ሓዋርያት</string>
+    <string name="holiday_orthodox_tsome_hawariat_history">ጾመ ሓዋርያት፡ ጾም ሓዋርያት፡ ድሕሪ ጴራቅሊጦስ (ጰንጠቆስጤ) ዚኽበር ኮይኑ፡ ካብተን ሾውዓተ ሕጋዊ ጾማት ናይ ኢትዮጵያ ኦርቶዶክስ ተዋሕዶ ቤተ ክርስቲያን ሓንቲ እያ። ሓዋርያት ወንጌል ንዓለም ንምስባኽ ቅድሚ ምጅማሮም ዝጾምዎ ጾም ንምዝካር ይካየድ።</string>
+    <string name="holiday_orthodox_tsome_hawariat_celebration">እቲ ጾም ዚጅምር ድሕሪ ጴራቅሊጦስ ኣብ ዚመጽእ ሰሉስ ኮይኑ፡ ብሓምለ 5 (ብጐርጐርዮሳዊ ኣቆጻጽራ ኣብ ሓምለ 12 ኣቢሉ) ኣብ በዓል ቅዱስ ጴጥሮስን ጳውሎስን ይዛዘም። በዚ እዋን እዚ፡ ምእመናን ካብ ስጋን ጸባን ብምግላስ፡ ንጸሎትን ንሚስዮናዊ ስራሕ ሓዋርያትን መንፈሳዊ ምድላው ይገብሩ።</string>
+    <string name="holiday_orthodox_tsome_dihnet">ጾመ ድሕነት</string>
+    <string name="holiday_orthodox_tsome_dihnet_history">ጾመ ድሕነት፡ "ናይ ድሕነት ጾም" ማለት ኮይኑ፡ ገለ ግዜ ንምሉእ ዓመት ዚግበር ናይ ዓርቢ ጾም ወይ ገለ ግዜ ምስ ዓርቢ ቅድስቲ ሰሙን (ስቅለት) ተተሓሒዙ ዚጽዋዕ ፍሉይ ስም እዩ። ኣብ መከራን ሞትን ክርስቶስ ብዝተረኽበ ድሕነት ንምስላስ ዝተዋህበ መዓልቲ እዩ።</string>
+    <string name="holiday_orthodox_tsome_dihnet_celebration">እቲ ሥርዓት ንቕድሚት ዘሎ ባህጊ ንንስሓን ኣብ ልግሲ ክርስቶስ ምትእምማንን የሕይል የሕይል እሞ። ከም ኩሎም ጾማት፡ ካብ ናይ እንስሳ ምርኩሳት ምግላስን ኣብ ጸሎት ተግባራት ምሕያልን የጠቓልል፡ እዚ ድማ ወትሩ ወይ ወቕታዊ መዘኻኸሪ ናይ ቀንዲ ስርዓታት እምነት ኦርቶዶክስ ኮይኑ የገልግል።</string>
+    <string name="holiday_orthodox_ghad">ገሃድ</string>
+    <string name="holiday_orthodox_ghad_history">ገሃድ ማለት ናይ ጥምቀት (ኤፊፋንያ) ዋዜማ፡ ኣብ ጥሪ 10 ዚግበር ጾም እዩ። እዚ ጾም እዚ ንብዓል ጥምቀት ክርስቶስ ኣዝዩ ንሓጐስን ኣገዳስን ዝኾነ ኣካልን መንፈስን ንምድላው ይጽወም። ምእመናን ሥርዓት ብንጽህናን ብመንፈሳዊ ምድላውን ንምቕባል ዜረጋግጽ ናይ ሓደ መዓልቲ ጾም እዩ።</string>
+    <string name="holiday_orthodox_ghad_celebration">እቲ ጾም ብተለምዶ ዚፍታሕ ኣብ ዋዜማ ጥምቀት ድሕሪ ናይ ፍርቂ ለይቲ ኣገልግሎት ወይ ሓንሳዕ ሓንሳዕ ኣብ ንግሆ ጥምቀት ድሕሪ ሥነ-ሥርዓት በረኸት ማይ እዩ። ኣገዳስነት ጥምቀትን ኢየሱስ ከም ወዲ ኣምላኽ ምግላጹን ንምስላስ ዚግበር ግዜ እዩ።</string>
+    <string name="holiday_orthodox_kana_zegelila">ቃና ዘገሊላ</string>
+    <string name="holiday_orthodox_kana_zegelila_history">ቃና ዘገሊላ፡ ኣብ መዘኻኸሪ በዓል መርዓ ቃና፡ ኢየሱስ ክርስቶስ ማይ ናብ ወይኒ ብምቕያር ዝፈጸሞ ናይ መጀመርታ ተኣምር ዜዘኻኽር በዓል ኦርቶዶክስ እዩ። እዚ ንደቀ መዛሙርቱ መለኮታዊ ሓይሉ ዝገለጸሉ ፍጻሜ ኣብ ጥሪ 11 (ብኢትዮጵያዊ ኣቆጻጽራ) ይኽበር።</string>
+    <string name="holiday_orthodox_kana_zegelila_celebration">እቲ በዓል ምግላጽ ክብሪ ክርስቶስን ምብራኽ መርዓን ማሕበራዊ ህይወትን የጕልሕ። ንሓይሊ ምቕያሩ መዘኻኸሪ ኰይኑ የገልግል እሞ መብዛሕትኡ ግዜ ብጸሎታትን ንባባትን ዜምልከት ኮይኑ፡ ኣብ ወንጌል ዮሃንስ ነቲ ተኣምር ኣብ ዚገልጽ ይምርኵስ።</string>
+    <string name="holiday_orthodox_lideta_mariam">ልደተ ማርያም</string>
+    <string name="holiday_orthodox_lideta_mariam_history">ልደተ ማርያም፡ ልደት ድንግል ማርያም፡ ኣብ ኢትዮጵያ ኦርቶዶክስ ተዋሕዶ ቤተ ክርስቲያን ወርሓዊ ሃይማኖታዊ ሥርዓት እዩ፡ እኳ ደኣ እቲ ቀንዲ ዓመታዊ በዓል ኣብ ግንቦት 1 (መብዛሕትኡ ግዜ ብጐርጐርዮሳዊ ኣቆጻጽራ ግንቦት 9) እንተ ኾነ። ልደት ኣዴና (ናይ ኣምላኽ ኣደ) ዜዘኻኽር ኮይኑ፡ ኣብ ባህሊ ኢትዮጵያ ኣዝዩ ዚኸበረ ቦታ ዘለዋ ድንግል ማርያም ንምኽባር ዝተዋህበ መዓልቲ እዩ።</string>
+    <string name="holiday_orthodox_lideta_mariam_celebration">ከም ወርሓዊ መዘኻኸሪ፡ ክሳዕ ድሕሪ ቀትሪ ብዚግበር ጾምን ፍሉይ ናይ ቤተ ክርስቲያን ኣገልግሎታትን ይኽበር። እቲ ዓመታዊ በዓል ንታሪኽ ድሕነት ኣብ ዝነበራ ኣገዳሲ ተራ ዝተዋህቡ ፍሉያት መዝሙራት፡ ጸሎታትን ሰልፍታትን ዜጠቓልል ዝያዳ ዝሰርሐ በዓል እዩ።</string>
+    <string name="holiday_orthodox_filseta">ፍልሰታ</string>
+    <string name="holiday_orthodox_filseta_history">ፍልሰታ፡ ጾም ዕርገት ድንግል ማርያም፡ ኣብ ኢትዮጵያ ኣቆጻጽራ ካብቶም ኣዝዮም ዝፍለጡን ዚጽወሙን ጾማት ሓደ እዩ። ንምሕላፍ ማርያም ናብ ሰማይ ብምዝካር ክሳብ ነሓሰ 16 ዚቕጽል ናይ 15 መዓልቲ ጾም እዩ። ፍልሰታ ማለት "ምውጻእ" ወይ "ስደት" ማለት እዩ።</string>
+    <string name="holiday_orthodox_filseta_celebration">እዚ ጾም እዚ፡ ኣብ ኣገባብ ምጽዋም ድሕሪ ዓቢይ ጾም ኣብ ካልኣይ ደረጃ ዚስራዕ ኮይኑ፡ በዚ እዋን እዚ ምእመናን ካብ ስጋን ጸባን ብምግላስ፡ ሓንሳዕ ሓንሳዕ ኣዝዩ ጥብቂ ዝኾነ ናይ ምግቢ ሥርዓት ይኽተሉ። ኣብያተ ክርስቲያናት ኣብተን ክልተ ሰሙናት ፍሉያት ኣገልግሎታት የካይዱ፡ እታ መዓልቲ በዓል ባዕላ ድማ ብዓበይቲ በዓላት እተመልከት ኮይና፡ ንንጽህናን ምልጃን ድንግል ማርያም ተኽብር።</string>
+    <string name="holiday_orthodox_debre_tabor">ደብረ ታቦር (ቡሄ)</string>
+    <string name="holiday_orthodox_debre_tabor_history">ደብረ ታቦር፡ ወይ ቡሄ ኣብ ነሓሰ 13 ዚኽበር እዩ። ኢየሱስ ሰለስተ ደቀ መዛሙርቱ (ጴጥሮስን፡ ያዕቆብን፡ ዮሃንስን) ናብ ደብረ ታቦር ወሲዱ ገጹ ከም ጸሓይ ኪበርህ፡ ክዳኑ ኸኣ ከም ብርሃን ጻዕዳ ኪኸውን ዚገልጽ ፍጻሜ የዘኻኽር።</string>
+    <string name="holiday_orthodox_debre_tabor_celebration">ኣብ ሃገርና ደቀቕቲ ቈልዑ እዚ በዓል እዚ ቅድሚ ምብጽሑ ቀደም ኣቢሎም ጭራፍ እናገመዱን እናጮኹን (እናንጐጉን) ይሰንብቱ። በዓሉ ከም ጽባሕ ኪኸውን ከሎ፡ ከም ሎሚ ኣብ ዋዜማኡ (ነሓሰ 12) ደቀቕቲ ቈልዑ ሰፈር ኣብ ነፍሲ ወከፍ ገዛ እናዞሩ ጭፈራ ቡሄ እናጨፈሩ ሙምሙል ዳቦ ይቕበሉ። ኣብ ገለ ከባቢታት ኣብ መዓልቲ ቡሄ ምሸት ጪራ ይውልዑ።</string>
+    <!-- ============================================ -->
+    <!-- ናይ ምስልምና በዓላት (Muslim Holidays) -->
+    <!-- ============================================ -->
+    <string name="holiday_muslim_mawlid">መውሊድ (Mawlid al-Nabi)</string>
+    <string name="holiday_muslim_mawlid_history">መውሊድ (Mawlid al-Nabi) ልደት ነቢ መሓመድ ዘኽብር ኮይኑ፡ ዕለት 12 ረቢዕ አል-አወል ይበዓል። ሙስሊማት ንነቢ ዘለዎም ፍቕርን ኣኽብሮትን ዝገልጽሉ ዕለት እዩ።</string>
+    <string name="holiday_muslim_mawlid_celebration">ኣብ ኢትዮጵያ፡ ብፍላይ ኣብ ከተማታት ከም ኣዲስ ኣበባን ሃረርን፡ ምእመናን መዛሙር (መንዙማ) እናዘመሩ ብዘካይድዎ ዓቢ ሰላማዊ ሰልፊ ብድምቀት ይኽበር። እታ ዕለት ብፍሉይ ጸሎታት፡ ብዛዕባ ህይወት ነቢ ብዝወሃብ ስብከታትን ብዓቢ ምጽዋት መግብን ትፍለጥ።</string>
+
+    <string name="holiday_muslim_ramadan_start">መጀመርታ ጾም ረመዳን</string>
+    <string name="holiday_muslim_ramadan_start_history">እዚ መዓልቲ እዚ፡ ብምርኣይ ሓድሽ ወርሒ ዝውሰን፡ ቅዱስ ወርሒ ጾም እስልምና ምጅማሩ የብስር። ጥዕንኦም ዝፈቕደሎም ዓበይቲ ሙስሊማት፡ ካብ ወጋሕታ ክሳብ ምሉእ ምሸት ካብ መግብን መስተን ተኸልኪሎም፡ ኣብ ጸሎትን መንፈሳዊ ምጽራይን የትኩሩ።</string>
+    <string name="holiday_muslim_ramadan_start_celebration">ኣብ ኢትዮጵያ፡ እቲ ናይ ቅድሚ ወጋሕታ መግቢ (ሱሑር) ከምኡ\'ውን እቲ ጾም ዝፍተሓሉ (ኢፍጣር) መብዛሕትኡ ግዜ ብሓባር እዩ ዝካየድ። መስጊዳት ንተወሳኺ ናይ ለይቲ ተራዊሕ ጸሎታት ዝመጹ ምእመናን ይበዝሑ፡ ንምጽዋት እውን ዓቢ ኣትኵሮ ይወሃቦ።</string>
+
+    <string name="holiday_muslim_eid_fitr">ኢድ አል-ፈጥር</string>
+    <string name="holiday_muslim_eid_fitr_history">ኢድ አል-ፈጥር (\"በዓል ፍታሕ ጾም\")፡ ናይ ረመዳን ጾም ብሓጎስ ምዝዛሙ የ müjdecisi እዩ። ናይ ሓደ ወርሒ ጾም ብዓወት ምዝዛሙን ንኣላህ ምስጋና ዝቐርበሉ ግዜ ምዃኑን የመልክት። ቅድሚ ጸሎት ዘካተል-ፈጥር (ግዴታዊ ምጽዋት) ምሃብ ኣገዳሲ እዩ።</string>
+    <string name="holiday_muslim_eid_fitr_celebration">እታ ዕለት ኣብ ዓበይቲ ቦታታት ጸሎት ብዝካየድ ፍሉይ ሓባራዊ ጸሎት ትጅምር። በዓል መግቢ፡ ሓደስቲ ክዳውንቲ ተኸዲንካ ቤተሰብን ፈተውትን ምብጻሕ፡ ከምኡ\'ውን እቲ ዝተዋህበ ዘካት ምስጋና ድኻታት\'ውን ከብዕሉ ብምግባር ይፍለጥ።</string>
+
+    <string name="holiday_muslim_arafat">መዓልቲ ዐረፋ</string>
+    <string name="holiday_muslim_arafat_history">መዓልቲ ዐረፋ ዕለት 9 ዙልሒጃ ትኽበር፡ እዚ ድማ ዋንነን ቀንዲን ክፋል ናይ ሐጅ እዩ። ነቢ መሓመድ ኣብ ጎቦ ዐረፋ ናይ መፋነዊ ስብከቶም ዘስምዑሉ መዓልቲ ተዘክሮ።</string>
+    <string name="holiday_muslim_arafat_celebration">ነቶም ሐጅ ዘይገብሩ ሙስሊማት፡ ጾም፡ ጸሎትን ምሕረት ምሕታትን ኣዝዩ ዝተመከረ መዓልቲ እዩ። ኣብዛ መዓልቲ እዚኣ ምጻም፡ ናይ ዝሓለፈን ዝመጽእን ዓመት ሓጥያት ከም ዘሰርይ ይእመን።</string>
+
+    <string name="holiday_muslim_eid_adha">ኢድ አል-አድሃ (ዐረፋ)</string>
+    <string name="holiday_muslim_eid_adha_history">ኢድ አል-አድሃ (\"በዓል መስዋእቲ\") ዕለት 10 ዙልሒጃ ይጅምር። ነቢ ኢብራሂም ንኣላህ ብምእዛዝ ወዱ ክስውእ ፍቓደኛ ዝነበረሉን፡ ኣላህ ድማ ኣብ ክንድኡ ድዑል ዘቕረበሉን ግዜ ዘኽብር እዩ።</string>
+    <string name="holiday_muslim_eid_adha_celebration">እቲ በዓል እንስሳ (ከም በግዕ ወይ ጤል) ብምስዋእ ይኽበር። እቲ ስጋ ንቤተሰብ፡ ንኣዝማድን ኣዕሩኽን፡ ከምኡ\'ውን ንድኻታት ተባሂሉ ብሰለስተ ይምቀል፤ እዚ ድማ ማሕበራዊ ምትእስሳር የደልድል።</string>
+
+    <string name="holiday_muslim_hijri_new_year">ሓድሽ ዓመት እስልምና (ሒጅራ)</string>
+    <string name="holiday_muslim_hijri_new_year_history">ሓድሽ ዓመት እስልምና (አል-ሒጅራ) ምጅማር ወርሒ ሙሐረም የመልክት። ነቢ መሓመድን ተኸተልቱን ካብ መካ ናብ መዲና ዝገበርዎ ስደት (ሒጅራ) የዘክር፤ እዚ ድማ ናይ መጀመርታ ማሕበረሰብ ሙስሊም ክምስረት ገይሩ እዩ።</string>
+    <string name="holiday_muslim_hijri_new_year_celebration">ኣብ ኢትዮጵያ፡ እዛ መዓልቲ እዚኣ መብዛሕትኡ ግዜ ብጸጥታን ብምስትንታንን ትኽበር። ካብ ህዝባዊ በዓላትን ድግሳትን ይልቅስ፡ ብዙሓት ብዛዕባ ኣገዳስነት እቲ ፍጻመ ዘልዕሉ ስብከታትን ፍሉይ ጸሎታትን ንምስታፍ ናብ መስጊዳት ይኸዱ።</string>
+
+    <string name="holiday_muslim_ashura">ኣሹራ</string>
+    <string name="holiday_muslim_ashura_history">ኣሹራ ዕለት 10 ሙሐረም ትኽበር። ኣብ ኢትዮጵያ ንዝርከቡ መብዛሕትኦም ሱኒ ሙስሊማት፡ እታ ዕለት ብቐንዱ ኣላህ ንነቢ ሙሴን እስራኤላውያንን ካብ ፈርዖን ዘድሓነሉ መዓልቲ ተዘክር።</string>
+    <string name="holiday_muslim_ashura_celebration">እቲ በዓል ብዋናነት ብፍቓደኝነት ጾምን ብተወሳኺ ጸሎታትን ይፍለጥ። ገለ ማሕበረሰባት ኢትዮጵያ\'ውን ንችጉራት ብምጽዋት ዝዕደል ፍሉይ መግቢ ናይ ምድላው ልምዲ ኣለዎም።</string>
+
+    <string name="holiday_muslim_isra_miraj">ኢስራእ ወል ሚዕራጅ</string>
+    <string name="holiday_muslim_isra_miraj_history">ኢስራእ ወል ሚዕራጅ፡ ናይ ነቢ መሓመድ ተኣምራታዊ ናይ ለይቲ ጉዕዞ ካብ መካ ናብ የሩሳሌም (ኢስራእ) ከምኡ\'ውን ቀጺሉ ናብ ሰማያት ምዕራጉ (ሚዕራጅ) የዘክር። ኣብዚ ጉዕዞ እዚ ኣተን ሓሙሽተ ናይ መዓልቲ ጸሎታት ከም ዝተኣዘዛ ይእመን።</string>
+    <string name="holiday_muslim_isra_miraj_celebration">እታ ለይቲ ኣብ መስጊዳት ብፍሉይ ጸሎታትን ሃይማኖታዊ ኣኼባታትን ትዝከር። ሊቃውንቲ ዛንታ ጉዕዞ ነቢን መንፈሳዊ ኣገዳስነቱን ይትርኹ፡ ኣብ ኣገዳስነት ሓሙሽተ ዕለታዊ ጸሎታት ድማ የትኩሩ።</string>
+
+    <string name="holiday_muslim_mid_shaban">ማእከላይ ሻዕባን (በራዓ)</string>
+    <string name="holiday_muslim_mid_shaban_history">ማእከላይ ሻዕባን፡ ወይ 15\'ይቲ ለይቲ ሻዕባን፡ \"ለይለተል በራዓ\" (ለይቲ ምሕረት) ተባሂላ ትፍለጥ። ኣላህ ዕድል ደቂ ሰባት ዝውስነሉን ነቶም ብልቦም ንዝልምንዎ ምሕረት ዝህበሉን ለይቲ ምዃኑ ይእመን።</string>
+    <string name="holiday_muslim_mid_shaban_celebration">ብዙሓት ነታ ለይቲ ብፍቓደኝነት ጸሎታት፡ ቁርኣን ብምንባብን ምሕረት ብምልማንን የሕልፍዋ። እዚ ግዜ እዚ ንመንፈሳዊ ዕዳሰን ነቲ ዝመጽእ ቅዱስ ወርሒ ረመዳን መዳለዊን ተባሂሉ ይውሰድ።</string>
+
+
+    <string name="add_event">መዘኻኸሪ ወስኽ</string>
+    <string name="edit_event">መዘኻኸሪ ኣመሓይሽ</string>
+    <string name="delete_event">መዘኻኸሪ ሰርዝ</string>
+    <string name="delete_event_title">ክስረዝ?</string>
+    <string name="delete_event_message">\"%1$s\" ክጠፍእ ርግጸኛ ዲኻ?</string>
+    <string name="delete">ሰርዝ</string>
+
+    <string name="title">ኣርእስቲ</string>
+    <string name="title_required">ኣርእስቲ የድሊ</string>
+    <string name="description_optional">መግለጺ </string>
+    <string name="date">ዕለት</string>
+    <string name="start_time">መጀመሪ ሰዓት</string>
+    <string name="end_time">መወዳእታ ሰዓት</string>
+    <string name="all_day_event">ምልእቲ መዓልቲ</string>
+    <string name="category">ምድብ</string>
+
+    <string name="repeat">ዝደጋገም</string>
+    <string name="repeat_weekly">ሰሙናዊ ድግግም</string>
+    <string name="no_repeat">ኣይትድገም</string>
+    <string name="weekly">ሰሙናዊ</string>
+    <string name="repeat_on">ዝደጋገመሉ መዓልቲ</string>
+    <string name="ends">መወዳእታ</string>
+    <string name="never">መወዳእታ የብሉን</string>
+    <string name="until">ክሳብ</string>
+    <string name="until_date">ክሳብ %1$s</string>
+    <string name="select_end_date">መወዳእታ ዕለት ምረጽ</string>
+
+    <string name="reminder">መዘኻኸሪ</string>
+    <string name="add_reminder">መዘኻኸሪ ወስኽ</string>
+    <string name="show_reminder_before">ቅድሚ %1$s ኣዘክረኒ</string>
+    <string name="at_time_of_event">በቲ ሰዓት</string>
+    <string name="minutes_before_5">ቅድሚ 5 ደቒቕ</string>
+    <string name="minutes_before_15">ቅድሚ 15 ደቒቕ</string>
+    <string name="minutes_before_30">ቅድሚ 30 ደቒቕ</string>
+    <string name="hour_before_1">ቅድሚ 1 ሰዓት</string>
+    <string name="reminder_minutes_before">ቅድሚ %1$d ደቒቕ</string>
+
+    <string name="create">ፍጠር</string>
+    <string name="update">ኣሐድስ</string>
+    <string name="cancel">ይትረፍ</string>
+    <string name="ok">ሕራይ</string>
+
+    <string name="no_events">መዘኻኸሪ የለን</string>
+    <string name="tap_plus_to_add_event">ቀዳማይ መዘኻኸሪኻ ንምቅማጥ + ጠውቕ</string>
+    <string name="error_loading_events">ኣብ ምጽዓን ጌጋ ኣጋጢሙ</string>
+
+    <string name="event_date_all_day">%1$d/%2$d/%3$d (ምልእቲ መዓልቲ)</string>
+    <string name="recurring_event">ተደጋጋሚ መዘኻኸሪ</string>
+    <string name="recurring">ተደጋጋሚ</string>
+
+    <!-- Event Filter Display -->
+    <string name="filter">ምርጫ</string>
+    <string name="show_all">ዩሉ ኣርኢ</string>
+    <string name="showing_all_events">ዩሉ መዘኻኸሪታት በምርኣይ ሂላይ</string>
+    <string name="showing_from_to">ካብ %1$s ክሳዕ %2$s በምርኣይ ሂላይ</string>
+    <string name="showing_from">ካብ %1$s በምርኣይ ሂላይ</string>
+    <string name="showing_until">ክሳዕ %1$s በምርኣይ ሂላይ</string>
+
+    <string name="time_just_now">ሕጂ</string>
+    <string name="time_in_a_moment">ብቐረባ</string>
+    <string name="time_minute_singular">ደቒቕ</string>
+    <string name="time_minute_plural">ደቓይቕ</string>
+    <string name="time_hour_singular">ሰዓት</string>
+    <string name="time_hour_plural">ሰዓታት</string>
+    <string name="time_day_singular">መዓልቲ</string>
+    <string name="time_day_plural">መዓልታት</string>
+    <string name="time_week_singular">ሰሙን</string>
+    <string name="time_week_plural">ሰሙናት</string>
+    <string name="time_month_singular">ወርሒ</string>
+    <string name="time_month_plural">ኣዋርሕ</string>
+    <string name="time_year_singular">ዓመት</string>
+    <string name="time_year_plural">ዓመታት</string>
+    <string name="time_ago">ቅድሚ %1$d %2$s</string>
+    <string name="time_in_future">ኣብ ውሽጢ %1$d %2$s</string>
+
+    <string name="permission_notification_title">መፍለጣት ንምርካብ</string>
+    <string name="permission_notification_rationale">ብዛዕባ ፍጻሜታትካ ንኸነዘክረካ ፍቓድ መፍለጣት የድልየና። ነቶም መደብ ዝሓዝካሎም ፍጻሜታት በብእዋኑ መዘኻኸሪ ክትቅበል ኢኻ።</string>
+    <string name="permission_exact_alarm_title">ልክዕ መጠንቀቕታታት ኣንቅሕ</string>
+    <string name="permission_exact_alarm_rationale">ነቲ ዘቀመጥካዮ መዘኻኸሪ መፍለጥ(ኖቲፊኬሽን) ክትረክብ እንተደሊኻ፡ ነቲ ኣፕሊኬሽን ፍቓድ (PERMISSION) ክትህቦ የድሊ። ድሕሪ እዚ "Permission Request" ዝብል ምስ ዝመጸካ ALLOW ዝብል ጠውቕ።</string>
+    <string name="permission_exact_alarm_instructions">ኣብቲ ዝቕጽል ገጽ፡ ንናይ ኢትዮጵያ መቁጸሪ ዕለት "መጠንቀቕታታትን መዘኻኸሪታትን" ኣንቅሕ።</string>
+    <string name="permission_grant">ፍቓድ ሃብ</string>
+    <string name="permission_not_now">ሕጂ ኣይኮነን</string>
+    <string name="permission_open_settings">ቅጥዕታት ክፈት</string>
+    <string name="permission_close">ዕጸ</string>
+    <string name="permission_fix">ኣመዓራሪ</string>
+    <string name="permission_banner_title">መፍለጥ ኣይረአን ኣሎ</string>
+    <string name="permission_banner_message">%1$s ይጐድል ኣሎ። መዘኻኸሪ መፍለጣት ንምርካብ \'ኣመዓራሪ\' ጠውቕ።</string>
+    <string name="permission_warning_compact">መዘኻኸሪ መፍለጣት ንምቕባል ፍቓዳት ኣንቅሕ</string>
+    <string name="permission_fix_title">መዘኻኸሪታት ኣንቅሕ</string>
+    <string name="permission_fix_message">መዘኻኸሪ መፍለጣት ንምቕባል ነዞም ዝስዕቡ ፍቓዳት ሃብ፦</string>
+    <string name="permission_grant_notifications">ናይ መፍለጥ ፍቓድ ሃብ</string>
+    <string name="permission_grant_exact_alarms">ልክዕ መጠንቀቕታታት ኣንቅሕ</string>
+
+    <string-array name="ethiopian_months">
+        <item>መስከረም</item>
+        <item>ጥቅምቲ</item>
+        <item>ሕዳር</item>
+        <item>ታሕሳስ</item>
+        <item>ጥሪ</item>
+        <item>ለካቲት</item>
+        <item>መጋቢት</item>
+        <item>ሚያዝያ</item>
+        <item>ግንቦት</item>
+        <item>ሰነ</item>
+        <item>ሓምለ</item>
+        <item>ነሓሰ</item>
+        <item>ጳጉሜ</item>
+    </string-array>
+
+    <string-array name="weekday_names_short">
+        <item>ሰኑ</item>
+        <item>ሰሉ</item>
+        <item>ረቡ</item>
+        <item>ሓሙ</item>
+        <item>ዓር</item>
+        <item>ቀዳ</item>
+        <item>ሰን</item>
+    </string-array>
+
+    <string-array name="weekday_names_full">
+        <item>ሰኑይ</item>
+        <item>ሰሉስ</item>
+        <item>ረቡዕ</item>
+        <item>ሓሙስ</item>
+        <item>ዓርቢ</item>
+        <item>ቀዳም</item>
+        <item>ሰንበት</item>
+    </string-array>
+
+    <string-array name="theme_color_names">
+        <item>ሰማያዊ</item>
+        <item>ቀይሕ</item>
+        <item>ቀጠልያ</item>
+        <item>ወይናዊ</item>
+        <item>ብርቱካናዊ</item>
+    </string-array>
+
+    <string-array name="theme_mode_names">
+        <item>ቴማ (ሕብሪ)</item>
+        <item>ብሩህ (Light)</item>
+        <item>ጸልማት (Dark)</item>
+    </string-array>
+</resources>
