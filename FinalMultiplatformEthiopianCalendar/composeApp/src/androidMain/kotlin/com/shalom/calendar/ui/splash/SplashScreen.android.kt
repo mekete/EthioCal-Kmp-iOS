@@ -15,7 +15,7 @@ import com.airbnb.lottie.compose.LottieAnimation
 import com.airbnb.lottie.compose.LottieCompositionSpec
 import com.airbnb.lottie.compose.animateLottieCompositionAsState
 import com.airbnb.lottie.compose.rememberLottieComposition
-import com.shalom.calendar.R
+import com.shalom.ethiopiancalendar.R
 
 @Composable
 actual fun AnimatedSplashScreen(onSplashFinished: () -> Unit) {
