@@ -1,8 +1,8 @@
 package com.shalom.ethiopicchrono
 
 /**
- * iOS-compatible ChronoField enum
- * Simplified version of java.time.temporal.ChronoField for cross-platform compatibility
+ * ChronoField enum for cross-platform compatibility
+ * Simplified version of java.time.temporal.ChronoField
  */
 enum class ChronoField {
     DAY_OF_WEEK,

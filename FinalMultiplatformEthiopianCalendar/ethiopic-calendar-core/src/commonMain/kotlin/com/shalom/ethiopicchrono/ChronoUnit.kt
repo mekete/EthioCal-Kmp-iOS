@@ -1,8 +1,8 @@
 package com.shalom.ethiopicchrono
 
 /**
- * iOS-compatible ChronoUnit enum
- * Simplified version of java.time.temporal.ChronoUnit for cross-platform compatibility
+ * ChronoUnit enum for cross-platform compatibility
+ * Simplified version of java.time.temporal.ChronoUnit
  */
 enum class ChronoUnit {
     DAYS,
