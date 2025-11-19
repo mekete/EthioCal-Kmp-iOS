@@ -16,8 +16,8 @@ import androidx.compose.ui.Modifier
 import org.jetbrains.compose.resources.painterResource
 import org.jetbrains.compose.ui.tooling.preview.Preview
 
-import kmpethiopiancalendar.composeapp.generated.resources.Res
-import kmpethiopiancalendar.composeapp.generated.resources.compose_multiplatform
+import ethiopiancalendar.composeapp.generated.resources.Res
+import ethiopiancalendar.composeapp.generated.resources.compose_multiplatform
 
 @Composable
 @Preview
