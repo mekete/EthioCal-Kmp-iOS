@@ -14,7 +14,7 @@ import java.time.temporal.TemporalAccessor
 import java.time.temporal.TemporalField
 import java.time.temporal.ValueRange
 
-gitclass EthiopicChronology private constructor() : AbstractChronology(), Serializable {
+class EthiopicChronology private constructor() : AbstractChronology(), Serializable {
 
     companion object {
         @JvmField
