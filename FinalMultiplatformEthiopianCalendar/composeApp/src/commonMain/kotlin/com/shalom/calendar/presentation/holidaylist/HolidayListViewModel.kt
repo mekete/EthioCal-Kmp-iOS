@@ -88,7 +88,7 @@ class CalendarItemListViewModel(
                                 holiday.ethiopianDay
                             )
                         )
-                    }.sortedWith(compareBy { it.actualEthiopicDate })
+                    }.sortedWith(compareBy { it.actualEthiopicDate.toEpochDay() })
 
                     // Get current settings values to apply initial filter
                     val showAllDayOffHolidays = settingsPreferences.includeAllDayOffHolidays

@@ -1,3 +1,5 @@
+@file:JvmName("KmpUtilsAndroid")
+
 package com.shalom.calendar.util
 
 import java.util.UUID
