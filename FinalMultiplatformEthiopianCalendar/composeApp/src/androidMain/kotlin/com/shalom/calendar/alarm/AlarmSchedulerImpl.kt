@@ -6,9 +6,14 @@ import android.content.Context
 import android.content.Intent
 import android.os.Build
 import com.shalom.calendar.data.local.entity.EventEntity
-import java.time.DayOfWeek
-import java.time.ZonedDateTime
-import java.time.temporal.ChronoUnit
+import kotlinx.datetime.Clock
+import kotlinx.datetime.DayOfWeek
+import kotlinx.datetime.Instant
+import kotlinx.datetime.TimeZone
+import kotlinx.datetime.toInstant
+import kotlinx.datetime.toLocalDateTime
+import kotlin.time.Duration.Companion.days
+import kotlin.time.Duration.Companion.minutes
 
 /**
  * Android implementation of AlarmScheduler using AlarmManager.
@@ -22,10 +27,10 @@ class AlarmSchedulerImpl(private val context: Context) : AlarmScheduler {
         val reminderMinutes = event.reminderMinutesBefore ?: return false
 
         // Calculate alarm trigger time
-        val alarmTime = event.startTime.minus(reminderMinutes.toLong(), ChronoUnit.MINUTES)
+        val alarmTime = event.startTime.minus(reminderMinutes.minutes)
 
         // Don't schedule alarms for past times
-        if (alarmTime.isBefore(ZonedDateTime.now())) {
+        if (alarmTime < Clock.System.now()) {
             // For repeating events, try to find the next occurrence
             if (event.recurrenceRule != null) {
                 return scheduleNextRecurringAlarm(event)
@@ -39,7 +44,7 @@ class AlarmSchedulerImpl(private val context: Context) : AlarmScheduler {
         return try {
             alarmManager.setExactAndAllowWhileIdle(
                 AlarmManager.RTC_WAKEUP,
-                alarmTime.toInstant().toEpochMilli(),
+                alarmTime.toEpochMilliseconds(),
                 pendingIntent
             )
             true
@@ -54,7 +59,7 @@ class AlarmSchedulerImpl(private val context: Context) : AlarmScheduler {
 
         // Check if recurrence has ended
         val recurrenceEnd = event.recurrenceEndDate
-        if (recurrenceEnd != null && recurrenceEnd.isBefore(ZonedDateTime.now())) {
+        if (recurrenceEnd != null && recurrenceEnd < Clock.System.now()) {
             return false
         }
 
@@ -74,10 +79,10 @@ class AlarmSchedulerImpl(private val context: Context) : AlarmScheduler {
             ?: return false
 
         // Calculate alarm time (next occurrence - reminder offset)
-        val alarmTime = nextOccurrence.minus(reminderMinutes.toLong(), ChronoUnit.MINUTES)
+        val alarmTime = nextOccurrence.minus(reminderMinutes.minutes)
 
         // Don't schedule if alarm time is in the past
-        if (alarmTime.isBefore(ZonedDateTime.now())) {
+        if (alarmTime < Clock.System.now()) {
             return false
         }
 
@@ -87,7 +92,7 @@ class AlarmSchedulerImpl(private val context: Context) : AlarmScheduler {
         return try {
             alarmManager.setExactAndAllowWhileIdle(
                 AlarmManager.RTC_WAKEUP,
-                alarmTime.toInstant().toEpochMilli(),
+                alarmTime.toEpochMilliseconds(),
                 pendingIntent
             )
             true
@@ -97,34 +102,45 @@ class AlarmSchedulerImpl(private val context: Context) : AlarmScheduler {
     }
 
     private fun findNextOccurrence(
-        startTime: ZonedDateTime,
+        startTime: Instant,
         weekDays: Set<DayOfWeek>,
-        endDate: ZonedDateTime?
-    ): ZonedDateTime? {
-        val now = ZonedDateTime.now()
-        var current = if (startTime.isAfter(now)) startTime else now
+        endDate: Instant?
+    ): Instant? {
+        val timeZone = TimeZone.currentSystemDefault()
+        val now = Clock.System.now()
+        val startDateTime = startTime.toLocalDateTime(timeZone)
+
+        var currentInstant = if (startTime > now) startTime else now
+        var currentDateTime = currentInstant.toLocalDateTime(timeZone)
 
         val maxSearchDays = 365
         var daysSearched = 0
 
         while (daysSearched < maxSearchDays) {
-            if (endDate != null && current.isAfter(endDate)) {
+            if (endDate != null && currentInstant > endDate) {
                 return null
             }
 
-            if (weekDays.contains(current.dayOfWeek)) {
-                val occurrence = current
-                    .withHour(startTime.hour)
-                    .withMinute(startTime.minute)
-                    .withSecond(startTime.second)
-                    .withNano(0)
+            if (weekDays.contains(currentDateTime.dayOfWeek)) {
+                // Create occurrence at the same time as startTime but on current date
+                val occurrenceDateTime = kotlinx.datetime.LocalDateTime(
+                    currentDateTime.date,
+                    kotlinx.datetime.LocalTime(
+                        startDateTime.hour,
+                        startDateTime.minute,
+                        startDateTime.second,
+                        0
+                    )
+                )
+                val occurrence = occurrenceDateTime.toInstant(timeZone)
 
-                if (occurrence.isAfter(now)) {
+                if (occurrence > now) {
                     return occurrence
                 }
             }
 
-            current = current.plusDays(1)
+            currentInstant = currentInstant.plus(1.days)
+            currentDateTime = currentInstant.toLocalDateTime(timeZone)
             daysSearched++
         }
 
@@ -180,7 +196,7 @@ class AlarmSchedulerImpl(private val context: Context) : AlarmScheduler {
             putExtra(AlarmReceiver.EXTRA_EVENT_ID, event.id)
             putExtra(AlarmReceiver.EXTRA_EVENT_TITLE, event.summary)
             putExtra(AlarmReceiver.EXTRA_EVENT_DESCRIPTION, event.description)
-            putExtra(AlarmReceiver.EXTRA_EVENT_TIME, event.startTime.toInstant().toEpochMilli())
+            putExtra(AlarmReceiver.EXTRA_EVENT_TIME, event.startTime.toEpochMilliseconds())
             putExtra(AlarmReceiver.EXTRA_IS_RECURRING, event.recurrenceRule != null)
         }
 

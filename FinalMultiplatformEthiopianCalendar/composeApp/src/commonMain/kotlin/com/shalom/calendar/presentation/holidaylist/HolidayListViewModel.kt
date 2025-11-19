@@ -4,6 +4,7 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.shalom.calendar.data.preferences.SettingsPreferences
 import com.shalom.calendar.data.repository.HolidayRepository
+import com.shalom.calendar.domain.model.Holiday
 import com.shalom.calendar.domain.model.HolidayOccurrence
 import com.shalom.calendar.domain.model.HolidayType
 import com.shalom.ethiopicchrono.ChronoField
@@ -76,8 +77,18 @@ class CalendarItemListViewModel(
                         message = e.message ?: "Failed to load calendar items"
                     )
                 }
-                .collect { calendarItems ->
-                    allCalendarItems = calendarItems.sortedWith(compareBy { it.actualEthiopicDate })
+                .collect { holidays ->
+                    // Convert Holiday to HolidayOccurrence
+                    allCalendarItems = holidays.map { holiday ->
+                        HolidayOccurrence(
+                            holiday = holiday,
+                            ethiopicDate = EthiopicDate.of(
+                                holiday.ethiopianYear,
+                                holiday.ethiopianMonth,
+                                holiday.ethiopianDay
+                            )
+                        )
+                    }.sortedWith(compareBy { it.actualEthiopicDate })
 
                     // Get current settings values to apply initial filter
                     val showAllDayOffHolidays = settingsPreferences.includeAllDayOffHolidays

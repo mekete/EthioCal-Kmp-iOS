@@ -9,7 +9,7 @@ import androidx.room.RoomDatabase
  * Requires Android Context to create the database.
  */
 actual object DatabaseBuilder {
-    private lateinit var context: Context
+    internal lateinit var context: Context
 
     /**
      * Initialize with Android context.
