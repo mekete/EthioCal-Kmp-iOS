@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="main$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/to-convert-compose-ethiopian-calendar-app2/ethiopic-chrono/src/main/res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="main" generated-set="main$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/to-convert-compose-ethiopian-calendar-app2/ethiopic-chrono/src/main/res"><file path="/Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/to-convert-compose-ethiopian-calendar-app2/ethiopic-chrono/src/main/res/values-am/strings.xml" qualifiers="am"><string name="mtrl_picker_title">Select date</string><string name="mtrl_picker_cancel">Cancel</string><string name="mtrl_picker_confirm">OK</string><string name="mtrl_picker_date_header_title">Selected Date</string><string name="mtrl_picker_range_header_title">Date Range</string><string name="ok">እሺ</string><string name="cancel">ይቅ</string><string name="pmtrl_picker_confirm">@string/ok</string><string name="pmtrl_picker_cancel">@string/cancel</string><string name="day_monday">ሰ</string><string name="day_tuesday">ማ</string><string name="day_wednesday">ረ</string><string name="day_thursday">ሐ</string><string name="day_friday">አ</string><string name="day_saturday">ቅ</string><string name="day_sunday">ቅ</string><string name="ethiopic_picker_title">ቀን ይምረጡ</string><string-array name="ethiopian_months">
+        <item>መስከረም</item>
+        <item>ጥቅምት</item>
+        <item>ሕዳር</item>
+        <item>ታህሳስ</item>
+        <item>ጥር</item>
+        <item>የካቲት</item>
+        <item>መጋቢት</item>
+        <item>ሚያዝያ</item>
+        <item>ግንቦት</item>
+        <item>ሰኔ</item>
+        <item>ሐምሌ</item>
+        <item>ነሐሴ</item>
+        <item>ጳጉሜ</item>
+    </string-array><string-array name="weekday_names_short">
+        <item>ሰኞ</item>
+        <item>ማክ</item>
+        <item>ረብ</item>
+        <item>ሐሙ</item>
+        <item>አር</item>
+        <item>ቅዳ</item>
+        <item>እሁ</item>
+    </string-array><string name="month_meskerem">መስከረም</string><string name="month_tikimt">ጥቅምት</string><string name="month_hidar">ሕዳር</string><string name="month_tahsas">ታህሳስ</string><string name="month_tir">ጥር</string><string name="month_yekatit">የካቲት</string><string name="month_megabit">መጋቢት</string><string name="month_miazia">ሚያዝያ</string><string name="month_ginbot">ግንቦት</string><string name="month_sene">ሰኔ</string><string name="month_hamle">ሐምሌ</string><string name="month_nehase">ነሐሴ</string><string name="month_pagume">ጳጉሜ</string></file><file path="/Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/to-convert-compose-ethiopian-calendar-app2/ethiopic-chrono/src/main/res/values/strings.xml" qualifiers=""><string name="mtrl_picker_title">Select date</string><string name="mtrl_picker_cancel">Cancel</string><string name="mtrl_picker_confirm">OK</string><string name="mtrl_picker_date_header_title">Selected Date</string><string name="mtrl_picker_range_header_title">Date Range</string><string name="ethiopic_picker_title">Select Ethiopian Date</string><string name="month_meskerem">Meskerem</string><string name="month_tikimt">Tikimt</string><string name="month_hidar">Hidar</string><string name="month_tahsas">Tahsas</string><string name="month_tir">Tir</string><string name="month_yekatit">Yekatit</string><string name="month_megabit">Megabit</string><string name="month_miazia">Miazia</string><string name="month_ginbot">Ginbot</string><string name="month_sene">Sene</string><string name="month_hamle">Hamle</string><string name="month_nehase">Nehase</string><string name="month_pagume">Pagume</string><string name="day_sunday">Sun</string><string name="day_monday">Mon</string><string name="day_tuesday">Tue</string><string name="day_wednesday">Wed</string><string name="day_thursday">Thu</string><string name="day_friday">Fri</string><string name="day_saturday">Sat</string><string-array name="ethiopian_months">
+        <item>Meskerem</item>
+        <item>Tikimt</item>
+        <item>Hidar</item>
+        <item>Tahsas</item>
+        <item>Tir</item>
+        <item>Yekatit</item>
+        <item>Megabit</item>
+        <item>Miazia</item>
+        <item>Ginbot</item>
+        <item>Sene</item>
+        <item>Hamle</item>
+        <item>Nehase</item>
+        <item>Pagume</item>
+    </string-array><string-array name="weekday_names_short">
+        <item>M</item>
+        <item>T</item>
+        <item>W</item>
+        <item>T</item>
+        <item>F</item>
+        <item>S</item>
+        <item>S</item>
+    </string-array><string-array name="weekday_names_mon_first">
+        <item>@string/day_monday</item>
+        <item>@string/day_tuesday</item>
+        <item>@string/day_wednesday</item>
+        <item>@string/day_thursday</item>
+        <item>@string/day_friday</item>
+        <item>@string/day_saturday</item>
+        <item>@string/day_sunday</item>
+    </string-array></file></source></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="debug$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/to-convert-compose-ethiopian-calendar-app2/ethiopic-chrono/src/debug/res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="debug" generated-set="debug$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/to-convert-compose-ethiopian-calendar-app2/ethiopic-chrono/src/debug/res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="generated$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/to-convert-compose-ethiopian-calendar-app2/ethiopic-chrono/build/generated/res/resValues/debug"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="generated" generated-set="generated$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/to-convert-compose-ethiopian-calendar-app2/ethiopic-chrono/build/generated/res/resValues/debug"/></dataSet><mergedItems/></merger>
