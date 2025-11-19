@@ -1,451 +1,274 @@
 
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/presentation/month/MonthCalendarViewModel.kt:402:47 None of the following candidates is applicable:
-fun BigDecimal.rem(other: BigDecimal): BigDecimal
-fun BigInteger.rem(other: BigInteger): BigInteger
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/presentation/month/MonthCalendarViewModel.kt:404:23 'operator' modifier is required on 'FirNamedFunctionSymbol kotlin/compareTo' in 'compareTo'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/presentation/month/MonthCalendarViewModel.kt:410:35 Overload resolution ambiguity between candidates:
-fun <T> Iterable<T>.minus(element: T): List<T>
-fun <K, V> Map<out K, V>.minus(key: K): Map<K, V>
-fun <T> Set<T>.minus(element: T): Set<T>
-fun <T> Sequence<T>.minus(element: T): Sequence<T>
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/presentation/month/MonthCalendarViewModel.kt:467:61 Unresolved reference 'isoDayNumber'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/presentation/month/MonthCalendarViewModel.kt:468:47 None of the following candidates is applicable:
-fun BigDecimal.rem(other: BigDecimal): BigDecimal
-fun BigInteger.rem(other: BigInteger): BigInteger
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/presentation/month/MonthCalendarViewModel.kt:470:23 'operator' modifier is required on 'FirNamedFunctionSymbol kotlin/compareTo' in 'compareTo'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/presentation/month/MonthCalendarViewModel.kt:476:35 Overload resolution ambiguity between candidates:
-fun <T> Iterable<T>.minus(element: T): List<T>
-fun <K, V> Map<out K, V>.minus(key: K): Map<K, V>
-fun <T> Set<T>.minus(element: T): Set<T>
-fun <T> Sequence<T>.minus(element: T): Sequence<T>
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/presentation/onboarding/OnboardingViewModel.kt:60:50 Unresolved reference 'OnboardingStart'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/presentation/onboarding/OnboardingViewModel.kt:68:32 Unresolved reference 'OnboardingPageView'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/presentation/onboarding/OnboardingViewModel.kt:84:28 Unresolved reference 'OnboardingLanguageSelected'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/presentation/onboarding/OnboardingViewModel.kt:96:28 Unresolved reference 'OnboardingThemeSelected'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/presentation/onboarding/OnboardingViewModel.kt:139:28 Unresolved reference 'OnboardingHolidaysConfigured'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/presentation/onboarding/OnboardingViewModel.kt:174:32 Unresolved reference 'OnboardingCalendarSelected'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/presentation/onboarding/OnboardingViewModel.kt:203:28 Unresolved reference 'OnboardingCompleted'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/presentation/onboarding/OnboardingViewModel.kt:220:28 Unresolved reference 'OnboardingSkipped'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/presentation/settings/SettingsViewModel.kt:130:32 Unresolved reference 'SettingsCalendarPreferencesChanged'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/presentation/settings/SettingsViewModel.kt:143:32 Unresolved reference 'SettingsCalendarPreferencesChanged'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/presentation/settings/SettingsViewModel.kt:156:32 Unresolved reference 'SettingsCalendarPreferencesChanged'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/presentation/settings/SettingsViewModel.kt:169:32 Unresolved reference 'SettingsOrthodoxNamesToggled'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/presentation/settings/SettingsViewModel.kt:180:32 Unresolved reference 'SettingsHolidayToggled'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/presentation/settings/SettingsViewModel.kt:194:32 Unresolved reference 'SettingsHolidayToggled'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/presentation/settings/SettingsViewModel.kt:208:32 Unresolved reference 'SettingsHolidayToggled'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/presentation/settings/SettingsViewModel.kt:247:32 Unresolved reference 'SettingsWidgetConfigured'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/presentation/settings/SettingsViewModel.kt:258:32 Unresolved reference 'SettingsWidgetConfigured'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/presentation/settings/SettingsViewModel.kt:269:32 Unresolved reference 'SettingsWidgetConfigured'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/presentation/settings/SettingsViewModel.kt:280:32 Unresolved reference 'SettingsWidgetConfigured'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/presentation/settings/SettingsViewModel.kt:292:32 Unresolved reference 'SettingsLanguageChanged'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/presentation/theme/ThemeViewModel.kt:42:32 Unresolved reference 'SettingsThemeChanged'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/presentation/theme/ThemeViewModel.kt:53:32 Unresolved reference 'SettingsThemeModeChanged'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/converter/DateConverterScreen.kt:49:28 Unresolved reference 'shared'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/converter/DateConverterScreen.kt:50:28 Unresolved reference 'shared'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/converter/DateConverterScreen.kt:51:28 Unresolved reference 'shared'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/converter/DateConverterScreen.kt:52:28 Unresolved reference 'shared'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/converter/DateConverterScreen.kt:53:28 Unresolved reference 'shared'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/converter/DateConverterScreen.kt:54:28 Unresolved reference 'shared'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/converter/DateConverterScreen.kt:55:28 Unresolved reference 'shared'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/converter/DateConverterScreen.kt:56:28 Unresolved reference 'shared'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/converter/DateConverterScreen.kt:57:28 Unresolved reference 'shared'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/converter/DateConverterScreen.kt:58:28 Unresolved reference 'shared'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/converter/DateConverterScreen.kt:59:28 Unresolved reference 'shared'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/converter/DateConverterScreen.kt:60:28 Unresolved reference 'shared'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/converter/DateConverterScreen.kt:61:28 Unresolved reference 'shared'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/converter/DateConverterScreen.kt:62:28 Unresolved reference 'shared'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/converter/DateConverterScreen.kt:63:28 Unresolved reference 'shared'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/converter/DateConverterScreen.kt:64:28 Unresolved reference 'shared'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/converter/DateConverterScreen.kt:65:28 Unresolved reference 'shared'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/converter/DateConverterScreen.kt:66:28 Unresolved reference 'shared'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/converter/DateConverterScreen.kt:67:28 Unresolved reference 'shared'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/converter/DateConverterScreen.kt:68:28 Unresolved reference 'shared'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/converter/DateConverterScreen.kt:87:42 Unresolved reference 'Res'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/converter/DateConverterScreen.kt:88:44 Unresolved reference 'Res'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/converter/DateConverterScreen.kt:163:47 Unresolved reference 'Res'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/converter/DateConverterScreen.kt:248:41 Unresolved reference 'Res'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/converter/DateConverterScreen.kt:253:41 Unresolved reference 'Res'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/converter/DateConverterScreen.kt:337:39 Unresolved reference 'Res'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/converter/DateConverterScreen.kt:385:61 Unresolved reference 'Res'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/converter/DateConverterScreen.kt:397:37 Unresolved reference 'Res'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/converter/DateConverterScreen.kt:439:39 Unresolved reference 'Res'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/converter/DateConverterScreen.kt:487:61 Unresolved reference 'Res'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/converter/DateConverterScreen.kt:499:37 Unresolved reference 'Res'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/converter/DateConverterScreen.kt:539:39 Unresolved reference 'Res'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/converter/DateConverterScreen.kt:571:55 Unresolved reference 'Res'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/converter/DateConverterScreen.kt:605:55 Unresolved reference 'Res'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/converter/DateConverterScreen.kt:624:37 Unresolved reference 'Res'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/converter/DateConverterScreen.kt:688:36 Unresolved reference 'Res'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/converter/DateConverterScreen.kt:690:36 Unresolved reference 'Res'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/converter/DateConverterScreen.kt:703:51 Unresolved reference 'Res'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/converter/DateConverterScreen.kt:717:55 Unresolved reference 'Res'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/converter/DateConverterScreen.kt:732:55 Unresolved reference 'Res'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/converter/DateConverterScreen.kt:748:37 Unresolved reference 'Res'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/event/EventScreen.kt:54:28 Unresolved reference 'shared'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/event/EventScreen.kt:55:28 Unresolved reference 'shared'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/event/EventScreen.kt:56:28 Unresolved reference 'shared'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/event/EventScreen.kt:57:28 Unresolved reference 'shared'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/event/EventScreen.kt:58:28 Unresolved reference 'shared'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/event/EventScreen.kt:59:28 Unresolved reference 'shared'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/event/EventScreen.kt:60:28 Unresolved reference 'shared'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/event/EventScreen.kt:61:28 Unresolved reference 'shared'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/event/EventScreen.kt:62:28 Unresolved reference 'shared'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/event/EventScreen.kt:63:28 Unresolved reference 'shared'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/event/EventScreen.kt:64:28 Unresolved reference 'shared'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/event/EventScreen.kt:85:42 Unresolved reference 'Res'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/event/EventScreen.kt:86:49 Unresolved reference 'Res'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/event/EventScreen.kt:103:50 Argument type mismatch: actual type is 'com.shalom.ethiopicchrono.EthiopicDate', but 'kotlinx.datetime.LocalDate?' was expected.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/event/EventScreen.kt:104:48 Argument type mismatch: actual type is 'com.shalom.ethiopicchrono.EthiopicDate', but 'kotlinx.datetime.LocalDate?' was expected.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/event/EventScreen.kt:117:47 Unresolved reference 'Res'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/event/EventScreen.kt:141:57 Unresolved reference 'Res'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/event/EventScreen.kt:192:55 Unresolved reference 'Res'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/event/EventScreen.kt:224:43 Unresolved reference 'Res'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/event/EventScreen.kt:225:42 Unresolved reference 'Res'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/event/EventScreen.kt:229:53 Unresolved reference 'event'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/event/EventScreen.kt:233:41 Unresolved reference 'Res'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/event/EventScreen.kt:238:41 Unresolved reference 'Res'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/event/EventScreen.kt:247:28 Argument type mismatch: actual type is 'kotlin.Comparable<it(kotlinx.datetime.LocalDate & java.time.chrono.ChronoLocalDate)>', but 'com.shalom.ethiopicchrono.EthiopicDate' was expected.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/event/EventScreen.kt:249:46 Argument type mismatch: actual type is 'com.shalom.ethiopicchrono.EthiopicDate', but 'kotlinx.datetime.LocalDate?' was expected.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/event/EventScreen.kt:257:28 Argument type mismatch: actual type is 'kotlin.Comparable<it(kotlinx.datetime.LocalDate & java.time.chrono.ChronoLocalDate)>', but 'com.shalom.ethiopicchrono.EthiopicDate' was expected.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/event/EventScreen.kt:259:44 Argument type mismatch: actual type is 'com.shalom.ethiopicchrono.EthiopicDate', but 'kotlinx.datetime.LocalDate?' was expected.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/event/EventScreen.kt:271:21 No parameter with name 'title' found.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/event/EventScreen.kt:273:21 No parameter with name 'ethiopicDate' found.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/event/EventScreen.kt:274:21 No parameter with name 'reminderTime' found.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/event/EventScreen.kt:274:21 No value passed for parameter 'summary'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/event/EventScreen.kt:274:21 No value passed for parameter 'startTime'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/event/EventScreen.kt:274:21 No value passed for parameter 'ethiopianYear'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/event/EventScreen.kt:274:21 No value passed for parameter 'ethiopianMonth'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/event/EventScreen.kt:274:21 No value passed for parameter 'ethiopianDay'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/event/EventScreen.kt:304:34 Unresolved reference 'event'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/event/EventScreen.kt:315:27 Unresolved reference 'event'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/event/EventScreen.kt:316:27 Unresolved reference 'event'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/event/EventScreen.kt:317:27 Unresolved reference 'event'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/event/EventScreen.kt:319:60 Unresolved reference 'event'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/event/EventScreen.kt:321:48 Unresolved reference 'event'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/event/EventScreen.kt:321:77 Unresolved reference 'event'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/event/EventScreen.kt:327:45 Unresolved reference 'event'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/event/EventScreen.kt:342:57 Unresolved reference 'Res'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/holidaylist/HolidayItem.kt:57:38 Unresolved reference 'Locale'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/holidaylist/HolidayListScreen.kt:41:28 Unresolved reference 'shared'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/holidaylist/HolidayListScreen.kt:42:28 Unresolved reference 'shared'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/holidaylist/HolidayListScreen.kt:43:28 Unresolved reference 'shared'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/holidaylist/HolidayListScreen.kt:44:28 Unresolved reference 'shared'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/holidaylist/HolidayListScreen.kt:45:28 Unresolved reference 'shared'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/holidaylist/HolidayListScreen.kt:46:28 Unresolved reference 'shared'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/holidaylist/HolidayListScreen.kt:47:28 Unresolved reference 'shared'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/holidaylist/HolidayListScreen.kt:48:28 Unresolved reference 'shared'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/holidaylist/HolidayListScreen.kt:49:28 Unresolved reference 'shared'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/holidaylist/HolidayListScreen.kt:50:28 Unresolved reference 'shared'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/holidaylist/HolidayListScreen.kt:51:28 Unresolved reference 'shared'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/holidaylist/HolidayListScreen.kt:71:47 Unresolved reference 'Res'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/holidaylist/HolidayListScreen.kt:80:69 Unresolved reference 'Res'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/holidaylist/HolidayListScreen.kt:155:35 Unresolved reference 'Res'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/holidaylist/HolidayListScreen.kt:188:43 Unresolved reference 'Res'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/holidaylist/HolidayListScreen.kt:194:50 Unresolved reference 'Res'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/holidaylist/HolidayListScreen.kt:195:57 Unresolved reference 'Res'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/holidaylist/HolidayListScreen.kt:213:46 Unresolved reference 'Res'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/holidaylist/HolidayListScreen.kt:232:40 Unresolved reference 'Res'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/holidaylist/HolidayListScreen.kt:236:44 Unresolved reference 'Res'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/holidaylist/HolidayListScreen.kt:250:47 Unresolved reference 'Res'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/holidaylist/HolidayListScreen.kt:258:37 Unresolved reference 'Res'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/month/MonthCalendarScreen.kt:58:47 Unresolved reference 'MonthPageData'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/month/MonthCalendarScreen.kt:59:28 Unresolved reference 'shared'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/month/MonthCalendarScreen.kt:60:28 Unresolved reference 'shared'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/month/MonthCalendarScreen.kt:61:28 Unresolved reference 'shared'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/month/MonthCalendarScreen.kt:62:28 Unresolved reference 'shared'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/month/MonthCalendarScreen.kt:63:28 Unresolved reference 'shared'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/month/MonthCalendarScreen.kt:88:42 Unresolved reference 'Res'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/month/MonthCalendarScreen.kt:89:49 Unresolved reference 'Res'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/month/MonthCalendarScreen.kt:135:65 Unresolved reference 'Res'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/month/MonthCalendarScreen.kt:207:57 No value passed for parameter 'hasEvents'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/month/MonthCalendarScreen.kt:234:15 Unresolved reference 'MonthPageData'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/month/MonthCalendarScreen.kt:248:22 Unresolved reference 'ethiopianGrid'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/month/MonthCalendarScreen.kt:250:22 Unresolved reference 'gregorianGrid'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/month/MonthCalendarScreen.kt:265:73 Unresolved reference 'ethiopicDate'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/month/MonthCalendarScreen.kt:268:57 Unresolved reference 'isToday'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/month/MonthCalendarScreen.kt:269:57 Unresolved reference 'holidays'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/month/MonthCalendarScreen.kt:284:52 Unresolved reference 'primaryDay'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/month/MonthCalendarScreen.kt:286:62 Unresolved reference 'isToday'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/month/MonthCalendarScreen.kt:288:49 Unresolved reference 'isToday'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/month/MonthCalendarScreen.kt:289:49 Unresolved reference 'holidays'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/month/MonthCalendarScreen.kt:295:56 Unresolved reference 'secondaryDay'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/month/MonthCalendarScreen.kt:299:53 Unresolved reference 'isToday'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/month/MonthCalendarScreen.kt:305:45 Unresolved reference 'hasEvents'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/month/MonthCalendarScreen.kt:323:22 Unresolved reference 'holidays'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/month/MonthCalendarScreen.kt:334:36 Unresolved reference 'holidays'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/month/MonthCalendarScreen.kt:336:39 Argument type mismatch: actual type is 'kotlin.Int', but 'com.shalom.calendar.domain.model.HolidayOccurrence' was expected.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/month/MonthCalendarScreen.kt:402:37 Unresolved reference 'Res'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/more/MoreScreen.kt:55:45 Unresolved reference 'ThemeMode'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/more/MoreScreen.kt:58:28 Unresolved reference 'shared'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/more/MoreScreen.kt:59:28 Unresolved reference 'shared'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/more/MoreScreen.kt:60:28 Unresolved reference 'shared'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/more/MoreScreen.kt:61:28 Unresolved reference 'shared'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/more/MoreScreen.kt:62:28 Unresolved reference 'shared'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/more/MoreScreen.kt:63:28 Unresolved reference 'shared'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/more/MoreScreen.kt:64:28 Unresolved reference 'shared'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/more/MoreScreen.kt:65:28 Unresolved reference 'shared'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/more/MoreScreen.kt:66:28 Unresolved reference 'shared'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/more/MoreScreen.kt:67:28 Unresolved reference 'shared'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/more/MoreScreen.kt:68:28 Unresolved reference 'shared'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/more/MoreScreen.kt:69:28 Unresolved reference 'shared'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/more/MoreScreen.kt:70:28 Unresolved reference 'shared'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/more/MoreScreen.kt:71:28 Unresolved reference 'shared'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/more/MoreScreen.kt:72:28 Unresolved reference 'shared'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/more/MoreScreen.kt:73:28 Unresolved reference 'shared'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/more/MoreScreen.kt:107:47 Unresolved reference 'Res'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/more/MoreScreen.kt:132:48 Unresolved reference 'Res'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/more/MoreScreen.kt:140:48 Unresolved reference 'Res'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/more/MoreScreen.kt:148:48 Unresolved reference 'Res'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/more/MoreScreen.kt:156:48 Unresolved reference 'Res'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/more/MoreScreen.kt:164:48 Unresolved reference 'Res'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/more/MoreScreen.kt:177:48 Unresolved reference 'Res'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/more/MoreScreen.kt:199:36 Unresolved reference 'ThemeMode'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/more/MoreScreen.kt:282:53 Unresolved reference 'Res'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/more/MoreScreen.kt:297:39 Unresolved reference 'Res'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/more/MoreScreen.kt:320:37 Unresolved reference 'Res'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/more/MoreScreen.kt:328:18 Unresolved reference 'ThemeMode'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/more/MoreScreen.kt:329:22 Unresolved reference 'ThemeMode'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/more/MoreScreen.kt:332:46 Unresolved reference 'Res'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/more/MoreScreen.kt:336:39 Unresolved reference 'Res'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/more/MoreScreen.kt:339:17 Unresolved reference 'ThemeMode'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/more/MoreScreen.kt:339:52 Cannot infer type for this parameter. Please specify it explicitly.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/more/MoreScreen.kt:339:59 Cannot infer type for this parameter. Please specify it explicitly.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/more/MoreScreen.kt:340:21 @Composable invocations can only happen from the context of a @Composable function
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/more/MoreScreen.kt:352:69 Unresolved reference 'name'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/more/MoreScreen.kt:359:37 Unresolved reference 'Res'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/more/MoreScreen.kt:375:39 Unresolved reference 'Res'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/more/MoreScreen.kt:381:43 Unresolved reference 'Res'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/more/MoreScreen.kt:398:41 Unresolved reference 'Res'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/more/MoreScreen.kt:413:41 Unresolved reference 'Res'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/more/MoreScreen.kt:424:47 Unresolved reference 'Res'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/more/MoreScreen.kt:436:37 Unresolved reference 'Res'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/more/MoreScreen.kt:454:39 Unresolved reference 'Res'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/more/MoreScreen.kt:498:37 Unresolved reference 'Res'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/more/MoreScreen.kt:511:39 Unresolved reference 'Res'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/more/MoreScreen.kt:553:37 Unresolved reference 'Res'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/more/ThemeSettingScreen.kt:37:45 Unresolved reference 'AppTheme'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/more/ThemeSettingScreen.kt:38:45 Unresolved reference 'ThemeMode'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/more/ThemeSettingScreen.kt:40:28 Unresolved reference 'shared'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/more/ThemeSettingScreen.kt:41:28 Unresolved reference 'shared'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/more/ThemeSettingScreen.kt:42:28 Unresolved reference 'shared'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/more/ThemeSettingScreen.kt:43:28 Unresolved reference 'shared'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/more/ThemeSettingScreen.kt:44:28 Unresolved reference 'shared'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/more/ThemeSettingScreen.kt:45:28 Unresolved reference 'shared'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/more/ThemeSettingScreen.kt:46:28 Unresolved reference 'shared'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/more/ThemeSettingScreen.kt:47:28 Unresolved reference 'shared'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/more/ThemeSettingScreen.kt:70:47 Unresolved reference 'Res'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/more/ThemeSettingScreen.kt:71:46 Unresolved reference 'Res'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/more/ThemeSettingScreen.kt:77:48 Unresolved reference 'Res'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/more/ThemeSettingScreen.kt:83:65 Unresolved reference 'Res'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/more/ThemeSettingScreen.kt:105:39 Unresolved reference 'AppTheme'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/more/ThemeSettingScreen.kt:113:38 Unresolved reference 'ThemeMode'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/more/ThemeSettingScreen.kt:122:19 Unresolved reference 'AppTheme'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/more/ThemeSettingScreen.kt:124:23 Unresolved reference 'AppTheme'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/more/ThemeSettingScreen.kt:139:39 Unresolved reference 'Res'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/more/ThemeSettingScreen.kt:146:17 Unresolved reference 'AppTheme'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/more/ThemeSettingScreen.kt:146:51 Cannot infer type for this parameter. Please specify it explicitly.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/more/ThemeSettingScreen.kt:146:58 Cannot infer type for this parameter. Please specify it explicitly.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/more/ThemeSettingScreen.kt:147:21 @Composable invocations can only happen from the context of a @Composable function
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/more/ThemeSettingScreen.kt:149:78 Unresolved reference 'name'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/more/ThemeSettingScreen.kt:161:12 Unresolved reference 'AppTheme'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/more/ThemeSettingScreen.kt:166:24 'when' expression must be exhaustive. Add an 'else' branch.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/more/ThemeSettingScreen.kt:167:9 Unresolved reference 'AppTheme'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/more/ThemeSettingScreen.kt:168:9 Unresolved reference 'AppTheme'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/more/ThemeSettingScreen.kt:169:9 Unresolved reference 'AppTheme'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/more/ThemeSettingScreen.kt:170:9 Unresolved reference 'AppTheme'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/more/ThemeSettingScreen.kt:171:9 Unresolved reference 'AppTheme'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/more/ThemeSettingScreen.kt:174:26 'when' expression must be exhaustive. Add an 'else' branch.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/more/ThemeSettingScreen.kt:175:9 Unresolved reference 'AppTheme'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/more/ThemeSettingScreen.kt:176:9 Unresolved reference 'AppTheme'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/more/ThemeSettingScreen.kt:177:9 Unresolved reference 'AppTheme'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/more/ThemeSettingScreen.kt:178:9 Unresolved reference 'AppTheme'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/more/ThemeSettingScreen.kt:179:9 Unresolved reference 'AppTheme'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/more/ThemeSettingScreen.kt:231:57 Unresolved reference 'Res'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/more/ThemeSettingScreen.kt:241:18 Unresolved reference 'ThemeMode'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/more/ThemeSettingScreen.kt:243:22 Unresolved reference 'ThemeMode'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/more/ThemeSettingScreen.kt:258:39 Unresolved reference 'Res'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/more/ThemeSettingScreen.kt:265:17 Unresolved reference 'ThemeMode'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/more/ThemeSettingScreen.kt:265:52 Cannot infer type for this parameter. Please specify it explicitly.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/more/ThemeSettingScreen.kt:265:59 Cannot infer type for this parameter. Please specify it explicitly.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/more/ThemeSettingScreen.kt:266:21 @Composable invocations can only happen from the context of a @Composable function
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/more/ThemeSettingScreen.kt:268:75 Unresolved reference 'name'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/more/ThemeSettingScreen.kt:280:11 Unresolved reference 'ThemeMode'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/more/ThemeSettingScreen.kt:314:57 Unresolved reference 'Res'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/navigation/BottomNavItem.kt:11:28 Unresolved reference 'shared'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/navigation/BottomNavItem.kt:12:28 Unresolved reference 'shared'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/navigation/BottomNavItem.kt:13:28 Unresolved reference 'shared'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/navigation/BottomNavItem.kt:14:28 Unresolved reference 'shared'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/navigation/BottomNavItem.kt:15:28 Unresolved reference 'shared'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/navigation/BottomNavItem.kt:16:28 Unresolved reference 'shared'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/navigation/BottomNavItem.kt:36:36 Unresolved reference 'Res'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/navigation/BottomNavItem.kt:41:36 Unresolved reference 'Res'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/navigation/BottomNavItem.kt:46:36 Unresolved reference 'Res'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/navigation/BottomNavItem.kt:51:36 Unresolved reference 'Res'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/navigation/BottomNavItem.kt:56:36 Unresolved reference 'Res'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/onboarding/CalendarDisplayPage.kt:18:28 Unresolved reference 'shared'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/onboarding/CalendarDisplayPage.kt:19:28 Unresolved reference 'shared'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/onboarding/CalendarDisplayPage.kt:20:28 Unresolved reference 'shared'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/onboarding/CalendarDisplayPage.kt:21:28 Unresolved reference 'shared'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/onboarding/CalendarDisplayPage.kt:22:28 Unresolved reference 'shared'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/onboarding/CalendarDisplayPage.kt:23:28 Unresolved reference 'shared'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/onboarding/CalendarDisplayPage.kt:24:28 Unresolved reference 'shared'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/onboarding/CalendarDisplayPage.kt:44:36 Unresolved reference 'Res'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/onboarding/CalendarDisplayPage.kt:45:39 Unresolved reference 'Res'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/onboarding/CalendarDisplayPage.kt:58:40 Unresolved reference 'Res'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/onboarding/CalendarDisplayPage.kt:65:40 Unresolved reference 'Res'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/onboarding/CalendarDisplayPage.kt:72:40 Unresolved reference 'Res'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/onboarding/CalendarDisplayPage.kt:73:46 Unresolved reference 'Res'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/onboarding/HolidaySelectionPage.kt:19:28 Unresolved reference 'shared'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/onboarding/HolidaySelectionPage.kt:20:28 Unresolved reference 'shared'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/onboarding/HolidaySelectionPage.kt:21:28 Unresolved reference 'shared'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/onboarding/HolidaySelectionPage.kt:22:28 Unresolved reference 'shared'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/onboarding/HolidaySelectionPage.kt:23:28 Unresolved reference 'shared'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/onboarding/HolidaySelectionPage.kt:24:28 Unresolved reference 'shared'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/onboarding/HolidaySelectionPage.kt:25:28 Unresolved reference 'shared'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/onboarding/HolidaySelectionPage.kt:26:28 Unresolved reference 'shared'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/onboarding/HolidaySelectionPage.kt:27:28 Unresolved reference 'shared'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/onboarding/HolidaySelectionPage.kt:28:28 Unresolved reference 'shared'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/onboarding/HolidaySelectionPage.kt:29:28 Unresolved reference 'shared'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/onboarding/HolidaySelectionPage.kt:53:36 Unresolved reference 'Res'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/onboarding/HolidaySelectionPage.kt:54:39 Unresolved reference 'Res'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/onboarding/HolidaySelectionPage.kt:65:44 Unresolved reference 'Res'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/onboarding/HolidaySelectionPage.kt:66:50 Unresolved reference 'Res'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/onboarding/HolidaySelectionPage.kt:76:44 Unresolved reference 'Res'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/onboarding/HolidaySelectionPage.kt:77:50 Unresolved reference 'Res'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/onboarding/HolidaySelectionPage.kt:87:44 Unresolved reference 'Res'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/onboarding/HolidaySelectionPage.kt:88:50 Unresolved reference 'Res'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/onboarding/HolidaySelectionPage.kt:98:44 Unresolved reference 'Res'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/onboarding/HolidaySelectionPage.kt:99:50 Unresolved reference 'Res'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/onboarding/LanguageSelectionPage.kt:18:28 Unresolved reference 'shared'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/onboarding/LanguageSelectionPage.kt:19:28 Unresolved reference 'shared'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/onboarding/LanguageSelectionPage.kt:20:28 Unresolved reference 'shared'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/onboarding/LanguageSelectionPage.kt:38:36 Unresolved reference 'Res'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/onboarding/LanguageSelectionPage.kt:39:39 Unresolved reference 'Res'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/onboarding/OnboardingScreen.kt:44:28 Unresolved reference 'shared'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/onboarding/OnboardingScreen.kt:45:28 Unresolved reference 'shared'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/onboarding/OnboardingScreen.kt:46:28 Unresolved reference 'shared'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/onboarding/OnboardingScreen.kt:47:28 Unresolved reference 'shared'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/onboarding/OnboardingScreen.kt:48:28 Unresolved reference 'shared'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/onboarding/OnboardingScreen.kt:180:57 Unresolved reference 'Res'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/onboarding/OnboardingScreen.kt:186:44 Unresolved reference 'Res'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/onboarding/OnboardingScreen.kt:245:36 Unresolved reference 'Res'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/onboarding/OnboardingScreen.kt:247:36 Unresolved reference 'Res'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/onboarding/ThemeSelectionPage.kt:17:45 Unresolved reference 'ThemeMode'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/onboarding/ThemeSelectionPage.kt:18:28 Unresolved reference 'shared'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/onboarding/ThemeSelectionPage.kt:19:28 Unresolved reference 'shared'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/onboarding/ThemeSelectionPage.kt:20:28 Unresolved reference 'shared'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/onboarding/ThemeSelectionPage.kt:21:28 Unresolved reference 'shared'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/onboarding/ThemeSelectionPage.kt:22:28 Unresolved reference 'shared'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/onboarding/ThemeSelectionPage.kt:23:28 Unresolved reference 'shared'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/onboarding/ThemeSelectionPage.kt:24:28 Unresolved reference 'shared'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/onboarding/ThemeSelectionPage.kt:25:28 Unresolved reference 'shared'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/onboarding/ThemeSelectionPage.kt:26:28 Unresolved reference 'shared'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/onboarding/ThemeSelectionPage.kt:31:20 Unresolved reference 'ThemeMode'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/onboarding/ThemeSelectionPage.kt:32:23 Unresolved reference 'ThemeMode'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/onboarding/ThemeSelectionPage.kt:44:36 Unresolved reference 'Res'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/onboarding/ThemeSelectionPage.kt:45:39 Unresolved reference 'Res'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/onboarding/ThemeSelectionPage.kt:58:40 Unresolved reference 'Res'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/onboarding/ThemeSelectionPage.kt:59:46 Unresolved reference 'Res'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/onboarding/ThemeSelectionPage.kt:60:47 Unresolved reference 'ThemeMode'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/onboarding/ThemeSelectionPage.kt:61:45 Unresolved reference 'ThemeMode'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/onboarding/ThemeSelectionPage.kt:66:40 Unresolved reference 'Res'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/onboarding/ThemeSelectionPage.kt:67:46 Unresolved reference 'Res'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/onboarding/ThemeSelectionPage.kt:68:47 Unresolved reference 'ThemeMode'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/onboarding/ThemeSelectionPage.kt:69:45 Unresolved reference 'ThemeMode'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/onboarding/ThemeSelectionPage.kt:74:40 Unresolved reference 'Res'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/onboarding/ThemeSelectionPage.kt:75:46 Unresolved reference 'Res'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/onboarding/ThemeSelectionPage.kt:76:47 Unresolved reference 'ThemeMode'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/onboarding/ThemeSelectionPage.kt:77:45 Unresolved reference 'ThemeMode'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/onboarding/WelcomePage.kt:19:28 Unresolved reference 'shared'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/onboarding/WelcomePage.kt:20:28 Unresolved reference 'shared'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/onboarding/WelcomePage.kt:21:28 Unresolved reference 'shared'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/onboarding/WelcomePage.kt:22:28 Unresolved reference 'shared'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/onboarding/WelcomePage.kt:23:28 Unresolved reference 'shared'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/onboarding/WelcomePage.kt:24:28 Unresolved reference 'shared'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/onboarding/WelcomePage.kt:25:28 Unresolved reference 'shared'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/onboarding/WelcomePage.kt:26:28 Unresolved reference 'shared'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/onboarding/WelcomePage.kt:48:51 Unresolved reference 'Res'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/onboarding/WelcomePage.kt:49:54 Unresolved reference 'Res'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/onboarding/WelcomePage.kt:59:40 Unresolved reference 'Res'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/onboarding/WelcomePage.kt:67:40 Unresolved reference 'Res'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/onboarding/WelcomePage.kt:75:40 Unresolved reference 'Res'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/onboarding/WelcomePage.kt:83:40 Unresolved reference 'Res'.
-e: file:///Users/meketel/AndroidStudioProjects/EthioCal-Kmp/EthioCal-Kmp-iOS/FinalMultiplatformEthiopianCalendar/composeApp/src/commonMain/kotlin/com/shalom/calendar/ui/onboarding/WelcomePage.kt:92:35 Unresolved reference 'Res'.
-
-FAILURE: Build completed with 5 failures.
-
-1: Task failed with an exception.
------------
-* What went wrong:
-Execution failed for task ':composeApp:compileCommonMainKotlinMetadata'.
-> A failure occurred while executing org.jetbrains.kotlin.compilerRunner.GradleCompilerRunnerWithWorkers$GradleKotlinCompilerWorkAction
-   > Compilation error. See log for more details
-
-* Try:
-> Run with --stacktrace option to get the stack trace.
-> Run with --info or --debug option to get more log output.
-> Run with --scan to get full insights.
-> Get more help at https://help.gradle.org.
-==============================================================================
-
-2: Task failed with an exception.
------------
-* What went wrong:
-Execution failed for task ':composeApp:compileKotlinIosSimulatorArm64'.
-> Compilation finished with errors
-
-* Try:
-> Run with --stacktrace option to get the stack trace.
-> Run with --info or --debug option to get more log output.
-> Run with --scan to get full insights.
-> Get more help at https://help.gradle.org.
-==============================================================================
-
-3: Task failed with an exception.
------------
-* What went wrong:
-Execution failed for task ':composeApp:compileKotlinIosArm64'.
-> Compilation finished with errors
-
-* Try:
-> Run with --stacktrace option to get the stack trace.
-> Run with --info or --debug option to get more log output.
-> Run with --scan to get full insights.
-> Get more help at https://help.gradle.org.
-==============================================================================
-
-4: Task failed with an exception.
------------
-* What went wrong:
-Execution failed for task ':composeApp:compileDebugKotlinAndroid'.
-> A failure occurred while executing org.jetbrains.kotlin.compilerRunner.GradleCompilerRunnerWithWorkers$GradleKotlinCompilerWorkAction
-   > Compilation error. See log for more details
-
-* Try:
-> Run with --stacktrace option to get the stack trace.
-> Run with --info or --debug option to get more log output.
-> Run with --scan to get full insights.
-> Get more help at https://help.gradle.org.
-==============================================================================
-
-5: Task failed with an exception.
------------
-* What went wrong:
-Execution failed for task ':composeApp:compileReleaseKotlinAndroid'.
-> A failure occurred while executing org.jetbrains.kotlin.compilerRunner.GradleCompilerRunnerWithWorkers$GradleKotlinCompilerWorkAction
-   > Compilation error. See log for more details
-
-* Try:
-> Run with --stacktrace option to get the stack trace.
-> Run with --info or --debug option to get more log output.
-> Run with --scan to get full insights.
-> Get more help at https://help.gradle.org.
-==============================================================================
-
-BUILD FAILED in 1m 7s
-296 actionable tasks: 164 executed, 113 from cache, 19 up-to-date
-Configuration cache entry reused.
-meketel@Uniken-Adore34 FinalMultiplatformEthiopianCalendar %
-
-
-
+> Task :composeApp:compileKotlinIosArm64 FAILED
+e: >>>>data/local/entity/RecurrenceRule.kt:50:37 RefIssue 'toLocalDateTime'.
+e: >>>>data/local/entity/RecurrenceRule.kt:105:23 RefIssue 'atStartOfDayIn'.
+e: >>>>presentation/event/EventViewModel.kt:252:33 RefIssue 'createEvent'.
+e: >>>>presentation/holidaylist/HolidayListViewModel.kt:80:40 Assignment type mismatch: actual type is 'kotlin.collections.List<com.shalom.calendar.domain.model.Holiday>', but 'kotlin.collections.List<com.shalom.calendar.domain.model.HolidayOccurrence>' was expected.
+e: >>>>presentation/holidaylist/HolidayListViewModel.kt:80:80 RefIssue 'holiday'.
+e: >>>>presentation/month/MonthCalendarViewModel.kt:402:59 RefIssue 'isoDayNumber'.
+e: >>>>presentation/month/MonthCalendarViewModel.kt:403:47 RefIssue 'rem' for operator '%'.
+e: >>>>presentation/month/MonthCalendarViewModel.kt:468:61 RefIssue 'isoDayNumber'.
+e: >>>>presentation/month/MonthCalendarViewModel.kt:469:47 RefIssue 'rem' for operator '%'.
+e: >>>>presentation/onboarding/OnboardingViewModel.kt:31:37 RefIssue 'System'.
+e: >>>>presentation/onboarding/OnboardingViewModel.kt:69:21 NoParam 'pageNumber' found.
+e: >>>>presentation/onboarding/OnboardingViewModel.kt:70:21 NoParam 'pageName' found.
+e: >>>>presentation/onboarding/OnboardingViewModel.kt:70:21 NoValPasse 'page'.
+e: >>>>presentation/onboarding/OnboardingViewModel.kt:98:17 NoParam 'mode' found.
+e: >>>>presentation/onboarding/OnboardingViewModel.kt:140:17 NoParam 'publicEnabled' found.
+e: >>>>presentation/onboarding/OnboardingViewModel.kt:141:17 NoParam 'orthodoxEnabled' found.
+e: >>>>presentation/onboarding/OnboardingViewModel.kt:142:17 NoParam 'muslimEnabled' found.
+e: >>>>presentation/onboarding/OnboardingViewModel.kt:142:17 NoValPasse 'showOrthodox'.
+e: >>>>presentation/onboarding/OnboardingViewModel.kt:142:17 NoValPasse 'showMuslim'.
+e: >>>>presentation/onboarding/OnboardingViewModel.kt:142:17 NoValPasse 'showDayOff'.
+e: >>>>presentation/onboarding/OnboardingViewModel.kt:175:21 NoParam 'primaryCalendar' found.
+e: >>>>presentation/onboarding/OnboardingViewModel.kt:176:21 NoParam 'dualEnabled' found.
+e: >>>>presentation/onboarding/OnboardingViewModel.kt:176:21 NoValPasse 'calendarType'.
+e: >>>>presentation/onboarding/OnboardingViewModel.kt:199:24 RefIssue 'System'.
+e: >>>>presentation/onboarding/OnboardingViewModel.kt:203:28 RefIssue 'OnboardingCompleted'.
+e: >>>>presentation/onboarding/OnboardingViewModel.kt:220:28 RefIssue 'OnboardingSkipped'.
+e: >>>>presentation/settings/SettingsViewModel.kt:131:21 NoParam 'changedField' found.
+e: >>>>presentation/settings/SettingsViewModel.kt:131:21 NoValPasse 'setting'.
+e: >>>>presentation/settings/SettingsViewModel.kt:131:21 NoValPasse 'value'.
+e: >>>>presentation/settings/SettingsViewModel.kt:144:21 NoParam 'changedField' found.
+e: >>>>presentation/settings/SettingsViewModel.kt:144:21 NoValPasse 'setting'.
+e: >>>>presentation/settings/SettingsViewModel.kt:144:21 NoValPasse 'value'.
+e: >>>>presentation/settings/SettingsViewModel.kt:157:21 NoParam 'changedField' found.
+e: >>>>presentation/settings/SettingsViewModel.kt:157:21 NoValPasse 'setting'.
+e: >>>>presentation/settings/SettingsViewModel.kt:157:21 NoValPasse 'value'.
+e: >>>>presentation/settings/SettingsViewModel.kt:181:21 NoParam 'type' found.
+e: >>>>presentation/settings/SettingsViewModel.kt:182:21 NoValPasse 'holidayType'.
+e: >>>>presentation/settings/SettingsViewModel.kt:195:21 NoParam 'type' found.
+e: >>>>presentation/settings/SettingsViewModel.kt:196:21 NoValPasse 'holidayType'.
+e: >>>>presentation/settings/SettingsViewModel.kt:209:21 NoParam 'type' found.
+e: >>>>presentation/settings/SettingsViewModel.kt:210:21 NoValPasse 'holidayType'.
+e: >>>>presentation/settings/SettingsViewModel.kt:247:57 NoParam 'field' found.
+e: >>>>presentation/settings/SettingsViewModel.kt:247:57 NoValPasse 'setting'.
+e: >>>>presentation/settings/SettingsViewModel.kt:247:57 NoValPasse 'value'.
+e: >>>>presentation/settings/SettingsViewModel.kt:258:57 NoParam 'field' found.
+e: >>>>presentation/settings/SettingsViewModel.kt:258:57 NoValPasse 'setting'.
+e: >>>>presentation/settings/SettingsViewModel.kt:258:57 NoValPasse 'value'.
+e: >>>>presentation/settings/SettingsViewModel.kt:269:57 NoParam 'field' found.
+e: >>>>presentation/settings/SettingsViewModel.kt:269:57 NoValPasse 'setting'.
+e: >>>>presentation/settings/SettingsViewModel.kt:269:57 NoValPasse 'value'.
+e: >>>>presentation/settings/SettingsViewModel.kt:280:57 NoParam 'field' found.
+e: >>>>presentation/settings/SettingsViewModel.kt:280:57 NoValPasse 'setting'.
+e: >>>>presentation/settings/SettingsViewModel.kt:280:57 NoValPasse 'value'.
+e: >>>>presentation/settings/SettingsViewModel.kt:293:21 NoParam 'fromLanguage' found.
+e: >>>>presentation/settings/SettingsViewModel.kt:294:21 NoParam 'toLanguage' found.
+e: >>>>presentation/settings/SettingsViewModel.kt:294:21 NoValPasse 'language'.
+e: >>>>presentation/theme/ThemeViewModel.kt:53:57 NoParam 'mode' found.
+e: >>>>presentation/theme/ThemeViewModel.kt:53:57 NoValPasse 'isDarkMode'.
+e: >>>>ui/event/EventScreen.kt:230:53 RefIssue 'event'.
+e: >>>>ui/event/EventScreen.kt:248:28 Argument type mismatch: actual type is 'kotlin.Any', but 'com.shalom.ethiopicchrono.EthiopicDate' was expected.
+e: >>>>ui/event/EventScreen.kt:250:46 Argument type mismatch: actual type is 'com.shalom.ethiopicchrono.EthiopicDate', but 'kotlinx.datetime.LocalDate?' was expected.
+e: >>>>ui/event/EventScreen.kt:258:28 Argument type mismatch: actual type is 'kotlin.Any', but 'com.shalom.ethiopicchrono.EthiopicDate' was expected.
+e: >>>>ui/event/EventScreen.kt:260:44 Argument type mismatch: actual type is 'com.shalom.ethiopicchrono.EthiopicDate', but 'kotlinx.datetime.LocalDate?' was expected.
+e: >>>>ui/event/EventScreen.kt:272:21 NoParam 'title' found.
+e: >>>>ui/event/EventScreen.kt:274:21 NoParam 'ethiopicDate' found.
+e: >>>>ui/event/EventScreen.kt:275:21 NoParam 'reminderTime' found.
+e: >>>>ui/event/EventScreen.kt:275:21 NoValPasse 'summary'.
+e: >>>>ui/event/EventScreen.kt:275:21 NoValPasse 'startTime'.
+e: >>>>ui/event/EventScreen.kt:275:21 NoValPasse 'ethiopianYear'.
+e: >>>>ui/event/EventScreen.kt:275:21 NoValPasse 'ethiopianMonth'.
+e: >>>>ui/event/EventScreen.kt:275:21 NoValPasse 'ethiopianDay'.
+e: >>>>ui/event/EventScreen.kt:305:34 RefIssue 'event'.
+e: >>>>ui/event/EventScreen.kt:316:27 RefIssue 'event'.
+e: >>>>ui/event/EventScreen.kt:317:27 RefIssue 'event'.
+e: >>>>ui/event/EventScreen.kt:318:27 RefIssue 'event'.
+e: >>>>ui/event/EventScreen.kt:320:60 RefIssue 'event'.
+e: >>>>ui/event/EventScreen.kt:322:48 RefIssue 'event'.
+e: >>>>ui/event/EventScreen.kt:322:77 RefIssue 'event'.
+e: >>>>ui/event/EventScreen.kt:328:45 RefIssue 'event'.
+e: >>>>ui/holidaylist/HolidayItem.kt:57:31 RefIssue 'format'.
+e: >>>>ui/holidaylist/HolidayItem.kt:57:38 RefIssue 'Locale'.
+e: >>>>ui/holidaylist/HolidayListScreen.kt:43:57 RefIssue 'cd_holiday_info'.
+e: >>>>ui/holidaylist/HolidayListScreen.kt:44:57 RefIssue 'empty_no_holidays_display'.
+e: >>>>ui/holidaylist/HolidayListScreen.kt:46:57 RefIssue 'holiday_info_dialog_checkbox'.
+e: >>>>ui/holidaylist/HolidayListScreen.kt:47:57 RefIssue 'holiday_info_dialog_message'.
+e: >>>>ui/holidaylist/HolidayListScreen.kt:48:57 RefIssue 'holiday_info_dialog_title'.
+e: >>>>ui/holidaylist/HolidayListScreen.kt:49:57 RefIssue 'label_ec_suffix'.
+e: >>>>ui/holidaylist/HolidayListScreen.kt:80:80 RefIssue 'cd_holiday_info'.
+e: >>>>ui/holidaylist/HolidayListScreen.kt:155:46 RefIssue 'label_ec_suffix'.
+e: >>>>ui/holidaylist/HolidayListScreen.kt:188:54 RefIssue 'empty_no_holidays_display'.
+e: >>>>ui/holidaylist/HolidayListScreen.kt:232:51 RefIssue 'holiday_info_dialog_title'.
+e: >>>>ui/holidaylist/HolidayListScreen.kt:236:55 RefIssue 'holiday_info_dialog_message'.
+e: >>>>ui/holidaylist/HolidayListScreen.kt:250:58 RefIssue 'holiday_info_dialog_checkbox'.
+e: >>>>ui/month/MonthCalendarScreen.kt:58:47 RefIssue 'MonthPageData'.
+e: >>>>ui/month/MonthCalendarScreen.kt:61:57 RefIssue 'cd_go_to_today'.
+e: >>>>ui/month/MonthCalendarScreen.kt:135:76 RefIssue 'cd_go_to_today'.
+e: >>>>ui/month/MonthCalendarScreen.kt:207:57 NoValPasse 'hasEvents'.
+e: >>>>ui/month/MonthCalendarScreen.kt:234:15 RefIssue 'MonthPageData'.
+e: >>>>ui/month/MonthCalendarScreen.kt:248:22 RefIssue 'ethiopianGrid'.
+e: >>>>ui/month/MonthCalendarScreen.kt:250:22 RefIssue 'gregorianGrid'.
+e: >>>>ui/month/MonthCalendarScreen.kt:265:73 RefIssue 'ethiopicDate'.
+e: >>>>ui/month/MonthCalendarScreen.kt:268:57 RefIssue 'isToday'.
+e: >>>>ui/month/MonthCalendarScreen.kt:269:57 RefIssue 'holidays'.
+e: >>>>ui/month/MonthCalendarScreen.kt:284:52 RefIssue 'primaryDay'.
+e: >>>>ui/month/MonthCalendarScreen.kt:286:62 RefIssue 'isToday'.
+e: >>>>ui/month/MonthCalendarScreen.kt:288:49 RefIssue 'isToday'.
+e: >>>>ui/month/MonthCalendarScreen.kt:289:49 RefIssue 'holidays'.
+e: >>>>ui/month/MonthCalendarScreen.kt:295:56 RefIssue 'secondaryDay'.
+e: >>>>ui/month/MonthCalendarScreen.kt:299:53 RefIssue 'isToday'.
+e: >>>>ui/month/MonthCalendarScreen.kt:305:45 RefIssue 'hasEvents'.
+e: >>>>ui/month/MonthCalendarScreen.kt:323:22 RefIssue 'holidays'.
+e: >>>>ui/month/MonthCalendarScreen.kt:334:36 RefIssue 'holidays'.
+e: >>>>ui/month/MonthCalendarScreen.kt:336:39 Argument type mismatch: actual type is 'kotlin.Int', but 'com.shalom.calendar.domain.model.HolidayOccurrence' was expected.
+e: >>>>ui/more/MoreScreen.kt:55:45 RefIssue 'ThemeMode'.
+e: >>>>ui/more/MoreScreen.kt:60:57 RefIssue 'cd_navigate'.
+e: >>>>ui/more/MoreScreen.kt:61:57 RefIssue 'label_theme_mode'.
+e: >>>>ui/more/MoreScreen.kt:62:57 RefIssue 'menu_about_us'.
+e: >>>>ui/more/MoreScreen.kt:63:57 RefIssue 'menu_language'.
+e: >>>>ui/more/MoreScreen.kt:64:57 RefIssue 'menu_notifications'.
+e: >>>>ui/more/MoreScreen.kt:65:57 RefIssue 'menu_share_app'.
+e: >>>>ui/more/MoreScreen.kt:67:57 RefIssue 'settings_calendar_ethiopian'.
+e: >>>>ui/more/MoreScreen.kt:68:57 RefIssue 'settings_calendar_gregorian'.
+e: >>>>ui/more/MoreScreen.kt:69:57 RefIssue 'settings_display_dual_calendar'.
+e: >>>>ui/more/MoreScreen.kt:70:57 RefIssue 'settings_ethiopian_gregorian_display'.
+e: >>>>ui/more/MoreScreen.kt:71:57 RefIssue 'settings_holidays_display'.
+e: >>>>ui/more/MoreScreen.kt:73:57 RefIssue 'theme_mode_names'.
+e: >>>>ui/more/MoreScreen.kt:132:59 RefIssue 'menu_language'.
+e: >>>>ui/more/MoreScreen.kt:140:59 RefIssue 'label_theme_mode'.
+e: >>>>ui/more/MoreScreen.kt:148:59 RefIssue 'settings_ethiopian_gregorian_display'.
+e: >>>>ui/more/MoreScreen.kt:156:59 RefIssue 'settings_holidays_display'.
+e: >>>>ui/more/MoreScreen.kt:164:59 RefIssue 'menu_share_app'.
+e: >>>>ui/more/MoreScreen.kt:177:59 RefIssue 'menu_about_us'.
+e: >>>>ui/more/MoreScreen.kt:199:36 RefIssue 'ThemeMode'.
+e: >>>>ui/more/MoreScreen.kt:282:64 RefIssue 'cd_navigate'.
+e: >>>>ui/more/MoreScreen.kt:297:50 RefIssue 'menu_language'.
+e: >>>>ui/more/MoreScreen.kt:328:18 RefIssue 'ThemeMode'.
+e: >>>>ui/more/MoreScreen.kt:329:22 RefIssue 'ThemeMode'.
+e: >>>>ui/more/MoreScreen.kt:332:56 RefIssue 'theme_mode_names'.
+e: >>>>ui/more/MoreScreen.kt:336:50 RefIssue 'label_theme_mode'.
+e: >>>>ui/more/MoreScreen.kt:339:17 RefIssue 'ThemeMode'.
+e: >>>>ui/more/MoreScreen.kt:339:52 Cannot infer type for this parameter. Please specify it explicitly.
+e: >>>>ui/more/MoreScreen.kt:339:59 Cannot infer type for this parameter. Please specify it explicitly.
+e: >>>>ui/more/MoreScreen.kt:340:21 @Composable invocations can only happen from the context of a @Composable function
+e: >>>>ui/more/MoreScreen.kt:352:69 RefIssue 'name'.
+e: >>>>ui/more/MoreScreen.kt:375:50 RefIssue 'settings_ethiopian_gregorian_display'.
+e: >>>>ui/more/MoreScreen.kt:398:52 RefIssue 'settings_calendar_ethiopian'.
+e: >>>>ui/more/MoreScreen.kt:413:52 RefIssue 'settings_calendar_gregorian'.
+e: >>>>ui/more/MoreScreen.kt:424:58 RefIssue 'settings_display_dual_calendar'.
+e: >>>>ui/more/MoreScreen.kt:454:50 RefIssue 'settings_holidays_display'.
+e: >>>>ui/more/MoreScreen.kt:511:50 RefIssue 'menu_about_us'.
+e: >>>>ui/more/ThemeSettingScreen.kt:37:45 RefIssue 'AppTheme'.
+e: >>>>ui/more/ThemeSettingScreen.kt:38:45 RefIssue 'ThemeMode'.
+e: >>>>ui/more/ThemeSettingScreen.kt:41:57 RefIssue 'cd_back'.
+e: >>>>ui/more/ThemeSettingScreen.kt:42:57 RefIssue 'cd_selected'.
+e: >>>>ui/more/ThemeSettingScreen.kt:43:57 RefIssue 'label_theme_color'.
+e: >>>>ui/more/ThemeSettingScreen.kt:44:57 RefIssue 'label_theme_mode'.
+e: >>>>ui/more/ThemeSettingScreen.kt:46:57 RefIssue 'theme_color_names'.
+e: >>>>ui/more/ThemeSettingScreen.kt:47:57 RefIssue 'theme_mode_names'.
+e: >>>>ui/more/ThemeSettingScreen.kt:70:57 RefIssue 'theme_color_names'.
+e: >>>>ui/more/ThemeSettingScreen.kt:71:56 RefIssue 'theme_mode_names'.
+e: >>>>ui/more/ThemeSettingScreen.kt:83:76 RefIssue 'cd_back'.
+e: >>>>ui/more/ThemeSettingScreen.kt:105:39 RefIssue 'AppTheme'.
+e: >>>>ui/more/ThemeSettingScreen.kt:113:38 RefIssue 'ThemeMode'.
+e: >>>>ui/more/ThemeSettingScreen.kt:122:19 RefIssue 'AppTheme'.
+e: >>>>ui/more/ThemeSettingScreen.kt:124:23 RefIssue 'AppTheme'.
+e: >>>>ui/more/ThemeSettingScreen.kt:139:50 RefIssue 'label_theme_color'.
+e: >>>>ui/more/ThemeSettingScreen.kt:146:17 RefIssue 'AppTheme'.
+e: >>>>ui/more/ThemeSettingScreen.kt:146:51 Cannot infer type for this parameter. Please specify it explicitly.
+e: >>>>ui/more/ThemeSettingScreen.kt:146:58 Cannot infer type for this parameter. Please specify it explicitly.
+e: >>>>ui/more/ThemeSettingScreen.kt:147:21 @Composable invocations can only happen from the context of a @Composable function
+e: >>>>ui/more/ThemeSettingScreen.kt:149:78 RefIssue 'name'.
+e: >>>>ui/more/ThemeSettingScreen.kt:161:12 RefIssue 'AppTheme'.
+e: >>>>ui/more/ThemeSettingScreen.kt:166:24 'when' expression must be exhaustive. Add an 'else' branch.
+e: >>>>ui/more/ThemeSettingScreen.kt:167:9 RefIssue 'AppTheme'.
+e: >>>>ui/more/ThemeSettingScreen.kt:168:9 RefIssue 'AppTheme'.
+e: >>>>ui/more/ThemeSettingScreen.kt:169:9 RefIssue 'AppTheme'.
+e: >>>>ui/more/ThemeSettingScreen.kt:170:9 RefIssue 'AppTheme'.
+e: >>>>ui/more/ThemeSettingScreen.kt:171:9 RefIssue 'AppTheme'.
+e: >>>>ui/more/ThemeSettingScreen.kt:174:26 'when' expression must be exhaustive. Add an 'else' branch.
+e: >>>>ui/more/ThemeSettingScreen.kt:175:9 RefIssue 'AppTheme'.
+e: >>>>ui/more/ThemeSettingScreen.kt:176:9 RefIssue 'AppTheme'.
+e: >>>>ui/more/ThemeSettingScreen.kt:177:9 RefIssue 'AppTheme'.
+e: >>>>ui/more/ThemeSettingScreen.kt:178:9 RefIssue 'AppTheme'.
+e: >>>>ui/more/ThemeSettingScreen.kt:179:9 RefIssue 'AppTheme'.
+e: >>>>ui/more/ThemeSettingScreen.kt:231:68 RefIssue 'cd_selected'.
+e: >>>>ui/more/ThemeSettingScreen.kt:241:18 RefIssue 'ThemeMode'.
+e: >>>>ui/more/ThemeSettingScreen.kt:243:22 RefIssue 'ThemeMode'.
+e: >>>>ui/more/ThemeSettingScreen.kt:258:50 RefIssue 'label_theme_mode'.
+e: >>>>ui/more/ThemeSettingScreen.kt:265:17 RefIssue 'ThemeMode'.
+e: >>>>ui/more/ThemeSettingScreen.kt:265:52 Cannot infer type for this parameter. Please specify it explicitly.
+e: >>>>ui/more/ThemeSettingScreen.kt:265:59 Cannot infer type for this parameter. Please specify it explicitly.
+e: >>>>ui/more/ThemeSettingScreen.kt:266:21 @Composable invocations can only happen from the context of a @Composable function
+e: >>>>ui/more/ThemeSettingScreen.kt:268:75 RefIssue 'name'.
+e: >>>>ui/more/ThemeSettingScreen.kt:280:11 RefIssue 'ThemeMode'.
+e: >>>>ui/more/ThemeSettingScreen.kt:314:68 RefIssue 'cd_selected'.
+e: >>>>ui/navigation/BottomNavItem.kt:12:57 RefIssue 'nav_convert'.
+e: >>>>ui/navigation/BottomNavItem.kt:13:57 RefIssue 'nav_event'.
+e: >>>>ui/navigation/BottomNavItem.kt:14:57 RefIssue 'nav_holiday'.
+e: >>>>ui/navigation/BottomNavItem.kt:15:57 RefIssue 'nav_month'.
+e: >>>>ui/navigation/BottomNavItem.kt:16:57 RefIssue 'nav_more'.
+e: >>>>ui/navigation/BottomNavItem.kt:36:47 RefIssue 'nav_month'.
+e: >>>>ui/navigation/BottomNavItem.kt:41:47 RefIssue 'nav_event'.
+e: >>>>ui/navigation/BottomNavItem.kt:46:47 RefIssue 'nav_holiday'.
+e: >>>>ui/navigation/BottomNavItem.kt:51:47 RefIssue 'nav_convert'.
+e: >>>>ui/navigation/BottomNavItem.kt:56:47 RefIssue 'nav_more'.
+e: >>>>ui/onboarding/CalendarDisplayPage.kt:19:57 RefIssue 'onboarding_calendar_description'.
+e: >>>>ui/onboarding/CalendarDisplayPage.kt:20:57 RefIssue 'onboarding_calendar_dual_display'.
+e: >>>>ui/onboarding/CalendarDisplayPage.kt:21:57 RefIssue 'onboarding_calendar_dual_display_desc'.
+e: >>>>ui/onboarding/CalendarDisplayPage.kt:23:57 RefIssue 'settings_calendar_ethiopian'.
+e: >>>>ui/onboarding/CalendarDisplayPage.kt:24:57 RefIssue 'settings_calendar_gregorian'.
+e: >>>>ui/onboarding/CalendarDisplayPage.kt:45:50 RefIssue 'onboarding_calendar_description'.
+e: >>>>ui/onboarding/CalendarDisplayPage.kt:58:51 RefIssue 'settings_calendar_ethiopian'.
+e: >>>>ui/onboarding/CalendarDisplayPage.kt:65:51 RefIssue 'settings_calendar_gregorian'.
+e: >>>>ui/onboarding/CalendarDisplayPage.kt:72:51 RefIssue 'onboarding_calendar_dual_display'.
+e: >>>>ui/onboarding/CalendarDisplayPage.kt:73:57 RefIssue 'onboarding_calendar_dual_display_desc'.
+e: >>>>ui/onboarding/HolidaySelectionPage.kt:20:57 RefIssue 'onboarding_holidays_description'.
+e: >>>>ui/onboarding/HolidaySelectionPage.kt:21:57 RefIssue 'onboarding_holidays_muslim'.
+e: >>>>ui/onboarding/HolidaySelectionPage.kt:22:57 RefIssue 'onboarding_holidays_muslim_desc'.
+e: >>>>ui/onboarding/HolidaySelectionPage.kt:23:57 RefIssue 'onboarding_holidays_orthodox'.
+e: >>>>ui/onboarding/HolidaySelectionPage.kt:24:57 RefIssue 'onboarding_holidays_orthodox_days'.
+e: >>>>ui/onboarding/HolidaySelectionPage.kt:25:57 RefIssue 'onboarding_holidays_orthodox_days_desc'.
+e: >>>>ui/onboarding/HolidaySelectionPage.kt:26:57 RefIssue 'onboarding_holidays_orthodox_desc'.
+e: >>>>ui/onboarding/HolidaySelectionPage.kt:27:57 RefIssue 'onboarding_holidays_public'.
+e: >>>>ui/onboarding/HolidaySelectionPage.kt:28:57 RefIssue 'onboarding_holidays_public_desc'.
+e: >>>>ui/onboarding/HolidaySelectionPage.kt:54:50 RefIssue 'onboarding_holidays_description'.
+e: >>>>ui/onboarding/HolidaySelectionPage.kt:65:55 RefIssue 'onboarding_holidays_public'.
+e: >>>>ui/onboarding/HolidaySelectionPage.kt:66:61 RefIssue 'onboarding_holidays_public_desc'.
+e: >>>>ui/onboarding/HolidaySelectionPage.kt:76:55 RefIssue 'onboarding_holidays_orthodox'.
+e: >>>>ui/onboarding/HolidaySelectionPage.kt:77:61 RefIssue 'onboarding_holidays_orthodox_desc'.
+e: >>>>ui/onboarding/HolidaySelectionPage.kt:87:55 RefIssue 'onboarding_holidays_muslim'.
+e: >>>>ui/onboarding/HolidaySelectionPage.kt:88:61 RefIssue 'onboarding_holidays_muslim_desc'.
+e: >>>>ui/onboarding/HolidaySelectionPage.kt:98:55 RefIssue 'onboarding_holidays_orthodox_days'.
+e: >>>>ui/onboarding/HolidaySelectionPage.kt:99:61 RefIssue 'onboarding_holidays_orthodox_days_desc'.
+e: >>>>ui/onboarding/LanguageSelectionPage.kt:19:57 RefIssue 'onboarding_language_description'.
+e: >>>>ui/onboarding/LanguageSelectionPage.kt:39:50 RefIssue 'onboarding_language_description'.
+e: >>>>ui/onboarding/OnboardingScreen.kt:45:57 RefIssue 'cd_back'.
+e: >>>>ui/onboarding/OnboardingScreen.kt:180:68 RefIssue 'cd_back'.
+e: >>>>ui/onboarding/ThemeSelectionPage.kt:17:45 RefIssue 'ThemeMode'.
+e: >>>>ui/onboarding/ThemeSelectionPage.kt:19:57 RefIssue 'onboarding_theme_dark'.
+e: >>>>ui/onboarding/ThemeSelectionPage.kt:20:57 RefIssue 'onboarding_theme_dark_desc'.
+e: >>>>ui/onboarding/ThemeSelectionPage.kt:21:57 RefIssue 'onboarding_theme_description'.
+e: >>>>ui/onboarding/ThemeSelectionPage.kt:22:57 RefIssue 'onboarding_theme_light'.
+e: >>>>ui/onboarding/ThemeSelectionPage.kt:23:57 RefIssue 'onboarding_theme_light_desc'.
+e: >>>>ui/onboarding/ThemeSelectionPage.kt:24:57 RefIssue 'onboarding_theme_system'.
+e: >>>>ui/onboarding/ThemeSelectionPage.kt:25:57 RefIssue 'onboarding_theme_system_desc'.
+e: >>>>ui/onboarding/ThemeSelectionPage.kt:31:20 RefIssue 'ThemeMode'.
+e: >>>>ui/onboarding/ThemeSelectionPage.kt:32:23 RefIssue 'ThemeMode'.
+e: >>>>ui/onboarding/ThemeSelectionPage.kt:45:50 RefIssue 'onboarding_theme_description'.
+e: >>>>ui/onboarding/ThemeSelectionPage.kt:58:51 RefIssue 'onboarding_theme_light'.
+e: >>>>ui/onboarding/ThemeSelectionPage.kt:59:57 RefIssue 'onboarding_theme_light_desc'.
+e: >>>>ui/onboarding/ThemeSelectionPage.kt:60:47 RefIssue 'ThemeMode'.
+e: >>>>ui/onboarding/ThemeSelectionPage.kt:61:45 RefIssue 'ThemeMode'.
+e: >>>>ui/onboarding/ThemeSelectionPage.kt:66:51 RefIssue 'onboarding_theme_dark'.
+e: >>>>ui/onboarding/ThemeSelectionPage.kt:67:57 RefIssue 'onboarding_theme_dark_desc'.
+e: >>>>ui/onboarding/ThemeSelectionPage.kt:68:47 RefIssue 'ThemeMode'.
+e: >>>>ui/onboarding/ThemeSelectionPage.kt:69:45 RefIssue 'ThemeMode'.
+e: >>>>ui/onboarding/ThemeSelectionPage.kt:74:51 RefIssue 'onboarding_theme_system'.
+e: >>>>ui/onboarding/ThemeSelectionPage.kt:75:57 RefIssue 'onboarding_theme_system_desc'.
+e: >>>>ui/onboarding/ThemeSelectionPage.kt:76:47 RefIssue 'ThemeMode'.
+e: >>>>ui/onboarding/ThemeSelectionPage.kt:77:45 RefIssue 'ThemeMode'.
+e: >>>>ui/onboarding/WelcomePage.kt:20:57 RefIssue 'onboarding_feature_dual_calendar'.
+e: >>>>ui/onboarding/WelcomePage.kt:21:57 RefIssue 'onboarding_feature_holidays'.
+e: >>>>ui/onboarding/WelcomePage.kt:22:57 RefIssue 'onboarding_feature_multilingual'.
+e: >>>>ui/onboarding/WelcomePage.kt:23:57 RefIssue 'onboarding_feature_reminders'.
+e: >>>>ui/onboarding/WelcomePage.kt:25:57 RefIssue 'onboarding_welcome_subtitle'.
+e: >>>>ui/onboarding/WelcomePage.kt:49:65 RefIssue 'onboarding_welcome_subtitle'.
+e: >>>>ui/onboarding/WelcomePage.kt:59:51 RefIssue 'onboarding_feature_dual_calendar'.
+e: >>>>ui/onboarding/WelcomePage.kt:67:51 RefIssue 'onboarding_feature_holidays'.
+e: >>>>ui/onboarding/WelcomePage.kt:75:51 RefIssue 'onboarding_feature_reminders'.
+e: >>>>ui/onboarding/WelcomePage.kt:83:51 RefIssue 'onboarding_feature_multilingual'.
+e: composeApp/src/iosMain/kotlin/com/shalom/ethiopiancalendar/MainViewController.kt:5:30 RefIssue 'GlobalContext'.
+e: composeApp/src/iosMain/kotlin/com/shalom/ethiopiancalendar/MainViewController.kt:9:9 RefIssue 'GlobalContext'. 
