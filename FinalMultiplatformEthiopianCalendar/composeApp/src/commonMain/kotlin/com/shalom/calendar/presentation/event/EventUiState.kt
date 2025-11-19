@@ -3,7 +3,7 @@ package com.shalom.calendar.presentation.event
 import com.shalom.calendar.data.local.entity.EventEntity
 import com.shalom.calendar.data.local.entity.EventInstance
 import com.shalom.ethiopicchrono.EthiopicDate
-import java.time.LocalDate
+import kotlinx.datetime.LocalDate
 
 /**
  * Sealed class representing the UI state for EventScreen.
