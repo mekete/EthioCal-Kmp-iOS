@@ -122,8 +122,7 @@ room {
 dependencies {
     debugImplementation(compose.uiTooling)
 
-    // Room KSP
-    add("kspCommonMainMetadata", libs.room.compiler)
+    // Room KSP - platform specific only (not commonMain to avoid expect/actual conflicts)
     add("kspAndroid", libs.room.compiler)
     add("kspIosArm64", libs.room.compiler)
     add("kspIosSimulatorArm64", libs.room.compiler)

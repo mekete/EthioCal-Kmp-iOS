@@ -8,19 +8,19 @@ import kotlin.math.floor
  * iOS-compatible EthiopicDate implementation
  * Represents a date in the Ethiopian calendar system
  */
-class EthiopicDate private constructor(
+actual class EthiopicDate private constructor(
     private val prolepticYear: Int,
     private val month: Short,
     private val day: Short
 ) {
-    companion object {
+    actual companion object {
         // Epoch day difference between Gregorian and Ethiopian calendars
         private const val EPOCH_DAY_DIFFERENCE = 716367
 
         /**
          * Gets the current Ethiopian date
          */
-        fun now(): EthiopicDate {
+        actual fun now(): EthiopicDate {
             val today = kotlinx.datetime.Clock.System.todayIn(kotlinx.datetime.TimeZone.currentSystemDefault())
             return from(today)
         }
@@ -28,14 +28,14 @@ class EthiopicDate private constructor(
         /**
          * Creates an Ethiopian date from year, month, and day
          */
-        fun of(prolepticYear: Int, month: Int, dayOfMonth: Int): EthiopicDate {
+        actual fun of(prolepticYear: Int, month: Int, dayOfMonth: Int): EthiopicDate {
             return create(prolepticYear, month, dayOfMonth)
         }
 
         /**
          * Creates an Ethiopian date from a Gregorian LocalDate
          */
-        fun from(gregorianDate: LocalDate): EthiopicDate {
+        actual fun from(gregorianDate: LocalDate): EthiopicDate {
             val epochDay = gregorianDate.toEpochDays().toLong()
             return ofEpochDay(epochDay)
         }
@@ -43,7 +43,7 @@ class EthiopicDate private constructor(
         /**
          * Creates an Ethiopian date from year and day of year
          */
-        fun ofYearDay(prolepticYear: Int, dayOfYear: Int): EthiopicDate {
+        actual fun ofYearDay(prolepticYear: Int, dayOfYear: Int): EthiopicDate {
             validateYear(prolepticYear)
             if (dayOfYear < 1 || dayOfYear > 366) {
                 throw IllegalArgumentException("Invalid day of year: $dayOfYear")
@@ -59,7 +59,7 @@ class EthiopicDate private constructor(
         /**
          * Creates an Ethiopian date from an epoch day
          */
-        fun ofEpochDay(epochDay: Long): EthiopicDate {
+        actual fun ofEpochDay(epochDay: Long): EthiopicDate {
             var ethiopicED = epochDay + EPOCH_DAY_DIFFERENCE
             var adjustment = 0
             if (ethiopicED < 0) {
@@ -137,25 +137,25 @@ class EthiopicDate private constructor(
     /**
      * Gets the chronology of this date
      */
-    val chronology: EthiopicChronology
+    actual val chronology: EthiopicChronology
         get() = EthiopicChronology.INSTANCE
 
     /**
      * Gets the era of this date
      */
-    val era: EthiopicEra
+    actual val era: EthiopicEra
         get() = if (prolepticYear >= 1) EthiopicEra.INCARNATION else EthiopicEra.BEFORE_INCARNATION
 
     /**
      * Gets whether this year is a leap year
      */
-    val isLeapYear: Boolean
+    actual val isLeapYear: Boolean
         get() = EthiopicChronology.INSTANCE.isLeapYear(prolepticYear)
 
     /**
      * Gets the length of this month
      */
-    fun lengthOfMonth(): Int {
+    actual fun lengthOfMonth(): Int {
         return if (month.toInt() == 13) {
             if (isLeapYear) 6 else 5
         } else {
@@ -166,7 +166,7 @@ class EthiopicDate private constructor(
     /**
      * Gets the length of this year
      */
-    fun lengthOfYear(): Int {
+    actual fun lengthOfYear(): Int {
         return if (isLeapYear) 366 else 365
     }
 
@@ -226,7 +226,7 @@ class EthiopicDate private constructor(
     /**
      * Gets the value of the specified field
      */
-    fun get(field: ChronoField): Int {
+    actual fun get(field: ChronoField): Int {
         return when (field) {
             ChronoField.DAY_OF_WEEK -> dayOfWeek
             ChronoField.ALIGNED_DAY_OF_WEEK_IN_MONTH -> alignedDayOfWeekInMonth
@@ -247,7 +247,7 @@ class EthiopicDate private constructor(
     /**
      * Converts this date to an epoch day
      */
-    fun toEpochDay(): Long {
+    actual fun toEpochDay(): Long {
         val year = prolepticYear.toLong()
         val calendarEpochDay = ((year - 1) * 365) + floor(year / 4.0).toLong() + (dayOfYear - 1)
         return calendarEpochDay - EPOCH_DAY_DIFFERENCE
@@ -256,7 +256,7 @@ class EthiopicDate private constructor(
     /**
      * Converts this Ethiopian date to a Gregorian LocalDate
      */
-    fun toLocalDate(): LocalDate {
+    actual fun toLocalDate(): LocalDate {
         val epochDay = toEpochDay()
         return LocalDate.fromEpochDays(epochDay.toInt())
     }
@@ -264,7 +264,7 @@ class EthiopicDate private constructor(
     /**
      * Adds the specified amount to this date
      */
-    fun plus(amountToAdd: Long, unit: ChronoUnit): EthiopicDate {
+    actual fun plus(amountToAdd: Long, unit: ChronoUnit): EthiopicDate {
         return when (unit) {
             ChronoUnit.DAYS -> plusDays(amountToAdd)
             ChronoUnit.WEEKS -> plusWeeks(amountToAdd)
@@ -289,14 +289,14 @@ class EthiopicDate private constructor(
     /**
      * Adds the specified amount to this date (Int version for convenience)
      */
-    fun plus(amountToAdd: Int, unit: ChronoUnit): EthiopicDate {
+    actual fun plus(amountToAdd: Int, unit: ChronoUnit): EthiopicDate {
         return plus(amountToAdd.toLong(), unit)
     }
 
     /**
      * Subtracts the specified amount from this date
      */
-    fun minus(amountToSubtract: Long, unit: ChronoUnit): EthiopicDate {
+    actual fun minus(amountToSubtract: Long, unit: ChronoUnit): EthiopicDate {
         return if (amountToSubtract == Long.MIN_VALUE) {
             plus(Long.MAX_VALUE, unit).plus(1, unit)
         } else {
@@ -307,7 +307,7 @@ class EthiopicDate private constructor(
     /**
      * Subtracts the specified amount from this date (Int version for convenience)
      */
-    fun minus(amountToSubtract: Int, unit: ChronoUnit): EthiopicDate {
+    actual fun minus(amountToSubtract: Int, unit: ChronoUnit): EthiopicDate {
         return minus(amountToSubtract.toLong(), unit)
     }
 

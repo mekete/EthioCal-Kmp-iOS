@@ -9,8 +9,8 @@ import java.time.ZoneId
 import java.time.chrono.ChronoLocalDate
 import java.time.chrono.ChronoLocalDateTime
 import java.time.chrono.ChronoPeriod
-import java.time.temporal.ChronoField
-import java.time.temporal.ChronoUnit
+import java.time.temporal.ChronoField as JavaChronoField
+import java.time.temporal.ChronoUnit as JavaChronoUnit
 import java.time.temporal.Temporal
 import java.time.temporal.TemporalAccessor
 import java.time.temporal.TemporalAdjuster
@@ -19,19 +19,22 @@ import java.time.temporal.TemporalField
 import java.time.temporal.TemporalUnit
 import java.time.temporal.UnsupportedTemporalTypeException
 import java.time.temporal.ValueRange
+import kotlinx.datetime.LocalDate as KotlinxLocalDate
+import kotlinx.datetime.toJavaLocalDate
+import kotlinx.datetime.toKotlinLocalDate
 
-class EthiopicDate private constructor(
+actual class EthiopicDate private constructor(
     private val prolepticYear: Int,
     private val month: Short,
     private val day: Short
 ) : ChronoLocalDate, Serializable {
 
-    companion object {
+    actual companion object {
         private const val serialVersionUID = -268768729L
         private const val EPOCH_DAY_DIFFERENCE = 716367
 
         @JvmStatic
-        fun now(): EthiopicDate = now(Clock.systemDefaultZone())
+        actual fun now(): EthiopicDate = now(Clock.systemDefaultZone())
 
         @JvmStatic
         fun now(zone: ZoneId): EthiopicDate = now(Clock.system(zone))
@@ -43,7 +46,7 @@ class EthiopicDate private constructor(
         }
 
         @JvmStatic
-        fun of(prolepticYear: Int, month: Int, dayOfMonth: Int): EthiopicDate {
+        actual fun of(prolepticYear: Int, month: Int, dayOfMonth: Int): EthiopicDate {
             return create(prolepticYear, month, dayOfMonth)
         }
 
@@ -52,13 +55,21 @@ class EthiopicDate private constructor(
             if (temporal is EthiopicDate) {
                 return temporal
             }
-            return ofEpochDay(temporal.getLong(ChronoField.EPOCH_DAY))
+            return ofEpochDay(temporal.getLong(JavaChronoField.EPOCH_DAY))
+        }
+
+        /**
+         * Creates an Ethiopian date from a kotlinx.datetime LocalDate
+         */
+        @JvmStatic
+        actual fun from(gregorianDate: KotlinxLocalDate): EthiopicDate {
+            return ofEpochDay(gregorianDate.toEpochDays().toLong())
         }
 
         @JvmStatic
-        fun ofYearDay(prolepticYear: Int, dayOfYear: Int): EthiopicDate {
-            EthiopicChronology.YEAR_RANGE.checkValidValue(prolepticYear.toLong(), ChronoField.YEAR)
-            ChronoField.DAY_OF_YEAR.range().checkValidValue(dayOfYear.toLong(), ChronoField.DAY_OF_YEAR)
+        actual fun ofYearDay(prolepticYear: Int, dayOfYear: Int): EthiopicDate {
+            EthiopicChronology.YEAR_RANGE.checkValidValue(prolepticYear.toLong(), JavaChronoField.YEAR)
+            JavaChronoField.DAY_OF_YEAR.range().checkValidValue(dayOfYear.toLong(), JavaChronoField.DAY_OF_YEAR)
             if (dayOfYear == 366 && !EthiopicChronology.INSTANCE.isLeapYear(prolepticYear.toLong())) {
                 throw DateTimeException("Invalid date 'Pagumen 6' as '$prolepticYear' is not a leap year")
             }
@@ -66,8 +77,8 @@ class EthiopicDate private constructor(
         }
 
         @JvmStatic
-        fun ofEpochDay(epochDay: Long): EthiopicDate {
-            ChronoField.EPOCH_DAY.range().checkValidValue(epochDay, ChronoField.EPOCH_DAY)
+        actual fun ofEpochDay(epochDay: Long): EthiopicDate {
+            JavaChronoField.EPOCH_DAY.range().checkValidValue(epochDay, JavaChronoField.EPOCH_DAY)
             var ethiopicED = epochDay + EPOCH_DAY_DIFFERENCE
             var adjustment = 0
             if (ethiopicED < 0) {
@@ -91,9 +102,9 @@ class EthiopicDate private constructor(
         }
 
         private fun create(prolepticYear: Int, month: Int, dayOfMonth: Int): EthiopicDate {
-            EthiopicChronology.YEAR_RANGE.checkValidValue(prolepticYear.toLong(), ChronoField.YEAR)
-            EthiopicChronology.MOY_RANGE.checkValidValue(month.toLong(), ChronoField.MONTH_OF_YEAR)
-            EthiopicChronology.DOM_RANGE.checkValidValue(dayOfMonth.toLong(), ChronoField.DAY_OF_MONTH)
+            EthiopicChronology.YEAR_RANGE.checkValidValue(prolepticYear.toLong(), JavaChronoField.YEAR)
+            EthiopicChronology.MOY_RANGE.checkValidValue(month.toLong(), JavaChronoField.MONTH_OF_YEAR)
+            EthiopicChronology.DOM_RANGE.checkValidValue(dayOfMonth.toLong(), JavaChronoField.DAY_OF_MONTH)
 
             if (month == 13 && dayOfMonth > 5) {
                 if (EthiopicChronology.INSTANCE.isLeapYear(prolepticYear.toLong())) {
@@ -114,12 +125,21 @@ class EthiopicDate private constructor(
 
     private fun readResolve(): Any = create(prolepticYear, month.toInt(), day.toInt())
 
+    actual val chronology: EthiopicChronology
+        get() = getChronology()
+
+    actual val era: EthiopicEra
+        get() = getEra()
+
+    actual val isLeapYear: Boolean
+        get() = EthiopicChronology.INSTANCE.isLeapYear(prolepticYear.toLong())
+
     override fun getChronology(): EthiopicChronology = EthiopicChronology.INSTANCE
 
     override fun getEra(): EthiopicEra =
         if (prolepticYear >= 1) EthiopicEra.INCARNATION else EthiopicEra.BEFORE_INCARNATION
 
-    override  fun lengthOfMonth(): Int {
+    actual override fun lengthOfMonth(): Int {
         return if (month.toInt() == 13) {
             if (isLeapYear) 6 else 5
         } else {
@@ -127,8 +147,51 @@ class EthiopicDate private constructor(
         }
     }
 
-    override fun lengthOfYear(): Int =
+    actual override fun lengthOfYear(): Int =
         if (EthiopicChronology.INSTANCE.isLeapYear(prolepticYear.toLong())) 366 else 365
+
+    /**
+     * Gets the value of the specified common ChronoField
+     */
+    actual fun get(field: ChronoField): Int {
+        return getLong(field.toJavaChronoField()).toInt()
+    }
+
+    /**
+     * Converts this Ethiopian date to a kotlinx.datetime LocalDate
+     */
+    actual fun toLocalDate(): KotlinxLocalDate {
+        val epochDay = toEpochDay()
+        return LocalDate.ofEpochDay(epochDay).toKotlinLocalDate()
+    }
+
+    /**
+     * Adds the specified amount using common ChronoUnit
+     */
+    actual fun plus(amountToAdd: Long, unit: ChronoUnit): EthiopicDate {
+        return plus(amountToAdd, unit.toJavaChronoUnit())
+    }
+
+    /**
+     * Adds the specified amount using common ChronoUnit (Int version)
+     */
+    actual fun plus(amountToAdd: Int, unit: ChronoUnit): EthiopicDate {
+        return plus(amountToAdd.toLong(), unit.toJavaChronoUnit())
+    }
+
+    /**
+     * Subtracts the specified amount using common ChronoUnit
+     */
+    actual fun minus(amountToSubtract: Long, unit: ChronoUnit): EthiopicDate {
+        return minus(amountToSubtract, unit.toJavaChronoUnit())
+    }
+
+    /**
+     * Subtracts the specified amount using common ChronoUnit (Int version)
+     */
+    actual fun minus(amountToSubtract: Int, unit: ChronoUnit): EthiopicDate {
+        return minus(amountToSubtract.toLong(), unit.toJavaChronoUnit())
+    }
 
     private val dayOfYear: Int
         get() = (month - 1) * 30 + day
@@ -155,14 +218,14 @@ class EthiopicDate private constructor(
         get() = ((dayOfYear - 1) / 7) + 1
 
     override fun range(field: TemporalField): ValueRange {
-        if (field is ChronoField) {
+        if (field is JavaChronoField) {
             if (isSupported(field)) {
                 return when (field) {
-                    ChronoField.DAY_OF_MONTH -> ValueRange.of(1, lengthOfMonth().toLong())
-                    ChronoField.DAY_OF_YEAR -> ValueRange.of(1, lengthOfYear().toLong())
-                    ChronoField.ALIGNED_WEEK_OF_MONTH ->
+                    JavaChronoField.DAY_OF_MONTH -> ValueRange.of(1, lengthOfMonth().toLong())
+                    JavaChronoField.DAY_OF_YEAR -> ValueRange.of(1, lengthOfYear().toLong())
+                    JavaChronoField.ALIGNED_WEEK_OF_MONTH ->
                         ValueRange.of(1, if (month.toInt() == 13) 1 else 5)
-                    else -> chronology.range(field)
+                    else -> getChronology().range(field)
                 }
             }
             throw UnsupportedTemporalTypeException("Unsupported field: $field")
@@ -171,28 +234,28 @@ class EthiopicDate private constructor(
     }
 
     override fun getLong(field: TemporalField): Long {
-        if (field is ChronoField) {
+        if (field is JavaChronoField) {
             return when (field) {
-                ChronoField.DAY_OF_WEEK -> dayOfWeek.toLong()
-                ChronoField.ALIGNED_DAY_OF_WEEK_IN_MONTH -> alignedDayOfWeekInMonth.toLong()
-                ChronoField.ALIGNED_DAY_OF_WEEK_IN_YEAR -> alignedDayOfWeekInYear.toLong()
-                ChronoField.DAY_OF_MONTH -> day.toLong()
-                ChronoField.DAY_OF_YEAR -> dayOfYear.toLong()
-                ChronoField.EPOCH_DAY -> toEpochDay()
-                ChronoField.ALIGNED_WEEK_OF_MONTH -> alignedWeekOfMonth.toLong()
-                ChronoField.ALIGNED_WEEK_OF_YEAR -> alignedWeekOfYear.toLong()
-                ChronoField.MONTH_OF_YEAR -> month.toLong()
-                ChronoField.PROLEPTIC_MONTH -> prolepticMonth
-                ChronoField.YEAR_OF_ERA -> yearOfEra.toLong()
-                ChronoField.YEAR -> prolepticYear.toLong()
-                ChronoField.ERA -> if (prolepticYear >= 1) 1L else 0L
+                JavaChronoField.DAY_OF_WEEK -> dayOfWeek.toLong()
+                JavaChronoField.ALIGNED_DAY_OF_WEEK_IN_MONTH -> alignedDayOfWeekInMonth.toLong()
+                JavaChronoField.ALIGNED_DAY_OF_WEEK_IN_YEAR -> alignedDayOfWeekInYear.toLong()
+                JavaChronoField.DAY_OF_MONTH -> day.toLong()
+                JavaChronoField.DAY_OF_YEAR -> dayOfYear.toLong()
+                JavaChronoField.EPOCH_DAY -> toEpochDay()
+                JavaChronoField.ALIGNED_WEEK_OF_MONTH -> alignedWeekOfMonth.toLong()
+                JavaChronoField.ALIGNED_WEEK_OF_YEAR -> alignedWeekOfYear.toLong()
+                JavaChronoField.MONTH_OF_YEAR -> month.toLong()
+                JavaChronoField.PROLEPTIC_MONTH -> prolepticMonth
+                JavaChronoField.YEAR_OF_ERA -> yearOfEra.toLong()
+                JavaChronoField.YEAR -> prolepticYear.toLong()
+                JavaChronoField.ERA -> if (prolepticYear >= 1) 1L else 0L
                 else -> throw UnsupportedTemporalTypeException("Unsupported field: $field")
             }
         }
         return field.getFrom(this)
     }
 
-    override fun toEpochDay(): Long {
+    actual override fun toEpochDay(): Long {
         val year = prolepticYear.toLong()
         val calendarEpochDay = ((year - 1) * 365) + Math.floorDiv(year, 4) + (dayOfYear - 1)
         return calendarEpochDay - EPOCH_DAY_DIFFERENCE
@@ -203,29 +266,29 @@ class EthiopicDate private constructor(
     }
 
     override fun with(field: TemporalField, newValue: Long): EthiopicDate {
-        if (field is ChronoField) {
-            chronology.range(field).checkValidValue(newValue, field)
+        if (field is JavaChronoField) {
+            getChronology().range(field).checkValidValue(newValue, field)
             val nvalue = newValue.toInt()
             return when (field) {
-                ChronoField.DAY_OF_WEEK -> plusDays(newValue - dayOfWeek)
-                ChronoField.ALIGNED_DAY_OF_WEEK_IN_MONTH ->
-                    plusDays(newValue - getLong(ChronoField.ALIGNED_DAY_OF_WEEK_IN_MONTH))
-                ChronoField.ALIGNED_DAY_OF_WEEK_IN_YEAR ->
-                    plusDays(newValue - getLong(ChronoField.ALIGNED_DAY_OF_WEEK_IN_YEAR))
-                ChronoField.DAY_OF_MONTH -> resolvePreviousValid(prolepticYear, month.toInt(), nvalue)
-                ChronoField.DAY_OF_YEAR -> withDayOfYear(nvalue)
-                ChronoField.EPOCH_DAY -> ofEpochDay(newValue)
-                ChronoField.ALIGNED_WEEK_OF_MONTH ->
-                    plusDays((newValue - getLong(ChronoField.ALIGNED_WEEK_OF_MONTH)) * 7)
-                ChronoField.ALIGNED_WEEK_OF_YEAR ->
-                    plusDays((newValue - getLong(ChronoField.ALIGNED_WEEK_OF_YEAR)) * 7)
-                ChronoField.MONTH_OF_YEAR -> resolvePreviousValid(prolepticYear, nvalue, day.toInt())
-                ChronoField.PROLEPTIC_MONTH -> plusMonths(newValue - prolepticMonth)
-                ChronoField.YEAR_OF_ERA ->
+                JavaChronoField.DAY_OF_WEEK -> plusDays(newValue - dayOfWeek)
+                JavaChronoField.ALIGNED_DAY_OF_WEEK_IN_MONTH ->
+                    plusDays(newValue - getLong(JavaChronoField.ALIGNED_DAY_OF_WEEK_IN_MONTH))
+                JavaChronoField.ALIGNED_DAY_OF_WEEK_IN_YEAR ->
+                    plusDays(newValue - getLong(JavaChronoField.ALIGNED_DAY_OF_WEEK_IN_YEAR))
+                JavaChronoField.DAY_OF_MONTH -> resolvePreviousValid(prolepticYear, month.toInt(), nvalue)
+                JavaChronoField.DAY_OF_YEAR -> withDayOfYear(nvalue)
+                JavaChronoField.EPOCH_DAY -> ofEpochDay(newValue)
+                JavaChronoField.ALIGNED_WEEK_OF_MONTH ->
+                    plusDays((newValue - getLong(JavaChronoField.ALIGNED_WEEK_OF_MONTH)) * 7)
+                JavaChronoField.ALIGNED_WEEK_OF_YEAR ->
+                    plusDays((newValue - getLong(JavaChronoField.ALIGNED_WEEK_OF_YEAR)) * 7)
+                JavaChronoField.MONTH_OF_YEAR -> resolvePreviousValid(prolepticYear, nvalue, day.toInt())
+                JavaChronoField.PROLEPTIC_MONTH -> plusMonths(newValue - prolepticMonth)
+                JavaChronoField.YEAR_OF_ERA ->
                     resolvePreviousValid(if (prolepticYear >= 1) nvalue else 1 - nvalue, month.toInt(), day.toInt())
-                ChronoField.YEAR -> resolvePreviousValid(nvalue, month.toInt(), day.toInt())
-                ChronoField.ERA ->
-                    if (newValue == getLong(ChronoField.ERA)) this
+                JavaChronoField.YEAR -> resolvePreviousValid(nvalue, month.toInt(), day.toInt())
+                JavaChronoField.ERA ->
+                    if (newValue == getLong(JavaChronoField.ERA)) this
                     else resolvePreviousValid(1 - prolepticYear, month.toInt(), day.toInt())
                 else -> throw UnsupportedTemporalTypeException("Unsupported field: $field")
             }
@@ -242,16 +305,16 @@ class EthiopicDate private constructor(
     }
 
     override fun plus(amountToAdd: Long, unit: TemporalUnit): EthiopicDate {
-        if (unit is ChronoUnit) {
+        if (unit is JavaChronoUnit) {
             return when (unit) {
-                ChronoUnit.DAYS -> plusDays(amountToAdd)
-                ChronoUnit.WEEKS -> plusWeeks(amountToAdd)
-                ChronoUnit.MONTHS -> plusMonths(amountToAdd)
-                ChronoUnit.YEARS -> plusYears(amountToAdd)
-                ChronoUnit.DECADES -> plusYears(Math.multiplyExact(amountToAdd, 10))
-                ChronoUnit.CENTURIES -> plusYears(Math.multiplyExact(amountToAdd, 100))
-                ChronoUnit.MILLENNIA -> plusYears(Math.multiplyExact(amountToAdd, 1000))
-                ChronoUnit.ERAS -> with(ChronoField.ERA, Math.addExact(getLong(ChronoField.ERA), amountToAdd))
+                JavaChronoUnit.DAYS -> plusDays(amountToAdd)
+                JavaChronoUnit.WEEKS -> plusWeeks(amountToAdd)
+                JavaChronoUnit.MONTHS -> plusMonths(amountToAdd)
+                JavaChronoUnit.YEARS -> plusYears(amountToAdd)
+                JavaChronoUnit.DECADES -> plusYears(Math.multiplyExact(amountToAdd, 10))
+                JavaChronoUnit.CENTURIES -> plusYears(Math.multiplyExact(amountToAdd, 100))
+                JavaChronoUnit.MILLENNIA -> plusYears(Math.multiplyExact(amountToAdd, 1000))
+                JavaChronoUnit.ERAS -> with(JavaChronoField.ERA, Math.addExact(getLong(JavaChronoField.ERA), amountToAdd))
                 else -> throw UnsupportedTemporalTypeException("Unsupported unit: $unit")
             }
         }
@@ -272,7 +335,7 @@ class EthiopicDate private constructor(
 
     private fun plusYears(yearsToAdd: Long): EthiopicDate {
         if (yearsToAdd == 0L) return this
-        val newYear = ChronoField.YEAR.checkValidIntValue(Math.addExact(prolepticYear.toLong(), yearsToAdd))
+        val newYear = JavaChronoField.YEAR.checkValidIntValue(Math.addExact(prolepticYear.toLong(), yearsToAdd))
         return resolvePreviousValid(newYear, month.toInt(), day.toInt())
     }
 
@@ -301,16 +364,16 @@ class EthiopicDate private constructor(
 
     override fun until(endExclusive: Temporal, unit: TemporalUnit): Long {
         val end = from(endExclusive)
-        if (unit is ChronoUnit) {
+        if (unit is JavaChronoUnit) {
             return when (unit) {
-                ChronoUnit.DAYS -> daysUntil(end)
-                ChronoUnit.WEEKS -> daysUntil(end) / 7
-                ChronoUnit.MONTHS -> monthsUntil(end)
-                ChronoUnit.YEARS -> monthsUntil(end) / 13
-                ChronoUnit.DECADES -> monthsUntil(end) / 130
-                ChronoUnit.CENTURIES -> monthsUntil(end) / 1300
-                ChronoUnit.MILLENNIA -> monthsUntil(end) / 13000
-                ChronoUnit.ERAS -> end.getLong(ChronoField.ERA) - getLong(ChronoField.ERA)
+                JavaChronoUnit.DAYS -> daysUntil(end)
+                JavaChronoUnit.WEEKS -> daysUntil(end) / 7
+                JavaChronoUnit.MONTHS -> monthsUntil(end)
+                JavaChronoUnit.YEARS -> monthsUntil(end) / 13
+                JavaChronoUnit.DECADES -> monthsUntil(end) / 130
+                JavaChronoUnit.CENTURIES -> monthsUntil(end) / 1300
+                JavaChronoUnit.MILLENNIA -> monthsUntil(end) / 13000
+                JavaChronoUnit.ERAS -> end.getLong(JavaChronoField.ERA) - getLong(JavaChronoField.ERA)
                 else -> throw UnsupportedTemporalTypeException("Unsupported unit: $unit")
             }
         }

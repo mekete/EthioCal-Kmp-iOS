@@ -4,7 +4,7 @@ package com.shalom.ethiopicchrono
  * iOS-compatible EthiopicEra enum
  * Represents the eras in the Ethiopian calendar
  */
-enum class EthiopicEra {
+actual enum class EthiopicEra {
     /**
      * The era before the Incarnation (before year 1)
      */

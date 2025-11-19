@@ -4,7 +4,7 @@ package com.shalom.ethiopicchrono
  * iOS-compatible ChronoUnit enum
  * Simplified version of java.time.temporal.ChronoUnit for cross-platform compatibility
  */
-enum class ChronoUnit {
+actual enum class ChronoUnit {
     DAYS,
     WEEKS,
     MONTHS,
