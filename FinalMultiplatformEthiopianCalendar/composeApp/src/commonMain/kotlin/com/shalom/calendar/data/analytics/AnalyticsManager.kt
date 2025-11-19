@@ -90,26 +90,26 @@ sealed class AnalyticsEvent(val name: String, val params: Map<String, Any> = emp
     data object OnboardingSkipped : AnalyticsEvent("onboarding_skipped")
 
     // Settings events
-    data class SettingsCalendarPreferencesChanged(val setting: String, val value: String) :
-        AnalyticsEvent("settings_calendar_preferences_changed", mapOf("setting" to setting, "value" to value))
+    data class SettingsCalendarPreferencesChanged(val changedField: String) :
+        AnalyticsEvent("settings_calendar_preferences_changed", mapOf("changed_field" to changedField))
 
     data class SettingsOrthodoxNamesToggled(val enabled: Boolean) :
         AnalyticsEvent("settings_orthodox_names_toggled", mapOf("enabled" to enabled))
 
-    data class SettingsHolidayToggled(val holidayType: String, val enabled: Boolean) :
-        AnalyticsEvent("settings_holiday_toggled", mapOf("holiday_type" to holidayType, "enabled" to enabled))
+    data class SettingsHolidayToggled(val type: String, val enabled: Boolean) :
+        AnalyticsEvent("settings_holiday_toggled", mapOf("type" to type, "enabled" to enabled))
 
-    data class SettingsWidgetConfigured(val setting: String, val value: String) :
-        AnalyticsEvent("settings_widget_configured", mapOf("setting" to setting, "value" to value))
+    data class SettingsWidgetConfigured(val field: String) :
+        AnalyticsEvent("settings_widget_configured", mapOf("field" to field))
 
-    data class SettingsLanguageChanged(val language: String) :
-        AnalyticsEvent("settings_language_changed", mapOf("language" to language))
+    data class SettingsLanguageChanged(val fromLanguage: String, val toLanguage: String) :
+        AnalyticsEvent("settings_language_changed", mapOf("from_language" to fromLanguage, "to_language" to toLanguage))
 
     data class SettingsThemeChanged(val theme: String) :
         AnalyticsEvent("settings_theme_changed", mapOf("theme" to theme))
 
-    data class SettingsThemeModeChanged(val isDarkMode: Boolean) :
-        AnalyticsEvent("settings_theme_mode_changed", mapOf("is_dark_mode" to isDarkMode))
+    data class SettingsThemeModeChanged(val mode: String) :
+        AnalyticsEvent("settings_theme_mode_changed", mapOf("mode" to mode))
 
     data class HolidayFilterChanged(val filterType: String, val enabled: Boolean) :
         AnalyticsEvent("holiday_filter_changed", mapOf("filter_type" to filterType, "enabled" to enabled))

@@ -52,8 +52,8 @@ import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import com.shalom.calendar.data.preferences.CalendarType
 import com.shalom.calendar.data.preferences.Language
-import com.shalom.calendar.data.preferences.ThemeMode
 import com.shalom.calendar.presentation.settings.SettingsViewModel
+import com.shalom.calendar.ui.theme.ThemeMode
 import com.shalom.calendar.presentation.theme.ThemeViewModel
 import ethiopiancalendar.composeapp.generated.resources.Res
 import ethiopiancalendar.composeapp.generated.resources.button_ok

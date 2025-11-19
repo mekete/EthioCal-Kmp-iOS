@@ -54,7 +54,7 @@ fun HolidayItem(
         ) {
             // Day number
             Text(
-                text = String.format(Locale.US, "%02d", holiday.holiday.ethiopianDay),
+                text = holiday.holiday.ethiopianDay.toString().padStart(2, '0'),
                 style = MaterialTheme.typography.headlineLarge,
                 fontWeight = FontWeight.Thin
             )
