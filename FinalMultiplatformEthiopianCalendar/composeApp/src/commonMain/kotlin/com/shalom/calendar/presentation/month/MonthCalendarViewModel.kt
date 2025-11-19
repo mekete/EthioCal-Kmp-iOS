@@ -10,6 +10,10 @@ import com.shalom.calendar.data.repository.EventRepository
 import com.shalom.calendar.data.repository.HolidayRepository
 import com.shalom.calendar.domain.model.HolidayOccurrence
 import com.shalom.calendar.domain.model.HolidayType
+import com.shalom.calendar.util.today
+import com.shalom.calendar.util.lengthOfMonth
+import com.shalom.ethiopicchrono.ChronoField
+import com.shalom.ethiopicchrono.ChronoUnit
 import com.shalom.ethiopicchrono.EthiopicDate
 import kotlinx.coroutines.CancellationException
 import kotlinx.coroutines.flow.Flow
@@ -22,9 +26,7 @@ import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.flow.stateIn
 import kotlinx.coroutines.runBlocking
-import java.time.LocalDate
-import java.time.temporal.ChronoField
-import java.time.temporal.ChronoUnit
+import kotlinx.datetime.LocalDate
 import kotlin.math.abs
 
 /**
@@ -180,9 +182,9 @@ class MonthCalendarViewModel(
      * Find the page that displays the current Gregorian month.
      */
     private fun getPageForCurrentGregorianMonth(): Int {
-        val today = LocalDate.now()
-        val currentGregorianYear = today.year
-        val currentGregorianMonth = today.monthValue
+        val todayDate = today()
+        val currentGregorianYear = todayDate.year
+        val currentGregorianMonth = todayDate.monthNumber
 
         // Search Ethiopian months near the current one
         for (offset in -2..2) {
@@ -349,8 +351,8 @@ class MonthCalendarViewModel(
         gregorianMonth: Int?
     ): List<HolidayOccurrence> {
         return if (primaryCalendar == CalendarType.GREGORIAN && gregorianYear != null && gregorianMonth != null) {
-            val firstDayOfMonth = LocalDate.of(gregorianYear, gregorianMonth, 1)
-            val lastDayOfMonth = LocalDate.of(gregorianYear, gregorianMonth, firstDayOfMonth.lengthOfMonth())
+            val firstDayOfMonth = LocalDate(gregorianYear, gregorianMonth, 1)
+            val lastDayOfMonth = LocalDate(gregorianYear, gregorianMonth, firstDayOfMonth.lengthOfMonth())
 
             // Convert to Ethiopian dates for comparison
             val firstEthiopianDate = EthiopicDate.from(firstDayOfMonth)
@@ -395,8 +397,8 @@ class MonthCalendarViewModel(
         val dateList = mutableListOf<EthiopicDate>()
 
         // Add days from previous month to fill first week
-        val gregorianFirstDay = LocalDate.from(firstDayOfMonth)
-        val firstDayWeekday = gregorianFirstDay.dayOfWeek.value
+        val gregorianFirstDay = firstDayOfMonth.toLocalDate()
+        val firstDayWeekday = gregorianFirstDay.dayOfWeek.isoDayNumber
         val dayOffset = (firstDayWeekday - 1) % 7
 
         if (dayOffset > 0) {
@@ -451,28 +453,28 @@ class MonthCalendarViewModel(
         val referenceEthiopianDate = EthiopicDate.of(ethiopianYear, ethiopianMonthValue, referenceDay)
 
         // Convert to Gregorian to find the Gregorian month to display
-        val gregorianDate = LocalDate.from(referenceEthiopianDate)
+        val gregorianDate = referenceEthiopianDate.toLocalDate()
         val year = gregorianDate.year
-        val month = gregorianDate.monthValue
+        val month = gregorianDate.monthNumber
 
         // Get first day of the Gregorian month
-        val firstDayOfMonth = LocalDate.of(year, month, 1)
-        val daysInMonth = firstDayOfMonth.lengthOfMonth()
+        val firstDayOfMonthGreg = LocalDate(year, month, 1)
+        val daysInMonth = firstDayOfMonthGreg.lengthOfMonth()
 
         val dateList = mutableListOf<EthiopicDate>()
 
         // Add days from previous month to fill first week
-        val firstDayWeekday = firstDayOfMonth.dayOfWeek.value
+        val firstDayWeekday = firstDayOfMonthGreg.dayOfWeek.isoDayNumber
         val dayOffset = (firstDayWeekday - 1) % 7
 
         if (dayOffset > 0) {
-            var prevDate = firstDayOfMonth.minusDays(1)
+            var prevEpochDay = firstDayOfMonthGreg.toEpochDays() - 1
             val prevDatesToAdd = mutableListOf<LocalDate>()
 
             for (i in 0 until dayOffset) {
-                prevDatesToAdd.add(prevDate)
+                prevDatesToAdd.add(LocalDate.fromEpochDays(prevEpochDay))
                 if (i < dayOffset - 1) {
-                    prevDate = prevDate.minusDays(1)
+                    prevEpochDay -= 1
                 }
             }
 
@@ -481,7 +483,7 @@ class MonthCalendarViewModel(
 
         // Add days of current Gregorian month
         for (day in 1..daysInMonth) {
-            val gregorianDay = LocalDate.of(year, month, day)
+            val gregorianDay = LocalDate(year, month, day)
             dateList.add(EthiopicDate.from(gregorianDay))
         }
 
@@ -492,12 +494,12 @@ class MonthCalendarViewModel(
         val remainingCells = targetCells - currentSize
 
         if (remainingCells > 0) {
-            var nextDate = LocalDate.of(year, month, daysInMonth).plusDays(1)
+            var nextEpochDay = LocalDate(year, month, daysInMonth).toEpochDays() + 1
 
             for (i in 0 until remainingCells) {
-                dateList.add(EthiopicDate.from(nextDate))
+                dateList.add(EthiopicDate.from(LocalDate.fromEpochDays(nextEpochDay)))
                 if (i < remainingCells - 1) {
-                    nextDate = nextDate.plusDays(1)
+                    nextEpochDay += 1
                 }
             }
         }
@@ -525,9 +527,9 @@ class MonthCalendarViewModel(
         val referenceEthiopianDate = EthiopicDate.of(ethiopianYear, ethiopianMonthValue, referenceDay)
 
         // Convert to Gregorian to find the Gregorian month to display
-        val gregorianDate = LocalDate.from(referenceEthiopianDate)
+        val gregorianDate = referenceEthiopianDate.toLocalDate()
         val year = gregorianDate.year
-        val month = gregorianDate.monthValue
+        val month = gregorianDate.monthNumber
 
         return Pair(year, month)
     }

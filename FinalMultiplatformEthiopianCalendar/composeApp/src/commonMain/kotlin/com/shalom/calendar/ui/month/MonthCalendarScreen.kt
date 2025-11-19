@@ -63,15 +63,15 @@ import com.shalom.calendar.shared.resources.ethiopian_months
 import com.shalom.calendar.shared.resources.weekday_names_short
 import com.shalom.calendar.ui.components.MonthHeaderItem
 import com.shalom.calendar.ui.holidaylist.HolidayItem
+import com.shalom.calendar.util.today
+import com.shalom.ethiopicchrono.ChronoField
 import com.shalom.ethiopicchrono.EthiopicDate
 import kotlinx.coroutines.launch
+import kotlinx.datetime.LocalDate
+import kotlinx.datetime.Month
 import org.jetbrains.compose.resources.stringArrayResource
 import org.jetbrains.compose.resources.stringResource
 import org.koin.compose.viewmodel.koinViewModel
-import java.time.LocalDate
-import java.time.format.DateTimeFormatter
-import java.time.temporal.ChronoField
-import java.util.Locale
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -93,7 +93,7 @@ fun MonthCalendarScreen(
     }
 
     val todayEthiopicDate = remember { EthiopicDate.now() }
-    val todayGregorianDate = remember { LocalDate.now() }
+    val todayGregorianDate = remember { today() }
 
     val primaryCalendar by viewModel.primaryCalendar.collectAsState()
     val displayDualCalendar by viewModel.displayDualCalendar.collectAsState()
@@ -116,9 +116,7 @@ fun MonthCalendarScreen(
                             style = MaterialTheme.typography.titleMedium
                         )
                         Text(
-                            text = todayGregorianDate.format(
-                                DateTimeFormatter.ofPattern("MMMM d, yyyy", Locale.US)
-                            ),
+                            text = formatGregorianDateSimple(todayGregorianDate),
                             style = MaterialTheme.typography.bodySmall,
                             color = MaterialTheme.colorScheme.onSurfaceVariant
                         )
@@ -359,10 +357,8 @@ fun DateDetailsDialog(
     val year = date.get(ChronoField.YEAR_OF_ERA)
     val monthName = monthNames.getOrElse(month - 1) { "" }
 
-    val gregorianDate = LocalDate.from(date)
-    val gregorianFormatted = gregorianDate.format(
-        DateTimeFormatter.ofPattern("MMMM d, yyyy", Locale.US)
-    )
+    val gregorianDate = date.toLocalDate()
+    val gregorianFormatted = formatGregorianDateSimple(gregorianDate)
 
     AlertDialog(
         onDismissRequest = onDismiss,
@@ -407,4 +403,14 @@ fun DateDetailsDialog(
             }
         }
     )
+}
+
+// Helper function to format Gregorian date without DateTimeFormatter
+private fun formatGregorianDateSimple(date: LocalDate): String {
+    val monthNames = listOf(
+        "January", "February", "March", "April", "May", "June",
+        "July", "August", "September", "October", "November", "December"
+    )
+    val monthName = monthNames.getOrElse(date.monthNumber - 1) { "" }
+    return "$monthName ${date.dayOfMonth}, ${date.year}"
 }

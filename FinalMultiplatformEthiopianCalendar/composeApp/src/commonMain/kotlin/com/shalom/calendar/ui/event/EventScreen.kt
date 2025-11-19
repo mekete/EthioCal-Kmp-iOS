@@ -63,14 +63,16 @@ import com.shalom.calendar.shared.resources.ethiopian_months
 import com.shalom.calendar.shared.resources.screen_title_events
 import com.shalom.calendar.shared.resources.weekday_names_short
 import com.shalom.calendar.ui.components.EthiopicDatePickerDialog
+import com.shalom.ethiopicchrono.ChronoField
 import com.shalom.ethiopicchrono.EthiopicDate
+import kotlinx.datetime.Clock
+import kotlinx.datetime.Instant
+import kotlinx.datetime.TimeZone
+import kotlinx.datetime.toLocalDateTime
 import org.jetbrains.compose.resources.stringArrayResource
 import org.jetbrains.compose.resources.stringResource
 import org.koin.compose.viewmodel.koinViewModel
-import java.time.ZonedDateTime
-import java.time.format.DateTimeFormatter
-import java.time.temporal.ChronoField
-import java.util.Locale
+import kotlin.time.Duration.Companion.hours
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -322,9 +324,13 @@ fun EventCard(
                 )
 
                 // Show reminder time
-                val formatter = DateTimeFormatter.ofPattern("h:mm a", Locale.US)
+                val reminderInstant = event.event.reminderTime
+                val localDateTime = reminderInstant.toLocalDateTime(TimeZone.currentSystemDefault())
+                val hour = if (localDateTime.hour == 0) 12 else if (localDateTime.hour > 12) localDateTime.hour - 12 else localDateTime.hour
+                val amPm = if (localDateTime.hour < 12) "AM" else "PM"
+                val timeStr = "$hour:${localDateTime.minute.toString().padStart(2, '0')} $amPm"
                 Text(
-                    text = event.event.reminderTime.format(formatter),
+                    text = timeStr,
                     style = MaterialTheme.typography.bodySmall,
                     color = MaterialTheme.colorScheme.primary
                 )
@@ -344,7 +350,7 @@ fun EventCard(
 @Composable
 fun AddEventDialog(
     onDismiss: () -> Unit,
-    onSave: (String, String, EthiopicDate, ZonedDateTime) -> Unit
+    onSave: (String, String, EthiopicDate, Instant) -> Unit
 ) {
     var title by remember { mutableStateOf("") }
     var description by remember { mutableStateOf("") }
@@ -388,7 +394,7 @@ fun AddEventDialog(
                             title,
                             description,
                             selectedDate,
-                            ZonedDateTime.now().plusHours(1)
+                            Clock.System.now() + 1.hours
                         )
                     }
                 }

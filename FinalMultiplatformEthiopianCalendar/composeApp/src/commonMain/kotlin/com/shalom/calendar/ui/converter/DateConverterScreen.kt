@@ -67,14 +67,15 @@ import com.shalom.calendar.shared.resources.label_start_date
 import com.shalom.calendar.shared.resources.screen_title_date_converter
 import com.shalom.calendar.shared.resources.weekday_names_full
 import com.shalom.calendar.ui.components.EthiopicDatePickerDialog
+import com.shalom.calendar.util.currentTimeMillis
+import com.shalom.ethiopicchrono.ChronoField
 import com.shalom.ethiopicchrono.EthiopicDate
+import kotlinx.datetime.LocalDate
+import kotlinx.datetime.Month
+import kotlinx.datetime.isoDayNumber
 import org.jetbrains.compose.resources.stringArrayResource
 import org.jetbrains.compose.resources.stringResource
 import org.koin.compose.viewmodel.koinViewModel
-import java.time.LocalDate
-import java.time.format.DateTimeFormatter
-import java.time.temporal.ChronoField
-import java.util.Locale
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -103,8 +104,8 @@ fun DateConverterScreen(
                 val month = uiState.gregorianMonth.toIntOrNull()
                 val year = uiState.gregorianYear.toIntOrNull()
                 if (day != null && month != null && year != null) {
-                    val date = LocalDate.of(year, month, day)
-                    date.format(DateTimeFormatter.ofPattern("EEEE, MMMM dd, yyyy", Locale.US))
+                    val date = LocalDate(year, month, day)
+                    formatGregorianDateFull(date)
                 } else null
             } catch (e: Exception) {
                 null
@@ -128,8 +129,8 @@ fun DateConverterScreen(
                 if (day != null && month != null && year != null) {
                     val date = EthiopicDate.of(year, month, day)
                     val monthName = monthNames.getOrElse(month - 1) { "" }
-                    val gregorianDate = LocalDate.from(date)
-                    val dayOfWeekIndex = (gregorianDate.dayOfWeek.value - 1) % 7
+                    val gregorianDate = date.toLocalDate()
+                    val dayOfWeekIndex = (gregorianDate.dayOfWeek.isoDayNumber - 1) % 7
                     val dayOfWeek = weekdayNames.getOrElse(dayOfWeekIndex) { "" }
                     "$dayOfWeek, $monthName $day, $year"
                 } else null
@@ -231,7 +232,7 @@ fun DateConverterScreen(
     // Gregorian Date Picker Dialog
     if (showGregorianPicker) {
         val datePickerState = rememberDatePickerState(
-            initialSelectedDateMillis = System.currentTimeMillis()
+            initialSelectedDateMillis = currentTimeMillis()
         )
 
         DatePickerDialog(
@@ -239,7 +240,7 @@ fun DateConverterScreen(
             confirmButton = {
                 TextButton(onClick = {
                     datePickerState.selectedDateMillis?.let { millis ->
-                        val date = LocalDate.ofEpochDay(millis / (24 * 60 * 60 * 1000))
+                        val date = LocalDate.fromEpochDays((millis / (24 * 60 * 60 * 1000)).toInt())
                         viewModel.setGregorianDateFromPicker(date)
                     }
                     showGregorianPicker = false
@@ -748,4 +749,17 @@ fun ResultDialog(
             }
         }
     )
+}
+
+// Helper function for full Gregorian date formatting
+private fun formatGregorianDateFull(date: LocalDate): String {
+    val weekdayNames = listOf("Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday")
+    val monthNames = listOf("January", "February", "March", "April", "May", "June",
+                           "July", "August", "September", "October", "November", "December")
+
+    val dayOfWeek = weekdayNames.getOrElse((date.dayOfWeek.isoDayNumber - 1) % 7) { "" }
+    val monthName = monthNames.getOrElse(date.monthNumber - 1) { "" }
+    val dayStr = date.dayOfMonth.toString().padStart(2, '0')
+
+    return "$dayOfWeek, $monthName $dayStr, ${date.year}"
 }

@@ -27,11 +27,10 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import com.shalom.calendar.domain.model.HolidayOccurrence
 import com.shalom.calendar.domain.model.HolidayType
+import com.shalom.ethiopicchrono.ChronoField
 import com.shalom.ethiopicchrono.EthiopicDate
-import java.time.LocalDate
-import java.time.format.TextStyle
-import java.time.temporal.ChronoField
-import java.util.Locale
+import kotlinx.datetime.LocalDate
+import kotlinx.datetime.isoDayNumber
 
 @Composable
 fun HolidayItem(
@@ -144,23 +143,25 @@ fun formatEthiopicDate(date: EthiopicDate, monthNames: List<String>, weekdayName
     val monthName = monthNames.getOrElse(month - 1) { "Unknown" }
 
     // Get day of week from the Gregorian equivalent
-    val gregorianDate = LocalDate.from(date)
-    val dayOfWeekIndex = (gregorianDate.dayOfWeek.value - 1) % 7 // Convert to 0-6 (Mon=0, Sun=6)
+    val gregorianDate = date.toLocalDate()
+    val dayOfWeekIndex = (gregorianDate.dayOfWeek.isoDayNumber - 1) % 7 // Convert to 0-6 (Mon=0, Sun=6)
     val dayOfWeekName = weekdayNamesShort.getOrElse(dayOfWeekIndex) { "" }
 
     return "$dayOfWeekName, $monthName $day, $year"
 }
 
 fun formatGregorianDate(date: EthiopicDate): String {
-    val gregorianDate = LocalDate.from(date)
+    val gregorianDate = date.toLocalDate()
 
-    // Get abbreviated English weekday name (e.g., "Mon", "Tue")
-    val dayOfWeekName = gregorianDate.dayOfWeek.getDisplayName(TextStyle.SHORT, Locale.ENGLISH)
+    // Abbreviated weekday names
+    val weekdayAbbr = listOf("Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun")
+    val dayOfWeekName = weekdayAbbr.getOrElse((gregorianDate.dayOfWeek.isoDayNumber - 1) % 7) { "" }
 
-    // Get abbreviated month name (e.g., "Jan", "Feb")
-    val monthAbbr = gregorianDate.month.getDisplayName(TextStyle.SHORT, Locale.ENGLISH)
+    // Abbreviated month names
+    val monthAbbr = listOf("Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec")
+    val monthName = monthAbbr.getOrElse(gregorianDate.monthNumber - 1) { "" }
 
-    return "$dayOfWeekName, $monthAbbr ${gregorianDate.dayOfMonth}, ${gregorianDate.year}"
+    return "$dayOfWeekName, $monthName ${gregorianDate.dayOfMonth}, ${gregorianDate.year}"
 }
 
 /**
