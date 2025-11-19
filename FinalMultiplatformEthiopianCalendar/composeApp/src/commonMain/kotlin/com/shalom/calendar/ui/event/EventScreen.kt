@@ -227,7 +227,7 @@ fun EventScreen(
             confirmButton = {
                 TextButton(
                     onClick = {
-                        viewModel.deleteEvent(event.event.id)
+                        viewModel.deleteEvent(event.eventId)
                         showDeleteConfirmDialog = null
                     }
                 ) {
@@ -244,20 +244,24 @@ fun EventScreen(
 
     // Date filter pickers
     if (showStartDatePicker) {
+        val filterStart = (uiState as? EventUiState.Success)?.filterStartDate
+        val selectedEthiopicDate = filterStart?.let { EthiopicDate.from(it) } ?: EthiopicDate.now()
         EthiopicDatePickerDialog(
-            selectedDate = (uiState as? EventUiState.Success)?.filterStartDate ?: EthiopicDate.now(),
+            selectedDate = selectedEthiopicDate,
             onDateSelected = { date ->
-                viewModel.setFilterStartDate(date)
+                viewModel.setFilterStartDate(date.toLocalDate())
             },
             onDismiss = { showStartDatePicker = false }
         )
     }
 
     if (showEndDatePicker) {
+        val filterEnd = (uiState as? EventUiState.Success)?.filterEndDate
+        val selectedEthiopicDate = filterEnd?.let { EthiopicDate.from(it) } ?: EthiopicDate.now()
         EthiopicDatePickerDialog(
-            selectedDate = (uiState as? EventUiState.Success)?.filterEndDate ?: EthiopicDate.now(),
+            selectedDate = selectedEthiopicDate,
             onDateSelected = { date ->
-                viewModel.setFilterEndDate(date)
+                viewModel.setFilterEndDate(date.toLocalDate())
             },
             onDismiss = { showEndDatePicker = false }
         )
@@ -302,7 +306,7 @@ fun EventCard(
         ) {
             Column(modifier = Modifier.weight(1f)) {
                 Text(
-                    text = event.event.title,
+                    text = event.summary,
                     style = MaterialTheme.typography.titleMedium,
                     fontWeight = FontWeight.Bold,
                     maxLines = 1,
@@ -313,20 +317,19 @@ fun EventCard(
 
                 // Format Ethiopian date
                 val ethiopicDate = EthiopicDate.of(
-                    event.event.ethiopianYear,
-                    event.event.ethiopianMonth,
-                    event.event.ethiopianDay
+                    event.ethiopianYear,
+                    event.ethiopianMonth,
+                    event.ethiopianDay
                 )
-                val monthName = monthNames.getOrElse(event.event.ethiopianMonth - 1) { "" }
+                val monthName = monthNames.getOrElse(event.ethiopianMonth - 1) { "" }
                 Text(
-                    text = "$monthName ${event.event.ethiopianDay}, ${event.event.ethiopianYear}",
+                    text = "$monthName ${event.ethiopianDay}, ${event.ethiopianYear}",
                     style = MaterialTheme.typography.bodySmall,
                     color = MaterialTheme.colorScheme.onSurfaceVariant
                 )
 
-                // Show reminder time
-                val reminderInstant = event.event.reminderTime
-                val localDateTime = reminderInstant.toLocalDateTime(TimeZone.currentSystemDefault())
+                // Show event time
+                val localDateTime = event.instanceStart.toLocalDateTime(TimeZone.currentSystemDefault())
                 val hour = if (localDateTime.hour == 0) 12 else if (localDateTime.hour > 12) localDateTime.hour - 12 else localDateTime.hour
                 val amPm = if (localDateTime.hour < 12) "AM" else "PM"
                 val timeStr = "$hour:${localDateTime.minute.toString().padStart(2, '0')} $amPm"

@@ -137,12 +137,16 @@
 
     <!-- Content descriptions -->
     <string name="cd_navigate_back">Navigate back</string>
+    <string name="cd_navigate">Navigate</string>
     <string name="cd_open_menu">Open menu</string>
     <string name="cd_close_dialog">Close dialog</string>
     <string name="cd_select_date">Select date</string>
     <string name="cd_today">Go to today</string>
     <string name="cd_add_event">Add event</string>
     <string name="cd_delete_event">Delete event</string>
+    <string name="cd_holiday_info">Holiday information</string>
+    <string name="cd_back">Go back</string>
+    <string name="cd_selected">Selected</string>
 
     <!-- Delete confirmation -->
     <string name="delete_event_confirm_title">Delete Event</string>
@@ -151,6 +155,30 @@
     <!-- Empty states -->
     <string name="empty_no_events">No events found</string>
     <string name="empty_no_holidays">No holidays found</string>
+    <string name="empty_no_holidays_display">No holidays to display for the selected filters</string>
+
+    <!-- Holiday info dialog -->
+    <string name="holiday_info_dialog_title">About Holiday Colors</string>
+    <string name="holiday_info_dialog_message">Holidays are color-coded based on their type:\n\n• Red - Day off holidays\n• Blue - Orthodox holidays\n• Green - Muslim holidays\n• Purple - National holidays</string>
+    <string name="holiday_info_dialog_checkbox">Don\'t show this again</string>
+
+    <!-- More screen menu items -->
+    <string name="menu_language">Language</string>
+    <string name="menu_notifications">Notifications</string>
+    <string name="menu_share_app">Share App</string>
+    <string name="menu_about_us">About Us</string>
+
+    <!-- Settings display -->
+    <string name="settings_ethiopian_gregorian_display">Calendar Display</string>
+    <string name="settings_holidays_display">Holiday Display</string>
+    <string name="settings_calendar_ethiopian">Ethiopian</string>
+    <string name="settings_calendar_gregorian">Gregorian</string>
+    <string name="settings_display_dual_calendar">Display Dual Calendar</string>
+
+    <!-- Theme settings -->
+    <string name="label_theme_mode">Theme Mode</string>
+    <string name="label_theme_color">Theme Color</string>
+    <string name="label_ec_suffix">E.C.</string>
 
     <!-- Date formatting -->
     <string name="date_format_years">%d years</string>
@@ -210,5 +238,19 @@
         <item>October</item>
         <item>November</item>
         <item>December</item>
+    </string-array>
+
+    <string-array name="theme_mode_names">
+        <item>System Default</item>
+        <item>Light</item>
+        <item>Dark</item>
+    </string-array>
+
+    <string-array name="theme_color_names">
+        <item>Blue</item>
+        <item>Red</item>
+        <item>Green</item>
+        <item>Purple</item>
+        <item>Orange</item>
     </string-array>
 </resources>
