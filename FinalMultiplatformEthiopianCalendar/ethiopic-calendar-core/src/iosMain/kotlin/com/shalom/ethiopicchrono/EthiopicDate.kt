@@ -1,6 +1,8 @@
 package com.shalom.ethiopicchrono
 
 import kotlinx.datetime.LocalDate
+import kotlinx.datetime.TimeZone
+import kotlinx.datetime.toLocalDateTime
 import kotlin.math.floor
 
 /**
@@ -20,7 +22,8 @@ class EthiopicDate private constructor(
          * Gets the current Ethiopian date
          */
         fun now(): EthiopicDate {
-            val today = kotlinx.datetime.Clock.System.todayIn(kotlinx.datetime.TimeZone.currentSystemDefault())
+            val now = kotlinx.datetime.Clock.System.now()
+            val today = now.toLocalDateTime(TimeZone.currentSystemDefault()).date
             return from(today)
         }
 
