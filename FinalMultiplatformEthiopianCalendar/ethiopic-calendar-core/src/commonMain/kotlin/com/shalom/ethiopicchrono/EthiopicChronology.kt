@@ -12,11 +12,11 @@ expect class EthiopicChronology {
 
     companion object {
         val INSTANCE: EthiopicChronology
-        const val MIN_YEAR: Int
-        const val MAX_YEAR: Int
-        const val MIN_MONTH: Int
-        const val MAX_MONTH: Int
-        const val MIN_DAY: Int
-        const val MAX_DAY: Int
+        val MIN_YEAR: Int
+        val MAX_YEAR: Int
+        val MIN_MONTH: Int
+        val MAX_MONTH: Int
+        val MIN_DAY: Int
+        val MAX_DAY: Int
     }
 }
