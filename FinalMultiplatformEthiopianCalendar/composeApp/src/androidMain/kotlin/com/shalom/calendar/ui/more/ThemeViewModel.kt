@@ -7,15 +7,12 @@ import com.shalom.calendar.data.analytics.AnalyticsManager
 import com.shalom.calendar.data.preferences.ThemePreferences
 import com.shalom.calendar.ui.theme.AppTheme
 import com.shalom.calendar.ui.theme.ThemeMode
-import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.stateIn
 import kotlinx.coroutines.launch
-import javax.inject.Inject
 
-@HiltViewModel
-class ThemeViewModel @Inject constructor(
+class ThemeViewModel(
     private val themePreferences: ThemePreferences,
     private val analyticsManager: AnalyticsManager
 ) : ViewModel() {

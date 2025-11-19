@@ -23,15 +23,16 @@ kotlin {
 
     sourceSets {
         commonMain.dependencies {
-            // Pure Kotlin dependencies (e.g., kotlinx-datetime for multiplatform)
+            // Pure Kotlin dependencies
         }
 
         androidMain.dependencies {
-            // Android-specific dependencies (currently uses java.time)
+            // Android-specific dependencies (uses java.time)
         }
 
         iosMain.dependencies {
-            // iOS-specific dependencies
+            // iOS uses kotlinx-datetime since java.time is not available
+            implementation("org.jetbrains.kotlinx:kotlinx-datetime:0.6.1")
         }
 
         commonTest.dependencies {

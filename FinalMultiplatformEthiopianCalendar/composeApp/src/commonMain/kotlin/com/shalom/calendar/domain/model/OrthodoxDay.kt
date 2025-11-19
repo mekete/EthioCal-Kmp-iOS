@@ -17,7 +17,8 @@ object OrthodoxDaysList {
      * Each day of the Ethiopian month (which has 30 days) has associated saints and observances
      */
     fun getOrthodoxDays(): List<OrthodoxDay> {
-        return listOf(OrthodoxDay("፩", "1", "ልደታ\nራጉኤል\nኤልያስ", "Lideta (Birth of the Holy Virgin Mary) and Elias (Elijah)"),
+        return listOf(
+            OrthodoxDay("፩", "1", "ልደታ\nራጉኤል\nኤልያስ", "Lideta (Birth of the Holy Virgin Mary) and Elias (Elijah)"),
             OrthodoxDay("፪", "2", "ታዴዎስ ሐዋርያ\nኢዮብ ጻድቅ", "Thaddius"),
             OrthodoxDay("፫", "3", "በዓታ ማርያም\nዜና ማርቆስ\nነአኩቶ ለአብ", "Be'eta (Presentation of the Holy Virgin to the Temple of Jerusalem)"),
             OrthodoxDay("፬", "4", "ዮሐንስ ወልደ ነጎድጓድ", "Yohannes Wolde Negedquad (John Son of Thunder)"),
@@ -46,7 +47,8 @@ object OrthodoxDaysList {
             OrthodoxDay("፳፯", "27", "መድኃኔዓለም\nሕዝቅያስ ነቢይ\nአባ ዮሐንስ", "Medhane Alem (Savior of the World)"),
             OrthodoxDay("፳፰", "28", "አማኑኤል\nቆስጠንጢኖስ\nአብርሃም", "Immanuel"),
             OrthodoxDay("፳፱", "29", "በዓለ ወልድ\nሳሙኤል ዘወገግ", "Bale Wold (Feast of God the Son)"),
-            OrthodoxDay("፴", "30", "ማርቆስ ወንጌላዊ", "Markos (Mark the Evangelist)"))
+            OrthodoxDay("፴", "30", "ማርቆስ ወንጌላዊ", "Markos (Mark the Evangelist)")
+        )
     }
 
     /**

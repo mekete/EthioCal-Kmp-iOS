@@ -6,7 +6,6 @@ import androidx.activity.ComponentActivity
 import androidx.activity.SystemBarStyle
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
-import androidx.activity.viewModels
 import androidx.compose.foundation.background
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.foundation.layout.Box
@@ -64,21 +63,18 @@ import com.shalom.calendar.ui.onboarding.OnboardingScreen
 import com.shalom.calendar.ui.theme.EthiopianCalendarTheme
 import com.shalom.calendar.ui.theme.ThemeMode
 import com.shalom.calendar.util.LocaleHelper
-import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.runBlocking
-import javax.inject.Inject
+import org.koin.android.ext.android.inject
+import org.koin.androidx.viewmodel.ext.android.viewModel
 
-@AndroidEntryPoint
 class MainActivity : ComponentActivity() {
-    private val themeViewModel: ThemeViewModel by viewModels()
+    private val themeViewModel: ThemeViewModel by viewModel()
 
-    @Inject
-    lateinit var settingsPreferences: SettingsPreferences
+    private val settingsPreferences: SettingsPreferences by inject()
 
-    @Inject
-    lateinit var permissionManager: PermissionManager
+    private val permissionManager: PermissionManager by inject()
 
     private var currentLanguage: Language? = null
 
