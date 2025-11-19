@@ -1,7 +1,11 @@
 package com.shalom.ethiopiancalendar
 
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.collectAsState
+import androidx.compose.runtime.getValue
 import com.shalom.calendar.data.preferences.SettingsPreferences
+import com.shalom.calendar.presentation.theme.ThemeViewModel
+import com.shalom.calendar.ui.theme.EthiopianCalendarTheme
 import com.shalom.calendar.util.AppInfo
 import com.shalom.calendar.util.ShareManager
 import com.shalom.calendar.util.UrlLauncher
@@ -16,11 +20,20 @@ fun App() {
     val urlLauncher: UrlLauncher = koinInject()
     val shareManager: ShareManager = koinInject()
     val appInfo: AppInfo = koinInject()
+    val themeViewModel: ThemeViewModel = koinInject()
 
-    CalendarApp(
-        settingsPreferences = settingsPreferences,
-        urlLauncher = urlLauncher,
-        shareManager = shareManager,
-        appInfo = appInfo
-    )
+    val appTheme by themeViewModel.appTheme.collectAsState()
+    val themeMode by themeViewModel.themeMode.collectAsState()
+
+    EthiopianCalendarTheme(
+        appTheme = appTheme,
+        themeMode = themeMode
+    ) {
+        CalendarApp(
+            settingsPreferences = settingsPreferences,
+            urlLauncher = urlLauncher,
+            shareManager = shareManager,
+            appInfo = appInfo
+        )
+    }
 }
