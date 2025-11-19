@@ -11,15 +11,13 @@ class CalendarApplication : Application() {
     override fun onCreate() {
         super.onCreate()
 
-        // Initialize Koin
-        // Note: Koin modules are currently incomplete - full initialization will be available
-        // once the data layer classes are migrated to the KMP project
+        // Initialize Koin with empty modules for now
+        // Modules will be added once the data layer is fully migrated to KMP
         try {
             startKoin {
                 androidLogger(Level.ERROR)
                 androidContext(this@CalendarApplication)
-                // TODO: Add appModules once data layer is fully migrated
-                // modules(appModules)
+                modules(emptyList())
             }
         } catch (e: Exception) {
             // Log initialization error but don't crash the app
