@@ -20,14 +20,4 @@ class DateConverter {
     fun toInstant(value: Long?): Instant? {
         return value?.let { Instant.fromEpochMilliseconds(it) }
     }
-
-    @TypeConverter
-    fun fromString(value: String?): String? {
-        return value
-    }
-
-    @TypeConverter
-    fun toString(value: String?): String? {
-        return value
-    }
 }
