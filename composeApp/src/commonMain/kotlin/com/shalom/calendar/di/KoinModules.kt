@@ -48,13 +48,14 @@ val domainModule = module {
 /**
  * ViewModel module - provides presentation layer ViewModels
  * Using factory scope so new instances are created for each injection
+ * ThemeViewModel is singleton to ensure consistent theme state across the app
  */
 val viewModelModule = module {
     factoryOf(::DateConverterViewModel)
     factoryOf(::CalendarItemListViewModel)
     factoryOf(::OnboardingViewModel)
     factoryOf(::SettingsViewModel)
-    factoryOf(::ThemeViewModel)
+    singleOf(::ThemeViewModel)
     factoryOf(::MonthCalendarViewModel)
     factoryOf(::EventViewModel)
 }
