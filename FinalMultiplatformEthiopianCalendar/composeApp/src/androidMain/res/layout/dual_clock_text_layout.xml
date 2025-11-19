@@ -58,7 +58,7 @@
             android:layout_width="@dimen/widget_refresh_button"
             android:layout_height="@dimen/widget_refresh_button"
             android:layout_gravity="center_vertical|end"
-            android:contentDescription="@string/app_name"
+            android:contentDescription="app_name"
             android:padding="@dimen/widget_icon_padding"
             android:src="@drawable/ic_refresh_24" />
     </LinearLayout>

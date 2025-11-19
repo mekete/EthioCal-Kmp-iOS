@@ -1,7 +1,0 @@
-{
-  "to": "/topics/general",
-  "notification": {
-    "title": "Basic Test",
-    "body": "This is a simple notification test"
-  }
-}
