@@ -4,32 +4,32 @@ package com.shalom.ethiopicchrono
  * iOS-compatible EthiopicChronology
  * Represents the Ethiopian calendar system
  */
-class EthiopicChronology private constructor() {
+actual class EthiopicChronology private constructor() {
 
-    companion object {
-        val INSTANCE = EthiopicChronology()
+    actual companion object {
+        actual val INSTANCE = EthiopicChronology()
 
         // Value ranges for validation
-        const val MIN_YEAR = -999_998
-        const val MAX_YEAR = 999_999
-        const val MIN_MONTH = 1
-        const val MAX_MONTH = 13
-        const val MIN_DAY = 1
-        const val MAX_DAY = 30
+        actual const val MIN_YEAR = -999_998
+        actual const val MAX_YEAR = 999_999
+        actual const val MIN_MONTH = 1
+        actual const val MAX_MONTH = 13
+        actual const val MIN_DAY = 1
+        actual const val MAX_DAY = 30
     }
 
-    val id: String = "Ethiopic"
-    val calendarType: String = "ethiopic"
+    actual val id: String = "Ethiopic"
+    actual val calendarType: String = "ethiopic"
 
     /**
      * Checks if the given year is a leap year in the Ethiopian calendar
      * A year is a leap year if (year mod 4) == 3
      */
-    fun isLeapYear(prolepticYear: Long): Boolean {
+    actual fun isLeapYear(prolepticYear: Long): Boolean {
         return (prolepticYear.mod(4)) == 3
     }
 
-    fun isLeapYear(prolepticYear: Int): Boolean {
+    actual fun isLeapYear(prolepticYear: Int): Boolean {
         return isLeapYear(prolepticYear.toLong())
     }
 

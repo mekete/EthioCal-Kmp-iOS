@@ -14,11 +14,11 @@ import java.time.temporal.TemporalAccessor
 import java.time.temporal.TemporalField
 import java.time.temporal.ValueRange
 
-class EthiopicChronology private constructor() : AbstractChronology(), Serializable {
+actual class EthiopicChronology private constructor() : AbstractChronology(), Serializable {
 
-    companion object {
+    actual companion object {
         @JvmField
-        val INSTANCE = EthiopicChronology()
+        actual val INSTANCE = EthiopicChronology()
 
         private const val serialVersionUID = 53287687268768L
 
@@ -45,16 +45,33 @@ class EthiopicChronology private constructor() : AbstractChronology(), Serializa
 
         @JvmField
         val DOM_RANGE_LEAP: ValueRange = ValueRange.of(1, 6)
+
+        // Constants for common API
+        actual const val MIN_YEAR: Int = -999_998
+        actual const val MAX_YEAR: Int = 999_999
+        actual const val MIN_MONTH: Int = 1
+        actual const val MAX_MONTH: Int = 13
+        actual const val MIN_DAY: Int = 1
+        actual const val MAX_DAY: Int = 30
     }
 
     private fun readResolve(): Any = INSTANCE
+
+    actual val id: String
+        get() = getId()
+
+    actual val calendarType: String
+        get() = getCalendarType()
 
     override fun getId(): String = "Ethiopic"
 
     override fun getCalendarType(): String = "ethiopic"
 
-    override fun isLeapYear(prolepticYear: Long): Boolean =
+    actual override fun isLeapYear(prolepticYear: Long): Boolean =
         Math.floorMod(prolepticYear, 4) == 3
+
+    actual fun isLeapYear(prolepticYear: Int): Boolean =
+        isLeapYear(prolepticYear.toLong())
 
     override fun date(era: Era, yearOfEra: Int, month: Int, dayOfMonth: Int): EthiopicDate {
         return date(prolepticYear(era, yearOfEra), month, dayOfMonth)

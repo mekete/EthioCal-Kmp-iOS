@@ -3,7 +3,7 @@ package com.shalom.ethiopicchrono
 import java.time.DateTimeException
 import java.time.chrono.Era
 
-enum class EthiopicEra : Era {
+actual enum class EthiopicEra : Era {
     BEFORE_INCARNATION,
     INCARNATION;
 
