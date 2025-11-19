@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Date Picker strings -->
+    <string name="mtrl_picker_title">Select date</string>
+    <string name="mtrl_picker_cancel">Cancel</string>
+    <string name="mtrl_picker_confirm">OK</string>
+    <string name="mtrl_picker_date_header_title">Selected Date</string>
+    <string name="mtrl_picker_range_header_title">Date Range</string>
+
+    <!-- Ethiopic Date Picker strings -->
+    <string name="ethiopic_picker_title">Select Ethiopian Date</string>
+
+    <!-- Ethiopic month names (for future use) -->
+    <string name="month_meskerem">Meskerem</string>
+    <string name="month_tikimt">Tikimt</string>
+    <string name="month_hidar">Hidar</string>
+    <string name="month_tahsas">Tahsas</string>
+    <string name="month_tir">Tir</string>
+    <string name="month_yekatit">Yekatit</string>
+    <string name="month_megabit">Megabit</string>
+    <string name="month_miazia">Miazia</string>
+    <string name="month_ginbot">Ginbot</string>
+    <string name="month_sene">Sene</string>
+    <string name="month_hamle">Hamle</string>
+    <string name="month_nehase">Nehase</string>
+    <string name="month_pagume">Pagume</string>
+
+    <!-- Day names -->
+    <string name="day_sunday">Sun</string>
+    <string name="day_monday">Mon</string>
+    <string name="day_tuesday">Tue</string>
+    <string name="day_wednesday">Wed</string>
+    <string name="day_thursday">Thu</string>
+    <string name="day_friday">Fri</string>
+    <string name="day_saturday">Sat</string>
+
+    <!-- Ethiopian Month Names (English) -->
+    <string-array name="ethiopian_months">
+        <item>Meskerem</item>
+        <item>Tikimt</item>
+        <item>Hidar</item>
+        <item>Tahsas</item>
+        <item>Tir</item>
+        <item>Yekatit</item>
+        <item>Megabit</item>
+        <item>Miazia</item>
+        <item>Ginbot</item>
+        <item>Sene</item>
+        <item>Hamle</item>
+        <item>Nehase</item>
+        <item>Pagume</item>
+    </string-array>
+
+    <!-- Weekday Names (Short) -->
+    <string-array name="weekday_names_short">
+        <item>M</item>
+        <item>T</item>
+        <item>W</item>
+        <item>T</item>
+        <item>F</item>
+        <item>S</item>
+        <item>S</item>
+    </string-array>
+
+    <!-- Weekday Names starting with Monday (for calendar grid) -->
+    <string-array name="weekday_names_mon_first">
+        <item>@string/day_monday</item>
+        <item>@string/day_tuesday</item>
+        <item>@string/day_wednesday</item>
+        <item>@string/day_thursday</item>
+        <item>@string/day_friday</item>
+        <item>@string/day_saturday</item>
+        <item>@string/day_sunday</item>
+    </string-array>
+</resources>

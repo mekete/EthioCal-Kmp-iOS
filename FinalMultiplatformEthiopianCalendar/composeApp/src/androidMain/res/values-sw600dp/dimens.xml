@@ -1,0 +1,22 @@
+<resources>
+    <dimen name="widget_label_text">18sp</dimen>
+    <dimen name="widget_time_text">36sp</dimen>
+
+    <!-- Dual Clock Widget Dimensions for Tablets -->
+    <dimen name="widget_header_left_text">22sp</dimen>
+    <dimen name="widget_header_center_text">18sp</dimen>
+    <dimen name="widget_separator_text">20sp</dimen>
+
+    <dimen name="widget_clock_time">48sp</dimen>
+    <dimen name="widget_clock_time_min">28sp</dimen>
+    <dimen name="widget_clock_time_max">64sp</dimen>
+    <dimen name="widget_clock_period">16sp</dimen>
+    <dimen name="widget_clock_period_min">12sp</dimen>
+    <dimen name="widget_clock_period_max">20sp</dimen>
+
+    <dimen name="widget_location_label">20sp</dimen>
+    <dimen name="widget_date_text">20sp</dimen>
+
+    <dimen name="widget_icon_size">24dp</dimen>
+    <dimen name="widget_refresh_button">42dp</dimen>
+</resources>

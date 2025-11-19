@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/widget_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?android:attr/colorBackgroundFloating"
+    android:orientation="vertical"
+    android:padding="@dimen/widget_padding_horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <!-- Big TextView (left) -->
+        <TextView
+            android:id="@+id/txtv_header_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:maxLines="1"
+            android:textColor="?android:attr/textColorPrimary"
+            android:textSize="@dimen/widget_header_left_text"
+            android:textStyle="bold" />
+
+        <!-- Left separator -->
+        <TextView
+            android:id="@+id/sepLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/widget_separator_margin"
+            android:text="|"
+            android:textSize="@dimen/widget_separator_text" />
+
+        <!-- Medium TextView (center) -->
+        <TextView
+            android:id="@+id/txtv_header_center"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:maxLines="1"
+            android:textColor="?android:attr/textColorPrimary"
+            android:textSize="@dimen/widget_header_center_text" />
+
+        <!-- Right separator -->
+        <TextView
+            android:id="@+id/sepRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/widget_separator_margin"
+            android:text="|"
+            android:textSize="@dimen/widget_separator_text" />
+
+        <!-- ImageView (right) -->
+        <ImageView
+            android:id="@+id/imgbtn_refresh"
+            android:layout_width="@dimen/widget_refresh_button"
+            android:layout_height="@dimen/widget_refresh_button"
+            android:layout_gravity="center_vertical|end"
+            android:contentDescription="@string/app_name"
+            android:padding="@dimen/widget_icon_padding"
+            android:src="@drawable/ic_refresh_24" />
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/widget_divider_height"
+        android:layout_marginTop="@dimen/widget_divider_margin_vertical"
+        android:layout_marginBottom="@dimen/widget_divider_margin_vertical"
+        android:background="?android:attr/textColorPrimary" />
+    <!-- Row 2 - Local Time -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Left side: Icon + Label + Date -->
+        <LinearLayout
+            android:id="@+id/layout_local_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imgv_local_icon"
+                android:layout_width="@dimen/widget_icon_size"
+                android:layout_height="@dimen/widget_icon_size"
+                android:contentDescription="Local Icon"
+                android:src="@drawable/ic_location_on_24" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/widget_label_margin_start"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtv_local_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="Local"
+                    android:textColor="?android:attr/textColorPrimary"
+                    android:textSize="@dimen/widget_location_label" />
+
+                <TextView
+                    android:id="@+id/txtv_primary_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:textColor="?android:attr/textColorSecondary"
+                    android:textSize="@dimen/widget_date_text" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Right side: Time + Period -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextClock
+                android:id="@+id/txtc_primary_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autoSizeMaxTextSize="@dimen/widget_clock_time_max"
+                android:autoSizeMinTextSize="@dimen/widget_clock_time_min"
+                android:autoSizeStepGranularity="2sp"
+                android:autoSizeTextType="uniform"
+                android:format12Hour="hh:mm"
+                android:includeFontPadding="false"
+                android:textColor="?android:attr/textColorPrimary"
+                android:textSize="@dimen/widget_clock_time"
+                android:textStyle="bold" />
+
+            <TextClock
+                android:id="@+id/txtv_primary_period"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/widget_period_margin_start"
+                android:autoSizeMaxTextSize="@dimen/widget_clock_period_max"
+                android:autoSizeMinTextSize="@dimen/widget_clock_period_min"
+                android:autoSizeStepGranularity="1sp"
+                android:autoSizeTextType="uniform"
+                android:format12Hour="a"
+                android:maxLines="1"
+                android:textColor="?android:attr/textColorPrimary"
+                android:textSize="@dimen/widget_clock_period" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/divider_dual_clock"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/widget_divider_height"
+        android:layout_marginTop="@dimen/widget_divider_margin_vertical"
+        android:layout_marginBottom="@dimen/widget_divider_margin_vertical"
+        android:background="?android:attr/textColorPrimary" />
+    <!-- Row 3 - World Time -->
+    <RelativeLayout
+        android:id="@+id/rell_world_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Left side: Icon + Label + Date -->
+        <LinearLayout
+            android:id="@+id/layout_world_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imgv_world_icon"
+                android:layout_width="@dimen/widget_icon_size"
+                android:layout_height="@dimen/widget_icon_size"
+                android:contentDescription="World Icon"
+                android:src="@drawable/ic_globe_24" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/widget_label_margin_start"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtv_world_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="World"
+                    android:textColor="?android:attr/textColorPrimary"
+                    android:textSize="@dimen/widget_location_label" />
+
+                <TextView
+                    android:id="@+id/txtv_secondary_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="2025-02-03"
+                    android:textColor="?android:attr/textColorSecondary"
+                    android:textSize="@dimen/widget_date_text" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextClock
+                android:id="@+id/txtc_secondary_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autoSizeMaxTextSize="@dimen/widget_clock_time_max"
+                android:autoSizeMinTextSize="@dimen/widget_clock_time_min"
+                android:autoSizeStepGranularity="2sp"
+                android:autoSizeTextType="uniform"
+                android:format12Hour="hh:mm"
+                android:includeFontPadding="false"
+                android:textColor="?android:attr/textColorPrimary"
+                android:textSize="@dimen/widget_clock_time"
+                android:textStyle="bold" />
+
+            <TextClock
+                android:id="@+id/txtv_secondary_period"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/widget_period_margin_start"
+                android:autoSizeMaxTextSize="@dimen/widget_clock_period_max"
+                android:autoSizeMinTextSize="@dimen/widget_clock_period_min"
+                android:autoSizeStepGranularity="1sp"
+                android:autoSizeTextType="uniform"
+                android:format12Hour="a"
+                android:maxLines="1"
+                android:textColor="?android:attr/textColorPrimary"
+                android:textSize="@dimen/widget_clock_period" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

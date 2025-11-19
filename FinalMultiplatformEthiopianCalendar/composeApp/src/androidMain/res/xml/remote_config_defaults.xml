@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<defaultsMap>
+    <!-- Muslim Holiday Date Offset Configuration (JSON format) -->
+    <!-- These values are fetched from Firebase Remote Config and control the date adjustments for Muslim holidays -->
+
+    <!-- JSON configuration for all holiday offsets (array structure supporting multiple years) -->
+    <entry>
+        <key>config_holiday_offset</key>
+        <value>[
+            {
+            "offset_description": "Default holiday offset configuration",
+            "offset_eid_al_adha": 0,
+            "offset_eid_al_fitr": 0,
+            "offset_mawlid": 0,
+            "offset_ethio_year": 0,
+            "offset_hirji_year": 0,
+            "offset_stage": "prod",
+            "offset_update_timestamp": 0
+            }
+            ]
+        </value>
+    </entry>
+</defaultsMap>
