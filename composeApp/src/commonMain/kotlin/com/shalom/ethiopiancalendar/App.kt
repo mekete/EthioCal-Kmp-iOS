@@ -4,8 +4,10 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import com.shalom.calendar.data.preferences.SettingsPreferences
+import com.shalom.calendar.presentation.settings.SettingsViewModel
 import com.shalom.calendar.presentation.theme.ThemeViewModel
 import com.shalom.calendar.ui.theme.EthiopianCalendarTheme
+import com.shalom.calendar.ui.theme.LanguageProvider
 import com.shalom.calendar.util.AppInfo
 import com.shalom.calendar.util.ShareManager
 import com.shalom.calendar.util.UrlLauncher
@@ -21,19 +23,23 @@ fun App() {
     val shareManager: ShareManager = koinInject()
     val appInfo: AppInfo = koinInject()
     val themeViewModel: ThemeViewModel = koinInject()
+    val settingsViewModel: SettingsViewModel = koinInject()
 
     val appTheme by themeViewModel.appTheme.collectAsState()
     val themeMode by themeViewModel.themeMode.collectAsState()
+    val language by settingsViewModel.language.collectAsState()
 
-    EthiopianCalendarTheme(
-        appTheme = appTheme,
-        themeMode = themeMode
-    ) {
-        CalendarApp(
-            settingsPreferences = settingsPreferences,
-            urlLauncher = urlLauncher,
-            shareManager = shareManager,
-            appInfo = appInfo
-        )
+    LanguageProvider(language = language) {
+        EthiopianCalendarTheme(
+            appTheme = appTheme,
+            themeMode = themeMode
+        ) {
+            CalendarApp(
+                settingsPreferences = settingsPreferences,
+                urlLauncher = urlLauncher,
+                shareManager = shareManager,
+                appInfo = appInfo
+            )
+        }
     }
 }

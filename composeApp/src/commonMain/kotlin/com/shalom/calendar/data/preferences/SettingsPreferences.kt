@@ -90,10 +90,10 @@ enum class CalendarType {
 /**
  * Language enumeration
  */
-enum class Language(val displayName: String) {
-    ENGLISH("English"),
-    AMHARIC("አማርኛ (Amharic)"),
-    OROMIFFA("Afan Oromoo"),
-    TIGRIGNA("ትግርኛ (Tigrigna)"),
-    FRENCH("French")
+enum class Language(val displayName: String, val localeTag: String) {
+    ENGLISH("English", "en"),
+    AMHARIC("አማርኛ (Amharic)", "am"),
+    OROMIFFA("Afan Oromoo", "om"),
+    TIGRIGNA("ትግርኛ (Tigrigna)", "ti"),
+    FRENCH("French", "fr")
 }
