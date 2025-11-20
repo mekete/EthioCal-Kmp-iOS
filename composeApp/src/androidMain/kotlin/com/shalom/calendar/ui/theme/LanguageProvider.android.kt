@@ -1,6 +1,7 @@
 package com.shalom.calendar.ui.theme
 
 import android.content.res.Configuration
+import android.util.Log
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.CompositionLocalProvider
 import androidx.compose.ui.platform.LocalConfiguration
@@ -17,6 +18,8 @@ actual fun LanguageProvider(
     language: Language,
     content: @Composable () -> Unit
 ) {
+    Log.d("CHECK-LANG-ONBOARDING", "LanguageProvider received language: ${language.name}, localeTag: ${language.localeTag}")
+
     val context = LocalContext.current
     val locale = Locale(language.localeTag)
 

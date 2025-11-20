@@ -25,9 +25,13 @@ fun App() {
     val themeViewModel: ThemeViewModel = koinInject()
     val settingsViewModel: SettingsViewModel = koinInject()
 
+    println("CHECK-LANG-ONBOARDING: App() composable, SettingsViewModel instance: ${settingsViewModel.hashCode()}")
+
     val appTheme by themeViewModel.appTheme.collectAsState()
     val themeMode by themeViewModel.themeMode.collectAsState()
     val language by settingsViewModel.language.collectAsState()
+
+    println("CHECK-LANG-ONBOARDING: App() collected language: ${language.name}")
 
     LanguageProvider(language = language) {
         EthiopianCalendarTheme(

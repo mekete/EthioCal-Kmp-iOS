@@ -75,10 +75,13 @@ class OnboardingViewModel(
     }
 
     fun setLanguage(language: Language) {
+        println("CHECK-LANG-ONBOARDING: OnboardingViewModel.setLanguage() called with: ${language.name}")
         _state.value = _state.value.copy(selectedLanguage = language)
         // Apply immediately
         viewModelScope.launch {
+            println("CHECK-LANG-ONBOARDING: Saving language to settingsPreferences: ${language.name}")
             settingsPreferences.setLanguage(language)
+            println("CHECK-LANG-ONBOARDING: Language saved to settingsPreferences")
         }
         // Track selection
         analyticsManager.logEvent(

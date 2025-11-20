@@ -1,6 +1,7 @@
 package com.shalom.calendar.data.preferences
 
 import android.content.Context
+import android.util.Log
 import androidx.datastore.preferences.core.booleanPreferencesKey
 import androidx.datastore.preferences.core.edit
 import androidx.datastore.preferences.core.stringPreferencesKey
@@ -137,11 +138,13 @@ class SettingsPreferencesImpl(private val context: Context) : SettingsPreference
     // Language
     override val language: Flow<Language> = context.settingsDataStore.data.map { preferences ->
         val languageString = preferences[LANGUAGE_KEY] ?: Language.AMHARIC.name
-        try {
+        val result = try {
             Language.valueOf(languageString)
         } catch (e: IllegalArgumentException) {
             Language.AMHARIC
         }
+        Log.d("CHECK-LANG-ONBOARDING", "SettingsPreferencesImpl.language Flow emitting: ${result.name}")
+        result
     }
 
     // Theme settings
@@ -271,8 +274,10 @@ class SettingsPreferencesImpl(private val context: Context) : SettingsPreference
 
     // Language & Theme Setters
     override suspend fun setLanguage(language: Language) {
+        Log.d("CHECK-LANG-ONBOARDING", "SettingsPreferencesImpl.setLanguage() called with: ${language.name}")
         context.settingsDataStore.edit { preferences ->
             preferences[LANGUAGE_KEY] = language.name
+            Log.d("CHECK-LANG-ONBOARDING", "SettingsPreferencesImpl.setLanguage() saved to DataStore: ${language.name}")
         }
     }
 

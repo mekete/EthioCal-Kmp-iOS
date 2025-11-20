@@ -10,6 +10,7 @@ import com.shalom.calendar.data.preferences.SettingsPreferences
 import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.first
+import kotlinx.coroutines.flow.onEach
 import kotlinx.coroutines.flow.stateIn
 import kotlinx.coroutines.launch
 
@@ -114,11 +115,19 @@ class SettingsViewModel(
         initialValue = false
     )
 
-    val language: StateFlow<Language> = settingsPreferences.language.stateIn(
-        scope = viewModelScope,
-        started = SharingStarted.WhileSubscribed(5000),
-        initialValue = Language.AMHARIC
-    )
+    val language: StateFlow<Language> = settingsPreferences.language
+        .onEach { lang ->
+            println("CHECK-LANG-ONBOARDING: SettingsViewModel.language Flow emitted: ${lang.name}")
+        }
+        .stateIn(
+            scope = viewModelScope,
+            started = SharingStarted.WhileSubscribed(5000),
+            initialValue = Language.AMHARIC
+        )
+
+    init {
+        println("CHECK-LANG-ONBOARDING: SettingsViewModel created, instance: ${this.hashCode()}")
+    }
 
     // Setter functions for Calendar Display Settings
     fun setPrimaryCalendar(calendar: CalendarType) {
