@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--    <string name="app_name">Ethiopian Calendar</string>-->
+
+    <string name="screen_title_month_calendar">የኢትዮጵያ ቀን መቁጠሪያ</string>
+    <string name="screen_title_date_converter">ቀን መቀየሪያ</string>
+    <string name="screen_title_holidays">የኢትዮጵያ በዓላት</string>
+    <string name="screen_title_events">ማስታወሻ</string>
+    <string name="screen_title_settings">ምርጫ (Settings)</string>
+    <string name="screen_title_more">ተጨማሪ</string>
+
+    <string name="nav_month">ወር</string>
+    <string name="nav_event">ማስታወሻ</string>
+    <string name="nav_holiday">በዓል</string>
+    <string name="nav_convert">ቀይር</string>
+    <string name="nav_more">ተጨማሪ</string>
+
+    <string name="button_today">ዛሬ</string>
+    <string name="button_prev">ያለፈው</string>
+    <string name="button_next">ቀጣይ</string>
+    <string name="button_to_ethiopian">ወደ ኢትዮጵያ</string>
+    <string name="button_to_gregorian">ወደ ጎርጎሮሳውያን</string>
+    <string name="button_ok">እሺ</string>
+    <string name="button_cancel">ይቅር</string>
+    <string name="button_calculate_difference">ልዩነትን አስላ</string>
+
+
+    <string name="onboarding_welcome_title">የኢትዮጵያ ቀን መቁጠሪያ</string>
+    <string name="onboarding_welcome_subtitle">Supports 5 languages</string>
+    <string name="onboarding_feature_dual_calendar">በኢትዮጵያ ና ግሪጎሪያን</string>
+    <string name="onboarding_feature_holidays">የተለያዩ በዓላትን የሚያሳይ</string>
+    <string name="onboarding_feature_date_converter">ቀን መቀየሪያ</string>
+    <string name="onboarding_feature_reminders">አላርም እና ማስታወሻ</string>
+    <string name="onboarding_feature_multilingual">በ 5 ቋንቋዎች</string>
+    <string name="onboarding_get_started">እንጀምር</string>
+
+    <string name="onboarding_language_title">ቋንቋዎን ይምረጡ</string>
+    <string name="onboarding_language_description">Language (Langue, Afaan)</string>
+
+    <string name="onboarding_theme_title">የገጽታ (Theme) ምርጫ</string>
+    <string name="onboarding_theme_description"> ይህን ምርጫ በኋላ መቀየር ይችላል</string>
+    <string name="onboarding_theme_light">ቀላል ገጽታ</string>
+    <string name="onboarding_theme_light_desc">ብሩህና ግልጽ ገጽ</string>
+    <string name="onboarding_theme_dark">ጨለማ ገጽታ</string>
+    <string name="onboarding_theme_dark_desc">ለዓይን ምቹ ና የማይጎዳ</string>
+    <string name="onboarding_theme_system">የሲስተሙን ይዉሰድ</string>
+    <string name="onboarding_theme_system_desc">አፑ የስልኩን ሴቲንግ ይከተላል</string>
+
+    <string name="onboarding_holidays_title">የትኞቹ በዓላት ይታዩ?</string>
+    <string name="onboarding_holidays_description"> ይህን ምርጫ በኋላ መቀየር ይችላል</string>
+    <string name="onboarding_holidays_public">ብሔራዊ በዓላት</string>
+    <string name="onboarding_holidays_public_desc">ስራ ዝግ የሚሆንባቸው በዓላት</string>
+    <string name="onboarding_holidays_orthodox">የኦርቶዶክስ ጾሞችና በዓላት</string>
+    <string name="onboarding_holidays_orthodox_desc">የኢትዮጵያ ኦርቶዶክስ የሚከበሩ በዓላት ና ጾም </string>
+    <string name="onboarding_holidays_muslim">የእስልምና በዓላት ና ጾም</string>
+    <string name="onboarding_holidays_muslim_desc">በእስልምና የሚከበሩ በዓላትና የጾም ቀናት</string>
+    <string name="onboarding_holidays_orthodox_days">የኦርቶዶክስ ዕለታት ስሞች</string>
+    <string name="onboarding_holidays_orthodox_days_desc">ከተመረጠ በ*ተጨማሪ* ውስጥ ታያል</string>
+
+    <string name="onboarding_calendar_title">የትኛው ካላንደር ይታይ</string>
+    <string name="onboarding_calendar_description">ወራቶች በየትኛው ካላንደር ይታዩ?</string>
+    <string name="onboarding_calendar_dual_display">ሁለቱንም ካለንደሮች በአንድ ላይ</string>
+    <string name="onboarding_calendar_dual_display_desc">ካሌንደሩን ጥቅጥቅ ያለ ሊያስመስለው ይችላል</string>
+    <string name="onboarding_calendar_tip">እነዚህን ቅንጅቶች ከጊዜ በኋላ በ**ተጨማሪ** ክፍል ውስጥ ሁልጊዜ መቀየር ይችላሉ</string>
+
+    <string name="onboarding_skip">ዝለል</string>
+    <string name="onboarding_next">ቀጣይ</string>
+    <string name="onboarding_done">ተከናውኗል</string>
+
+    <string name="label_from_gregorian">ከጎርጎሮሳውያን</string>
+    <string name="label_from_ethiopian">ከኢትዮጵያ</string>
+    <string name="label_ethiopian_date">የኢትዮጵያ ቀን</string>
+    <string name="label_gregorian_date">የጎርጎሮሳውያን ቀን</string>
+    <string name="dialog_title_select_ethiopian_date">የኢትዮጵያ ቀን ምረጥ</string>
+    <string name="label_date_difference">የቀን ልዩነት</string>
+    <string name="label_start_date">የመጀመሪያ ቀን</string>
+    <string name="label_end_date">የመጨረሻ ቀን</string>
+    <string name="label_difference_result">ልዩነት</string>
+    <string name="pick_gregorian">ወይም በጎርጎሮሳውያን</string>
+    <string name="pick_ethiopian">ኢትዮጵያ</string>
+
+    <string name="label_filter_by_type">የሚታዩ በአላት</string>
+    <string name="filter_public">ሕዝባዊ</string>
+    <string name="filter_orthodox">ኦርቶዶክስ</string>
+    <string name="filter_muslim">ሙስሊም</string>
+    <string name="label_ec_suffix">ዓ.ም.</string>
+    <string name="label_holidays">በዓላት</string>
+    <string name="label_day_off">ስራ ዝግ የሚሆንበት</string>
+
+    <string name="menu_color_theme">ቴም ወይም ቀለም (Theme)</string>
+    <string name="menu_privacy_policy">የግላዊነት ፖሊሲ</string>
+    <string name="menu_share_app">ለማጋራት</string>
+    <string name="menu_about_us">ስለ እኛ</string>
+    <string name="menu_language">ቋንቋ (Language, Afaan, Langue)</string>
+    <string name="menu_notifications">ማሳወቂያዎች (Notifications)</string>
+    <string name="menu_additional_settings">ተጨማሪ ምርጫዎች</string>
+
+    <string name="notification_banner_title">ማሳወቂያዎችን ያንቁ</string>
+    <string name="notification_banner_message">ለመጪዎቹ የኢትዮጵያ በዓላት እና ክስተቶች ማስታወሻዎችን ይቀበሉ</string>
+    <string name="notification_banner_enable">ኢኔብል</string>
+    <string name="notification_banner_dismiss">ይቅር</string>
+
+    <string name="about_us_dialog_title">ስለ እኛ</string>
+    <string name="about_us_developer">ገንቢ</string>
+    <string name="about_us_developed_by">Mekete Nimaga</string>
+    <string name="about_us_contact_us">ያግኙን</string>
+    <string name="about_us_rate_app">ሬት ለማድረግ</string>
+    <string name="about_us_app_version">የአፑ ቨርሽን</string>
+    <string name="about_us_build_time">አፕዴት የሆነው</string>
+    <string name="about_us_privacy_policy">የግላዊነት ፖሊሲ</string>
+    <string name="about_us_terms_of_service">የአገልግሎት ውሎች</string>
+
+    <string name="label_theme_color">ቴም ቀለም (Theme)</string>
+    <string name="label_theme_mode">ቴም (Theme)</string>
+
+    <string name="settings_calendar_display">የቀን መቁጠሪያ ማሳያ</string>
+    <string name="settings_ethiopian_gregorian_display">የኢትዮጵያ እና የጎርጎሮሳውያን እይታ</string>
+    <string name="settings_calendar_display_dialog_title">የቀን መቁጠሪያ ማሳያ ምርጫዎች</string>
+    <string name="settings_primary_calendar">ዋናው ካሌንዳር</string>
+    <string name="settings_display_dual_calendar">ሁለት ካሌንዳር አሳይ</string>
+    <string name="settings_secondary_calendar">ተጨማሪ ካሌንዳር</string>
+    <string name="settings_calendar_ethiopian">የኢትዮጵያ</string>
+    <string name="settings_calendar_gregorian">ጎርጎሮሳውያን</string>
+    <string name="settings_calendar_hirji">ሙስሊም</string>
+
+    <string name="settings_show_orthodox_day_names">የኦርቶዶክስ ቀን ስሞች አሳይ</string>
+    <string name="settings_show_day_off_holidays">የሕዝብ በዓላት አሳይ</string>
+    <string name="settings_show_orthodox_working_holidays">የኦርቶዶክስ የጾም ቀናት እና በዓላት አሳይ</string>
+    <string name="settings_show_muslim_working_holidays">ተጨማሪ የሙስሊም በዓላት አሳይ</string>
+    <string name="settings_show_cultural_holidays">የባህል በዓላት አሳይ</string>
+    <string name="settings_show_us_holidays">የአሜሪካ በዓላት አሳይ</string>
+    <string name="settings_use_geez_numbers">የግእዝ ቁጥሮችን ተጠቀም</string>
+    <string name="settings_holidays_display">የሚታዩት በዓላት</string>
+    <string name="settings_holidays_display_dialog_title">የሚታዩት በዓላት</string>
+    <string name="settings_orthodox_day_names_button">የኦርቶዶክስ ቀን ስሞች</string>
+    <string name="settings_orthodox_day_names_dialog_title">የኦርቶዶክስ ቀን ስሞች</string>
+    <string name="settings_use_24_hour_format">በዊጅቶች ላይ የ24 ሰዓት ተጠቀም</string>
+
+    <string name="settings_widget_options">ሆም ስክሪን ዊጅት</string>
+    <string name="settings_widget_dialog_title">የዊጅት ምርጫዎች</string>
+    <string name="settings_display_two_clocks">ሁለት ሰዓቶች አሳይ</string>
+    <string name="settings_primary_timezone">የዋናው ዊጅት የሚያሳየው ቦታ</string>
+    <string name="settings_secondary_timezone">ሁለተኛው ዊጅት የሚያሳየው ቦታ</string>
+    <string name="settings_use_transparent_background">ግልጽ ዳራ ተጠቀም</string>
+    <string name="settings_timezone_hint">የጊዜ ዞን ያስገቡ (ለምሳሌ፣ New York)</string>
+
+    <string name="holiday_info_dialog_title">የበዓላት</string>
+    <string name="holiday_info_dialog_message">በሴቲንግ ውስጥ የትኞቹን በዓላት እንደሚታዩ መቀየር ይችላሉ</string>
+    <string name="holiday_info_dialog_checkbox">ይህንን መረጃ ዳግመኛ አታሳይ</string>
+
+    <string name="error_loading_calendar">ቀን መቁጠሪያ በመጫን ላይ ስህተት አጋጥሞአል</string>
+    <string name="empty_no_holidays_month">በዚህ ወር ስራ ዝግ የሚሆንበት በዓል የለም</string>
+    <string name="empty_no_holidays_display">በዚህ ወር ስራ ዝግ የሚሆንበት በዓል የለም</string>
+    <string name="placeholder_coming_soon">በቅርቡ…</string>
+    <string name="placeholder_news_events">ዜናዎች፣ ክስተቶች እና ማስታወሻዎች</string>
+
+    <string name="cd_back">ወደ ኋላ</string>
+    <string name="cd_pick_date">ቀን ምረጥ</string>
+    <string name="cd_selected">ተመርጧል</string>
+    <string name="cd_navigate">አሰስ</string>
+    <string name="cd_previous_year">ያለፈው ዓመት</string>
+    <string name="cd_next_year">የሚቀጥለው ዓመት</string>
+    <string name="cd_calendar_state">የኢትዮጵያ ቀን መቁጠሪያ፣ አሁን %1$s እያሳየ</string>
+    <string name="cd_holiday_info">የትኞቹ በዓላት ይታዩ</string>
+
+    <!-- ============================================ -->
+    <!-- የሕዝብ በዓላት (Public Holidays) -->
+    <!-- ============================================ -->
+    <string name="holiday_public_enkutatash">እንቁጣጣሽ</string>
+    <string name="holiday_public_enkutatash_history">እንቁጣጣሽ የኢትዮጵያ አዲስ ዓመት ሲሆን የሚከበረውም በመስከረም 1 ነው። ስያሜው "የእንቁ ስጦታ" ማለት ሲሆን፣ የሳባ ንግሥት ንጉሥ ሰሎሞንን ከጎበኘች በኋላ «ዕንቁ ለጣትሽ ጌጥ ይሁንልሽ» ሲል ካበረከተላት የዕንቁ ስጦታ ጋር ይያያዛል የሚል ምንጭ አለ፡፡ በተጨማሪም፣ የኖኅ ልጅ ካም በአፍሪቃ ምድርም ሲገባ፣ ሀገሪቱ በአደይ አበባ አሸብርቃ ስለነበር ደስ ብሎት «ዕንቁ ዕጣ ወጣሽልኝ» ሲል ከተናገረው ነው የሚለም አመላካከት አለ፡፡ መስከረም የበጋ ወቅት ማብቂያ እና የፀደይ ወቅት መጀመርን የሚያሳይ ወር ነው።</string>
+    <string name="holiday_public_enkutatash_celebration">ዋነኛው ባህል የአዲስ ዓመት ካርዶችን እና የደማቅ ቢጫ አደይ አበባዎችን መለዋወጥ ሲሆን፣ ይህም ከጨለማው፣ ወደ ለምለም፣ አበቦች ወደሞሉበት ምድር መሸጋገሩን ያመለክታል። ሴቶች ልጆች ከቤት ወደ ቤት እየዞሩ ባህላዊ ዘፈኖችን ይዘምራሉ፤ ገንዘብና ትኩስ ዳቦ ይሰበስባሉ። በቤተሰብ ደረጃ፣ በዓሉ ዶሮ ወጥ መመገብን እና በግ ወይም ፍየል በሥርዓት ማረድን የሚያካትት ነው።</string>
+    <string name="holiday_public_christian_meskel">መስቀል</string>
+    <string name="holiday_public_christian_meskel_history">መስቀል በ4ኛው ክፍለ ዘመን በእቴጌ እሌኒ አማካኝነት እየሱስ ክርስቶስ የተሰቀለብትን መስቀሉ መገኘት አስመልክቶ የሚከበር ዓመታዊ በዓል ነው። በመስከረም 17 የሚከበር ሲሆን፣ በጣም ከደመቁት እና በቀለማት ያሸበረቁት የኦርቶዶክስ ክርስቲያኖች በዓላት ዉስጥ አንዱ ነው። </string>
+    <string name="holiday_public_christian_meskel_celebration">ዋናው ሥነ ሥርዓት ደመራ ተብሎ የሚጠራ ሲሆን፣ የደመራው ሥነ ሥርዓት በዋናነት በአዲስ አበባ በሚገኘው የመስቀል አደባባይ ላይ ይካሄዳል፤ ቀሳውስት፣ ዲያቆናት እና በባህላዊ ነጭ ልብስ የለበሱ ብዙ ሕዝብ ይሳተፋሉ። ፀሐይ ከጠለቀች በኋላ፣ ደመራው ይለኮሳል። የእሳት ቃጠሎው መብራት እቴጌ እሌኒን ወደ መስቀሉ ቦታ የመራትን ጭስ ያመለክታል።</string>
+    <string name="holiday_public_christian_genna">ገና</string>
+    <string name="holiday_public_christian_genna_history">ገና  ታህሳስ 29 (በ 4 ዓመት አንዴ ታህሳስ 28) ቀን ይከበራል። በምዕራቡ ዓለም ከሚከበረው የንግድ ገጽታ በተለየ መልኩ፣ ገና በዋነኝነት የሚከበረው ሃይማኖታዊ ሥርዓት ሲሆን፣ በ ኦርቶዶክስ አምኞች በ40 ቀናት የነብያት ጾምን ተከትሎ ይከበራል፤ በዚህ ወቅት ከሥጋና ከወተት ምርቶች ሁሉ መታቀብ ይደረጋል። በዓሉ በገና ጥዋት ሥጋና የወተት ምርቶችን በመመገብ ይጠናቀቃል፣ ይህም ረጅም ጾምን ይፈታል። </string>
+    <string name="holiday_public_christian_genna_celebration">ከገና ጋር ተያይዞ የሚታወቅ አንድ ታዋቂ ባህል የገና ጨዋታ ነው። ይህ የሆኪ ዓይነት ባህላዊ ጨዋታ ሲሆን፣ ወንዶች ጫፉ ላይ በታጠፈ በትር እና ኳስ ይጫወቱታል።</string>
+    <string name="holiday_public_christian_timket">ጥምቀት</string>
+    <string name="holiday_public_christian_timket_history">የጥምቀት በዓል በክርስትና ኃይማኖት ተከታዮች በተለይም የኢትዮጵያ ኦርቶዶክስ ተዋሕዶ ቤተ ክርስቲያን፣ ኢየሱስ ክርስቶስ በፈለገ ዮርዳኖስ በመጥምቁ ዮሐንስ እጅ በዮርዳኖስ ባሕር የተጠመቀበትን ዕለት የሚያስታውስ ደማቅ በዓል ነው። የኢየሱስ ክርስቶስ ጥምቀት ታሪክ የሚገኘው በማቴዎስ ወንጌል ምዕራፍ ፫ ቁ ፲፫–፲፯ ውስጥ ነው።</string>
+    <string name="holiday_public_christian_timket_celebration">ጥር 10 ቀን፣ ታቦታት ከየአቢያተ ክርስቲያናቱ በዓሉ ወደሚከበርበት ቦታ በምዕመናን ታጅበው እየዘመሩ ይሄዳሉ። እዚያም በየተዘጋጀው ድንኳን እንዲያርፉ ተደርጎ ሌሊቱን እዛው ያሳልፋሉ። ብቦታውም፣ በገጠር ወራጅ ውሃ ይከተራል በከተሞች ደግሞ ሰው ሰራሽ ግድብ ይሰራል። ጥር 11 ቀን የጥምቀት ዕለት፤ ጎኅ ሲቀድ ምእመናን እዚያው በድንኳኑ ዙሪያ አስቀድሰው ሲጨርሱ በካህናት መሪነት ሁሉም ወደከተራው ያመራና ውሃውም ተባርኮ ሕዝቡ ይረጫል። ከዚህ ሥነ ሥርዓት በኋላ በመቋሚያ፣ በከበሮና በጽናፅል በሚታጀብ ኃይማኖታዊ ዝማሬ፣ ወንዱ በሆታ፤ ሴቱ በእልልታ፤ ካህኑ በሃሌታ ታቦተ ሕጉን አጅበው፣ እንደያመጣጣቸው ወደየ ቤተክርሲያናቸው ይመለሳሉ።</string>
+    <string name="holiday_public_adwa">የዓድዋ ድል</string>
+    <string name="holiday_public_adwa_history">በየካቲት 23 ቀን 1888 ዓ.ም በአጼ ምኒልክ በተመራው የኢትዮጵያ ሠራዊትና ባህር አቋርጦ ከአውሮፓ ከመጣው የጣሊያን ሠራዊት ጋር የተካሄደው የዓድዋው ጦርነት በታሪክ ውስጥ ከሚጠቀሱ ጉልህ ክስተቶች መካከል አንዱ ነው። በዓድዋ ጦርነት ኢትዮጵያ ወራሪውን የጣሊያን ኃይል ድል ማድረጓን ያስታውሳል። \nይህ ታሪካዊ ድል በአፍሪካ የቅኝ ግዛት ወረራ ላይ ከተካሄዱ ታላላቅ ተቃውሞዎች አንዱ ተደርጎ ይከበራል። \nለዓደዋው ጦርነት ዋነኛ ምክንያት የሆነው በኢትዮጵያና በጣሊያን መንግሥታት መካከል የተፈረመው የውጫሌ ውል ነበር። በአጼ ምኒልክ የተመራው ሠራዊት ዓድዋ ከደረሰ በኋላ ለፍልሚያ አመቺ ጊዜን ሲጠብቅ ቆይቶ የካቲት 23 ቀን 1888 ዓ.ም ከ17 ሺህ በላይ ወታደሮችን ካሰለፈው አውሮፓዊ ኃይል ጋር ጦርነት ገጠመ። ጦርነቱ በተጀመረ በግማሽ ቀን ውስጥ የኢትዮጵያ አርበኞች በሁሉም አቅጣጫ በጣሊያን ሠራዊት ላይ በሰነዘሩት ጥቃት ከባድ ጉዳት ስላደረሱበት በአንድ ላይ ተሰልፎ ኢትዮጵያዊያኑን ለመቋቋም ሳይችል ቀረ። \n የአድዋ ድል ለመጀመሪያ ጊዜ የተከበረው በሠባተኛ ዓመቱ በ1895 ዓ.ም (እ.ኤ.አ በ1903 ከአንድ መቶ ዘጠኝ ዓመታት በፊት አሁን ጊዮርጊስ ቤተክርስቲያን ያለበት ሥፍራ ምኒሊክ አደባባይ ነው፡፡</string>
+    <string name="holiday_public_adwa_celebration">ቀኑ በመላ አገሪቱ በተለይም በአዲስ አበባ እና በአድዋ የመታሰቢያ ቦታዎች በብሔራዊ በዓላት፣ በወታደራዊ ሰልፎች እና በሥርዓት ዝግጅቶች ምልክት ይደረግበታል። ይህ ቀን ብሔራዊ አንድነትን፣ ሉዓላዊነትን እና ለነጻነት የተደረገውን ታሪካዊ ትግል የሚያስታውስ መታሰቢያ ሆኖ ያገለግላል፤ ኢትዮጵያም ዋናውን የአውሮፓ ኃይል በጦር ሜዳ አሸንፋ ነፃነቷን ያስጠበቀች ብቸኛዋ የአፍሪካ ሀገር ሆና እንድትታወቅ አድርጓታል።</string>
+    <string name="holiday_public_labour_day">የሰራተኞች ቀን</string>
+    <string name="holiday_public_labour_day_history">የሰራተኞች ቀን፣ ወይም ዓለም አቀፍ የሰራተኞች ቀን፣ በዓለም አቀፍ ደረጃ የሚከበር ሲሆን በኢትዮጵያም በሚያዝያ 23 ይከበራል። ይህ የሕዝብ በዓል የሰራተኞችን አስተዋጽኦ እና ስኬቶች እንዲሁም የሰራተኞች ንቅናቄን ያወሳል። ይህ ቀን ለሰራተኞች ማህበራዊና ኢኮኖሚያዊ መብቶች የተሰጠ ሲሆን፣ በአብዛኛው በንግድ ማኅበራት በሚዘጋጁ ውይይቶች፣ ሰልፎች እና ዝግጅቶች ይታጀባል።</string>
+    <string name="holiday_public_labour_day_celebration">በአብዛኛው ለዜጎች የእረፍት ቀን ሆኖ ቢታወቅም፣ የሰራተኞች ቀን በኢትዮጵያ መከበሩ ለሰራተኞች አንድነት እና ለፍትሃዊ የሥራ ልምዶችና ለተሻሻሉ የሥራ ሁኔታዎች ቀጣይ ጥረት ዓለም አቀፍ ባህልን ይከተላል። ቀኑ በሰራተኞች መብት ጥበቃ ላይ የተደረገውን እድገት እና የሰራተኛው ኃይል ለአገር ኢኮኖሚ ያበረከተውን አስተዋጽኦ ለማሰላሰል ይጠቅማል።</string>
+    <string name="holiday_public_patriots_day">የአርበኞች ቀን</string>
+    <string name="holiday_public_patriots_day_history">የአርበኞች ቀን፣ በሚያዝያ 27 የሚከበር ሲሆን፣ የፋሽስት ጣልያን መንግሥት ኢትዮጵያን ዳግም የወረረበትና ከአምስት ዓመታት የአርበኞች ተጋድሎ በኃላ ተሸንፎ የወጣበት ይህ ዕለት፣ በወራሪው ኃይል ወርዶ የነበረው የኢትዮጵያ ሰንደቅ ዓላማ ዳግም በክብር የተሰቀለበት ነው። </string>
+    <string name="holiday_public_patriots_day_celebration">በዓሉ በመላ ኢትዮጵያ ለጦር ጀግኖች እና ሰማዕታት ሐውልቶች ላይ የአበባ ጉንጉን በማስቀመጥ ይከበራል። ይህ በጥልቅ የአገር ፍቅር ስሜት የተሞላበት አጋጣሚ ሲሆን፣ ብሔራዊ ኩራትን፣ የኢትዮጵያ ሕዝብ የውጭ ወራሪዎችን ለመቋቋም ያደረገውን አንድነት ያጎላል። ቀኑ ለአገሪቱ ነፃነት ለተዋጉ እና ለሞቱ ሰዎች ሁሉ የሐዘን መታሰቢያ ሆኖ ያገለግላል።</string>
+    <string name="holiday_derg">ግንቦት 20</string>
+    <string name="holiday_derg_history">የደርግ መውደቅ ቀን፣ በግንቦት 20 (በግንቦት 28) የሚከበር ሲሆን፣ በ1991 ዓ.ም. የደርግ ወታደራዊ አገዛዝ መገርሰሱን የሚያስታውስ ነው፤ ይህም ለ17 ዓመታት የዘለቀውን የማርክሲስት-ሌኒኒስት ወታደራዊ አገዛዝ ፍጻሜ ነው። ደርግ ንጉሠ ነገሥት ቀዳማዊ ኃይለ ሥላሴን ከሥልጣን ካስወገደ በኋላ ወደ ሥልጣን የመጣ ሲሆን፣ በአፈና፣ በረሃብ እና በእርስ በእርስ ጦርነት ተለይቷል።</string>
+    <string name="holiday_derg_celebration">ይህ ቀን በኢትዮጵያ ታሪክ ውስጥ እንደ ትልቅ ለውጥ ተደርጎ የሚከበር ሲሆን፣ አዲስ የፖለቲካ መዋቅር እና ለብዙዎች የዴሞክራሲና የሰላም ተስፋን ያመጣ ነበር። የሕዝብ በዓል ሲሆን እና ታሪካዊ በሆነ መልኩ ከአምባገነንነት ነፃ መውጣትን የሚያስታውስ ቢሆንም፣ በዓሉ እና ትርጉሙ ግን ከአገሪቱ ቀጣይ የፖለቲካ እድገቶች አንጻር የተለያዩ የሕዝብ ውይይቶች ርዕሰ ጉዳይ ሆኖ ይቆያል።</string>
+
+    <!-- ============================================ -->
+    <!-- የኦርቶዶክስ በዓላት (Orthodox Holidays) -->
+    <!-- ============================================ -->
+    <string name="holiday_orthodox_siklet">ስቅለት</string>
+    <string name="holiday_orthodox_siklet_history">ስቅለት ማለትም "መስቀል ላይ መሰቀል" ማለት ሲሆን፣ የኢትዮጵያ ኦርቶዶክስ ተዋሕዶ ቤተ ክርስቲያን የኢየሱስ ክርስቶስን መከራ፣ መስቀል ላይ መሰቀል እና በጎልጎታ ላይ ያደረገውን ሞት የምታስታውስበት ታላቅ የሐዘን እና የንስሐ ቀን ነው። ይህ ቀን ከ55 ቀናት የአብይ ጾም በኋላ በቅድስት (ሕማማት) ሳምንት ውስጥ የሚውል ሲሆን፣ የክርስቶስን ፍጹም መስዋዕትነት በማሰብ አማኞች ለፋሲካ (ትንሳኤ) ዝግጅት የሚያደርጉበት ጥልቅ መንፈሳዊ ጊዜ ነው።</string>
+    <string name="holiday_orthodox_siklet_celebration">በስቅለት ቀን፣ አማኞች ቀኑን ሙሉ ይጾማሉ (አልቦ ምግብ) እና ወደ ስቅለቱ ያመሩትን ክስተቶች የሚተርኩ ልዩ፣ ረጅም የቤተ ክርስቲያን አገልግሎቶችን ይሳተፋሉ። አገልግሎቱ በአብዛኛው ከጠዋት ጀምሮ እስከ ምሽት ድረስ የሚዘልቅ ሲሆን፣ የክርስቶስን መከራ የሚዘክሩ የሰዓታት ጸሎቶች፣ የማኅሌት እና የስግደት መርሃ ግብሮች ይካሄዳሉ። አማኞች በቤተ መቅደስ ውስጥ ይሰግዳሉ፣ እንዲሁም አየሩ በጥልቅ ሀዘን፣ በዝምታና በጸሎት የተሞላ ሲሆን፣ ይህም የክርስቶስን ስቃይና ሞት በሕይወት የመኖራቸውን ያህል እንዲሰማቸው ያደርጋል።</string>
+    <string name="holiday_orthodox_fasika">ፋሲካ (ትንሳኤ)</string>
+    <string name="holiday_orthodox_fasika_history">ፋሲካ፣ በአማርኛ ትንሳኤ እየተባለ የሚጠራ ሲሆን፣ በኢትዮጵያ ኦርቶዶክስ ተዋሕዶ ቤተ ክርስቲያን ዘንድ እጅግ ታላቅና ዋናው በዓል ነው። ይህ በዓል የኢየሱስ ክርስቶስን ሞትን ድል አድርጎ ከሙታን መነሳት (ትንሳኤውን) የሚያከብር ሲሆን፣ ለመላው የሰው ዘር የድል፣ የተስፋ እና ከሞት ወደ ሕይወት መሻገርን (ፋሲካ ማለት መሻገር ማለት ነው) ያመለክታል። ፋሲካ የረዥሙና ከባድ የ55 ቀናት የአብይ ጾም እና የሕማማት ሳምንት ፍጻሜ መሆኑ፣ በዓሉን ከልደት በዓል የበለጠ ታላቅ የደስታ እና የፍሰሐ ጊዜ ያደርገዋል።</string>
+    <string name="holiday_orthodox_fasika_celebration">የፋሲካ በዓል የሚጀምረው ቅዳሜ ምሽት ሲሆን፣ አማኞች ነጭ የባህል ልብሶችን ለብሰው ሌሊቱን ሙሉ በቤተ ክርስቲያን የትንሳኤን ንቃት (Paschal Vigil) እና ጸሎት ያሳልፋሉ። በሌሊቱ አጋማሽ አካባቢ፣ ከእኩለ ሌሊት በኋላ፣ ትንሳኤው መታወጁን ተከትሎ የሐዘን ድባቡ ወደ ደስታና ጭፈራ ይቀየራል፤ መብራቶች ይበራሉ፣ ዜማዎች ይዘምራሉ፣ ምዕመናንም መላ ሰውነታቸውን ይሰግዳሉ። ከጧቱ 3፡00 ሰዓት አካባቢ ወደ ቤታቸው በመመለስ፣ ለ55 ቀናት የጾሙትን ሥጋና የወተት ውጤቶች በመመገብ ጾማቸውን ይፈታሉ። በተለይ ዶሮ ወጥ እና እንጀራ ለፋሲካ እጅግ ተወዳጅ ባህላዊ ምግቦች ሲሆኑ፣ ዘመድ ወዳጅን የመጠየቅ፣ ስጦታ የመለዋወጥ እና የቤተሰብ አንድነትን የማጠናከር ልማዶች ቀኑን ሙሉ ይቀጥላሉ።</string>
+    <string name="holiday_orthodox_tensae">ትንሳኤ</string>
+    <string name="holiday_orthodox_tensae_history">ትንሳኤ ማለትም "ትንሳኤ" ማለት ሲሆን፣ ከፋሲካ ጋር በቅርበት የተያያዘ ሲሆን፣ በተለይ በትንሳኤ ወቅት የሚከበረው የመሠረታዊ ሥነ-መለኮታዊ ክስተት የሆነውን የኢየሱስ ክርስቶስ ከሞት መነሳትን ያመለክታል። ምንም እንኳን ብዙ ጊዜ ከፋሲካ ጋር ተቀያይሮ ጥቅም ላይ ቢውልም፣ ትንሳኤ በመንፈሳዊ በሞት ላይ የተገኘውን ድል ያጎላል። ከሐዘን ጾም ወደ ታላቅ ሃይማኖታዊ ደስታ መሸጋገርን ያመለክታል።</string>
+    <string name="holiday_orthodox_tensae_celebration">የትንሳኤ ሥርዓተ አምልኮ በደስታ ዝማሬዎች፣ በሰልፎች እና ቀሳውስቱ በእጃቸው በሚይዙት ጽናጽል (የሙዚቃ መሣሪያ) የታጀበ ሲሆን፣ ይህም መላእክት ሲዘምሩ ያመለክታል። የትንሳኤ አስፈላጊነት በአማኞች መካከል በሚለዋወጡት ባህላዊ ሰላምታዎች ላይ ይንጸባረቃል፣ ይህም የመለኮታዊ ድልን እና የዘላለም ሕይወትን ቃል ያጎላል።</string>
+    <string name="holiday_orthodox_erget">እርገት</string>
+    <string name="holiday_orthodox_erget_history">እርገት፣ ወይም የዕርገት በዓል፣ ኢየሱስ ክርስቶስ ከፋሲካ ትንሳኤው በኋላ ከ40 ቀናት በኋላ ወደ ሰማይ ማረጉን የመጽሐፍ ቅዱስ ዘገባ ያስታውሳል። ይህ ተለዋዋጭ በዓል የክርስቶስን የመጨረሻ ምድራዊ መገለጥ ለደቀ መዛሙርቱ የሚያመለክት ሲሆን፣ በእርሱ ትንሳኤና በጴራቅሊጦስ የመንፈስ ቅዱስ መምጣት መካከል ያለውን ድልድይ ሆኖ ያገለግላል።</string>
+    <string name="holiday_orthodox_erget_celebration">ቀኑ የሚከበረው በልዩ የቤተ ክርስቲያን አገልግሎቶች እና በክርስቶስ በሰማይ ላይ መግዛትና በተከታዮቹ መካከል ያለው መንፈሳዊ መገኘት ላይ በሚያተኩሩ መዝሙሮች ነው። ምንም እንኳን አሳዛኝ ሃይማኖታዊ ሥርዓት ቢሆንም፣ የእርገት በዓል የክርስቶስን መለኮትነት እና በምድር ላይ ያለውን አገልግሎት መጠናቀቅን የሚያረጋግጥ የበዓል ድምፅ አለው።</string>
+    <string name="holiday_orthodox_peraklitos">ጴራቅሊጦስ</string>
+    <string name="holiday_orthodox_peraklitos_history">ጴራቅሊጦስ ማለትም "አጽናኝ" ወይም "ጠበቃ" ማለት ሲሆን፣ በግእዝ የጰንጠቆስጤ ስያሜ ነው። ከፋሲካ በኋላ በ50ኛው ቀን የሚከበር ሲሆን፣ መንፈስ ቅዱስ በሐዋርያትና በኢየሱስ ክርስቶስ ሌሎች ተከታዮች ላይ መውረዱን የሚያስታውስ ሲሆን፣ ይህም የክርስትና ቤተ ክርስቲያን መመሥረትን ያመለክታል። ከጌታ ዘጠኝ ታላላቅ በዓላት አንዱ ነው።</string>
+    <string name="holiday_orthodox_peraklitos_celebration">ቀኑ በታላቅ አክብሮት የሚከበር ሲሆን፣ አማኞችን ለመምራትና ለማበረታታት የመንፈስ ቅዱስ ኃይል ላይ የሚያንጸባርቁ ልዩ ጸሎቶችንና ሥርዓተ አምልኮዎችን ያካትታል። በተለምዶ፣ አማኞች ነጭ ወይም ንጹህ ልብሶችን ይለብሳሉ፣ ይህም የመንፈስ ቅዱስ የሰጠውን ንጽህና እና አዲስ መንፈሳዊ ጅምርን ያመለክታል።</string>
+    <string name="holiday_orthodox_nineveh">ነነዌ</string>
+    <string name="holiday_orthodox_nineveh_history">የነነዌ ጾም፣ ወይም ጾመ ነነዌ፣ ታላቁ ጾም ከመጀመሩ ከሁለት ሳምንት በፊት በኢትዮጵያ ኦርቶዶክስ ተዋሕዶ ቤተ ክርስቲያን የሚጾም የሦስት ቀን ጾም ነው። የነብዩ ዮናስን ለነነዌ ሰዎች መስበክ እና ከዚያ በኋላ የተደረገውን ንስሐ በማስታወስ ከተማዋን ከመጥፋት ማዳን ያመለክታል። ለዋናው የዐቢይ ጾም ጊዜ መንፈሳዊ ቅድመ ዝግጅት ሆኖ ያገለግላል።</string>
+    <string name="holiday_orthodox_nineveh_celebration">ጾሙ ከሰባቱ የቤተ ክርስቲያን ይፋዊ ጾሞች አንዱ ሲሆን፣ እንደ ታላቁ ጾም፣ ከሥጋና ከወተት ምርቶች መታቀብን ይጠይቃል። በእነዚህ ሦስት ቀናት፣ አማኞች የቤተ ክርስቲያን አገልግሎቶችን ይሳተፋሉ እና የነነዌ ከተማ ለእግዚአብሔር ቃል መገዛቷን በመምሰል በተጠናከረ ጸሎት እና ንስሐ ይገባሉ።</string>
+    <string name="holiday_orthodox_abiy_tsom">አብይ ጾም</string>
+    <string name="holiday_orthodox_abiy_tsom_history">አብይ ጾም ማለትም "ታላቁ ጾም" ማለት ሲሆን፣ በኢትዮጵያ ኦርቶዶክስ የቀን መቁጠሪያ ውስጥ ረጅሙና እጅግ የተከበረው የጾም ወቅት ነው፤ 55 ቀናት ይቆያል። ሁዳዴ ወይም ጾመ አርባ፣ ኢየሱስ በምድረ በዳ የጾመውን አርባ ቀናትም በመባል ይታወቃል። በሰኞ ይጀምራል እና በፋሲካ (ትንሳኤ) ይጠናቀቃል፤ ይህም ለከፍተኛ መንፈሳዊ ዝግጅት ጊዜ ነው።</string>
+    <string name="holiday_orthodox_abiy_tsom_celebration">ጾሙ በጣም ጥብቅ ነው፣ ለሙሉ 55 ቀናት ከሥጋ፣ ከእንቁላል እና ከወተት ምርቶች መታቀብን ይጠይቃል። አማኞች ከሁሉም የእንስሳት ምርቶች በመታቀብ ጥብቅ የቪጋን አመጋገብን ይከተላሉ። ከምግብ በላይ፣ ጾሙ የተጠናከረ ጸሎትን፣ ምጽዋትን እና ንስሐን ያካትታል፣ ይህም አማኞችን በክርስቶስ መከራና ትንሳኤ መንፈሳዊ በሆነ መልኩ ለመሳተፍ ያዘጋጃል።</string>
+    <string name="holiday_orthodox_debre_zeit">ደብረ ዘይት</string>
+    <string name="holiday_orthodox_debre_zeit_history">ደብረ ዘይት ማለትም "የዘይት ተራራ" ማለት ሲሆን፣ በታላቁ ጾም ሁለተኛ እሁድ የሚከበር በዓል ነው። ኢየሱስ ክርስቶስ በዘይት ተራራ ላይ የተናገረውን ትንቢትና ትምህርቶችን፣ በተለይም ስለ ዳግም ምጽዓቱ ምልክቶች እና ስለ መጨረሻው ዘመን የሚያስረዱትን ያስታውሳል። ቀኑ ለፍርድ ንቃትና ዝግጁነት ላይ ማሰላሰልን ያበረታታል።</string>
+    <string name="holiday_orthodox_debre_zeit_celebration">ለዚህ ቀን የሚደረገው ሥርዓተ አምልኮ በክርስቶስ የመጨረሻ ቀናት ንግግሮች ላይ በሚያተኩሩ የወንጌል ንባቦች ላይ ከፍተኛ ትኩረት ይሰጣል። የደብረ ዘይት ጭብጥ መንፈሳዊ ንቃት ሲሆን፣ አማኞችን በጾም ወቅት መንገዳቸውን ለማስተካከል በመጠቀም በእምነታቸውና በበጎ ሥራቸው ጸንተው እንዲቆዩ ያሳስባል።</string>
+    <string name="holiday_orthodox_hosanna">ሆሣእና እና ሕማማት</string>
+    <string name="holiday_orthodox_hosanna_history">ሆሣዕና፣ ወይም የዘንባባ እሁድ፣ ከፋሲካ (ትንሳኤ) በፊት ባለው እሁድ የሚከበር ነው። ኢየሱስ ክርስቶስ ወደ ኢየሩሳሌም በድል መግባቱን ያስታውሳል፤ ሕዝቡም የዘንባባ ዝንጣፊዎችን እና ልብሶችን በመንገድ ላይ በማንጠፍ "ሆሣዕና" ተቀብለውታል። ይህ ቀን ሕማማት ሳምንት መጀመሪያ ነው። የሕማማት ሳምንት በኢትዮጵያ ኦርቶዶክስ ተዋሕዶ ቤተ ክርስቲያን የቀን አቆጣጠር ውስጥ እጅግ ቅዱስና አሳዛኝ ጊዜ ነው። ይህ ሳምንት ከዘመነ ጾም የመጨረሻው ሲሆን እስከ ቅዳሜ ስዑር ድረስ ይቆያል። ሕማማት የሚለው ቃል መከራ ወይም ሥቃይ ማለት ሲሆን፣ ሳምንቱ ሙሉ ኢየሱስ ክርስቶስ ከመሰቀሉ በፊት የደረሰበትን ከባድ መከራዎች፣ ትምህርቶች እና በቤተ መቅደስ ውስጥ ያደረጋቸውን የመጨረሻ ሥራዎች በዝርዝር በንስሐና በሐዘን በማሰብና በመዘከር ይከበራል።</string>
+    <string name="holiday_orthodox_hosanna_celebration">በዚህ ቀን፣ የዘንባባ ዝንጣፊዎች ወይም የተሸመኑ ቅጠሎች በቤተ ክርስቲያን ውስጥ ለአማኞች ይከፋፈላሉ፣ እነዚህም ብዙውን ጊዜ ቀለበት ወይም መስቀል ተሠርተው የክርስቶስን መስዋዕትነት እና ድል ለማስታወስ ይቀመጣሉ። ቀኑ የክርስቶስን መከራ የሚያሳይ የዐቢይ ጾም የመጨረሻ ሳምንት የሆነው የቅድስት ሳምንት መጀመሪያን ያመለክታል። በሕማማት ሳምንት አማኞች ከባድ ጾም በመጾም፣ ረጅም የጸሎት አገልግሎት በመከታተል እና ስግደትን በማድረግ ያሳልፋሉ። የየቀኑ ክስተቶችም የሚታሰቡት በዚህ መንገድ ነው፡-\n
+• እሑድ (ሆሳዕና): ጌታ በአህያ ውርንጫ ላይ ሆኖ በዘንባባና በምስጋና (ሆሳዕና) ወደ ኢየሩሳሌም በክብር መግባቱ ይታሰባል። በዚህ ቀን፣ የዘንባባ ዝንጣፊዎች ወይም የተሸመኑ ቅጠሎች በቤተ ክርስቲያን ውስጥ ለአማኞች ይከፋፈላሉ፣ እነዚህም ብዙውን ጊዜ ቀለበት ወይም መስቀል ተሠርተው የክርስቶስን መስዋዕትነት እና ድል ለማስታወስ ይቀመጣሉ።\n
+• ሰኞ (መርገመ በለስ): ክርስቶስ ፍሬ የሌላትን በለስ ረግሞ እስራኤልን (ቤተ መቅደስን) ምሳሌ አድርጎ ያስተማረበት ቀን ይታሰባል።\n
+• ማክሰኞ (ጥያቄና መልስ): ጌታ በቤተ መቅደስ ውስጥ ተቀምጦ ያስተማረባቸውና የሊቃውንቱን ጥያቄ የመለሰባቸው ክስተቶች ይታሰባሉ።\n
+• ረቡዕ (ምክር): የአይሁድ ሊቃነ ካህናት ክርስቶስን ለመግደል ሚስጥራዊ ምክር ያደረጉበት እና ይሁዳ አሳልፎ ለመስጠት የተስማማበት ቀን ይታሰባል።\n
+• ሐሙስ (ጸሎተ ሐሙስ): ክርስቶስ ለደቀ መዛሙርቱ እግራቸውን ያጠበበት፣ ምሥጢረ ቁርባንን የመሰረተበትና በጌቴሴማኒ የጸለየበት ምሽት ይታሰባል።\n
+• ዓርብ (ስቅለት): የጌታችን መሰቀልና መሞት የሚታሰብበት፣ ምናልባትም በሳምንቱ ውስጥ እጅግ የከበደው የሐዘን ቀን ነው።\n
+• ቅዳሜ (ስዑር): ክርስቶስ በመቃብር ያደረበት እና ወደ ሲኦል ወርዶ የነበሩትን ነፍሳት ያወጣበት (ተስፋ የሰጠበት) ቀን ይታሰባል።</string>
+    <string name="holiday_orthodox_rikbe_kahinat">ርክበ ካህናት</string>
+    <string name="holiday_orthodox_rikbe_kahinat_history">ርክበ ካህናት ማለት መገናኛ (የስብሰባ) ቀን ማለት ሲሆን እርሱም መሠረቱ በዮሐንስ ወንጌል (21፥15) እንደተገለጸው ነው።እርሱም በቅዱስ ጴጥሮስ አማካኝነት አበው ሐዋርያት ከጌታችን ኢየሱስ ክርስቶስ የኖላዊነት(የጠባቂነት) ሥልጣንና አደራ የተረከቡበት ዕለት ነው። ይህንም ለመጀመሪያ ጊዜ ሚያዚያ 23 ቀን የተፈጸመ ሲሆን ቀጥሎም ቅዱሳን ሐዋርያት በየዓመቱ ትንሣኤ በዋለ በ25ኛው ቀን በኢየሩሳሌም ቅድስት ይሰበሰቡ እንደነበር ሊቃውንት መምህራን አስተምረውናል።</string>
+    <string name="holiday_orthodox_rikbe_kahinat_celebration">ይህ በዓል ከቅዱሳን ሐዋርያት ጀምሮ ቅድስት ቤተ ክርስቲያንን ሲያስተዳድሩ የቆዩ አባቶቻችን በጋራ በመሰባሰብ ለቅድስት ቤተ ክርስቲያን የተቀላጠፈ አገልግሎት እንደዚሁም ለምእመናን አንድነትና መንፈሳዊ ዕድገት የሚበጁ መንፈሳውያን መመሪያዎችን የሚያስተላልፉበት ዕለት ነው፡፡</string>
+    <string name="holiday_orthodox_tsome_hawariat">ጾመ ሐዋርያት</string>
+    <string name="holiday_orthodox_tsome_hawariat_history">ጾመ ሐዋርያት፣ የሐዋርያት ጾም፣ ከጴራቅሊጦስ (ጰንጠቆስጤ) በኋላ የሚከበር ሲሆን፣ ከኢትዮጵያ ኦርቶዶክስ ተዋሕዶ ቤተ ክርስቲያን ሰባት የሕግ ጾሞች አንዱ ነው። ሐዋርያት ወንጌልን ለአለም ለመስበክ ከመጀመራቸው በፊት የጾሙትን ጾም ለማስታወስ ይከናወናል።</string>
+    <string name="holiday_orthodox_tsome_hawariat_celebration">ጾሙ የሚጀምረው ከጴራቅሊጦስ በኋላ ባለው ሰኞ ሲሆን፣ በሐምሌ 5 (በጎርጎርያን ካሌንደር ሐምሌ 12 አካባቢ) በቅዱስ ጴጥሮስና ጳውሎስ በዓል ይጠናቀቃል። በዚህ ወቅት፣ አማኞች ከሥጋና ከወተት በመታቀብ፣ ለጸሎት እና ለሐዋርያት ሚስዮናዊ ሥራ መንፈሳዊ ዝግጅት ያደርጋሉ።</string>
+    <string name="holiday_orthodox_tsome_dihnet">ጾመ ድኅነት</string>
+    <string name="holiday_orthodox_tsome_dihnet_history">ጾመ ድኅነት፣ "የድኅነት ጾም" ማለት ሲሆን፣ አንዳንድ ጊዜ ዓመቱን ሙሉ ለሚደረገው የዓርብ ጾም ወይም አንዳንድ ጊዜ ከቅድስት ሳምንት ዓርብ (ስቅለት) ጋር ተያይዞ የሚጠራ ልዩ ስም ነው። በክርስቶስ መከራና ሞት በተገኘው ድኅነት ላይ ለማሰላሰል የተሰጠ ቀን ነው።</string>
+    <string name="holiday_orthodox_tsome_dihnet_celebration">ሥርዓቱ ለንስሐ ቀጣይነት ያለውን ፍላጎት እና በክርስቶስ ቸርነት ላይ መታመንን ያጠናክራል። እንደ ሁሉም ጾሞች፣ ከእንስሳት ምርቶች መታቀብን እና በጸሎት ተግባራት መጨመርን ያካትታል፣ ይህም የኦርቶዶክስ እምነት ዋና መርሆችን ሳምንታዊ ወይም ወቅታዊ ማስታወሻ ሆኖ ያገለግላል።</string>
+    <string name="holiday_orthodox_ghad">ገሃድ</string>
+    <string name="holiday_orthodox_ghad_history">ገሃድ ማለት የጥምቀት (ኤፊፋንያ) ዋዜማ፣ በጥር 10 የሚደረግ ጾም ነው። ይህ ጾም ለክርስቶስ ጥምቀት አስደሳችና በጣም አስፈላጊ ለሆነው በዓል አካልንና መንፈስን ለማዘጋጀት ይጾማል። አማኞች ሥርዓቱን በንጽህናና በመንፈሳዊ ዝግጁነት እንዲቀበሉ የሚያረጋግጥ የአንድ ቀን ጾም ነው።</string>
+    <string name="holiday_orthodox_ghad_celebration">ጾሙ በተለምዶ የሚፈታው በጥምቀት ዋዜማ ከእኩለ ሌሊት አገልግሎት በኋላ ወይም አንዳንዴ በጥምቀት ጥዋት ከውኃ በረከት ሥነ ሥርዓት በኋላ ነው። የጥምቀትን አስፈላጊነት እና ኢየሱስ የእግዚአብሔር ልጅ ሆኖ መገለጡን ለማሰላሰል የሚደረግበት ጊዜ ነው።</string>
+    <string name="holiday_orthodox_kana_zegelila">ቃና ዘገሊላ</string>
+    <string name="holiday_orthodox_kana_zegelila_history">ቃና ዘገሊላ፣ በቃና የሰርግ በዓል ማስታወሻ፣ ኢየሱስ ክርስቶስ ውኃን ወደ ወይን በመለወጥ ያከናወነውን የመጀመሪያውን ተአምር የሚያስታውስ የኦርቶዶክስ በዓል ነው። ይህ ለደቀ መዛሙርቱ መለኮታዊ ኃይሉን የገለጠበት ክስተት በጥር 11 (በኢትዮጵያ አቆጣጠር) ይከበራል።</string>
+    <string name="holiday_orthodox_kana_zegelila_celebration">በዓሉ የክርስቶስን ክብር መገለጥ እና ጋብቻንና ማህበራዊ ኑሮን መባረክን ያጎላል። የመለወጥ ኃይሉን ማስታወሻ ሆኖ ያገለግላል እና ብዙውን ጊዜ ተአምሩን በሚተርከው በዮሐንስ ወንጌል ላይ በሚያተኩሩ ጸሎቶችና ንባቦች ምልክት ይደረግበታል።</string>
+    <string name="holiday_orthodox_lideta_mariam">ልደተ ማርያም</string>
+    <string name="holiday_orthodox_lideta_mariam_history">ልደተ ማርያም፣ የድንግል ማርያም ልደት፣ በኢትዮጵያ ኦርቶዶክስ ተዋሕዶ ቤተ ክርስቲያን ወርሃዊ ሃይማኖታዊ ሥርዓት ነው፣ ምንም እንኳን ዋናው ዓመታዊ በዓል በግንቦት 1 (ብዙውን ጊዜ በጎርጎርያን ካሌንደር ግንቦት 9) ቢሆንም። የእመቤታችን (የእግዚአብሔር እናት) መወለድ የሚያስታውስ ሲሆን፣ በኢትዮጵያ ባህል ውስጥ እጅግ የተከበረ ቦታ ያላትን ድንግል ማርያምን ለማክበር የተሰጠ ቀን ነው።</string>
+    <string name="holiday_orthodox_lideta_mariam_celebration">እንደ ወርሃዊ መታሰቢያነት፣ እስከ ከሰዓት በኋላ በሚደረግ ጾም እና ልዩ የቤተ ክርስቲያን አገልግሎቶች ይከበራል። ዓመታዊው በዓል ለድነት ታሪክ ውስጥ ለነበራት ወሳኝ ሚና የተሰጡ ልዩ መዝሙሮችን፣ ጸሎቶችን እና ሰልፎችን የሚያካትት የበለጠ የተብራራ በዓል ነው።</string>
+    <string name="holiday_orthodox_filseta">ፍልሰታ</string>
+    <string name="holiday_orthodox_filseta_history">ፍልሰታ፣ የድንግል ማርያም ዕርገት ጾም፣ በኢትዮጵያ የቀን መቁጠሪያ ውስጥ በጣም ከታወቁትና ከሚጾሙት ጾሞች አንዱ ነው። የማርያምን ወደ ሰማይ ማለፍን በማስታወስ እስከ ነሐሴ 16 ድረስ የሚቆይ የ15 ቀናት ጾም ነው። ፍልሰታ ማለት "መውጣት" ወይም "ስደት" ማለት ነው።</string>
+    <string name="holiday_orthodox_filseta_celebration">ይህ ጾም፣ በጾም አከባበር ከታላቁ ጾም ቀጥሎ በሁለተኛ ደረጃ ላይ የሚገኝ ሲሆን፣ በዚህ ወቅት አማኞች ከሥጋና ከወተት በመታቀብ፣ አንዳንድ ጊዜ በጣም ጥብቅ የሆነ የአመጋገብ ሥርዓት ይከተላሉ። አብያተ ክርስቲያናት በሁለቱ ሳምንታት ውስጥ ልዩ አገልግሎቶችን ያካሂዳሉ፣ እና የበዓሉ ቀን ራሱ በታላቅ በዓላት ምልክት ይደረግበታል፣ ይህም የድንግል ማርያምን ንጽህና እና ምልጃዋን ያከብራል።</string>
+    <string name="holiday_orthodox_debre_tabor">ደብረ ታቦር (ቡሄ)</string>
+    <string name="holiday_orthodox_debre_tabor_history">ደብረ ታቦር፣ ወይም ቡሄ በነሐሴ 13 የሚከበር ነው። ኢየሱስ ሦስት ደቀ መዛሙርቱን (ጴጥሮስን፣ ያዕቆብንና ዮሐንስን) ወደ ደብረ ታቦር ወስዶ ፊቱ እንደ ፀሐይ ሲያበራ ልብሱም እንደ ብርሃን ነጭ የሆነበትን ክስተት ያስታውሳል።</string>
+    <string name="holiday_orthodox_debre_tabor_celebration">በሀገራችን ሕፃናቱ ይሀ በዓል ከመድረሱ በፊት ቀደም አድርገው ጅራፍ ሲገምዱና ሲያጮሁ (ሲያኖጉ) ይሰነብታሉ። በዓሉ እንደ ነገ ሲሆን አንደ ዛሬ በዋዜማው (ነሐሴ 12) የሠፈር ሕፃናት በየቤቱ እየዞሩ የቡሄ ጭፈራ እየጨፈሩ ሙምሙል ዳቦ ቀበላሉ። ባንዳንድ አካባቢዎች የቡሄ ዕለት ማታ ችቦ ያበራሉ።</string>
+
+    <!-- ============================================ -->
+    <!-- የእስልምና በዓላት (Muslim Holidays) -->
+    <!-- ============================================ -->
+    <string name="holiday_muslim_mawlid">መውሊድ</string>
+    <string name="holiday_muslim_mawlid_history">መውሊድ የነቢዩ መሐመድ ልደት መታሰቢያ በዓል ሲሆን በኢትዮጵያና በመላው ዓለም በሚገኙ ሙስሊም ማኅበረሰቦች ይከበራል። ልክ እንደ ሁሉም የእስልምና በዓላት፣ ቀኑ የሚወሰነው በጨረቃ አቆጣጠር (ሂጅራ) ሲሆን፣ ከጎርጎርያን ካሌንደር አንጻር በየዓመቱ ይለዋወጣል። ክብረ በዓሉ ብዙውን ጊዜ በረቢዕ አል-አወል 12ኛው ቀን ይውላል።</string>
+    <string name="holiday_muslim_mawlid_celebration">በዓሉ የሚከበረው በልዩ ጸሎቶች፣ በሃይማኖታዊ ስብሰባዎች፣ የነቢዩን ሕይወትና ትምህርቶች በሚተርኩ ስብከቶች እና ባህላዊ የእስልምና መዝሙሮችን (ናዓቶችን) በመዘመር ነው። አንዳንዶች በሃይማኖታዊ ንቃት ብቻ ሲያከብሩት፣ ሌሎች ደግሞ በሕዝባዊ ሰልፎች፣ በምጽዋት ተግባራት እና የጋራ ምግቦችን በመመገብ ያከብራሉ።</string>
+    <string name="holiday_muslim_ramadan_start">ረመዳን መጀመሪያ</string>
+    <string name="holiday_muslim_ramadan_start_history">የረመዳን መጀመሪያ በእስላማዊው የቀን አቆጣጠር ዘጠነኛው እና እጅግ ቅዱስ ወር መጀመሩን ያመለክታል፣ ይህም ለአዋቂ ሙስሊሞች ሁሉ የግዴታ ጾም ወቅት ነው። የመነሻው ቀን በአዲስ የጨረቃ ብርሃን መታየት በይፋ ይወሰናል። ይህ ወር ለመንፈሳዊ ንጽህና፣ ለተጠናከረ ጸሎት እና ለራስ-ቁጥጥር የተሰጠ ነው።</string>
+    <string name="holiday_muslim_ramadan_start_celebration">በወሩ ውስጥ ከፀሐይ መውጫ እስከ ፀሐይ መግቢያ ድረስ፣ ሙስሊሞች ከምግብ፣ ከመጠጥ፣ ከማጨስና ከትዳር ግንኙነት ይርቃሉ። ጾሙ በየምሽቱ ኢፍጣር በተባለ ምግብ ይፈታል። ረመዳን ትዕግስትን፣ ርኅራኄን እና ልግስናን የሚያጎላ ሲሆን፣ ብዙ ሙስሊሞችም ሙሉውን ቁርኣን ለማንበብ ጊዜ ይሰጣሉ።</string>
+    <string name="holiday_muslim_eid_fitr">ኢድ አል-ፈጥር</string>
+    <string name="holiday_muslim_eid_fitr_history">ኢድ አል-ፈጥር፣ "የጾም መፍቻ በዓል" ማለት ሲሆን፣ ከሁለቱ ዋና ዓመታዊ የእስልምና በዓላት አንዱ ነው። የረመዳን ወር የ29 ወይም የ30 ቀናት የጾም ፍጻሜ ማብቃትን ያመለክታል። ክብረ በዓሉ ብዙውን ጊዜ ከረመዳን በኋላ ባለው ወር (ሸዋል) የመጀመሪያ ቀን ንጋት ላይ በጋራ ጸሎቶች ይጀምራል።</string>
+    <string name="holiday_muslim_eid_fitr_celebration">ቀኑ በትልልቅ የቤተሰብ ስብሰባዎች፣ በግብዣ፣ በስጦታ መለዋወጥ እና የሞቱ ዘመዶችን መቃብር መጎብኘት ይታወቃል። ከኢድ ጸሎት በፊት፣ ሙስሊሞች ዘካተል-ፈጥር የተባለውን ለድሆች የሚሰጥ የ ምጽዋት ዓይነት መክፈል ይጠበቅባቸዋል፣ ይህም ሁሉም የማኅበረሰቡ አባላት በበዓሉ ላይ መሳተፍ እንዲችሉ ለማድረግ ነው።</string>
+    <string name="holiday_muslim_arafat">የዐረፋት ቀን</string>
+    <string name="holiday_muslim_arafat_history">የዐረፋት ቀን የሚከበረው በዙልሒጃ 9ኛው ቀን ሲሆን፣ ይህም በእስላማዊው የቀን አቆጣጠር 12ኛው ወር ነው። በእስልምና ዘንድ ከዓመቱ እጅግ ቅዱስ ቀን ተደርጎ የሚቆጠር ሲሆን፣ የሐጅ ጉዞ ሁለተኛ ቀን ነው። ነብዩ መሐመድ የስንብት ስብከታቸውን በአረፋ ተራራ ላይ የተናገሩበትን ቀን ያስታውሳል።</string>
+    <string name="holiday_muslim_arafat_celebration">ሐጅ የሚያደርጉ ምዕመናን ከሰዓት በኋላ በአረፋ ሜዳ ላይ ማሳለፍ የሐጅ ጉዞ እጅግ ወሳኝ ሥርዓት ነው። ሐጅ የማያደርጉ ሙስሊሞች ደግሞ በዚህ ቀን በፈቃደኝነት መጾም በጣም ይመከራል፣ ምክንያቱም ያለፈውን እና የሚመጣውን ዓመት ኃጢአት እንደሚያስተሰርይ ይታመናል።</string>
+    <string name="holiday_muslim_eid_adha">ኢድ አል-አድሃ</string>
+    <string name="holiday_muslim_eid_adha_history">ኢድ አል-አድሃ፣ "የመስዋዕት በዓል" ማለት ሲሆን፣ ከሁለቱ ዋና የእስልምና በዓላት ሁለተኛው ነው፣ ከዐረፋት ቀን በኋላ ወዲያውኑ ይከበራል። ነቢዩ ኢብራሂም (አብርሃም) ልጃቸውን እስማኤልን ለእግዚአብሔር የመታዘዝ ተግባር አድርገው ለመስዋዕትነት ለማቅረብ ፈቃደኛ መሆናቸውን ያስታውሳል፣ ከዚያ በፊት ግን እግዚአብሔር ጣልቃ ገብቶ በግ እንዲሰዋለት አድርጓል።</string>
+    <string name="holiday_muslim_eid_adha_celebration">ዋናው ባህል እንስሳን (በግ፣ ፍየል ወይም ከብት) ማረድ ነው፣ ከፊሉ ለድሆች፣ ለጓደኞችና ለዘመዶች የሚከፋፈል ሲሆን፣ የተወሰነው ደግሞ ለቤተሰብ ይቀመጣል። በዓሉ ለአራት ቀናት የሚቆይ ሲሆን፣ በልዩ ጸሎቶች፣ አዲስ ልብስ በመልበስ፣ ዘመድ በመጠየቅ እና ሥጋውን በማከፋፈል ምልክት ይደረግበታል።</string>
+    <string name="holiday_muslim_hijri_new_year">የእስላም አዲስ ዓመት</string>
+    <string name="holiday_muslim_hijri_new_year_history">የእስላም አዲስ ዓመት፣ ወይም የሂጅራ አዲስ ዓመት፣ የእስላማዊው የጨረቃ አቆጣጠር የመጀመሪያ ወር የሆነው ሙሐረም መጀመሩን ያመለክታል። ቀኑ ነቢዩ መሐመድና ተከታዮቻቸው በ622 ዓ.ም. ከመካ ወደ መዲና ያደረጉትን ስደት (ሂጅራ) ያስታውሳል፤ ይህም በእስልምና ታሪክ ውስጥ መሠረታዊ ክስተት ነው።</string>
+    <string name="holiday_muslim_hijri_new_year_celebration">እንደ ሌሎች የአዲስ ዓመት በዓላት ሳይሆን፣ የሂጅራ አዲስ ዓመት በተለምዶ በሕዝባዊ ድግሶች ሳይሆን፣ በዋነኛነት በማሰላሰልና በጸሎት፣ በዝምታና በሃይማኖታዊ መንገድ ይከበራል። የሙሐረም ወር በሙሉ ቅዱስ እንደሆነ ተደርጎ የሚቆጠር ሲሆን፣ የመጀመሪያው ቀን ብዙውን ጊዜ ያለፈውን ዓመት ለመመልከት እና ለመጪው ጊዜ መንፈሳዊ መመሪያ ለመፈለግ ይጠቅማል።</string>
+    <string name="holiday_muslim_ashura">አሹራ</string>
+    <string name="holiday_muslim_ashura_history">አሹራ የሚከበረው የሙሐረም ወር 10ኛው ቀን ሲሆን፣ ይህም በእስላማዊው የቀን አቆጣጠር የመጀመሪያ ወር ነው። ጠቀሜታው ይለያያል፡ ለሱኒ ሙስሊሞች፣ አላህ ሙሴንና እስራኤላውያንን ከፈርዖን ያዳነበትን ቀን ለማስታወስ የሚደረግ ፈቃደኛ፣ ግዴታ ያልሆነ ጾም ነው።</string>
+    <string name="holiday_muslim_ashura_celebration">ለሺዓ ሙስሊሞች፣ አሹራ ጥልቅ የሐዘን ቀን ሲሆን፣ በ680 ዓ.ም. በከርበላ ጦርነት የነቢዩ መሐመድ የልጅ ልጅ የሆኑት ኢማም ሁሰይን ኢብኑ ዓሊ ሰማዕትነት መታሰቢያ ነው። በብዙ ማኅበረሰቦች ውስጥ፣ ቀኑ በሐዘን ሰልፎች፣ በድራማዎች እና ለመታሰቢያና ለሐዘን በሚደረጉ ትልልቅ ስብሰባዎች ምልክት ይደረግበታል።</string>
+    <string name="holiday_muslim_isra_miraj">ኢስራ እና ሚዕራጅ</string>
+    <string name="holiday_muslim_isra_miraj_history">ኢስራ እና ሚዕራጅ፣ የሌሊት ጉዞ እና ዕርገት፣ የነቢዩ መሐመድ በአንድ ሌሊት ያደረጉትን ተአምራዊ ጉዞ ሁለት ክፍሎች የሚያስታውስ የእስልምና በዓል ነው። ኢስራ ከመካ ወደ እየሩሳሌም ወደሚገኘው አል-አቅሷ መስጊድ ያደረጉትን ጉዞ ሲያመለክት፣ ሚዕራጅ ደግሞ ከዚያ በኋላ ወደ ሰባቱ ሰማያት ማረጉን ያመለክታል።</string>
+    <string name="holiday_muslim_isra_miraj_celebration">ክስተቱ የእግዚአብሔር ኃይል ታላቅ ምልክት እና በነቢዩ ሕይወት ውስጥ ወሳኝ ወቅት ተደርጎ ይታያል። በዓሉ በአጠቃላይ በሌሊት ንቃት፣ በልዩ ጸሎቶች እና የቁርኣን ንባቦች እንዲሁም የነቢዩን ጉዞ ታሪኮች በማንበብ የሚከበር ሲሆን፣ ለመንፈሳዊ ማሰላሰልና እድሳት እድል ይሰጣል።</string>
+    <string name="holiday_muslim_mid_shaban">መካከለኛ ሻዕባን</string>
+    <string name="holiday_muslim_mid_shaban_history">መካከለኛ ሻዕባን፣ ወይም የበራዓህ ሌሊት (የንጽህና ወይም የመዳን ሌሊት) ተብሎ የሚታወቀው፣ ከረመዳን በፊት ባለው የሸዕባን ወር 14ኛው እና 15ኛው ሌሊት መካከል የሚከበር ነው። አላህ ለሚመጣው ዓመት የሰዎችን ዕድልና ኑሮ የሚወስንበት ታላቅ የበረከት ሌሊት እንደሆነ ይታመናል።</string>
+    <string name="holiday_muslim_mid_shaban_celebration">የመካከለኛ ሻዕባን በዓል በብዙ ማኅበረሰቦች ዘንድ በጣም የተከበረ ሲሆን፣ በተለምዶ በፈቃደኝነት በሚደረጉ የሌሊት ጸሎቶች፣ በቀን ውስጥ መጾምና ቁርኣንን በማንበብ ምልክት ይደረግበታል። ብዙ ሙስሊሞች ምሽቱን ለምህረት በመጠየቅ እና ለረመዳን ቅዱስ ወር መድረስ በመንፈሳዊነት ይዘጋጃሉ።</string>
+
+    <string name="add_event">ማስታወሻ ጨምር</string>
+    <string name="edit_event">ማስታወሻ አርትዕ</string>
+    <string name="delete_event">ማስታወሻ ሰርዝ</string>
+    <string name="delete_event_title">ዲሌት?</string>
+    <string name="delete_event_message">\"%1$s\" እርግጠኛ ነዎት ይጥፋ?</string>
+    <string name="delete">ዲሊት</string>
+
+    <string name="title">ርዕስ</string>
+    <string name="title_required">ርዕስ ያስፈልጋል</string>
+    <string name="description_optional">መግለጫ </string>
+    <string name="date">ቀን</string>
+    <string name="start_time">የመጀመሪያ ሰዓት</string>
+    <string name="end_time">የመጨረሻ ሰዓት</string>
+    <string name="all_day_event">ሙሉ ቀን</string>
+    <string name="category">ካታጎሪ</string>
+
+    <string name="repeat">የሚደጋገም</string>
+    <string name="repeat_weekly">በየሳምንቱ ድጋገም</string>
+    <string name="no_repeat">አትድገም</string>
+    <string name="weekly">ሳምንታዊ</string>
+    <string name="repeat_on">የሚደገሚበት ቀን</string>
+    <string name="ends">ማብቂያ</string>
+    <string name="never">ማብቂያ የሌለው</string>
+    <string name="until">እስከ</string>
+    <string name="until_date">እስከ %1$s</string>
+    <string name="select_end_date">የመጨረሻ ቀን ምረጥ</string>
+
+    <string name="reminder">ማስታወሻ</string>
+    <string name="add_reminder">ማስታወሻ ጨምር</string>
+    <string name="show_reminder_before">ከ%1$s በፊት አስታውሰኝ</string>
+    <string name="at_time_of_event">በሰዓቱ</string>
+    <string name="minutes_before_5">ከ5 ደቂቃ በፊት</string>
+    <string name="minutes_before_15">ከ15 ደቂቃ በፊት</string>
+    <string name="minutes_before_30">ከ30 ደቂቃ በፊት</string>
+    <string name="hour_before_1">ከ1 ሰዓት በፊት</string>
+    <string name="reminder_minutes_before">%1$d ደቂቃ በፊት</string>
+
+    <string name="create">ፍጠር</string>
+    <string name="update">ሴቭ</string>
+    <string name="cancel">ይቅር</string>
+    <string name="ok">እሺ</string>
+
+    <string name="no_events">ማስታወሻ የለም</string>
+    <string name="tap_plus_to_add_event">የመጀመሪያ ማስታወሻዎን ሴቭ ለማድረግ + ይንኩ</string>
+    <string name="error_loading_events">ላይ ስህተት አጋጥሞአል</string>
+
+    <string name="event_date_all_day">%1$d/%2$d/%3$d (ሙሉ ቀን)</string>
+    <string name="recurring_event">ተደጋጋሚ ማስታወሻ</string>
+    <string name="recurring">ተደጋጋሚ</string>
+
+    <string name="filter">አጣራ</string>
+    <string name="show_all">ሁሉንም አሳይ</string>
+    <string name="showing_all_events">ሁሉንም ማስታወሻዎች በማሳየት ላይ</string>
+    <string name="showing_from_to">ከ %1$s እስከ %2$s በማሳየት ላይ</string>
+    <string name="showing_from">ከ %1$s በማሳየት ላይ</string>
+    <string name="showing_until">እስከ %1$s በማሳየት ላይ</string>
+
+    <string name="time_just_now">አሁን</string>
+    <string name="time_in_a_moment">በቅርቡ</string>
+    <string name="time_minute_singular">ደቂቃ</string>
+    <string name="time_minute_plural">ደቂቃዎች</string>
+    <string name="time_hour_singular">ሰዓት</string>
+    <string name="time_hour_plural">ሰዓታት</string>
+    <string name="time_day_singular">ቀን</string>
+    <string name="time_day_plural">ቀናት</string>
+    <string name="time_week_singular">ሳምንት</string>
+    <string name="time_week_plural">ሳምንታት</string>
+    <string name="time_month_singular">ወር</string>
+    <string name="time_month_plural">ወራት</string>
+    <string name="time_year_singular">ዓመት</string>
+    <string name="time_year_plural">ዓመታት</string>
+    <string name="time_ago">ከ%1$d %2$s በፊት</string>
+    <string name="time_in_future">በ%1$d %2$s ውስጥ</string>
+
+    <string name="permission_notification_title">ኖቲፊኬሽን ለማግኘት</string>
+    <string name="permission_notification_rationale">አላርም ለማሳየት የ Notification ፈቃድ እንፈልጋለን።</string>
+    <string name="permission_exact_alarm_title">ትክክለኛ ማንቂያዎችን ያንቁ</string>
+    <string name="permission_exact_alarm_rationale">ሴቭ ለሚያደርጉት ማስታወስሻ ኖቲፊኬሽን ለመግኘት ከፈለጉ ለ አፕሊኬሽኑ PERMISSION መስጠት ያስፈልጋል። ከዚህ ቀጥሎ Permission Request የሚል ከመጣልዎ ALLOW የሚለዉን ትጫኑ።</string>
+    <string name="permission_exact_alarm_instructions">በሚቀጥለው ማያ ገጽ ላይ ለኢትዮጵያ ቀን መቁጠሪያ \"ማንቂያዎች እና ማስታወሻዎች\" ያንቁ።</string>
+    <string name="permission_grant">ፈቃድ ስጥ</string>
+    <string name="permission_not_now">አሁን አይደለም</string>
+    <string name="permission_open_settings">ሴቲንግ ክፈት</string>
+    <string name="permission_close">ዝጋ</string>
+    <string name="permission_fix">FIX</string>
+    <string name="permission_banner_title">ኖቲፊኬሽን እየታየ አይደለም</string>
+    <string name="permission_banner_message">ለአላርም %1$s ያስፈልጋል። \nለማስተካከል "Fix" ይንኩ።</string>
+    <string name="permission_warning_compact">አላርም ለማግኘት Notification ያንቁ</string>
+    <string name="permission_fix_title">ማስታወሻዎችን ያንቁ</string>
+    <string name="permission_fix_message">የማስታወሻ ማስታወሻዎችን ለመቀበል የሚከተሉትን ፈቃዶች ይስጡ፦</string>
+    <string name="permission_grant_notifications">የማሳወቂያ ፈቃድ ስጥ</string>
+    <string name="permission_grant_exact_alarms">ትክክለኛ ማንቂያዎችን ያንቁ</string>
+
+    <string name="widget_description">የኢትዮጵያ የቀን መቁጠሪያ ዊጅት ከቀን፣ ሰዓት እና መጪ ማስታወሻዎች ጋር</string>
+
+    <string name="pref_language_dialog_title">ቋንቋ ይምረጡ</string>
+
+    <string-array name="ethiopian_months">
+        <item>መስከረም</item>
+        <item>ጥቅምት</item>
+        <item>ኅዳር</item>
+        <item>ታኅሣሥ</item>
+        <item>ጥር</item>
+        <item>የካቲት</item>
+        <item>መጋቢት</item>
+        <item>ሚያዝያ</item>
+        <item>ግንቦት</item>
+        <item>ሰኔ</item>
+        <item>ሐምሌ</item>
+        <item>ነሐሴ</item>
+        <item>ጳጉሜ</item>
+    </string-array>
+
+    <string-array name="weekday_names_short">
+        <item>ሰኞ</item>
+        <item>ማክ</item>
+        <item>ረቡ</item>
+        <item>ሐሙ</item>
+        <item>ዓር</item>
+        <item>ቅዳ</item>
+        <item>እሁ</item>
+    </string-array>
+
+    <string-array name="weekday_names_full">
+        <item>ሰኞ</item>
+        <item>ማክሰኞ</item>
+        <item>ረቡዕ</item>
+        <item>ሐሙስ</item>
+        <item>ዓርብ</item>
+        <item>ቅዳሜ</item>
+        <item>እሁድ</item>
+    </string-array>
+
+    <string-array name="theme_color_names">
+        <item>ሰማያዊ</item>
+        <item>ቀይ</item>
+        <item>አረንጓዴ</item>
+        <item>ወይን ጠጅ</item>
+        <item>ብርቱካናማ</item>
+    </string-array>
+
+    <string-array name="theme_mode_names">
+        <item>የስልኩን ቴም </item>
+        <item>ቀላል (Light)</item>
+        <item>ጨለማ (Dark)</item>
+    </string-array>
+</resources>

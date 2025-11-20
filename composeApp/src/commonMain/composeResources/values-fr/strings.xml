@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="screen_title_month_calendar">Calendrier Éthiopien</string>
+    <string name="screen_title_date_converter">Convertisseur de Date</string>
+    <string name="screen_title_holidays">Jours Fériés Éthiopiens</string>
+    <string name="screen_title_events">Rappels</string>
+    <string name="screen_title_settings">Paramètres</string>
+    <string name="screen_title_more">Plus</string>
+
+    <string name="nav_month">Mois</string>
+    <string name="nav_event">Rappel</string>
+    <string name="nav_holiday">Fête</string>
+    <string name="nav_convert">Convertir</string>
+    <string name="nav_more">Plus</string>
+
+    <string name="button_today">Aujourd\'hui</string>
+    <string name="button_prev">PRÉC</string>
+    <string name="button_next">SUIV</string>
+    <string name="button_to_ethiopian">Vers Éthiopien</string>
+    <string name="button_to_gregorian">Vers Grégorien</string>
+    <string name="button_ok">OK</string>
+    <string name="button_cancel">Annuler</string>
+    <string name="button_calculate_difference">Calculer la Différence</string>
+
+    <string name="onboarding_welcome_title">Calendrier Éthiopien</string>
+    <string name="onboarding_welcome_subtitle">Disponible en Cinq Langues</string>
+    <string name="onboarding_feature_dual_calendar">Éthiopien et Grégorien</string>
+    <string name="onboarding_feature_holidays">Fêtes Publiques/Religieuses</string>
+    <string name="onboarding_feature_reminders">Rappels et Notifications</string>
+    <string name="onboarding_feature_date_converter">Convertisseur de Date</string>
+    <string name="onboarding_feature_multilingual">Prise en Charge de Cinq (5) Langues</string>
+    <string name="onboarding_get_started">Démarrer</string>
+
+    <string name="onboarding_language_title">Choisir la Langue</string>
+    <string name="onboarding_language_description">Langue (Language, Afaan)</string>
+
+    <string name="onboarding_theme_title">Choisir le Thème</string>
+    <string name="onboarding_theme_description">Peut être changé plus tard</string>
+    <string name="onboarding_theme_light">Mode Clair</string>
+    <string name="onboarding_theme_light_desc">Interface Claire et Nette</string>
+    <string name="onboarding_theme_dark">Mode Sombre</string>
+    <string name="onboarding_theme_dark_desc">Facile pour les Yeux la Nuit</string>
+    <string name="onboarding_theme_system">Système (Par Défaut)</string>
+    <string name="onboarding_theme_system_desc">Suit les Paramètres de l\'Appareil</string>
+
+    <string name="onboarding_holidays_title">Quelles Fêtes Afficher ?</string>
+    <string name="onboarding_holidays_description">Peut être changé plus tard</string>
+    <string name="onboarding_holidays_public">Fêtes Publiques</string>
+    <string name="onboarding_holidays_public_desc">Jours Fériés Nationaux</string>
+    <string name="onboarding_holidays_orthodox">Fêtes Orthodoxes</string>
+    <string name="onboarding_holidays_orthodox_desc">Fêtes et Jeûnes Orthodoxes</string>
+    <string name="onboarding_holidays_muslim">Fêtes Musulmanes</string>
+    <string name="onboarding_holidays_muslim_desc">Fêtes et Observances Musulmanes</string>
+    <string name="onboarding_holidays_orthodox_days">Noms des Jours Orthodoxes</string>
+    <string name="onboarding_holidays_orthodox_days_desc">Si sélectionné, dans la section **Plus**.</string>
+
+    <string name="onboarding_calendar_title">Calendrier Principal</string>
+    <string name="onboarding_calendar_description">Lequel doit être affiché ?</string>
+    <string name="onboarding_calendar_dual_display">Affichage Double</string>
+    <string name="onboarding_calendar_dual_display_desc">Peut être encombrant</string>
+    <string name="onboarding_calendar_tip">Vous pouvez le changer plus tard dans la section **Plus**</string>
+
+    <string name="onboarding_skip">Passer</string>
+    <string name="onboarding_next">Suivant</string>
+    <string name="onboarding_done">Terminé</string>
+    <string name="label_from_gregorian">Depuis Grégorien</string>
+    <string name="label_from_ethiopian">Depuis Éthiopien</string>
+    <string name="label_ethiopian_date">Date Éthiopienne</string>
+    <string name="label_gregorian_date">Date Grégorienne</string>
+    <string name="dialog_title_select_ethiopian_date">Sélectionner la Date Éthiopienne</string>
+    <string name="label_date_difference">Différence de Jours</string>
+    <string name="label_start_date">Date de Début</string>
+    <string name="label_end_date">Date de Fin</string>
+    <string name="label_difference_result">Différence</string>
+    <string name="pick_gregorian">Grégorien</string>
+    <string name="pick_ethiopian">Éthiopien</string>
+
+    <string name="label_filter_by_type">Afficher les Jours Fériés</string>
+    <string name="filter_public">Publics</string>
+    <string name="filter_orthodox">Orthodoxes</string>
+    <string name="filter_muslim">Musulmans</string>
+    <string name="label_ec_suffix">E.C.</string>
+    <string name="label_holidays">Jours Fériés</string>
+    <string name="label_day_off">Fermé</string>
+
+    <string name="menu_color_theme">Thème de Couleur</string>
+    <string name="menu_privacy_policy">Politique de Confidentialité</string>
+    <string name="menu_share_app">Partager l\'Application</string>
+    <string name="menu_about_us">À Propos de Nous</string>
+    <string name="menu_language">Langue (ቋንቋ Language, Afaan)</string>
+    <string name="menu_notifications">Notifications</string>
+    <string name="menu_additional_settings">Paramètres Supplémentaires</string>
+
+    <string name="notification_banner_title">Activer les Notifications</string>
+    <string name="notification_banner_message">Recevez des rappels pour les fêtes éthiopiennes et les événements à venir</string>
+    <string name="notification_banner_enable">Activer</string>
+    <string name="notification_banner_dismiss">Ignorer</string>
+
+    <string name="about_us_dialog_title">À Propos de Nous</string>
+    <string name="about_us_developer">Développeur</string>
+    <string name="about_us_developed_by">Mekete Nimaga</string>
+    <string name="about_us_contact_us">Nous Contacter</string>
+    <string name="about_us_rate_app">Noter l\'Application</string>
+    <string name="about_us_app_version">Version de l\'Application</string>
+    <string name="about_us_build_time">Dernière Mise à Jour</string>
+    <string name="about_us_privacy_policy">Politique de Confidentialité</string>
+    <string name="about_us_terms_of_service">Conditions d\'Utilisation</string>
+
+    <string name="label_theme_color">Couleur du Thème</string>
+    <string name="label_theme_mode">Mode du Thème</string>
+
+    <string name="settings_calendar_display">Affichage du Calendrier</string>
+    <string name="settings_ethiopian_gregorian_display">Affichage Éthiopien et Grégorien</string>
+    <string name="settings_calendar_display_dialog_title">Options d\'Affichage du Calendrier</string>
+    <string name="settings_primary_calendar">Calendrier Principal</string>
+    <string name="settings_display_dual_calendar">Afficher le Double Calendrier</string>
+    <string name="settings_secondary_calendar">Calendrier Secondaire</string>
+    <string name="settings_calendar_ethiopian">Éthiopien</string>
+    <string name="settings_calendar_gregorian">Grégorien</string>
+    <string name="settings_calendar_hirji">Musulman (Hijri)</string>
+
+    <string name="settings_show_orthodox_day_names">Afficher les Noms des Jours Orthodoxes</string>
+    <string name="settings_show_day_off_holidays">Afficher les Jours Fériés (Fermés)</string>
+    <string name="settings_show_orthodox_working_holidays">Afficher les Fêtes et Jeûnes Orthodoxes</string>
+    <string name="settings_show_muslim_working_holidays">Afficher les Fêtes Musulmanes (Supplémentaires)</string>
+    <string name="settings_show_cultural_holidays">Afficher les Fêtes Culturelles</string>
+    <string name="settings_show_us_holidays">Afficher les Jours Fériés Américains</string>
+    <string name="settings_use_geez_numbers">Utiliser les Chiffres Ge\'ez</string>
+    <string name="settings_holidays_display">Jours Fériés Affichés</string>
+    <string name="settings_holidays_display_dialog_title">Jours Fériés Affichés</string>
+    <string name="settings_orthodox_day_names_button">Noms des Jours Orthodoxes</string>
+    <string name="settings_orthodox_day_names_dialog_title">Noms des Jours Orthodoxes</string>
+    <string name="settings_use_24_hour_format">Utiliser le format 24 heures sur le widget</string>
+
+    <string name="settings_widget_options">Options du Widget d\'Écran d\'Accueil</string>
+    <string name="settings_widget_dialog_title">Options du Widget</string>
+    <string name="settings_display_two_clocks">Afficher Deux Horloges</string>
+    <string name="settings_primary_timezone">Fuseau Horaire Principal du Widget</string>
+    <string name="settings_secondary_timezone">Fuseau Horaire Secondaire du Widget</string>
+    <string name="settings_use_transparent_background">Utiliser un Arrière-Plan Transparent</string>
+    <string name="settings_timezone_hint">Entrez le fuseau horaire (ex: New York)</string>
+
+    <string name="holiday_info_dialog_title">Info Jours Fériés</string>
+    <string name="holiday_info_dialog_message">Vous pouvez modifier les fêtes affichées dans les paramètres</string>
+    <string name="holiday_info_dialog_checkbox">Ne plus afficher cette information</string>
+
+    <string name="error_loading_calendar">Une erreur s\'est produite lors du chargement du calendrier</string>
+    <string name="empty_no_holidays_month">Aucune fête nationale fermée ce mois-ci</string>
+    <string name="empty_no_holidays_display">Aucune fête nationale fermée n\'est affichée</string>
+    <string name="placeholder_coming_soon">Bientôt disponible…</string>
+    <string name="placeholder_news_events">Nouvelles, Événements et Rappels</string>
+
+    <string name="cd_back">Retour</string>
+    <string name="cd_pick_date">Sélectionner la Date</string>
+    <string name="cd_selected">Sélectionné</string>
+    <string name="cd_navigate">Naviguer</string>
+    <string name="cd_previous_year">Année Précédente</string>
+    <string name="cd_next_year">Année Suivante</string>
+    <string name="cd_calendar_state">Calendrier Éthiopien, affiche maintenant %1$s</string>
+    <string name="cd_holiday_info">Information sur les Paramètres des Jours Fériés</string>
+
+    <string name="holiday_public_enkutatash">Enkutatash (Nouvel An)</string>
+    <string name="holiday_public_enkutatash_history">**Enkutatash**, ou le Nouvel An Éthiopien, est célébré le 1er Meskerem (généralement le 11 septembre du calendrier Grégorien). Il marque la fin de la saison des pluies et le début du printemps. Le nom, signifiant « Cadeau de Bijoux », fait référence au retour de la reine de Saba de la visite de Salomon.</string>
+    <string name="holiday_public_enkutatash_celebration">La fête est marquée par des repas de famille, notamment le *Doro Wat* (un ragoût de poulet épicé). Les enfants distribuent des bouquets de fleurs jaunes *Adey Ababa* (fleur de Meskel) et chantent des chansons. C\'est une période de renouveau, de joie et d\'échanges de vœux pour une bonne nouvelle année.</string>
+
+    <string name="holiday_public_christian_meskel">Meskel (La Sainte Croix)</string>
+    <string name="holiday_public_christian_meskel_history">**Meskel** est célébré le 17 Meskerem (généralement le 27 septembre), commémorant la découverte de la Vraie Croix par l\'Impératrice Hélène au 4ème siècle. C\'est une fête majeure de l\'Église Orthodoxe Éthiopienne, qui coincide avec la saison de floraison des fleurs jaunes.</string>
+    <string name="holiday_public_christian_meskel_celebration">L\'événement central de la fête est le **Demera**, un immense bûcher en forme de croix décoré de fleurs jaunes. Des milliers de personnes se rassemblent pour allumer ce bûcher au crépuscule. La célébration est joyeuse, culturelle et historique.</string>
+
+    <string name="holiday_public_christian_genna">Genna (Noël)</string>
+    <string name="holiday_public_christian_genna_history">**Genna**, ou la Fête de la Nativité Éthiopienne, est célébrée le 29 Tahsas (7 janvier). Elle est précédée par le **Jeûne des Prophètes** de 43 jours, durant lequel les fidèles s\'abstiennent de viande et de produits laitiers.</string>
+    <string name="holiday_public_christian_genna_celebration">Après de longues messes, les familles rompent le jeûne en mangeant le *Doro Wat*. La fête est souvent associée au *Yagegna Chewata*, un jeu de type hockey.</string>
+
+    <string name="holiday_public_christian_timket">Timkat (Épiphanie)</string>
+    <string name="holiday_public_christian_timket_history">**Timkat** est la célébration éthiopienne de l\'Épiphanie, commémorant le baptême de Jésus dans le Jourdain. Il est célébré le 19 Terr (19 janvier). La fête est reconnue par l\'UNESCO comme patrimoine culturel immatériel.</string>
+    <string name="holiday_public_christian_timket_celebration">La fête commence la veille au soir par la procession des **Tabots** (répliques de l\'Arche d\'Alliance) vers un bassin d\'eau. Le matin de Timkat, l\'eau est bénie et aspergée sur les fidèles. Les célébrations comprennent des chants, des danses, des instruments traditionnels et des prêtres portant des robes colorées.</string>
+
+    <string name="holiday_public_adwa">Victoire d\'Adwa</string>
+    <string name="holiday_public_adwa_history">Le **Jour de la Victoire d\'Adwa** est célébré le 2 Maggabit (2 mars), commémorant la victoire de l\'Éthiopie sur les forces italiennes à la bataille d\'Adwa en 1896.</string>
+    <string name="holiday_public_adwa_celebration">Cette victoire a préservé la souveraineté éthiopienne et a inspiré les mouvements anti-coloniaux dans le monde entier. La journée est marquée par des cérémonies et des défilés militaires, ainsi que des rassemblements commémoratifs sur le site historique d\'Adwa.</string>
+
+    <string name="holiday_public_labour_day">Fête du Travail</string>
+    <string name="holiday_public_labour_day_history">La **Fête du Travail** (ou Journée internationale des travailleurs) est célébrée en Éthiopie, comme dans de nombreux pays, le 1er Mai. Elle vise à honorer la contribution des travailleurs à travers l\'histoire.</string>
+    <string name="holiday_public_labour_day_celebration">Bien que ce soit un jour de congé, il sert de moment de réflexion sur les droits des travailleurs et la justice sociale. Les syndicats et les organisations professionnelles peuvent organiser des événements pour discuter des questions relatives au travail.</string>
+
+    <string name="holiday_public_patriots_day">Journée des Patriotes</string>
+    <string name="holiday_public_patriots_day_history">La **Journée des Patriotes** est célébrée le 5 Ginbot (5 mai), commémorant la libération de l\'Éthiopie de l\'occupation italienne en 1941. Elle marque le retour de l\'Empereur Haile Selassie I à Addis-Abeba et honore les "Patriotes" qui ont résisté à l\'armée d\'occupation.</string>
+    <string name="holiday_public_patriots_day_celebration">Cette journée est un symbole fort de fierté nationale et de résilience. Des cérémonies commémoratives ont lieu dans les cimetières, honorant ceux qui sont tombés au combat. C\'est un moment de reconnaissance de l\'unité nationale contre l\'agression étrangère.</string>
+
+    <string name="holiday_derg">28 Mai (Chute du Derg)</string>
+    <string name="holiday_derg_history">Le **Jour de la Chute du Derg** est célébré le 20 Ginbot (28 mai). Il commémore la fin du régime militaire marxiste-léniniste du Derg en 1991, après 17 ans au pouvoir.</string>
+    <string name="holiday_derg_celebration">Cette journée est souvent considérée comme le début d\'une nouvelle ère pour le pays. Elle symbolise le changement et la transition d\'un système politique à un autre.</string>
+
+    <string name="holiday_orthodox_siklet">Siqlet (Crucifixion)</string>
+    <string name="holiday_orthodox_siklet_history">Siqlet, signifiant "Être pendu sur la Croix", est une fête de grande tristesse et de repentance dans l\'Église Orthodoxe Tewahedo Éthiopienne qui commémore la passion, la crucifixion et la mort de Jésus-Christ sur le Golgotha. Elle a lieu pendant la **Semaine Sainte (Himamat)**, après les 55 jours du Grand Carême (Abiy Tsom), et représente le sacrifice ultime du Christ, incitant les fidèles à une préparation spirituelle intense pour Pâques (Tensae/Faasikaa).</string>
+    <string name="holiday_orthodox_siklet_celebration">Le jour de Siqlet, les fidèles **jeûnent strictement** (sans nourriture) toute la journée et participent à des services d\'église longs et spéciaux qui décrivent le cheminement vers la crucifixion. Ces services, qui durent souvent du matin au soir, comprennent les **Prières des Heures**, les Mahlet (hymnes) et les prostrations qui se souviennent de la souffrance du Christ. Les fidèles se prosternent dans l\'église, l\'atmosphère est remplie d\'une grande tristesse, de silence et de prière, leur faisant revivre la détresse et la mort du Christ.</string>
+    <string name="holiday_orthodox_fasika">Faasikaa (Pâques/Résurrection)</string>
+    <string name="holiday_orthodox_fasika_history">Faasikaa, également appelé Tensae (Résurrection) en Amharique, est la **fête majeure et centrale** de l\'Église Orthodoxe Tewahedo Éthiopienne. Elle célèbre la **Résurrection** (Tensae) de Jésus-Christ, qui a vaincu la mort, et représente **la victoire**, **l\'espoir** et **le passage de la Vie à la Mort** (Faasikaa dérive du mot "Passage") pour toute l\'humanité. Faasikaa marque la fin du Grand Carême (Abiy Tsom) de 55 jours et de la Semaine Sainte, ce qui fait de la fête de Pâques une période d\'immense joie et de festivité.</string>
+    <string name="holiday_orthodox_fasika_celebration">La célébration de Faasikaa commence la **nuit du Samedi Saint**, où les fidèles, vêtus de vêtements traditionnels blancs, passent toute la nuit à l\'église pour la **Vigile Pascale** et les prières de la Résurrection. Après minuit, la proclamation de la Résurrection a lieu, et l\'ambiance sombre se transforme en **joie et en chant** ; les lumières sont allumées, les hymnes sont chantés et les fidèles font des prostrations de tout leur corps. Vers 3h00 du matin, ils rentrent chez eux et rompent leur jeûne de 55 jours en mangeant de la **viande et des produits laitiers**. Le **Doro Wot** et l\'**Injera** sont les plats de Pâques les plus appréciés, et les traditions de visite aux proches et aux amis, d\'échange de cadeaux et de **renforcement de l\'unité familiale** se poursuivent tout au long de la journée.</string>
+    <string name="holiday_orthodox_tensae">Tensae (Résurrection)</string>
+    <string name="holiday_orthodox_tensae_history">Tensae, signifiant "Résurrection", est étroitement lié à Faasikaa. Il fait spécifiquement référence à la Résurrection de notre Seigneur Jésus-Christ, célébrée à Pâques, représentant la vérité théologique fondamentale. Souvent utilisé de manière interchangeable avec Faasikaa, Tensae souligne néanmoins la victoire spirituelle sur la mort. Il signifie le passage de la tristesse du jeûne à la grande joie de la foi.</string>
+    <string name="holiday_orthodox_tensae_celebration">Les services religieux de Tensae sont accompagnés de chants joyeux, de processions et de *Tsinatsil* (instruments de musique) que les prêtres tiennent, symbolisant les anges chantant. L\'importance de Tensae se reflète dans les salutations traditionnelles échangées entre les fidèles, renforçant la victoire divine et l\'espoir de la vie éternelle.</string>
+    <string name="holiday_orthodox_erget">Erget (Ascension)</string>
+    <string name="holiday_orthodox_erget_history">Erget, ou la Fête de l\'Ascension, est un récit biblique commémorant l\'ascension de Jésus-Christ au ciel 40 jours après sa Résurrection de Pâques. Elle est mobile dans le calendrier et marque la dernière apparition terrestre du Christ ressuscité à ses disciples, servant de pont entre sa Résurrection et l\'avènement du Saint-Esprit (Pentecôte).</string>
+    <string name="holiday_orthodox_erget_celebration">Le jour est marqué par des services d\'église spéciaux et des hymnes axés sur la royauté du Christ au ciel et sa présence spirituelle parmi ses fidèles. Bien que les services mettent l\'accent sur la dévotion et la prière, l\'Ascension porte une note festive, affirmant la divinité du Christ et l\'accomplissement de son ministère terrestre.</string>
+    <string name="holiday_orthodox_peraklitos">Pentecôte (Paraclitos)</string>
+    <string name="holiday_orthodox_peraklitos_history">Pentecôte, ou Paraclitos, qui signifie "Consolateur" ou "Avocat" en Guèze, est célébrée le 50ème jour après Pâques. Elle commémore la descente du Saint-Esprit sur les Apôtres et autres disciples de Jésus-Christ, marquant la fondation de l\'Église chrétienne. C\'est l\'une des neuf fêtes majeures du Seigneur.</string>
+    <string name="holiday_orthodox_peraklitos_celebration">La journée est célébrée avec une grande solennité, comprenant des prières spéciales et des rituels religieux axés sur la **Puissance du Saint-Esprit** pour guider et réconforter les fidèles. Si possible, les fidèles portent des vêtements blancs ou propres, symbolisant la pureté et le nouveau départ spirituel donné par le Saint-Esprit.</string>
+    <string name="holiday_orthodox_nineveh">Jeûne de Ninive</string>
+    <string name="holiday_orthodox_nineveh_history">Le Jeûne de Ninive, ou Tsome Ninewe, est un jeûne de trois jours dans l\'Église Orthodoxe Tewahedo Éthiopienne, observé deux semaines avant le début du Grand Carême. Il commémore la prédication du prophète Jonas aux habitants de Ninive et leur repentance ultérieure qui a sauvé la ville de la destruction. Il sert de préparation spirituelle au Grand Carême principal.</string>
+    <string name="holiday_orthodox_nineveh_celebration">Ce jeûne est l\'un des neuf jeûnes ecclésiastiques et, comme le Grand Carême, il exige l\'abstinence de viande et de produits laitiers. Pendant ces trois jours, les fidèles participent à des services d\'église et s\'engagent dans une prière et une repentance intenses, reproduisant l\'obéissance de Ninive à la Parole de Dieu.</string>
+    <string name="holiday_orthodox_abiy_tsom">Grand Carême (Abiy Tsom)</string>
+    <string name="holiday_orthodox_abiy_tsom_history">Abiy Tsom, signifiant "Grand Jeûne", est la période de jeûne la plus longue et la plus vénérée du calendrier Orthodoxe Éthiopien, d\'une durée de 55 jours. Il est aussi appelé **Hudade** ou le **Jeûne de Quarante Jours**, en référence au jeûne de quarante jours de Jésus dans le désert. Il commence un Lundi et se termine à Pâques (Faasikaa), en faisant une période de préparation spirituelle suprême.</string>
+    <string name="holiday_orthodox_abiy_tsom_celebration">Le jeûne est très strict, exigeant l\'abstinence de viande, d\'œufs et de produits laitiers pendant les 55 jours complets. Les fidèles suivent un régime végétalien strict, s\'abstenant de tout produit d\'origine animale. En plus de la nourriture, le jeûne implique une **prière intense**, la **charité** et la **repentance**, préparant les fidèles à participer spirituellement à la Passion et à la Résurrection du Christ.</string>
+    <string name="holiday_orthodox_debre_zeit">Debre Zeit</string>
+    <string name="holiday_orthodox_debre_zeit_history">Debre Zeit, signifiant "Mont des Oliviers", est célébré le deuxième dimanche du Grand Carême. Il commémore les prophéties et l\'enseignement donnés par Jésus-Christ sur le Mont des Oliviers, en particulier en décrivant les signes de son **Second Avènement** et la fin des temps. Cette journée encourage la vigilance et la préparation pour le Jugement Dernier.</string>
+    <string name="holiday_orthodox_debre_zeit_celebration">Le service religieux de cette journée met l\'accent sur les lectures de l\'Évangile qui se concentrent sur le discours final du Christ. Le thème de Debre Zeit est la **vigilance spirituelle**, exhortant les fidèles à corriger leur chemin pendant le temps du carême et à rester fermes dans leur foi et leurs bonnes œuvres.</string>
+    <string name="holiday_orthodox_hosanna">Hosanna et Himamat (Semaine Sainte)</string>
+    <string name="holiday_orthodox_hosanna_history">Hosanna, ou Dimanche des Rameaux, est célébré le dimanche précédant Pâques (Faasikaa/Tensae). Il commémore l\'entrée triomphale de Jésus-Christ à Jérusalem, où les gens étendaient des branches d\'olivier et leurs vêtements sur le chemin en criant **"Hosanna"**. Ce jour marque le début de la **Semaine Sainte (Himamat)**. La Semaine Sainte (Himamat) est la période la plus sainte et la plus solennelle du calendrier de l\'Église Orthodoxe Tewahedo Éthiopienne. C\'est la dernière semaine du Grand Carême, et elle dure jusqu\'au Samedi Saint. Himamat signifie **Passion** ou **Souffrance**, et elle est observée avec une **repentance et une tristesse** intenses, commémorant la souffrance, les enseignements et les derniers actes du Christ avant sa crucifixion, jour par jour dans l\'église.</string>
+    <string name="holiday_orthodox_hosanna_celebration">Ce jour-là, des branches d\'olivier ou des feuilles tressées sont distribuées aux fidèles à l\'église, souvent nouées en forme de croix ou de bague, pour commémorer le sacrifice et la victoire du Christ. Ce jour est le début de la Semaine Sainte, la dernière semaine du Grand Carême qui représente la Passion du Christ. Pendant la Semaine Sainte, les fidèles jeûnent strictement, participent à de longs services de prière et font des **prosternations**. Les événements commémorés jour par jour sont : \n
+• Dimanche (Hosanna): Le Seigneur est commémoré entrant à Jérusalem avec honneur, assis sur un ânon, avec des branches d\'olivier et des hymnes (**Hosanna**). \n
+• Lundi (Koudaam Balai): Le Christ est commémoré enseignant et maudissant le figuier stérile comme une parabole pour les apôtres et l\'église. \n
+• Mardi (Gaffi et Debee): Le Seigneur est commémoré enseignant dans le Temple et répondant aux questions des érudits. \n
+• Mercredi (Gotsa): Les prêtres juifs sont commémorés tenant un **conseil secret** pour tuer le Christ et Judas acceptant de le trahir. \n
+• Jeudi (Kamis de Prière): Le Christ est commémoré **lavant les pieds** de ses disciples, instituant la **Sainte Communion** et **priant** à Gethsémani. \n
+• Vendredi (Siqlet): C\'est la journée de la **plus grande tristesse** de la semaine, commémorant la **Crucifixion et la Mort** de notre Seigneur. \n
+• Samedi (Se\'ur): Le Christ est commémoré **restant dans la tombe** et descendant aux Enfers (Sheol) pour délivrer les âmes qui y étaient (**Promise**).</string>
+    <string name="holiday_orthodox_rikbe_kahinat">Rikbe Kahinat</string>
+    <string name="holiday_orthodox_rikbe_kahinat_history">Rikbe Kahinat, signifiant "Assemblée des Prêtres/Apôtres", est un jour dont la base se trouve dans l\'Évangile de Jean (21:15). C\'était le jour où les Saints Apôtres ont reçu **l\'onction (l\'autorité)** et la foi du Christ notre Seigneur. Bien que cela se soit produit à l\'origine le 23 Miazia, les érudits enseignent que par la suite, les Saints Apôtres se rassemblaient annuellement à la Sainte Jérusalem le 25ème jour après la Résurrection.</string>
+    <string name="holiday_orthodox_rikbe_kahinat_celebration">Cette fête commémore le rassemblement de nos Pères, qui ont gouverné l\'Église Sainte depuis les Apôtres, transmettant des **directives spirituelles** bénéfiques pour le service de la Sainte Église ainsi que pour l\'unité et la croissance spirituelle des fidèles.</string>
+    <string name="holiday_orthodox_tsome_hawariat">Jeûne des Apôtres</string>
+    <string name="holiday_orthodox_tsome_hawariat_history">Le Jeûne des Apôtres (Tsome Hawariaat), observé après la Pentecôte, est l\'un des jeûnes canoniques de l\'Église Orthodoxe Tewahedo Éthiopienne. Il est observé pour commémorer le jeûne des Apôtres avant de commencer leur ministère de prédication de l\'Évangile au monde.</string>
+    <string name="holiday_orthodox_tsome_hawariat_celebration">Ce jeûne commence le Lundi après la Pentecôte et se termine le 5 Hamle (généralement autour du 12 juillet dans le calendrier Grégorien), jour de la fête des Saints Pierre et Paul. Pendant cette période, les fidèles s\'abstiennent de viande et de produits laitiers, s\'engageant dans la prière et la préparation spirituelle pour le travail missionnaire des Apôtres.</string>
+    <string name="holiday_orthodox_tsome_dihnet">Jeûne de Dihnat</string>
+    <string name="holiday_orthodox_tsome_dihnet_history">Le Jeûne de Dihnat, "Jeûne du Salut", se réfère parfois au jeûne strict du Vendredi Saint tout au long de l\'année, ou parfois spécifiquement au jeûne du Vendredi de la Semaine Sainte (Siqlet). C\'est un jour dédié à la méditation sur le Salut obtenu par la Passion et la Mort du Christ.</string>
+    <string name="holiday_orthodox_tsome_dihnet_celebration">L\'observance religieuse renforce la nécessité d\'une repentance continue et de la confiance en la miséricorde du Christ. Comme tous les jeûnes, elle implique l\'abstinence de produits animaux et l\'augmentation des pratiques de prière, servant de rappel hebdomadaire ou occasionnel des fondements de la foi Orthodoxe.</string>
+    <string name="holiday_orthodox_ghad">Ghad</string>
+    <string name="holiday_orthodox_ghad_history">Ghad est un jeûne observé la veille de la fête de **Timkat** (Épiphanie), le 10 Terr (18 janvier). Ce jeûne est observé pour que les fidèles se préparent physiquement et spirituellement à la fête joyeuse et très importante du Baptême du Christ. C\'est un jeûne d\'une journée pour s\'assurer que les fidèles accueillent le rituel religieux avec pureté et préparation spirituelle.</string>
+    <string name="holiday_orthodox_ghad_celebration">Le jeûne est généralement rompu après les services de minuit la veille de Timkat ou parfois le matin de Timkat après la cérémonie de bénédiction de l\'eau. Il sert à réfléchir sur l\'importance de Timkat et la révélation de Jésus comme Fils de Dieu.</string>
+    <string name="holiday_orthodox_kana_zegelila">Cana de Galilée</string>
+    <string name="holiday_orthodox_kana_zegelila_history">Cana de Galilée, commémoration des Noces de Cana, est une fête Orthodoxe qui se souvient du premier miracle de Jésus-Christ, transformant l\'eau en vin lors d\'un mariage. Cet acte, qui a manifesté sa puissance divine à ses disciples, est célébré le 11 Terr (19 janvier dans le calendrier Éthiopien).</string>
+    <string name="holiday_orthodox_kana_zegelila_celebration">La fête souligne la gloire du Christ et la bénédiction du mariage et de la vie communautaire. Elle sert de rappel de son pouvoir de transformation et comprend souvent des prières et des lectures se concentrant sur le récit du miracle dans l\'Évangile de Jean.</string>
+    <string name="holiday_orthodox_lideta_mariam">Lideta Mariam (Nativité de Marie)</string>
+    <string name="holiday_orthodox_lideta_mariam_history">Lideta Mariam, la Nativité de la Vierge Marie, est une observance mensuelle dans l\'Église Orthodoxe Tewahedo Éthiopienne, avec sa grande fête annuelle célébrée le 1er Tahsas (généralement le 9 décembre). Elle commémore la naissance de la Mère de Dieu, une journée dédiée à honorer la Vierge Marie qui occupe une place centrale dans la tradition éthiopienne.</string>
+    <string name="holiday_orthodox_lideta_mariam_celebration">En tant que commémoration mensuelle, elle est observée par un jeûne de courte durée et des services d\'église spéciaux. La fête annuelle est une célébration plus élaborée, comprenant des hymnes, des prières et des processions spéciales, honorant son rôle dans l\'acte du salut et son intercession.</string>
+    <string name="holiday_orthodox_filseta">Filseta (Assomption)</string>
+    <string name="holiday_orthodox_filseta_history">Filseta, le Jeûne de l\'Assomption de la Vierge Marie, est l\'un des jeûnes les plus populaires et les plus strictement observés du calendrier éthiopien. C\'est un jeûne de 15 jours qui dure jusqu\'au 16 Nehase (22 ou 23 août), commémorant le passage de Marie au ciel. Filseta signifie "Départ" ou "Migration".</string>
+    <string name="holiday_orthodox_filseta_celebration">Ce jeûne, deuxième en importance après le Grand Carême, est une période où les fidèles s\'abstiennent de viande et de produits laitiers, suivant parfois un régime très strict. Les églises organisent des services spéciaux tout au long des deux semaines, et le jour de la fête lui-même est marqué par de grandes célébrations, honorant la sainteté et l\'intercession de la Vierge Marie.</string>
+    <string name="holiday_orthodox_debre_tabor">Debre Tabor (Bouhe)</string>
+    <string name="holiday_orthodox_debre_tabor_history">Debre Tabor, ou Bouhe, est célébré le 13 Nehase (19 ou 20 août). Il commémore la Transfiguration du Christ, lorsque Jésus emmena trois de ses disciples (Pierre, Jacques et Jean) sur le Mont Tabor, où son visage brilla comme le soleil et ses vêtements devinrent blancs comme la lumière.</string>
+    <string name="holiday_orthodox_debre_tabor_celebration">En Éthiopie, les enfants jouent avec des **fouets** (pour créer un bruit fort) pendant un certain temps avant la fête. La veille au soir (12 Nehase), les enfants se rendent de maison en maison dans le quartier en chantant la **Chanson de Bouhe** et reçoivent du **Pain Muummul** (pain plat). Dans certaines régions, un **Ciboo** (fagot de bois) est allumé la nuit de Bouhe.</string>
+
+    <string name="holiday_muslim_eid_fitr">Aid al-Fitr (Ramelan Bayram)</string>
+    <string name="holiday_muslim_eid_fitr_history">L\'**Aid al-Fitr** (également connu sous le nom d\'Aid, Ramelan Bayram, ou "Fête de la Rupture du Jeûne") marque la fin du **Ramadan**, le mois sacré du jeûne. C\'est l\'une des fêtes musulmanes les plus importantes, symbolisant le retour à une observance normale de la vie après une période d\'intense purification et discipline spirituelle.</string>
+    <string name="holiday_muslim_eid_fitr_celebration">La célébration commence par la prière spéciale de l\'Aid à la mosquée ou dans un champ ouvert, suivie de festivités comprenant des repas de famille, l\'échange de cadeaux et la charité (**Zakat al-Fitr**) pour s\'assurer que les pauvres peuvent également célébrer. C\'est un moment de pardon, de réconciliation et de gratitude envers Allah.</string>
+
+    <string name="holiday_muslim_eid_adha">Aid al-Adha (Arafa)</string>
+    <string name="holiday_muslim_eid_adha_history">L\'**Aid al-Adha** (également connu sous le nom d\'Arafa ou "Fête du Sacrifice") est la deuxième fête musulmane la plus importante. Elle honore la volonté d\'Ibrahim (Abraham) de sacrifier son fils, Ismaël, comme un acte d\'obéissance à Allah, avant qu\'Allah n\'intervienne pour lui fournir un bélier à sacrifier à la place.</string>
+    <string name="holiday_muslim_eid_adha_celebration">La fête est commémorée par le sacrifice rituel d\'un animal (mouton, chèvre ou vache) dont la viande est divisée en trois parties : une pour la famille, une pour les amis et les voisins, et une pour les pauvres. Elle marque également la fin du **Hajj**, le pèlerinage annuel à La Mecque. La journée est passée à prier et à rendre visite à la famille et aux amis.</string>
+
+    <string name="holiday_muslim_mawlid">Mawlid (Dhaloota Nabiyyii)</string>
+    <string name="holiday_muslim_mawlid_history">Le **Mawlid** (également connu sous le nom de Mouloud ou "Anniversaire du Prophète") commémore la naissance du prophète de l\'Islam, **Muhammad**. Il est célébré le 12ème jour de Rabi\' al-awwal, le troisième mois du calendrier islamique.</string>
+    <string name="holiday_muslim_mawlid_celebration">La journée est marquée par des prières publiques, des chants d\'hymnes religieux, des récits de la vie de Muhammad et des discours sur son rôle dans l\'Islam. Bien qu\'il existe des débats sur l\'opportunité de le célébrer, en Éthiopie, c\'est un jour férié reconnu, observé par des rassemblements pacifiques et la charité.</string>
+
+    <string name="holiday_muslim_hijri_new_year">Hégire (Bara Haaraa Muslimaa)</string>
+    <string name="holiday_muslim_hijri_new_year_history">L\'**Hégire** (également connue sous le nom de Nouvel An Musulman ou **Muharram**) marque le début de la nouvelle année dans le calendrier Hijri (islamique). Il commémore le voyage du prophète **Muhammad** de La Mecque à Médine en 622 de l\'ère chrétienne, un événement crucial pour l\'établissement de l\'Islam.</string>
+    <string name="holiday_muslim_hijri_new_year_celebration">La célébration est généralement sobre et n\'est pas aussi festive que l\'Aid. Les musulmans utilisent ce jour pour réfléchir à l\'importance de l\'Hégire et pour prier pour une année à venir de paix et de prospérité. Il est important de noter que le jour d\'**Achoura** tombe le 10ème jour de Muharram et est souvent observé par un jeûne volontaire.</string>
+    <string name="add_event">Ajouter un Rappel</string>
+    <string name="edit_event">Modifier un Rappel</string>
+    <string name="delete_event">Supprimer un Rappel</string>
+    <string name="delete_event_title">Supprimer ?</string>
+    <string name="delete_event_message">Êtes-vous sûr de vouloir supprimer \"%1$s\" ?</string>
+    <string name="delete">Supprimer</string>
+
+    <string name="title">Titre</string>
+    <string name="title_required">Titre requis</string>
+    <string name="description_optional">Description (Optionnel)</string>
+    <string name="date">Date</string>
+    <string name="start_time">Heure de Début</string>
+    <string name="end_time">Heure de Fin</string>
+    <string name="all_day_event">Événement Toute la Journée</string>
+    <string name="category">Catégorie</string>
+
+    <string name="repeat">Répéter</string>
+    <string name="repeat_weekly">Répéter chaque semaine</string>
+    <string name="no_repeat">Ne pas répéter</string>
+    <string name="weekly">Hebdomadaire</string>
+    <string name="repeat_on">Répéter le</string>
+    <string name="ends">Se termine</string>
+    <string name="never">Jamais</string>
+    <string name="until">Jusqu\'à</string>
+    <string name="until_date">Jusqu\'à %1$s</string>
+    <string name="select_end_date">Sélectionner la date de fin</string>
+
+    <string name="reminder">Rappel</string>
+    <string name="add_reminder">Ajouter un Rappel</string>
+    <string name="show_reminder_before">Me rappeler %1$s avant</string>
+    <string name="at_time_of_event">À l\'heure de l\'événement</string>
+    <string name="minutes_before_5">5 minutes avant</string>
+    <string name="minutes_before_15">15 minutes avant</string>
+    <string name="minutes_before_30">30 minutes avant</string>
+    <string name="hour_before_1">1 heure avant</string>
+    <string name="reminder_minutes_before">%1$d Min. Avant</string>
+
+    <string name="create">Créer</string>
+    <string name="update">Mettre à jour</string>
+    <string name="cancel">Annuler</string>
+    <string name="ok">OK</string>
+
+    <string name="no_events">Aucun rappel</string>
+    <string name="tap_plus_to_add_event">Appuyez sur + pour enregistrer votre premier rappel</string>
+    <string name="error_loading_events">Erreur lors du chargement des rappels</string>
+
+    <string name="event_date_all_day">%1$d/%2$d/%3$d (Toute la Journée)</string>
+    <string name="recurring_event">Rappel récurrent</string>
+    <string name="recurring">Récurrent</string>
+
+    <string name="filter">Filtre</string>
+    <string name="show_all">Tout Afficher</string>
+    <string name="showing_all_events">Affichage de tous les rappels</string>
+    <string name="showing_from_to">Affichage de %1$s à %2$s</string>
+    <string name="showing_from">Affichage à partir de %1$s</string>
+    <string name="showing_until">Affichage jusqu\'à %1$s</string>
+
+    <string name="time_just_now">À l\'instant</string>
+    <string name="time_in_a_moment">Dans un instant</string>
+    <string name="time_minute_singular">minute</string>
+    <string name="time_minute_plural">minutes</string>
+    <string name="time_hour_singular">heure</string>
+    <string name="time_hour_plural">heures</string>
+    <string name="time_day_singular">jour</string>
+    <string name="time_day_plural">jours</string>
+    <string name="time_week_singular">semaine</string>
+    <string name="time_week_plural">semaines</string>
+    <string name="time_month_singular">mois</string>
+    <string name="time_month_plural">mois</string>
+    <string name="time_year_singular">an</string>
+    <string name="time_year_plural">ans</string>
+    <string name="time_ago">il y a %1$d %2$s</string>
+    <string name="time_in_future">dans %1$d %2$s</string>
+
+    <string name="permission_notification_title">Activer les Notifications</string>
+    <string name="permission_notification_rationale">Nous avons besoin de votre permission de notification pour vous rappeler vos événements. Vous recevrez des rappels en temps opportun pour les événements planifiés.</string>
+    <string name="permission_exact_alarm_title">Activer l\'Alarme Exacte</string>
+    <string name="permission_exact_alarm_rationale">Si vous souhaitez recevoir des notifications pour les rappels que vous avez enregistrés, vous devez accorder la PERMISSION à l\'application. Ensuite, appuyez sur AUTORISER si la \"Demande de Permission\" apparaît.</string>
+    <string name="permission_exact_alarm_instructions">Sur l\'écran suivant, activez \"Alarmes et Rappels\" pour Calendrier Éthiopien.</string>
+    <string name="permission_grant">Accorder la Permission</string>
+    <string name="permission_not_now">Pas maintenant</string>
+    <string name="permission_open_settings">Ouvrir les Paramètres</string>
+    <string name="permission_close">Fermer</string>
+    <string name="permission_fix">Corriger</string>
+    <string name="permission_banner_title">Notification Manquante</string>
+    <string name="permission_banner_message">Il manque %1$s. Appuyez sur Corriger pour recevoir les notifications de rappel.</string>
+    <string name="permission_warning_compact">Activez les permissions pour les notifications de rappel</string>
+    <string name="permission_fix_title">Activer les Rappels</string>
+    <string name="permission_fix_message">Veuillez accorder les permissions suivantes pour recevoir des notifications de rappel :</string>
+    <string name="permission_grant_notifications">Accorder la Permission de Notification</string>
+    <string name="permission_grant_exact_alarms">Activer l\'Alarme Exacte</string>
+
+    <string-array name="ethiopian_months">
+        <item>Meskerem</item>
+        <item>Tikimt</item>
+        <item>Hedar</item>
+        <item>Tahsas</item>
+        <item>Terr</item>
+        <item>Yekatit</item>
+        <item>Maggabit</item>
+        <item>Miyazya</item>
+        <item>Ginbot</item>
+        <item>Sene</item>
+        <item>Hamle</item>
+        <item>Nehase</item>
+        <item>Pagume</item>
+    </string-array>
+
+    <string-array name="weekday_names_short">
+        <item>Lun</item>
+        <item>Mar</item>
+        <item>Mer</item>
+        <item>Jeu</item>
+        <item>Ven</item>
+        <item>Sam</item>
+        <item>Dim</item>
+    </string-array>
+
+    <string-array name="weekday_names_full">
+        <item>Lundi</item>
+        <item>Mardi</item>
+        <item>Mercredi</item>
+        <item>Jeudi</item>
+        <item>Vendredi</item>
+        <item>Samedi</item>
+        <item>Dimanche</item>
+    </string-array>
+
+    <string-array name="theme_color_names">
+        <item>Bleu</item>
+        <item>Rouge</item>
+        <item>Vert</item>
+        <item>Orange</item>
+        <item>Violet</item>
+    </string-array>
+
+    <string-array name="theme_mode_names">
+        <item>Système</item>
+        <item>Clair</item>
+        <item>Sombre</item>
+    </string-array>
+</resources>
