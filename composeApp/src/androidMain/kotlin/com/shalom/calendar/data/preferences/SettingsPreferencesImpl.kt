@@ -279,6 +279,13 @@ class SettingsPreferencesImpl(private val context: Context) : SettingsPreference
             preferences[LANGUAGE_KEY] = language.name
             Log.d("CHECK-LANG-ONBOARDING", "SettingsPreferencesImpl.setLanguage() saved to DataStore: ${language.name}")
         }
+
+        // Also save to SharedPreferences for MainActivity.attachBaseContext to read
+        context.getSharedPreferences("language_prefs", android.content.Context.MODE_PRIVATE)
+            .edit()
+            .putString("language_code", language.localeTag)
+            .apply()
+        Log.d("CHECK-LANG-ONBOARDING", "SettingsPreferencesImpl.setLanguage() saved to SharedPrefs: ${language.localeTag}")
     }
 
     override suspend fun setIsDarkMode(isDark: Boolean) {
