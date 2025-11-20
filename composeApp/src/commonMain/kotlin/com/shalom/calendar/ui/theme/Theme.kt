@@ -268,6 +268,9 @@ fun EthiopianCalendarTheme(
 
     val colorScheme = getColorScheme(appTheme, darkTheme)
 
+    // Apply system bar colors on Android
+    SystemBarsEffect(colorScheme = colorScheme, isDarkTheme = darkTheme)
+
     MaterialTheme(
         colorScheme = colorScheme,
         typography = Typography,
